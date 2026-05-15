@@ -1,0 +1,769 @@
+{
+  "source_file": "names-with-phones.xlsx",
+  "description": "Names and phone numbers of Quran memorization centers",
+  "total_centers": 91,
+  "centers": [
+    {
+      "number": 1,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز أبوظبي لتحفيظ القرآن الكريم",
+      "area": "البطين",
+      "phone": "0 26812422",
+      "center_count": 14
+    },
+    {
+      "number": 2,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز الشيخ زايد بن سلطان لتحفيظ القرآن الكريم - ذكور",
+      "area": "الزعاب",
+      "phone": "023093996 /02 6143712",
+      "center_count": null
+    },
+    {
+      "number": 3,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز الشيخ زايد بن سلطان لتحفيظ القرآن الكريم - إناث",
+      "area": "الزعاب",
+      "phone": "0 23093996",
+      "center_count": null
+    },
+    {
+      "number": 4,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز هامل الغيث لتحفيظ القرآن الكريم",
+      "area": "المشرف",
+      "phone": "0 26790611",
+      "center_count": null
+    },
+    {
+      "number": 5,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز درويش بن كرم لتحفيظ القرآن الكريم ( خاص) (جديد)",
+      "area": "شارع الدفاع بالقرب من تقنية الطلاب",
+      "phone": "02 6417773",
+      "center_count": null
+    },
+    {
+      "number": 6,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز حمدان بن محمد لتحفيظ القرآن الكريم",
+      "area": "بين الجسرين",
+      "phone": "0 25588489",
+      "center_count": null
+    },
+    {
+      "number": 7,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز مبارك هلال المنصوري لتحفيظ القرآن الكريم (جديد)",
+      "area": "مدينة محمد بن زايد",
+      "phone": "لا يوجد",
+      "center_count": null,
+      "notes": "لا يوجد بنيه تحتيه"
+    },
+    {
+      "number": 8,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز المدينة لتحفيظ القرآن الكريم",
+      "area": "مدينة خليفة",
+      "phone": "0 25563862",
+      "center_count": null
+    },
+    {
+      "number": 9,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز مسلم مكتوم المزروعي لتحفيظ القرآن الكريم",
+      "area": "مدينة خليفة",
+      "phone": "0 25558545",
+      "center_count": null,
+      "notes": "لا يعمل"
+    },
+    {
+      "number": 10,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز محمد هامل الغيث لتحفيظ القرآن الكريم",
+      "area": "بني ياس شرق 7",
+      "phone": "0 25858548",
+      "center_count": null,
+      "notes": "لا يعمل"
+    },
+    {
+      "number": 11,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز الإمارات لتحفيظ القرآن الكريم",
+      "area": "بني ياس شرق 7",
+      "phone": "لا يوجد",
+      "center_count": null,
+      "notes": "لا يوجد بنيه تحتيه"
+    },
+    {
+      "number": 12,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز عثمان بن عفان لتحفيظ القرآن الكريم (جديد)",
+      "area": "بني ياس شرق 5",
+      "phone": "لا يوجد",
+      "center_count": null,
+      "notes": "لا يوجد بنيه تحتيه"
+    },
+    {
+      "number": 13,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز الشهامة لتحفيظ القرآن الكريم",
+      "area": "الشهامة",
+      "phone": "02 5635755",
+      "center_count": null
+    },
+    {
+      "number": 14,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز الشيخ محمد بن زايد لتحفيظ القرآن الكريم",
+      "area": "الفلاح",
+      "phone": "لا يوجد",
+      "center_count": null,
+      "notes": "لا يوجد بنيه تحتيه"
+    },
+    {
+      "number": null,
+      "branch": "الفرع",
+      "center_name": "اسم المركز",
+      "area": "المنطقة",
+      "phone": "رقم الهاتف",
+      "center_count": null,
+      "notes": "الملاحظات"
+    },
+    {
+      "number": 1,
+      "branch": "Al Ain",
+      "center_name": "مركز محمد أحمد العتيبة لتحفيظ القرآن الكريم",
+      "area": "فلج هزاع",
+      "phone": "037370067",
+      "center_count": 34
+    },
+    {
+      "number": 2,
+      "branch": "Al Ain",
+      "center_name": "مركز الشيخة حصة بنت محمد لتحفيظ القرآن الكريم",
+      "area": "المعترض",
+      "phone": "037229315",
+      "center_count": null
+    },
+    {
+      "number": 3,
+      "branch": "Al Ain",
+      "center_name": "مركز صبحة بنت عويص لتحفيظ القرآن الكريم",
+      "area": "زاخر",
+      "phone": "037374831",
+      "center_count": null
+    },
+    {
+      "number": 4,
+      "branch": "Al Ain",
+      "center_name": "مركز سهيل بن عويضة الخييلي لتحفيظ القرآن الكريم",
+      "area": "زاخر",
+      "phone": "037374025",
+      "center_count": null
+    },
+    {
+      "number": 5,
+      "branch": "Al Ain",
+      "center_name": "مركز الشيخة آمنة لتحفيظ القرآن الكريم",
+      "area": "المسعودي",
+      "phone": "037211952",
+      "center_count": null
+    },
+    {
+      "number": 6,
+      "branch": "Al Ain",
+      "center_name": "مركز بن حمودة لتحفيظ القرآن الكريم",
+      "area": "الجيمي",
+      "phone": "037801124",
+      "center_count": null
+    },
+    {
+      "number": 7,
+      "branch": "Al Ain",
+      "center_name": "مركز الشيخة مريم بنت سلطان لتحفيظ القرآن الكريم",
+      "area": "الوقن",
+      "phone": "لا يوجد",
+      "center_count": null,
+      "notes": "المركز مستأجر"
+    },
+    {
+      "number": 8,
+      "branch": "Al Ain",
+      "center_name": "مركز أبو بكر الصديق لتحفيظ القرآن الكريم",
+      "area": "الفوعة",
+      "phone": "لا يوجد",
+      "center_count": null,
+      "notes": "لا يوجد بنية تحتية"
+    },
+    {
+      "number": 9,
+      "branch": "Al Ain",
+      "center_name": "مركز بن حاذة الكتبي لتحفيظ القرآن الكريم",
+      "area": "هيلي",
+      "phone": "037821707",
+      "center_count": null
+    },
+    {
+      "number": 10,
+      "branch": "Al Ain",
+      "center_name": "مركز العين لتحفيظ القرآن الكريم",
+      "area": "الصاروج",
+      "phone": "037688840",
+      "center_count": null
+    },
+    {
+      "number": 11,
+      "branch": "Al Ain",
+      "center_name": "مركز هيلي لتحفيظ القرآن الكريم",
+      "area": "هيلي",
+      "phone": "037378731",
+      "center_count": null
+    },
+    {
+      "number": 12,
+      "branch": "Al Ain",
+      "center_name": "مركز بر الوالدين لتحفيظ القرآن الكريم",
+      "area": "الهير",
+      "phone": "037320074",
+      "center_count": null
+    },
+    {
+      "number": 13,
+      "branch": "Al Ain",
+      "center_name": "مركز نعمة لتحفيظ القرآن الكريم",
+      "area": "نعمة",
+      "phone": "037370038",
+      "center_count": null
+    },
+    {
+      "number": 14,
+      "branch": "Al Ain",
+      "center_name": "مركز سعيد بن السالومي لتحفيظ القرآن الكريم",
+      "area": "القوع",
+      "phone": "037355024",
+      "center_count": null
+    },
+    {
+      "number": 15,
+      "branch": "Al Ain",
+      "center_name": "مركز عوض بن سعيد الكتبي( خاص)",
+      "area": "هيلي",
+      "phone": "037844255",
+      "center_count": null
+    },
+    {
+      "number": 16,
+      "branch": "Al Ain",
+      "center_name": "مركز الشيخة موزة بنت بطي ( خاص)",
+      "area": "الشعيبة",
+      "phone": "037812050",
+      "center_count": null
+    },
+    {
+      "number": 17,
+      "branch": "Al Ain",
+      "center_name": "مركز الشيخ محمد بن زايد ( خاص)",
+      "area": "الجيمي",
+      "phone": "037622112",
+      "center_count": null
+    },
+    {
+      "number": 18,
+      "branch": "Al Ain",
+      "center_name": "مركز عائشة أم المؤمنين (خاص)",
+      "area": "هيلي",
+      "phone": "037846599",
+      "center_count": null
+    },
+    {
+      "number": 19,
+      "branch": "Al Ain",
+      "center_name": "مركز الفرقان ( خاص)",
+      "area": "اليحر",
+      "phone": "037819072",
+      "center_count": null
+    },
+    {
+      "number": 20,
+      "branch": "Al Ain",
+      "center_name": "مركز دار الخير ( خاص)",
+      "area": "الفوعة",
+      "phone": "037832662",
+      "center_count": null
+    },
+    {
+      "number": 21,
+      "branch": "Al Ain",
+      "center_name": "مركز رملة الراعي ( خاص)",
+      "area": "النايفة",
+      "phone": "037844910",
+      "center_count": null
+    },
+    {
+      "number": 22,
+      "branch": "Al Ain",
+      "center_name": "مركز وديمة بنت زايد( خاص)",
+      "area": "أم غافة",
+      "phone": "037833711",
+      "center_count": null
+    },
+    {
+      "number": 23,
+      "branch": "Al Ain",
+      "center_name": "مركز محمد مفتاح القشاطي( خاص)",
+      "area": "الظاهر",
+      "phone": "037842227",
+      "center_count": null
+    },
+    {
+      "number": 24,
+      "branch": "Al Ain",
+      "center_name": "مركز بن حرمل ( خاص)",
+      "area": "المقام",
+      "phone": "037680555",
+      "center_count": null
+    },
+    {
+      "number": 25,
+      "branch": "Al Ain",
+      "center_name": "مركز بو حقب لتحفيظ القرآن الكريم",
+      "area": "مزيد",
+      "phone": "لا يوجد",
+      "center_count": null,
+      "notes": "لا يوجد بنية تحتية"
+    },
+    {
+      "number": 26,
+      "branch": "Al Ain",
+      "center_name": "مركز فاطمة سعد بو فلاسة لتحفيظ القرآن الكريم",
+      "area": "الشعيبة",
+      "phone": "لا يوجد",
+      "center_count": null,
+      "notes": "لا يوجد بنية تحتية"
+    },
+    {
+      "number": 27,
+      "branch": "Al Ain",
+      "center_name": "مركز بالأصلي لتحفيظ القرآن الكريم",
+      "area": "هيلي",
+      "phone": "لا يوجد",
+      "center_count": null,
+      "notes": "لا يوجد بنية تحتية"
+    },
+    {
+      "number": 28,
+      "branch": "Al Ain",
+      "center_name": "مركز القطيطي لتحفيظ القرآن الكريم",
+      "area": "الظاهر",
+      "phone": "لا يوجد",
+      "center_count": null,
+      "notes": "لا يوجد بنية تحتية"
+    },
+    {
+      "number": 29,
+      "branch": "Al Ain",
+      "center_name": "مركز الفقع لتحفيظ القرآن الكريم",
+      "area": "الفقع",
+      "phone": "لا يوجد",
+      "center_count": null,
+      "notes": "لا يوجد بنية تحتية"
+    },
+    {
+      "number": 30,
+      "branch": "Al Ain",
+      "center_name": "مركز ناهل لتحفيظ القرآن الكريم",
+      "area": "ناهل",
+      "phone": "لا يوجد",
+      "center_count": null,
+      "notes": "لا يوجد بنية تحتية"
+    },
+    {
+      "number": 31,
+      "branch": "Al Ain",
+      "center_name": "مركز سويحان لتحفيظ القرآن الكريم (ملحق مسجد)",
+      "area": "سويحان",
+      "phone": "لا يوجد",
+      "center_count": null,
+      "notes": "حلقة في مسجد"
+    },
+    {
+      "number": 32,
+      "branch": "Al Ain",
+      "center_name": "مركز فاخرة أحمد الخييلي لتحفيظ القرآن الكريم",
+      "area": "ابوسمرة",
+      "phone": "لا يوجد",
+      "center_count": null,
+      "notes": "لا يوجد بنية تحتية"
+    },
+    {
+      "number": 33,
+      "branch": "Al Ain",
+      "center_name": "مركز شعاب الاشخر لتحفيظ القرآن الكريم",
+      "area": "شعاب الاشخر",
+      "phone": "لا يوجد",
+      "center_count": null,
+      "notes": "لا يوجد بنية تحتية"
+    },
+    {
+      "number": 34,
+      "branch": "Al Ain",
+      "center_name": "مركز سالم بالهويمل لتحفيظ القرآن الكريم (جديد)",
+      "area": "زاخر",
+      "phone": "لا يوجد",
+      "center_count": null,
+      "notes": "لا يوجد بنية تحتية"
+    },
+    {
+      "number": null,
+      "branch": "الفرع",
+      "center_name": "اسم المركز",
+      "area": "المنطقة",
+      "phone": "رقم الهاتف",
+      "center_count": null,
+      "notes": "الملاحظات"
+    },
+    {
+      "number": 1,
+      "branch": "Al Dhafra",
+      "center_name": "مركز مرابع الظفرة لتحفيظ القرآن الكريم",
+      "area": "مدينة زايد",
+      "phone": "لا يوجد",
+      "center_count": 8
+    },
+    {
+      "number": 2,
+      "branch": "Al Dhafra",
+      "center_name": "مركز ليوا لتحفيظ القرآن الكريم",
+      "area": "ليوا",
+      "phone": "0 28772338",
+      "center_count": null
+    },
+    {
+      "number": 3,
+      "branch": "Al Dhafra",
+      "center_name": "مركز المرفأ لتحفيظ القرآن الكريم",
+      "area": "المرفأ",
+      "phone": "لا يوجد",
+      "center_count": null,
+      "notes": "لا يوجد بنيه تحتيه"
+    },
+    {
+      "number": 4,
+      "branch": "Al Dhafra",
+      "center_name": "مركز بن عشير لتحفيظ القرآن الكريم",
+      "area": "غياثي",
+      "phone": "0 28744023",
+      "center_count": null
+    },
+    {
+      "number": 5,
+      "branch": "Al Dhafra",
+      "center_name": "مركز بدع المطاوعة لتحفيظ القرآن الكريم",
+      "area": "بدع المطاوعة",
+      "phone": "لا يوجد",
+      "center_count": null,
+      "notes": "لا يوجد بنيه تحتيه"
+    },
+    {
+      "number": 6,
+      "branch": "Al Dhafra",
+      "center_name": "مركز الرويس لتحفيظ القرآن الكريم",
+      "area": "الرويس",
+      "phone": "لا يوجد",
+      "center_count": null,
+      "notes": "لا يوجد بنيه تحتيه"
+    },
+    {
+      "number": 7,
+      "branch": "Al Dhafra",
+      "center_name": "مركز بعيا لتحفيظ القرآن الكريم",
+      "area": "السلع",
+      "phone": "لا يوجد",
+      "center_count": null
+    },
+    {
+      "number": 8,
+      "branch": "Al Dhafra",
+      "center_name": "مركز دلما لتحفيظ القرآن الكريم",
+      "area": "جزيرة دلما",
+      "phone": "لا يوجد",
+      "center_count": null,
+      "notes": "لا يوجد بنيه تحتيه"
+    },
+    {
+      "number": null,
+      "branch": "الفرع",
+      "center_name": "اسم المركز",
+      "area": "المنطقة",
+      "phone": "رقم الهاتف",
+      "center_count": null,
+      "notes": "الملاحظات"
+    },
+    {
+      "number": 1,
+      "branch": "Ajman",
+      "center_name": "مركز الاتحاد لتحفيظ القران الكريم",
+      "area": "الجرف",
+      "phone": "0 67115574",
+      "center_count": 7
+    },
+    {
+      "number": 2,
+      "branch": "Ajman",
+      "center_name": "مركز آية لتحفيظ القرآن الكريم و علومه",
+      "area": "الجرف",
+      "phone": "0 67311236",
+      "center_count": null
+    },
+    {
+      "number": 3,
+      "branch": "Ajman",
+      "center_name": "مركز عبيد الحلو- المنامة",
+      "area": "المنامة",
+      "phone": "0 67115576",
+      "center_count": null
+    },
+    {
+      "number": 4,
+      "branch": "Ajman",
+      "center_name": "مركز دارأسماء بنت أبي بكر لتحفيظ القران الكريم",
+      "area": "السوان",
+      "phone": "06 7115573",
+      "center_count": null
+    },
+    {
+      "number": 5,
+      "branch": "Ajman",
+      "center_name": "مركز عبدالله منصور العوضي",
+      "area": "الجرف",
+      "phone": "06 7489878",
+      "center_count": null
+    },
+    {
+      "number": 6,
+      "branch": "Ajman",
+      "center_name": "مركز هاجر لتحفيظ القران الكريم",
+      "area": "التله",
+      "phone": "06 7673064",
+      "center_count": null
+    },
+    {
+      "number": 7,
+      "branch": "Ajman",
+      "center_name": "مركز عبيد الحلو- مزيرع",
+      "area": "مزيرع",
+      "phone": "04 8522449",
+      "center_count": null
+    },
+    {
+      "number": null,
+      "branch": "الفرع",
+      "center_name": "اسم المركز",
+      "area": "المنطقة",
+      "phone": "رقم الهاتف",
+      "center_count": null,
+      "notes": "الملاحظات"
+    },
+    {
+      "number": 1,
+      "branch": "Ras Al Khaimah",
+      "center_name": "مركز الأم لتحفيظ القرآن (جديد)",
+      "area": "الظيت الجنوبي",
+      "phone": "لا يوجد",
+      "center_count": 6,
+      "notes": "لا يوجد بنيه تحتيه"
+    },
+    {
+      "number": 2,
+      "branch": "Ras Al Khaimah",
+      "center_name": "مركز ميمونة بنت الحارث لتحفيظ القرآن",
+      "area": "خزام",
+      "phone": "07/2362306",
+      "center_count": null
+    },
+    {
+      "number": 3,
+      "branch": "Ras Al Khaimah",
+      "center_name": "مركز سالم العلي لتحفيظ القرآن",
+      "area": "القصيدات",
+      "phone": "07/2215065",
+      "center_count": null
+    },
+    {
+      "number": 4,
+      "branch": "Ras Al Khaimah",
+      "center_name": "مركز جلفار لتحفيظ القرآن",
+      "area": "جلفار",
+      "phone": "07/2268033",
+      "center_count": null
+    },
+    {
+      "number": 5,
+      "branch": "Ras Al Khaimah",
+      "center_name": "مركز قباء لتحفيظ القرآن الكريم ( خاص)",
+      "area": "جلفار ( بجوار مسجد قباء )",
+      "phone": "لا يوجد",
+      "center_count": null,
+      "notes": "لا يوجد بنيه تحتيه"
+    },
+    {
+      "number": 6,
+      "branch": "Ras Al Khaimah",
+      "center_name": "مركز عمر بن الخطاب لتحفيظ القرآن الكريم( خاص)",
+      "area": "جلفار ( شارع الجولان )",
+      "phone": "07/2237559-07/2239559",
+      "center_count": null
+    },
+    {
+      "number": null,
+      "branch": "الفرع",
+      "center_name": "اسم المركز",
+      "area": "المنطقة",
+      "phone": "لا يوجد",
+      "center_count": null,
+      "notes": "الملاحظات"
+    },
+    {
+      "number": 1,
+      "branch": "Umm Al Quwain",
+      "center_name": "مركز أحمد بن راشد لتحفيظ القرآن الكريم",
+      "area": "الراس",
+      "phone": "0 67664230",
+      "center_count": 5
+    },
+    {
+      "number": 2,
+      "branch": "Umm Al Quwain",
+      "center_name": "مركز الشيخ زايد بن سلطان لتحفيظ القرآن الكريم",
+      "area": "النيفه",
+      "phone": "لا يوجد",
+      "center_count": null,
+      "notes": "لا يوجد بنيه تحتيه"
+    },
+    {
+      "number": 3,
+      "branch": "Umm Al Quwain",
+      "center_name": "مركز أم القيوين لتحفيظ القرآن الكريم",
+      "area": "الحمره",
+      "phone": "0 67641109",
+      "center_count": null
+    },
+    {
+      "number": 4,
+      "branch": "Umm Al Quwain",
+      "center_name": "مركز حمد مطر الجابري",
+      "area": "السلمة",
+      "phone": "0 67415994",
+      "center_count": null
+    },
+    {
+      "number": 5,
+      "branch": "Umm Al Quwain",
+      "center_name": "مركز الشيخة عهود بنت راشد لتحفيظ القرآن الكريم",
+      "area": "الراعفة",
+      "phone": "0 67681084",
+      "center_count": null
+    },
+    {
+      "number": null,
+      "branch": "الفرع",
+      "center_name": "اسم المركز",
+      "area": "المنطقة",
+      "phone": "رقم الهاتف",
+      "center_count": null,
+      "notes": "الملاحظات"
+    },
+    {
+      "number": 1,
+      "branch": "Fujairah",
+      "center_name": "مركز الفجيرة لتحفيظ القرآن الكريم / ذكور",
+      "area": "الفصيل",
+      "phone": "0 92248499",
+      "center_count": 5
+    },
+    {
+      "number": 2,
+      "branch": "Fujairah",
+      "center_name": "مركز الفجيرة لتحفيظ القرآن الكريم / إناث",
+      "area": "مضب شارع الإتحاد",
+      "phone": "0 92243315",
+      "center_count": null
+    },
+    {
+      "number": 3,
+      "branch": "Fujairah",
+      "center_name": "مركز زايد لتحفيظ القرآن الكريم",
+      "area": "النهضة",
+      "phone": "لايوجد",
+      "center_count": null,
+      "notes": "لا يوجد بنيه تحتيه"
+    },
+    {
+      "number": 4,
+      "branch": "Fujairah",
+      "center_name": "مركز سعيد محمد الرقباني لتحفيظ القرآن الكريم",
+      "area": "قدفع",
+      "phone": "لايوجد",
+      "center_count": null,
+      "notes": "لا يوجد بنيه تحتيه"
+    },
+    {
+      "number": 5,
+      "branch": "Fujairah",
+      "center_name": "مركز دبا لتحفيظ القرآن الكريم",
+      "area": "دبا المهلب",
+      "phone": "0 92444548",
+      "center_count": null
+    },
+    {
+      "number": null,
+      "branch": "الفرع",
+      "center_name": "اسم المركز",
+      "area": "المنطقة",
+      "phone": "رقم الهاتف",
+      "center_count": null,
+      "notes": "الملاحظات"
+    },
+    {
+      "number": 1,
+      "branch": "Khor Fakkan",
+      "center_name": "مركز المبارك لتحفيظ القرآن الكريم",
+      "area": "القادسية",
+      "phone": "0 92770303",
+      "center_count": 1
+    },
+    {
+      "number": null,
+      "branch": "البيان",
+      "center_name": "العدد",
+      "area": "ملاحظات",
+      "phone": "",
+      "center_count": null
+    },
+    {
+      "number": null,
+      "branch": "عدد المراكز المفتوحة",
+      "center_name": "80",
+      "area": "( 67 مركز حكومي)- ( 13 مركز خاص)",
+      "phone": "",
+      "center_count": null
+    },
+    {
+      "number": null,
+      "branch": "عدد المراكز الغير مفتوحة",
+      "center_name": "9",
+      "area": "",
+      "phone": "",
+      "center_count": null
+    },
+    {
+      "number": null,
+      "branch": "اجمالي المراكز",
+      "center_name": "89",
+      "area": "",
+      "phone": "",
+      "center_count": null
+    }
+  ]
+}

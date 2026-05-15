@@ -1,0 +1,83 @@
+{
+  "dataset": "Quran Memorization Circles and Students",
+  "source": {
+    "organization": "General Authority for Islamic Affairs, Endowments and Zakat",
+    "department": "Quran Education",
+    "phone": "8008222",
+    "data_sources": "Administrative record",
+    "methodology": "Counting the number of Quran memorization circles and students during the specified period"
+  },
+  "coverage": {
+    "area": "Each Emirate within the country",
+    "periodicity": "Yearly /monthly"
+  },
+  "indicator": {
+    "name": "Number of Quran memorization circles and their students",
+    "definition": "Total number of Quran memorization circles in mosques and the registered students during a specified period",
+    "unit": "Number"
+  },
+  "fields": {
+    "mosque_name": {
+      "original_name": "أسماء المساجد (Mosque Names)",
+      "description": "Name of the mosque hosting Quran memorization circles (in Arabic)"
+    },
+    "branch": {
+      "original_name": "الفرع (Branch)",
+      "description": "The city/region where the mosque is located (e.g. Abu Dhabi, Al Ain, Dubai)"
+    },
+    "area": {
+      "original_name": "اسم المنطقة (Area Name)",
+      "description": "The specific neighborhood or district within the city (in Arabic)"
+    },
+    "quran_circles": {
+      "original_name": "عدد الحلقات (Number of Circles)",
+      "description": "Number of Quran memorization circles (halaqat) held at this mosque"
+    },
+    "latitude": {
+      "original_name": "خط العرض (Latitude)",
+      "description": "Geographic latitude coordinate of the mosque (where available; some source values are malformed)"
+    },
+    "longitude": {
+      "original_name": "خط الطول (Longitude)",
+      "description": "Geographic longitude coordinate of the mosque (where available)"
+    }
+  },
+  "terms": [
+    {
+      "term": "Mosque",
+      "original_arabic": "مسجد",
+      "definition": "A place designated for prayer; includes the mosque's courtyards, entrances, annexes, and facilities",
+      "calculation": "Total number of mosques",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative records"
+    },
+    {
+      "term": "Number of Quran Memorization Circles in Mosques",
+      "original_arabic": "عدد حلقات تحفيظ القران في المساجد",
+      "definition": "Total number of accredited educational circles held in mosques for teaching Quran memorization and recitation during a specified period and within a specific geographic area",
+      "calculation": "Total number of Quran memorization circles in mosques",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative records"
+    },
+    {
+      "term": "Number of Students in Circles",
+      "original_arabic": "عدد الدارسين في الحلقات",
+      "definition": "Total number of individuals actually enrolled in Quran memorization circles during a specified period and within a specific area",
+      "calculation": "Total number of students in circles",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative records"
+    },
+    {
+      "term": "Location Coordinates",
+      "original_arabic": "خطوط الطول - خطوط العرض (احداثيات الموقع)",
+      "definition": "Digital address of the place on the globe, precisely determining its location using latitude and longitude",
+      "calculation": "Total number of Quran memorization circles in mosques by location",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative records"
+    }
+  ]
+}

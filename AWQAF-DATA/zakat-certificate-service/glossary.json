@@ -1,0 +1,129 @@
+{
+  "dataset": "Certificate \"To Whom It May Concern\" for Zakat Assistance",
+  "source": {
+    "organization": "General Authority of Islamic Affairs, Endowments and Zakat",
+    "department": "Zakat Fund Management",
+    "phone": "8008222",
+    "data_sources": "Administrative Records",
+    "methodology": "A database containing the names of the Authority's services and total transaction statistics provided during the year 2025, classified by month"
+  },
+  "coverage": {
+    "area": "All Emirates of the Country",
+    "periodicity": "Monthly and Yearly"
+  },
+  "indicator": {
+    "name": "Statistics of Certificate \"To Whom It May Concern\" for Zakat Assistance",
+    "definition": "A report reviewing the number of customers by channel and month",
+    "unit": "Numbers"
+  },
+  "fields": {
+    "smartphone_app": {
+      "original_name": "Smartphone Applications",
+      "description": "Number of certificate requests submitted via the Authority's smartphone application"
+    },
+    "chatbot": {
+      "original_name": "Chat bot",
+      "description": "Number of certificate requests submitted via the Authority's chatbot"
+    },
+    "website": {
+      "original_name": "Website",
+      "description": "Number of certificate requests submitted via the Authority's website"
+    },
+    "good_loan": {
+      "original_name": "Good Loan",
+      "description": "Number of certificate requests related to Good Loan (Qard Hasan) projects"
+    },
+    "call_center": {
+      "original_name": "Call Center",
+      "description": "Number of certificate requests submitted via the Authority's call center (8008222)"
+    },
+    "service_center": {
+      "original_name": "Service Delivery Center",
+      "description": "Number of certificate requests submitted in person at the Authority's service delivery center"
+    },
+    "mobile_website": {
+      "original_name": "Mobile Website",
+      "description": "Number of certificate requests submitted via the Authority's mobile website (smartphone browser)"
+    },
+    "na_legacy": {
+      "original_name": "N/A",
+      "description": "Transactions documented on a channel that was subsequently cancelled (legacy/deprecated channel)"
+    },
+    "total": {
+      "original_name": "Total",
+      "description": "Total certificate requests across all channels for the given month"
+    }
+  },
+  "terms": [
+    {
+      "term": "Total",
+      "definition": "Total requests by month",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "N/A",
+      "definition": "Refers to a channel that was cancelled but a transaction was documented before cancellation.",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Call Center",
+      "definition": "Authority Call Center 8008222",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Service Delivery Center",
+      "definition": "Authority Service Delivery Center",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Website",
+      "definition": "Authority Website",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Good Loan",
+      "definition": "Type of Projects",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Smartphone Applications",
+      "definition": "Authority's Smartphone App",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Zaki Platform",
+      "definition": "Authority WhatsApp at 8008222",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Mobile Website",
+      "definition": "Authority Website via Smartphone",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Month",
+      "definition": "The month in which the service was provided.",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    }
+  ]
+}

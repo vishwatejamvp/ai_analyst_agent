@@ -1,0 +1,37 @@
+{
+  "dataset": "Mosques Registry",
+  "source": {
+    "organization": "General Authority for Islamic Affairs, Endowments and Zakat",
+    "department": "Mosques Department"
+  },
+  "fields": {
+    "mosque_name": {
+      "original_name": "اسم المسجد (Mosque Name)",
+      "description": "Name of the mosque (in Arabic)"
+    },
+    "mosque_number": {
+      "original_name": "رقم المسجد (Mosque Number)",
+      "description": "Unique identifier/registration number of the mosque"
+    },
+    "branch": {
+      "original_name": "الفرع (Branch)",
+      "description": "The emirate/city where the mosque is located"
+    },
+    "area": {
+      "original_name": "المنطقة (Area)",
+      "description": "The neighborhood or district within the emirate (in Arabic)"
+    },
+    "mosque_type": {
+      "original_name": "صفة المسجد (Mosque Type)",
+      "description": "Classification of the mosque: Friday (Jumu'ah) mosque or Congregation (Jama'ah) mosque"
+    },
+    "latitude": {
+      "original_name": "خط العرض (Latitude)",
+      "description": "Geographic latitude coordinate (available only for 2023 data)"
+    },
+    "longitude": {
+      "original_name": "خط الطول (Longitude)",
+      "description": "Geographic longitude coordinate (available only for 2023 data)"
+    }
+  }
+}

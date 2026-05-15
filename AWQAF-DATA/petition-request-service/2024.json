@@ -1,0 +1,146 @@
+{
+  "year": 2024,
+  "dataset": "Statistics of Petition Request Service",
+  "notes": [],
+  "data": [
+    {
+      "month": "january",
+      "channels": {
+        "ipad": 0,
+        "smartphone_app": 4,
+        "website": 104,
+        "service_center": 30,
+        "mobile_website": 86
+      },
+      "total": 224
+    },
+    {
+      "month": "february",
+      "channels": {
+        "ipad": 0,
+        "smartphone_app": 23,
+        "website": 100,
+        "service_center": 44,
+        "mobile_website": 66
+      },
+      "total": 233
+    },
+    {
+      "month": "march",
+      "channels": {
+        "ipad": 0,
+        "smartphone_app": 43,
+        "website": 65,
+        "service_center": 15,
+        "mobile_website": 70
+      },
+      "total": 193
+    },
+    {
+      "month": "april",
+      "channels": {
+        "ipad": 0,
+        "smartphone_app": 49,
+        "website": 65,
+        "service_center": 11,
+        "mobile_website": 52
+      },
+      "total": 177
+    },
+    {
+      "month": "may",
+      "channels": {
+        "ipad": 0,
+        "smartphone_app": 58,
+        "website": 88,
+        "service_center": 44,
+        "mobile_website": 81
+      },
+      "total": 271
+    },
+    {
+      "month": "june",
+      "channels": {
+        "ipad": 0,
+        "smartphone_app": 54,
+        "website": 87,
+        "service_center": 7,
+        "mobile_website": 67
+      },
+      "total": 215
+    },
+    {
+      "month": "july",
+      "channels": {
+        "ipad": 0,
+        "smartphone_app": 85,
+        "website": 87,
+        "service_center": 3,
+        "mobile_website": 64
+      },
+      "total": 239
+    },
+    {
+      "month": "august",
+      "channels": {
+        "ipad": 0,
+        "smartphone_app": 63,
+        "website": 59,
+        "service_center": 18,
+        "mobile_website": 50
+      },
+      "total": 190
+    },
+    {
+      "month": "september",
+      "channels": {
+        "ipad": 0,
+        "smartphone_app": 60,
+        "website": 65,
+        "service_center": 6,
+        "mobile_website": 57
+      },
+      "total": 188
+    },
+    {
+      "month": "october",
+      "channels": {
+        "ipad": 0,
+        "smartphone_app": 71,
+        "website": 85,
+        "service_center": 6,
+        "mobile_website": 74
+      },
+      "total": 236
+    },
+    {
+      "month": "november",
+      "channels": {
+        "ipad": 0,
+        "smartphone_app": 59,
+        "website": 82,
+        "service_center": 2,
+        "mobile_website": 69
+      },
+      "total": 212
+    },
+    {
+      "month": "december",
+      "channels": {
+        "ipad": 0,
+        "smartphone_app": 44,
+        "website": 48,
+        "service_center": 7,
+        "mobile_website": 53
+      },
+      "total": 152
+    }
+  ],
+  "totals_by_channel": {
+    "ipad": 0,
+    "smartphone_app": 613,
+    "website": 935,
+    "service_center": 193,
+    "mobile_website": 789
+  }
+}

@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Analyst — Chat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+  <!-- Apache ECharts (production-grade dashboard charts; Apache 2.0,
+       ~1MB gzipped). Frontend prefers ECharts when ``echarts_option``
+       is present on a ChartPayload; Plotly stays as fallback so any
+       chart kind not yet ported keeps rendering. -->
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js" charset="utf-8"></script>
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
+  <style>
+    :root {
+      /* Official light UI: white canvas + slate typography + restrained blue accent */
+      --bg: #ffffff;
+      --surface: #f8fafc;
+      --surface-elevated: #ffffff;
+      --border: #e2e8f0;
+      --border-strong: #cbd5e1;
+      --text: #0f172a;
+      --text-muted: #475569;
+      --accent: #1d4ed8;
+      --accent-hover: #1e40af;
+      --accent-dim: rgba(29, 78, 216, 0.1);
+      --accent-ring: rgba(29, 78, 216, 0.22);
+      --user-bubble: #1e40af;
+      --assistant-bubble: #ffffff;
+      --success: #15803d;
+      --warn: #a16207;
+      --radius: 12px;
+      --radius-sm: 8px;
+      --shadow: 0 1px 3px rgba(15, 23, 42, 0.08), 0 4px 14px rgba(15, 23, 42, 0.06);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { color-scheme: light; }
+
+    html, body {
+      height: 100%;
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .app {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      height: 100%;
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    header.app-header {
+      padding: 1rem 0 0.75rem;
+      border-bottom: 1px solid var(--border-strong);
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    header .subtitle {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      margin-top: 0.125rem;
+    }
+
+    header .links {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    header a {
+      color: var(--accent);
+      font-size: 0.8125rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    header a:hover { color: var(--accent-hover); text-decoration: underline; }
+    
+    header a.statistics-link {
+      background: var(--accent);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+    header a.statistics-link:hover {
+      background: var(--accent-hover);
+      text-decoration: none;
+    }
+
+    .messages {
+      overflow-y: auto;
+      padding: 1.25rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      scroll-behavior: smooth;
+    }
+
+    .msg {
+      display: flex;
+      flex-direction: column;
+      max-width: 85%;
+      animation: fadeIn 0.25s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .msg.user { align-self: flex-end; }
+    .msg.assistant { align-self: flex-start; }
+
+    .msg-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-bottom: 0.35rem;
+      padding: 0 0.25rem;
+      width: 100%;
+      min-width: 0;
+    }
+
+    .msg-label {
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      flex-shrink: 0;
+    }
+
+    .msg-time {
+      font-size: 0.6875rem;
+      font-variant-numeric: tabular-nums;
+      color: var(--text-muted);
+      white-space: nowrap;
+      opacity: 0.9;
+      font-weight: 500;
+    }
+
+    .bubble {
+      padding: 0.875rem 1rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      font-size: 0.9375rem;
+    }
+
+    .msg.user .bubble {
+      background: var(--user-bubble);
+      border-color: var(--user-bubble);
+      color: #ffffff;
+    }
+
+    .msg.assistant .bubble {
+      background: var(--assistant-bubble);
+      border-color: var(--border-strong);
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+    }
+
+    .assistant-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .chip {
+      font-size: 0.6875rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 999px;
+      background: var(--accent-dim);
+      color: var(--accent);
+      border: 1px solid var(--accent-ring);
+      font-weight: 500;
+    }
+
+    .chip.muted {
+      background: var(--surface);
+      color: var(--text-muted);
+      border-color: var(--border);
+      font-weight: 500;
+    }
+
+    .markdown-body {
+      font-size: 0.9375rem;
+    }
+    .markdown-body h1, .markdown-body h2, .markdown-body h3 {
+      font-size: 1rem;
+      margin: 0.75rem 0 0.35rem;
+      font-weight: 600;
+    }
+    .markdown-body h1:first-child, .markdown-body h2:first-child { margin-top: 0; }
+    .markdown-body p { margin: 0.5rem 0; }
+    .markdown-body ul, .markdown-body ol { margin: 0.5rem 0 0.5rem 1.25rem; }
+    .markdown-body code {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.8125rem;
+      background: var(--surface);
+      color: var(--text);
+      padding: 0.1rem 0.35rem;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+    .markdown-body pre {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 0.75rem;
+      border-radius: var(--radius-sm);
+      overflow-x: auto;
+      margin: 0.5rem 0;
+      font-size: 0.8125rem;
+      color: var(--text);
+    }
+
+    .chart-panel {
+      margin-top: 1rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-strong);
+      background: var(--surface);
+      overflow: hidden;
+    }
+    .chart-tabs {
+      display: flex;
+      gap: 0;
+      padding: 0.5rem 0.5rem 0;
+      flex-wrap: wrap;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface-elevated);
+    }
+    .chart-tab {
+      font: inherit;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      padding: 0.5rem 0.85rem;
+      border: 1px solid transparent;
+      border-bottom: none;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      background: transparent;
+      color: var(--text-muted);
+      cursor: pointer;
+      margin-bottom: -1px;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+    }
+    .chart-tab:hover {
+      background: var(--accent-dim);
+      color: var(--accent);
+    }
+    .chart-tab.active {
+      background: var(--surface);
+      color: var(--text);
+      border-color: var(--border);
+      border-bottom-color: var(--surface);
+    }
+    .chart-tab .tab-icon {
+      margin-right: 0.35rem;
+      opacity: 0.85;
+    }
+    .chart-canvas {
+      display: none;
+      padding: 0.5rem 0.25rem 0.75rem;
+      background: var(--surface);
+      min-height: 360px;
+    }
+    .chart-canvas.active { display: block; }
+    .chart-canvas .plotly-host {
+      width: 100%;
+      min-height: 380px;
+    }
+
+    /* Native HTML metric picker rendered above multi-series Plotly
+       charts. Replaces the in-SVG Plotly dropdown which was easy to
+       miss in the corner of the figure. */
+    .metric-selector {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 0.5rem;
+      padding: 0.35rem 0.75rem 0.5rem;
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+    }
+    .metric-selector label {
+      font-weight: 500;
+      letter-spacing: 0.01em;
+    }
+    .metric-selector select {
+      font: inherit;
+      font-size: 0.8125rem;
+      color: var(--text);
+      background: var(--surface-elevated);
+      border: 1px solid var(--border-strong);
+      border-radius: 6px;
+      padding: 0.3rem 1.75rem 0.3rem 0.6rem;
+      cursor: pointer;
+      max-width: 240px;
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+      background-repeat: no-repeat;
+      background-position: right 0.55rem center;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .metric-selector select:hover {
+      border-color: var(--accent);
+    }
+    .metric-selector select:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-dim);
+    }
+    /* Inline note shown when a user picks a metric whose series has no
+       data for the current period — replaces the otherwise meaningless
+       flat-zero line. Matches the muted-text-on-tinted-card aesthetic
+       of the chart caption. */
+    .metric-empty-note {
+      margin: 0.25rem 0.75rem 0.75rem;
+      padding: 0.55rem 0.75rem;
+      border-left: 3px solid var(--accent);
+      background: var(--accent-dim);
+      color: var(--text);
+      font-size: 0.8125rem;
+      border-radius: 4px;
+    }
+    .chart-canvas img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+    .chart-caption {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      padding: 0 0.75rem 0.5rem;
+    }
+
+    details.panel {
+      margin-top: 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: var(--surface);
+    }
+    details.panel summary {
+      cursor: pointer;
+      padding: 0.5rem 0.75rem;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      user-select: none;
+    }
+    details.panel summary:hover { color: var(--text); }
+    details.panel .panel-body {
+      padding: 0 0.75rem 0.75rem;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.75rem;
+      overflow-x: auto;
+      max-height: 200px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      word-break: break-word;
+      color: var(--text-muted);
+    }
+
+    .table-mini {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.8125rem;
+      margin-top: 0.5rem;
+    }
+    .table-mini th, .table-mini td {
+      border: 1px solid var(--border);
+      padding: 0.35rem 0.5rem;
+      text-align: left;
+    }
+    .table-mini th {
+      background: var(--surface);
+      color: var(--text);
+      font-weight: 600;
+      border-color: var(--border-strong);
+    }
+    .table-mini td { border-color: var(--border); color: var(--text); }
+
+    .composer {
+      padding: 1rem 0 1.25rem;
+      border-top: 1px solid var(--border-strong);
+      background: var(--bg);
+    }
+
+    .composer-grid {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0.75rem;
+      align-items: end;
+    }
+
+    textarea {
+      font-family: inherit;
+      font-size: 0.875rem;
+      background: var(--surface-elevated);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-sm);
+      color: var(--text);
+      padding: 0.5rem 0.65rem;
+      width: 100%;
+      min-height: 52px;
+      max-height: 140px;
+      resize: vertical;
+    }
+    textarea::placeholder { color: #94a3b8; }
+    textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-dim);
+    }
+
+    .btn-send {
+      font-family: inherit;
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 0.65rem 1.25rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--accent-hover);
+      background: var(--accent);
+      color: #ffffff;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+      white-space: nowrap;
+    }
+    .btn-send:hover:not(:disabled) {
+      background: var(--accent-hover);
+      border-color: var(--accent-hover);
+    }
+    .btn-send:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+
+    .error-banner {
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      color: #991b1b;
+      padding: 0.65rem 0.85rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.8125rem;
+      margin-bottom: 0.75rem;
+      display: none;
+    }
+    .error-banner.visible { display: block; }
+
+    .typing {
+      display: inline-flex;
+      gap: 4px;
+      padding: 0.25rem 0;
+    }
+    .typing span {
+      width: 6px;
+      height: 6px;
+      background: var(--text-muted);
+      border-radius: 50%;
+      animation: bounce 1.2s infinite ease-in-out;
+    }
+    .typing span:nth-child(2) { animation-delay: 0.15s; }
+    .typing span:nth-child(3) { animation-delay: 0.3s; }
+    @keyframes bounce {
+      0%, 80%, 100% { transform: translateY(0); opacity: 0.4; }
+      40% { transform: translateY(-4px); opacity: 1; }
+    }
+
+    .welcome {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--text-muted);
+      font-size: 0.9375rem;
+    }
+    .welcome strong { color: var(--text); }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <div>
+        <h1>AI Analyst</h1>
+        <p class="subtitle">Ask questions in plain English — insights from your data + Claude.</p>
+      </div>
+      <nav class="links">
+        <a href="/docs" target="_blank" rel="noopener">API docs</a>
+        <a href="/api/v1/health" target="_blank" rel="noopener">Health</a>
+      </nav>
+    </header>
+
+    <main class="messages" id="messages" aria-live="polite">
+      <div class="welcome" id="welcome">
+        <p><strong>Try:</strong> “What is the total amount by region?”</p>
+      </div>
+    </main>
+
+    <footer class="composer">
+      <div class="error-banner" id="errorBanner" role="alert"></div>
+      <div class="composer-grid">
+        <textarea id="input" placeholder="Ask about totals, trends, or semantic insights…" rows="2"></textarea>
+        <button type="button" class="btn-send" id="sendBtn">Send</button>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const messagesEl = document.getElementById("messages");
+    const welcomeEl = document.getElementById("welcome");
+    const inputEl = document.getElementById("input");
+    const sendBtn = document.getElementById("sendBtn");
+    const errorBanner = document.getElementById("errorBanner");
+
+    function hideWelcome() {
+      if (welcomeEl && welcomeEl.parentNode) welcomeEl.remove();
+    }
+
+    function showError(msg) {
+      errorBanner.textContent = msg;
+      errorBanner.classList.add("visible");
+    }
+    function clearError() {
+      errorBanner.textContent = "";
+      errorBanner.classList.remove("visible");
+    }
+
+    function scrollToBottom() {
+      messagesEl.scrollTop = messagesEl.scrollHeight;
+    }
+
+    function escapeHtml(str) {
+      const d = document.createElement("div");
+      d.textContent = str;
+      return d.innerHTML;
+    }
+
+    function formatMsgTime(date) {
+      var d = date instanceof Date ? date : new Date(date);
+      return d.toLocaleString(undefined, {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+        hour: "numeric",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: true,
+      });
+    }
+
+    function msgHeaderHtml(roleLabel, when) {
+      var t = when instanceof Date ? when : new Date(when);
+      return (
+        '<div class="msg-header">' +
+        '<span class="msg-label">' +
+        escapeHtml(roleLabel) +
+        "</span>" +
+        '<time class="msg-time" datetime="' +
+        t.toISOString() +
+        '">' +
+        escapeHtml(formatMsgTime(t)) +
+        "</time>" +
+        "</div>"
+      );
+    }
+
+    function renderMarkdown(md) {
+      if (!md) return "<p><em>No insight text returned.</em></p>";
+      if (typeof marked !== "undefined" && typeof DOMPurify !== "undefined") {
+        const raw = marked.parse(md, { breaks: true });
+        return DOMPurify.sanitize(raw);
+      }
+      return "<p>" + escapeHtml(md).replace(/\n/g, "<br/>") + "</p>";
+    }
+
+    function tableFromRows(rows) {
+      if (!rows || !rows.length) return "";
+      const keys = Object.keys(rows[0]);
+      let html = "<table class='table-mini'><thead><tr>";
+      keys.forEach((k) => { html += "<th>" + escapeHtml(k) + "</th>"; });
+      html += "</tr></thead><tbody>";
+      rows.slice(0, 50).forEach((row) => {
+        html += "<tr>";
+        keys.forEach((k) => {
+          const v = row[k];
+          html += "<td>" + escapeHtml(v === null || v === undefined ? "" : String(v)) + "</td>";
+        });
+        html += "</tr>";
+      });
+      html += "</tbody></table>";
+      if (rows.length > 50) html += "<p style='margin-top:0.35rem;font-size:0.75rem;color:var(--text-muted);'>Showing first 50 rows.</p>";
+      return html;
+    }
+
+    function appendUserBubble(text) {
+      hideWelcome();
+      const wrap = document.createElement("div");
+      wrap.className = "msg user";
+      const now = new Date();
+      wrap.innerHTML =
+        msgHeaderHtml("You", now) +
+        '<div class="bubble">' + escapeHtml(text) + "</div>";
+      messagesEl.appendChild(wrap);
+      scrollToBottom();
+    }
+
+    function appendTypingBubble() {
+      const wrap = document.createElement("div");
+      wrap.className = "msg assistant";
+      wrap.id = "typingBubble";
+      const now = new Date();
+      wrap.innerHTML =
+        msgHeaderHtml("Analyst", now) +
+        '<div class="bubble">' +
+        '<div class="typing" aria-label="Thinking"><span></span><span></span><span></span></div>' +
+        "</div>";
+      messagesEl.appendChild(wrap);
+      scrollToBottom();
+      return wrap;
+    }
+
+    function removeTypingBubble() {
+      const el = document.getElementById("typingBubble");
+      if (el) el.remove();
+    }
+
+    // Tiny per-view-kind icon set so the tab strip reads at a glance.
+    // Plain unicode glyphs — no extra asset deps. Stable mapping by
+    // ChartType so frontends don't need to know about chart_id.
+    const CHART_ICONS = {
+      line: "📈",
+      bar:  "📊",
+      pie:  "🍩",
+      kpi:  "🔢",
+    };
+
+    function chartTabIcon(chart) {
+      const t = String(chart && chart.chart_type || "").toLowerCase();
+      return CHART_ICONS[t] || "📊";
+    }
+
+    // Wire the Awqaf-style "hover swaps the donut centre" behaviour.
+    // The backend exports the JS body verbatim from chart_service.py
+    // (DONUT_HOVER_CENTER_SNIPPET); we re-implement the same logic
+    // inline here so the frontend can stay self-contained.
+    function attachDonutCenterHover(host, figure) {
+      if (!host || !figure || !figure.layout) return;
+      const meta = (figure.layout && figure.layout.meta) || {};
+      const fallback = meta.donut_center_default || { title: "Total", value: "" };
+      const ann = figure.layout.annotations || [];
+      const titleIdx = ann.findIndex(function (a) { return a && a.name === "center.title"; });
+      const valueIdx = ann.findIndex(function (a) { return a && a.name === "center.value"; });
+      if (titleIdx < 0 || valueIdx < 0) return;
+      host.on("plotly_hover", function (ev) {
+        const pt = ev.points && ev.points[0];
+        if (!pt || !pt.customdata) return;
+        const cd = pt.customdata;
+        const label = cd[0], formatted = cd[1], color = cd[3] || "#0f172a";
+        Plotly.relayout(host, {
+          ["annotations[" + titleIdx + "].text"]: label,
+          ["annotations[" + titleIdx + "].font.color"]: color,
+          ["annotations[" + valueIdx + "].text"]: formatted,
+        });
+      });
+      host.on("plotly_unhover", function () {
+        Plotly.relayout(host, {
+          ["annotations[" + titleIdx + "].text"]: fallback.title,
+          ["annotations[" + titleIdx + "].font.color"]: "#64748b",
+          ["annotations[" + valueIdx + "].text"]: fallback.value,
+        });
+      });
+    }
+
+    // Defer the Plotly draw so the tab content is in the DOM when the
+    // first tab activates. Returns the host node so the caller can
+    // attach hover handlers afterwards.
+    //
+    // ``displayModeBar: "hover"`` so the camera/zoom/home icons only
+    // appear when the user mouses over the figure — the always-on
+    // modebar used to sit on top of the chart title in the top-right
+    // corner and made the title harder to read.
+    function renderPlotlyInto(host, figure) {
+      if (typeof Plotly === "undefined" || !figure || !figure.data) return null;
+      const config = {
+        responsive: true,
+        displaylogo: false,
+        displayModeBar: "hover",
+        modeBarButtonsToRemove: ["lasso2d", "select2d", "autoScale2d"],
+      };
+      Plotly.newPlot(host, figure.data, figure.layout, config).catch(function (err) {
+        console.warn("Plotly render failed:", err);
+      });
+      return host;
+    }
+
+    // ----- Apache ECharts (production-grade renderer) ---------------
+    //
+    // The backend ships an ``echarts_option`` dict alongside Plotly's
+    // ``plotly_json``. ECharts' defaults beat Plotly's inside a card:
+    //   * titles auto-wrap (``overflow: 'break'``) so we never see
+    //     ``…Smart App Transac`` truncation again,
+    //   * legends are scrollable so 4+ series no longer sit on top of
+    //     the bars,
+    //   * axis ``valueFormatter`` smartly switches between integer and
+    //     SI prefix instead of rendering ``-500m`` for a zero series,
+    //   * Canvas rendering scales to 50K+ points smoothly.
+    //
+    // The ``__js__`` rehydration step is needed because callbacks
+    // (``valueFormatter``, ``axisLabel.formatter``) can't travel as
+    // JSON. The backend wraps them as ``{__js__: "function(){...}"}``;
+    // we walk the option tree and turn them back into real functions
+    // before ``setOption``.
+
+    function rehydrateJs(node) {
+      if (Array.isArray(node)) {
+        for (let i = 0; i < node.length; i++) node[i] = rehydrateJs(node[i]);
+        return node;
+      }
+      if (node && typeof node === "object") {
+        if (typeof node.__js__ === "string") {
+          try {
+            // eslint-disable-next-line no-new-func
+            return new Function("return (" + node.__js__ + ")")();
+          } catch (e) {
+            console.warn("rehydrateJs failed:", e, node.__js__);
+            return undefined;
+          }
+        }
+        for (const k of Object.keys(node)) node[k] = rehydrateJs(node[k]);
+      }
+      return node;
+    }
+
+    // Track ECharts instances per host so we can resize / setOption /
+    // dispose without re-creating them. Stashed on the DOM node so it
+    // survives across tab switches.
+    function getEChartsInstance(host) {
+      return host && host.__echart ? host.__echart : null;
+    }
+
+    function renderEChartsInto(host, optionInput) {
+      if (typeof echarts === "undefined" || !host || !optionInput) return null;
+      // Deep-clone so rehydration doesn't mutate the cached payload —
+      // the metric selector reads ``host.__echartsOption`` later to
+      // know which trace is which without re-fetching.
+      const option = JSON.parse(JSON.stringify(optionInput));
+      const live = rehydrateJs(option);
+      const chart = echarts.init(host, null, { renderer: "canvas" });
+      // Donut: format the centre value via the side-channel formatter.
+      if (live && live._donut) {
+        const fmt = live._donut.valueFormatter;
+        const def = live._donut.centerDefault || {};
+        if (typeof fmt === "function" && Array.isArray(live.graphic)) {
+          for (const g of live.graphic) {
+            if (g && g.id === "centerValue") g.style.text = fmt(def.value);
+          }
+        }
+      }
+      // KPI: format the headline value via the side-channel formatter.
+      if (live && live._kpi) {
+        const fmt = live._kpi.valueFormatter;
+        if (typeof fmt === "function" && Array.isArray(live.graphic)) {
+          for (const g of live.graphic) {
+            if (g && g.id === "kpiValue") g.style.text = fmt(live._kpi.value);
+          }
+        }
+      }
+      chart.setOption(live, true);
+      // Donut hover-swap: replace the centre title + value with the
+      // hovered slice's name + formatted value. Restore on mouseout.
+      if (live && live._donut) {
+        const fmt = live._donut.valueFormatter;
+        const def = live._donut.centerDefault || {};
+        chart.on("mouseover", { seriesType: "pie" }, function (ev) {
+          if (!ev || ev.value == null) return;
+          chart.setOption({
+            graphic: [
+              { id: "centerTitle", style: { text: ev.name || def.title } },
+              { id: "centerValue", style: { text: typeof fmt === "function" ? fmt(ev.value) : String(ev.value) } },
+            ],
+          });
+        });
+        chart.on("mouseout", { seriesType: "pie" }, function () {
+          chart.setOption({
+            graphic: [
+              { id: "centerTitle", style: { text: def.title } },
+              { id: "centerValue", style: { text: typeof fmt === "function" ? fmt(def.value) : String(def.value) } },
+            ],
+          });
+        });
+      }
+      host.__echart = chart;
+      host.__echartsOption = optionInput;
+      // ECharts doesn't auto-resize on container changes; ResizeObserver
+      // keeps the chart fitted to its parent (tab switches, window
+      // resizes, sidebar opens, …).
+      if (typeof ResizeObserver !== "undefined" && !host.__echartsRO) {
+        host.__echartsRO = new ResizeObserver(function () {
+          try { chart.resize(); } catch (e) { /* host detached */ }
+        });
+        host.__echartsRO.observe(host);
+      }
+      return chart;
+    }
+
+    // Drive trace-visibility from the metric selector against an
+    // ECharts instance. ``setOption`` with the ``legend.selected`` map
+    // is the canonical way to show/hide series — also triggers axis
+    // re-fit so an isolated tiny series no longer hugs the baseline.
+    function setEChartsVisibleSeries(host, pickedIdx) {
+      const chart = getEChartsInstance(host);
+      const opt = host && host.__echartsOption;
+      if (!chart || !opt || !Array.isArray(opt.series)) return;
+      const selected = {};
+      const names = opt.series.map(function (s) { return s && s.name; });
+      for (let i = 0; i < names.length; i++) {
+        selected[names[i]] = pickedIdx < 0 ? true : (i === pickedIdx);
+      }
+      chart.setOption({ legend: { selected: selected } });
+    }
+
+    // Same all-zero / small-values heuristic as the Plotly path so the
+    // empty-data note + integer ticks behaviour is identical regardless
+    // of which renderer is in play.
+    function eChartsTraceStats(host, idx) {
+      const opt = host && host.__echartsOption;
+      if (!opt || !Array.isArray(opt.series) || idx < 0 || idx >= opt.series.length) {
+        return { allZero: false, maxAbs: 0 };
+      }
+      const data = opt.series[idx].data || [];
+      let maxAbs = 0; let anyNonZero = false;
+      for (let i = 0; i < data.length; i++) {
+        const d = data[i];
+        const v = Array.isArray(d) ? Number(d[1]) : Number(d);
+        if (!Number.isFinite(v)) continue;
+        if (Math.abs(v) > 0) anyNonZero = true;
+        if (Math.abs(v) > maxAbs) maxAbs = Math.abs(v);
+      }
+      return { maxAbs: maxAbs, allZero: !anyNonZero };
+    }
+
+    // Pull a friendly label for each plotted series. Reads either the
+    // ECharts ``option`` (preferred) or the legacy Plotly figure so
+    // the same selector works against both renderers without callers
+    // caring which is in use.
+    function multiSeriesNames(chart) {
+      if (!chart) return [];
+      // ECharts payload: ``series`` is an array of ``{name, type}``.
+      if (chart.echarts_option && Array.isArray(chart.echarts_option.series)) {
+        const eseries = chart.echarts_option.series;
+        const okTypes = new Set(["line", "bar"]);
+        const names = [];
+        for (let i = 0; i < eseries.length; i++) {
+          const s = eseries[i] || {};
+          if (!okTypes.has(s.type)) return [];
+          const nm = (s.name || "").trim();
+          if (!nm) return [];
+          names.push(nm);
+        }
+        return names;
+      }
+      // Plotly payload (legacy / fallback for chart kinds not yet ported).
+      const figure = chart.plotly_json;
+      if (!figure || !figure.data) return [];
+      const seriesTypes = new Set(["scatter", "bar"]);
+      const names = [];
+      for (let i = 0; i < figure.data.length; i++) {
+        const tr = figure.data[i] || {};
+        if (!seriesTypes.has(tr.type || "scatter")) return [];
+        const nm = (tr.name || "").trim();
+        if (!nm) return [];
+        names.push(nm);
+      }
+      return names;
+    }
+
+    // Build dimension selectors (metric, year, month, etc.) based on
+    // available dimensions in the chart data. Returns HTML for all
+    // applicable selectors.
+    //
+    // INTELLIGENT DROPDOWN LOGIC:
+    // - Only show dropdowns for dimensions with role "SERIES" (not "X_AXIS")
+    // - Only show if 2+ unique values exist
+    // - Month dropdown only appears when months have sub-dimensions
+    function buildDimensionSelectors(chart, baseId) {
+      const names = multiSeriesNames(chart);
+      let html = "";
+      
+      // Extract dimensions and roles from ECharts option
+      const dims = (chart.echarts_option && chart.echarts_option._dimensions) || {};
+      const roles = (chart.echarts_option && chart.echarts_option._dimension_roles) || {};
+      
+      // Metric selector - show if multiple series AND role is SERIES
+      if (names.length >= 2 && (!roles.metric || roles.metric === "SERIES")) {
+        let opts = '<option value="all">All metrics</option>';
+        names.forEach(function (nm, i) {
+          opts += '<option value="' + i + '">' + escapeHtml(nm) + "</option>";
+        });
+        html += (
+          '<div class="metric-selector">' +
+          '<label for="' + baseId + '-metric">View metric:</label>' +
+          '<select id="' + baseId + '-metric" data-dimension="metric" aria-label="Select metric to display">' +
+          opts +
+          "</select>" +
+          "</div>"
+        );
+      }
+      
+      // Year selector - only if role is SERIES and 2+ values
+      if (dims.year && dims.year.length >= 2 && roles.year === "SERIES") {
+        let opts = '<option value="all">All years</option>';
+        dims.year.forEach(function (yr, i) {
+          opts += '<option value="' + i + '">' + escapeHtml(yr) + "</option>";
+        });
+        html += (
+          '<div class="metric-selector">' +
+          '<label for="' + baseId + '-year">Filter by year:</label>' +
+          '<select id="' + baseId + '-year" data-dimension="year" aria-label="Filter by year">' +
+          opts +
+          "</select>" +
+          "</div>"
+        );
+      }
+      
+      // Month selector - only if role is SERIES and 2+ values
+      // (X_AXIS months don't get a dropdown - they're already on the x-axis)
+      if (dims.month && dims.month.length >= 2 && roles.month === "SERIES") {
+        let opts = '<option value="all">All months</option>';
+        dims.month.forEach(function (mo, i) {
+          opts += '<option value="' + i + '">' + escapeHtml(mo) + "</option>";
+        });
+        html += (
+          '<div class="metric-selector">' +
+          '<label for="' + baseId + '-month">Filter by month:</label>' +
+          '<select id="' + baseId + '-month" data-dimension="month" aria-label="Filter by month">' +
+          opts +
+          "</select>" +
+          "</div>"
+        );
+      }
+      
+      return html;
+    }
+
+    // Legacy function for backward compatibility
+    function metricSelectorHtml(chart, selectorId) {
+      return buildDimensionSelectors(chart, selectorId);
+    }
+
+    // Inspect a Plotly trace's y values and report (max-abs, all-zero).
+    // Used to pick a sensible y-axis tickformat when a single metric
+    // is isolated — without this the SI tickformat (``~s``) renders
+    // 0.5 as "500m" (milli) on an all-zero series, which is gibberish
+    // for a count metric.
+    function traceYStats(trace) {
+      const ys = (trace && trace.y) || [];
+      let maxAbs = 0;
+      let anyNonZero = false;
+      for (let i = 0; i < ys.length; i++) {
+        const v = Number(ys[i]);
+        if (!Number.isFinite(v)) continue;
+        const a = Math.abs(v);
+        if (a > 0) anyNonZero = true;
+        if (a > maxAbs) maxAbs = a;
+      }
+      return { maxAbs: maxAbs, allZero: !anyNonZero };
+    }
+
+    // Wire change events so picking an option toggles trace
+    // visibility and re-fits the y-axis. Dispatches to ECharts or
+    // Plotly depending on which renderer owns ``host``.
+    //
+    // The empty-note ("this metric has no data for the selected
+    // period") shows when the picked trace is all-zero, regardless of
+    // renderer.
+    function attachMetricSelector(host, selectEl, chart) {
+      if (!host || !selectEl || !chart) return;
+      const isE = !!getEChartsInstance(host);
+      const figure = chart.plotly_json;
+      const layout = (figure && figure.layout) || {};
+      const dualAxis = !isE && !!layout.yaxis2;
+      const origTickFmt =
+        (layout.yaxis && layout.yaxis.tickformat) || null;
+      const origDtick =
+        (layout.yaxis && layout.yaxis.dtick) || null;
+      const canvasEl = host.closest(".chart-canvas");
+      const noteEl = canvasEl
+        ? canvasEl.querySelector(".metric-empty-note")
+        : null;
+      const noteLabelEl = noteEl
+        ? noteEl.querySelector(".metric-empty-name")
+        : null;
+
+      selectEl.addEventListener("change", function () {
+        const v = selectEl.value;
+        let pickedIdx = -1;
+        if (v !== "all") pickedIdx = parseInt(v, 10);
+        try {
+          let showNote = false;
+          let pickedName = "this metric";
+
+          if (isE) {
+            // ECharts path — visibility toggled via legend.selected;
+            // axis re-fits automatically. Empty-state note still
+            // surfaces when the picked series is all zero.
+            setEChartsVisibleSeries(host, pickedIdx);
+            if (pickedIdx >= 0) {
+              const stats = eChartsTraceStats(host, pickedIdx);
+              const opt = host.__echartsOption;
+              const sname = opt && opt.series && opt.series[pickedIdx]
+                ? opt.series[pickedIdx].name
+                : "";
+              pickedName = sname || pickedName;
+              if (stats.allZero) showNote = true;
+            }
+          } else if (figure && figure.data) {
+            // Plotly fallback — same as before, kept for any chart
+            // kind not yet ported to ECharts.
+            const n = figure.data.length;
+            const visible = pickedIdx < 0
+              ? new Array(n).fill(true)
+              : (function () {
+                  const a = []; for (let i = 0; i < n; i++) a.push(i === pickedIdx); return a;
+                })();
+            Plotly.restyle(host, { visible: visible });
+            const layoutUpdate = {
+              "yaxis.autorange": true,
+              "yaxis.tickformat": origTickFmt,
+              "yaxis.dtick": origDtick,
+            };
+            if (dualAxis) layoutUpdate["yaxis2.autorange"] = true;
+            if (pickedIdx >= 0) {
+              const stats = traceYStats(figure.data[pickedIdx]);
+              pickedName = (figure.data[pickedIdx] && figure.data[pickedIdx].name) || pickedName;
+              if (stats.allZero) {
+                layoutUpdate["yaxis.autorange"] = false;
+                layoutUpdate["yaxis.range"] = [0, 1];
+                layoutUpdate["yaxis.tickformat"] = ",.0f";
+                layoutUpdate["yaxis.dtick"] = 1;
+                showNote = true;
+              } else if (stats.maxAbs < 1000) {
+                layoutUpdate["yaxis.tickformat"] = ",.0f";
+                layoutUpdate["yaxis.dtick"] = null;
+              }
+            }
+            Plotly.relayout(host, layoutUpdate);
+          }
+
+          if (noteEl) {
+            if (showNote && noteLabelEl) noteLabelEl.textContent = pickedName;
+            noteEl.style.display = showNote ? "" : "none";
+          }
+        } catch (err) {
+          console.warn("Metric selector update failed:", err);
+        }
+      });
+    }
+
+    function chartPanelHtml(charts, panelId) {
+      if (!charts || !charts.length) return "";
+      
+      // Detect if this is a Zakat/Statistics panel by checking chart titles
+      const firstChart = charts[0] || {};
+      const chartTitle = (firstChart.view_label || firstChart.title || "").toLowerCase();
+      const isStatisticsPanel = chartTitle.includes('zakat') ||
+                                chartTitle.includes('statistics') ||
+                                chartTitle.includes('payment service');
+      
+      // Extract year from title if present (e.g., "Zakat Payment Service Statistics 2025")
+      let currentYear = new Date().getFullYear();
+      const yearMatch = (firstChart.view_label || firstChart.title || "").match(/20\d{2}/);
+      if (yearMatch) {
+        currentYear = parseInt(yearMatch[0]);
+      }
+      
+      // Build filter controls for statistics panels
+      let filterHtml = "";
+      if (isStatisticsPanel) {
+        filterHtml = `
+          <div class="panel-filters" style="
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: var(--surface);
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+          ">
+            <div style="flex: 1;">
+              <label style="
+                display: block;
+                font-size: 0.75rem;
+                font-weight: 500;
+                color: var(--text);
+                margin-bottom: 0.375rem;
+              ">Year</label>
+              <select
+                id="${panelId}-year-filter"
+                onchange="updateStatisticsPanel('${panelId}')"
+                style="
+                  width: 100%;
+                  padding: 0.5rem 0.75rem;
+                  border: 1px solid var(--border-strong);
+                  border-radius: 6px;
+                  font-size: 0.875rem;
+                  background: white;
+                  cursor: pointer;
+                "
+              >
+                <option value="2022" ${currentYear === 2022 ? 'selected' : ''}>2022</option>
+                <option value="2023" ${currentYear === 2023 ? 'selected' : ''}>2023</option>
+                <option value="2024" ${currentYear === 2024 ? 'selected' : ''}>2024</option>
+                <option value="2025" ${currentYear === 2025 ? 'selected' : ''}>2025</option>
+              </select>
+            </div>
+            
+            <div style="flex: 1;">
+              <label style="
+                display: block;
+                font-size: 0.75rem;
+                font-weight: 500;
+                color: var(--text);
+                margin-bottom: 0.375rem;
+              ">Month</label>
+              <select
+                id="${panelId}-month-filter"
+                onchange="updateStatisticsPanel('${panelId}')"
+                style="
+                  width: 100%;
+                  padding: 0.5rem 0.75rem;
+                  border: 1px solid var(--border-strong);
+                  border-radius: 6px;
+                  font-size: 0.875rem;
+                  background: white;
+                  cursor: pointer;
+                "
+              >
+                <option value="">All Months</option>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select>
+            </div>
+            
+            <div style="flex: 0 0 auto; align-self: flex-end;">
+              <button
+                onclick="updateStatisticsPanel('${panelId}')"
+                style="
+                  padding: 0.5rem 1.25rem;
+                  background: var(--accent);
+                  color: white;
+                  border: none;
+                  border-radius: 6px;
+                  font-size: 0.875rem;
+                  font-weight: 500;
+                  cursor: pointer;
+                  transition: background 0.2s;
+                "
+                onmouseover="this.style.background='var(--accent-hover)'"
+                onmouseout="this.style.background='var(--accent)'"
+              >
+                Update
+              </button>
+            </div>
+          </div>
+        `;
+      }
+      
+      const tabs = charts.map(function (c, i) {
+        const label = escapeHtml(c.view_label || c.chart_type || "Chart");
+        const icon  = chartTabIcon(c);
+        const cls   = "chart-tab" + (c.is_primary ? " active" : (i === 0 ? " active" : ""));
+        const tip   = escapeHtml(c.view_description || "");
+        return (
+          '<button type="button" class="' + cls + '" ' +
+          'data-tab-target="' + panelId + "-canvas-" + i + '" ' +
+          'title="' + tip + '">' +
+          '<span class="tab-icon">' + icon + "</span>" + label +
+          "</button>"
+        );
+      }).join("");
+
+      const canvases = charts.map(function (c, i) {
+        const cls = "chart-canvas" + (c.is_primary ? " active" : (i === 0 ? " active" : ""));
+        const canvasId = panelId + "-canvas-" + i;
+        const hostId   = panelId + "-host-" + i;
+        const selectorId = panelId + "-select-" + i;
+        let body;
+        // Prefer ECharts when the backend supplied an option dict (it
+        // beats Plotly's defaults in every dashboard scenario). Fall
+        // back to Plotly when only ``plotly_json`` is present, then to
+        // the static PNG for clients without either.
+        let selector = "";
+        let emptyNote = "";
+        if (c.echarts_option || c.plotly_json) {
+          selector = metricSelectorHtml(c, selectorId);
+          if (selector) {
+            // Pre-render the (hidden) empty-data note so the metric
+            // selector can flip it on instantly without DOM churn.
+            emptyNote =
+              '<div class="metric-empty-note" style="display:none">' +
+              '<strong class="metric-empty-name">This metric</strong> ' +
+              "has no values for the selected period." +
+              "</div>";
+          }
+          // Same host class for both renderers; the activator picks
+          // which one to mount by checking ``c.echarts_option`` first.
+          body =
+            '<div id="' + hostId + '" class="plotly-host" ' +
+            'data-figure-target="' + canvasId + '"></div>';
+        } else if (c.image_base64) {
+          body =
+            '<img alt="' + escapeHtml(c.view_label || c.chart_type || "Chart") +
+            '" src="data:image/png;base64,' + c.image_base64 + '" />';
+        } else {
+          body = '<p style="padding:1rem;color:var(--text-muted);font-size:0.85rem;">No renderable chart payload.</p>';
+        }
+        const caption = c.view_description
+          ? '<div class="chart-caption">' + escapeHtml(c.view_description) + "</div>"
+          : "";
+        return (
+          '<div id="' + canvasId + '" class="' + cls + '" ' +
+          'data-chart-id="' + escapeHtml(c.chart_id || "") + '" ' +
+          'data-selector-id="' + selectorId + '">' +
+          selector + emptyNote + body + caption +
+          "</div>"
+        );
+      }).join("");
+
+      return (
+        '<div class="chart-panel" id="' + panelId + '" data-panel-type="' +
+        (isStatisticsPanel ? 'statistics' : 'standard') + '">' +
+        filterHtml +  // Filters appear ABOVE tabs
+        '<div class="chart-tabs" role="tablist">' + tabs + "</div>" +
+        canvases +
+        "</div>"
+      );
+    }
+
+    function activateChartPanel(panelId, charts) {
+      const root = document.getElementById(panelId);
+      if (!root) return;
+      const tabs = root.querySelectorAll(".chart-tab");
+      const canvases = root.querySelectorAll(".chart-canvas");
+      // Render every chart once (so swapping tabs is instant) and
+      // stash the renderer instance on the host node. ECharts wins
+      // over Plotly when both payloads are present — Plotly stays as
+      // the safety net for chart kinds not yet ported.
+      canvases.forEach(function (canvas, i) {
+        const host = canvas.querySelector(".plotly-host");
+        if (!host) return;
+        const c = charts[i] || {};
+        let renderedAs = null;
+        if (c.echarts_option) {
+          renderEChartsInto(host, c.echarts_option);
+          renderedAs = "echarts";
+        } else if (c.plotly_json) {
+          renderPlotlyInto(host, c.plotly_json);
+          renderedAs = "plotly";
+          // Plotly donut keeps the centre-hover handler we already had
+          // — only relevant when the donut isn't ported to ECharts yet.
+          if (c.chart_type === "pie") {
+            attachDonutCenterHover(host, c.plotly_json);
+          }
+        }
+        host.setAttribute("data-rendered-as", renderedAs || "");
+        // Multi-series line / bar charts get a "View metric" picker
+        // rendered above the figure. The <select> is already in the
+        // DOM via chartPanelHtml; we wire its change handler now that
+        // the renderer has bound to ``host``.
+        const selectorId = canvas.getAttribute("data-selector-id");
+        const metricSelectEl = selectorId
+          ? document.querySelector("#" + selectorId + "-metric")
+          : null;
+        if (metricSelectEl) {
+          attachMetricSelector(host, metricSelectEl, c);
+        }
+      });
+      tabs.forEach(function (tab) {
+        tab.addEventListener("click", function () {
+          tabs.forEach(function (t) { t.classList.remove("active"); });
+          canvases.forEach(function (c) { c.classList.remove("active"); });
+          tab.classList.add("active");
+          const targetId = tab.getAttribute("data-tab-target");
+          const target = document.getElementById(targetId);
+          if (target) {
+            target.classList.add("active");
+            // Each renderer needs to be told its container changed.
+            const host = target.querySelector(".plotly-host");
+            if (!host) return;
+            const echart = getEChartsInstance(host);
+            if (echart) {
+              try { echart.resize(); } catch (e) { /* host detached */ }
+            } else if (typeof Plotly !== "undefined") {
+              Plotly.Plots.resize(host);
+            }
+          }
+        });
+      });
+    }
+
+    function appendAssistantBubble(data) {
+      hideWelcome();
+      const wrap = document.createElement("div");
+      wrap.className = "msg assistant";
+
+      const r = data.routing || {};
+      const agg = r.aggregation || {};
+      const chips = [];
+      chips.push('<span class="chip">' + escapeHtml(r.route || "?") + "</span>");
+      chips.push('<span class="chip muted">' + escapeHtml(r.data_source || "") + "</span>");
+      if (agg.operation) {
+        chips.push('<span class="chip muted">' + escapeHtml(agg.operation + (agg.metric ? " · " + agg.metric : "")) + "</span>");
+      }
+      const metaMs = data.meta && data.meta.elapsed_ms != null ? data.meta.elapsed_ms + " ms" : "";
+      if (metaMs) chips.push('<span class="chip muted">' + escapeHtml(metaMs) + "</span>");
+
+      const now = new Date();
+      let html = msgHeaderHtml("Analyst", now) + '<div class="bubble">';
+      html += '<div class="assistant-meta">' + chips.join("") + "</div>";
+      html += '<div class="markdown-body">' + renderMarkdown(data.insight || "") + "</div>";
+
+      // Multi-view chart panel. Falls back to legacy single-chart
+      // rendering when the backend sent only ``data.chart`` (older
+      // server build, or a route that produced exactly one view).
+      let panelId = null;
+      const charts = (data.charts && data.charts.length) ? data.charts : (data.chart ? [data.chart] : []);
+      if (charts.length) {
+        panelId = "panel-" + Date.now() + "-" + Math.floor(Math.random() * 1e6);
+        html += chartPanelHtml(charts, panelId);
+      }
+
+      const sd = data.structured_data;
+      if (sd && sd.length) {
+        html +=
+          "<details class='panel'>" +
+          "<summary>Structured data (" +
+          sd.length +
+          " rows)</summary>" +
+          "<div class='panel-body'>" +
+          tableFromRows(sd) +
+          "</div></details>";
+      }
+
+      const vc = data.vector_context;
+      if (vc && vc.length) {
+        const lines = vc.map(function (h) {
+          return (
+            "[" +
+            (h.score != null ? Number(h.score).toFixed(3) : "?") +
+            "] " +
+            String(h.text || "").slice(0, 400)
+          );
+        });
+        html +=
+          "<details class='panel'>" +
+          "<summary>Vector context (" +
+          vc.length +
+          " hits)</summary>" +
+          "<div class='panel-body'>" +
+          escapeHtml(lines.join("\n\n")) +
+          "</div></details>";
+      }
+
+      html += "</div>";
+      wrap.innerHTML = html;
+      messagesEl.appendChild(wrap);
+      // Activate the chart panel *after* the markup is in the DOM —
+      // Plotly.newPlot needs a real layout-sized container to draw
+      // into, and tab click handlers need their target ids to exist.
+      if (panelId && charts.length) {
+        activateChartPanel(panelId, charts);
+      }
+      scrollToBottom();
+    }
+
+    async function analyze() {
+      const question = inputEl.value.trim();
+      if (question.length < 2) return;
+
+      clearError();
+      appendUserBubble(question);
+      inputEl.value = "";
+      sendBtn.disabled = true;
+      appendTypingBubble();
+
+      const body = { question: question };
+
+      try {
+        const res = await fetch("/api/v1/analyze", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(body),
+        });
+        const payload = await res.json().catch(function () { return {}; });
+
+        removeTypingBubble();
+
+        if (!res.ok) {
+          const detail = payload.detail || payload.error || res.statusText || "Request failed";
+          showError(typeof detail === "string" ? detail : JSON.stringify(detail));
+          appendAssistantBubble({
+            insight:
+              "**Request failed.** Check the error above. Ensure Mongo/MySQL is running and data is ingested.",
+            routing: { route: "error", data_source: "auto" },
+            structured_data: [],
+            vector_context: [],
+          });
+          return;
+        }
+
+        appendAssistantBubble(payload);
+      } catch (e) {
+        removeTypingBubble();
+        showError(e.message || "Network error");
+        appendAssistantBubble({
+          insight: "Could not reach the API. Is the server running?",
+          routing: { route: "error", data_source: "auto" },
+          structured_data: [],
+          vector_context: [],
+        });
+      } finally {
+        sendBtn.disabled = false;
+        inputEl.focus();
+      }
+    }
+
+    sendBtn.addEventListener("click", analyze);
+    inputEl.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" && !e.shiftKey) {
+        e.preventDefault();
+        analyze();
+      }
+    });
+
+    inputEl.focus();
+
+    // ─────────────────────────────────────────────────────────────────
+    // Statistics Panel Filter Update
+    // ─────────────────────────────────────────────────────────────────
+    async function updateStatisticsPanel(panelId) {
+      const panel = document.getElementById(panelId);
+      if (!panel || panel.getAttribute('data-panel-type') !== 'statistics') return;
+      
+      const yearSelect = document.getElementById(panelId + '-year-filter');
+      const monthSelect = document.getElementById(panelId + '-month-filter');
+      
+      if (!yearSelect || !monthSelect) return;
+      
+      const year = yearSelect.value;
+      const month = monthSelect.value;
+      
+      try {
+        // Show loading overlay
+        const loadingOverlay = document.createElement('div');
+        loadingOverlay.className = 'panel-loading-overlay';
+        loadingOverlay.style.cssText = `
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(255, 255, 255, 0.95);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          z-index: 1000;
+          border-radius: var(--radius);
+        `;
+        loadingOverlay.innerHTML = `
+          <div class="typing" style="margin-bottom: 0.5rem;">
+            <span></span><span></span><span></span>
+          </div>
+          <div style="font-size: 0.875rem; color: var(--text-muted);">
+            Loading ${month ? getMonthName(month) : 'all months'} ${year}...
+          </div>
+        `;
+        panel.style.position = 'relative';
+        panel.appendChild(loadingOverlay);
+        
+        // Fetch new data from API
+        const monthParam = month ? `&month=${month}` : '';
+        const response = await fetch(`/api/statistics/zakat-payment?year=${year}${monthParam}`);
+        
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        }
+        
+        const data = await response.json();
+        
+        // Display summary of new data
+        const summary = `
+          <div style="padding: 2rem; text-align: center;">
+            <div style="font-size: 2.5rem; font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">
+              AED ${data.total_funds.toLocaleString()}
+            </div>
+            <div style="font-size: 1rem; color: var(--text); margin-bottom: 0.25rem; font-weight: 500;">
+              ${data.period_label}
+            </div>
+            <div style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+              ${data.total_payers.toLocaleString()} payers across ${data.channels.length} channels
+            </div>
+            <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); text-align: left; max-width: 600px; margin-left: auto; margin-right: auto;">
+              <div style="font-weight: 600; margin-bottom: 1rem; color: var(--text);">Top 5 Channels:</div>
+              ${data.channels.slice(0, 5).map((ch, i) => `
+                <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--border);">
+                  <div style="font-size: 0.875rem;">
+                    <span style="color: var(--text-muted); margin-right: 0.5rem;">${i + 1}.</span>
+                    <span style="color: var(--text);">${escapeHtml(ch.channel)}</span>
+                  </div>
+                  <div style="font-size: 0.875rem; font-weight: 500; color: var(--accent);">
+                    AED ${ch.funds_collected_aed.toLocaleString()}
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+            <div style="margin-top: 1.5rem; font-size: 0.8125rem; color: var(--text-muted);">
+              💡 To see full charts for this period, ask: "Show Zakat statistics for ${month ? getMonthName(month) + ' ' : ''}${year}"
+            </div>
+          </div>
+        `;
+        
+        // Replace loading with summary
+        loadingOverlay.innerHTML = summary;
+        loadingOverlay.style.background = 'var(--surface)';
+        loadingOverlay.style.border = '1px solid var(--border)';
+        loadingOverlay.style.borderRadius = 'var(--radius)';
+        loadingOverlay.style.marginTop = '1rem';
+        
+      } catch (error) {
+        console.error('Error updating statistics:', error);
+        const errorMsg = document.createElement('div');
+        errorMsg.style.cssText = `
+          padding: 1rem;
+          background: #fef2f2;
+          border: 1px solid #fecaca;
+          color: #991b1b;
+          border-radius: var(--radius-sm);
+          margin-top: 1rem;
+        `;
+        errorMsg.textContent = `Failed to update statistics: ${error.message}`;
+        panel.querySelector('.panel-loading-overlay')?.remove();
+        panel.appendChild(errorMsg);
+        setTimeout(() => errorMsg.remove(), 5000);
+      }
+    }
+
+    function getMonthName(monthNum) {
+      const months = {
+        '01': 'January', '02': 'February', '03': 'March', '04': 'April',
+        '05': 'May', '06': 'June', '07': 'July', '08': 'August',
+        '09': 'September', '10': 'October', '11': 'November', '12': 'December'
+      };
+      return months[monthNum] || monthNum;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+{
+  "dataset": "Key Outcomes of Zakat Disbursement",
+  "source": {
+    "organization": "General Authority of Islamic Affairs, Endowments and Zakat",
+    "department": "Zakat Fund Management",
+    "phone": "8008222",
+    "data_sources": "Administrative Records",
+    "methodology": "Total number of beneficiaries and amounts spent classified by project type"
+  },
+  "coverage": {
+    "area": "All Emirates of the Country",
+    "periodicity": "Monthly and Yearly"
+  },
+  "indicator": {
+    "name": "Zakat disbursement statistics by beneficiary project categories",
+    "definition": "A database containing the names of Zakat beneficiary projects, the number of beneficiaries, and the value of Zakat expenditures spent on them during the measurement period.",
+    "unit": "Numbers"
+  },
+  "fields": {
+    "project": {
+      "original_name": "Projects for Categories Eligible for Zakat",
+      "description": "Name of the Zakat disbursement project targeting a specific beneficiary category"
+    },
+    "eligible_families": {
+      "original_name": "Eligible Families (الأسر المستحقة)",
+      "description": "Number of families eligible for and receiving Zakat under this project in the given month",
+      "unit": "count"
+    },
+    "zakat_expenditures_aed": {
+      "original_name": "Zakat Expenditures (المصروفات الزكوية)",
+      "description": "Total value of Zakat funds disbursed to beneficiaries under this project in the given month",
+      "unit": "AED"
+    }
+  },
+  "terms": [
+    {
+      "term": "Eligible Families",
+      "definition": "Number of beneficiary and eligible families for Zakat",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Zakat Expenditures",
+      "definition": "Value of financial amounts spent on beneficiaries",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Orphans' Families Project",
+      "definition": "A project specialized in supporting orphans' families with financial aid, provided that at least one family member is under 15 years old.",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Prisoners' Families Project",
+      "definition": "A project specialized in supporting the families of inmates in correctional and punitive institutions in the country with financial aid.",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "People of Determination Project",
+      "definition": "A project specialized in supporting people of determination with financial aid or paying rehabilitation center costs.",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Widows Project",
+      "definition": "A project specialized in supporting widows and their families with financial aid, provided that none of its members is under 15 years old.",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Unemployed Project",
+      "definition": "Project to support families of the unemployed with financial aid for relief",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Good Loan Project (Qard Hasan)",
+      "definition": "Specializes in granting good loans (Qard Hasan) to cases that meet the conditions.",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Patients Project",
+      "definition": "Specializes in helping residents pay medical costs for surgeries or medications.",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "New Muslims Project",
+      "definition": "Specializes in helping new Muslims with a financial amount under the category of those whose hearts are to be reconciled.",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Divorcees Project",
+      "definition": "Specializes in providing financial assistance to citizen divorcees and their children in their custody.",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Divorcees with Custody of Citizen Children Project",
+      "definition": "Specializes in providing financial assistance to resident divorcees who have custody of citizen children.",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Disaster Victims Project",
+      "definition": "Specializes in helping cases affected by flooding or house fires, or electricity and water disconnection due to non-payment.",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Citizen Women Wives of Non-Citizens Project",
+      "definition": "Specializes in helping citizen women married to non-citizens and their families with financial aid.",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Zakat Khalas Project (Debtors)",
+      "definition": "Specializes in helping debtors in financial cases.",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Zakat Al-Fitr Project",
+      "definition": "Specializes in disbursing Zakat Al-Fitr to beneficiaries during Ramadan.",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Low Income Project",
+      "definition": "Specializes in disbursing aid to low-income earners and their families.",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Students Project (Schools)",
+      "definition": "Specializes in helping school students pay tuition fees for educational stages from grade 1 to 12 for resident families.",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "University Students Project",
+      "definition": "Specializes in helping university students pay tuition fees for educational stages from grade 1 to 12.",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Senior Citizens and Residents Project",
+      "definition": "Specializes in disbursing financial aid to families of senior citizens aged 60 and over.",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Maskani Project",
+      "definition": "Specializes in helping families pay electricity connection costs for their new homes in cooperation with Etihad Water and Electricity.",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Eligible Families",
+      "definition": "Number of families eligible for Zakat",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Zakat Expenditures",
+      "definition": "Amounts Disbursed",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Total number of families eligible for Zakat and Zakat expenditures by month",
+      "definition": "A database including the names of projects for categories eligible for Zakat, the number of beneficiaries, and the value of Zakat expenditures on them during the measurement period.",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Projects for Categories Eligible for Zakat",
+      "definition": "Names of projects eligible for Zakat during the measurement period.",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    }
+  ]
+}

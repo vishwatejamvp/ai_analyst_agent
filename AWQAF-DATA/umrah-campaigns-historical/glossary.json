@@ -1,0 +1,62 @@
+{
+  "dataset": "Umrah Campaigns Historical",
+  "source": {
+    "organization": "General Authority of Islamic Affairs, Endowments & Zakat",
+    "department": "Hajj and Umrah Affairs",
+    "phone": "8008222",
+    "data_sources": "Administrative records",
+    "methodology": ""
+  },
+  "coverage": {
+    "area": "Each Emirate within the country",
+    "periodicity": "Yearly"
+  },
+  "indicator": {
+    "name": "Number of Umrah campaigns",
+    "definition": "Number of Umrah campaigns during a specific time period",
+    "unit": "Number"
+  },
+  "fields": {
+    "year": {
+      "original_name": "السنة",
+      "description": "Calendar year the campaign was registered/active"
+    },
+    "campaign_name": {
+      "original_name": "اسم الحملة",
+      "description": "Official registered name of the Umrah campaign"
+    },
+    "campaign_owner": {
+      "original_name": "اسم صاحب الحملة",
+      "description": "Full name of the individual or entity that owns the campaign"
+    },
+    "campaign_number": {
+      "original_name": "رقم الحملة",
+      "description": "Unique registration number assigned to the campaign by the Authority"
+    },
+    "emirate": {
+      "original_name": "الإمارة / المدينة",
+      "description": "The UAE emirate where the campaign is registered"
+    },
+    "phone_mobile": {
+      "original_name": "هاتف - محمول",
+      "description": "Mobile phone number of the campaign contact"
+    },
+    "phone_office": {
+      "original_name": "هاتف - مكتب",
+      "description": "Office/landline phone number of the campaign"
+    },
+    "phone_fax": {
+      "original_name": "هاتف - فاكس",
+      "description": "Fax number of the campaign"
+    },
+    "branch": {
+      "original_name": "الفرع",
+      "description": "Other emirates where the campaign has branch offices (empty if none)"
+    },
+    "email": {
+      "original_name": "البريد الإلكتروني",
+      "description": "Email address of the campaign"
+    }
+  },
+  "terms": []
+}

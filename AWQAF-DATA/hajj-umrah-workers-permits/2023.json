@@ -1,0 +1,66 @@
+{
+  "year": 2023,
+  "dataset": "Monthly Statistics for Hajj and Umrah Workers Permits Service",
+  "months": {
+    "january": {
+      "website_transactions": 0,
+      "smart_app_transactions": 0,
+      "total_transactions": 0
+    },
+    "february": {
+      "website_transactions": 0,
+      "smart_app_transactions": 0,
+      "total_transactions": 0
+    },
+    "march": {
+      "website_transactions": 0,
+      "smart_app_transactions": 0,
+      "total_transactions": 0
+    },
+    "april": {
+      "website_transactions": 0,
+      "smart_app_transactions": 0,
+      "total_transactions": 0
+    },
+    "may": {
+      "website_transactions": 261,
+      "smart_app_transactions": 0,
+      "total_transactions": 261
+    },
+    "june": {
+      "website_transactions": 539,
+      "smart_app_transactions": 0,
+      "total_transactions": 539
+    },
+    "july": {
+      "website_transactions": 1,
+      "smart_app_transactions": 0,
+      "total_transactions": 1
+    },
+    "august": {
+      "website_transactions": 0,
+      "smart_app_transactions": 0,
+      "total_transactions": 0
+    },
+    "september": {
+      "website_transactions": 0,
+      "smart_app_transactions": 0,
+      "total_transactions": 0
+    },
+    "october": {
+      "website_transactions": 0,
+      "smart_app_transactions": 0,
+      "total_transactions": 0
+    },
+    "november": {
+      "website_transactions": 0,
+      "smart_app_transactions": 0,
+      "total_transactions": 0
+    },
+    "december": {
+      "website_transactions": 1,
+      "smart_app_transactions": 0,
+      "total_transactions": 1
+    }
+  }
+}

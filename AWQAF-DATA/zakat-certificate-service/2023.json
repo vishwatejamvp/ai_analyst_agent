@@ -1,0 +1,185 @@
+{
+  "year": 2023,
+  "dataset": "Certificate \"To Whom It May Concern\" for Zakat Assistance",
+  "notes": [],
+  "data": [
+    {
+      "month": "january",
+      "channels": {
+        "smartphone_app": 8,
+        "chatbot": 0,
+        "website": 161,
+        "good_loan": 0,
+        "call_center": 0,
+        "service_center": 2,
+        "mobile_website": 503,
+        "na_legacy": 0
+      },
+      "total": 674
+    },
+    {
+      "month": "february",
+      "channels": {
+        "smartphone_app": 74,
+        "chatbot": 23,
+        "website": 354,
+        "good_loan": 0,
+        "call_center": 0,
+        "service_center": 8,
+        "mobile_website": 720,
+        "na_legacy": 1
+      },
+      "total": 1180
+    },
+    {
+      "month": "march",
+      "channels": {
+        "smartphone_app": 103,
+        "chatbot": 35,
+        "website": 313,
+        "good_loan": 0,
+        "call_center": 0,
+        "service_center": 2,
+        "mobile_website": 960,
+        "na_legacy": 0
+      },
+      "total": 1413
+    },
+    {
+      "month": "april",
+      "channels": {
+        "smartphone_app": 115,
+        "chatbot": 43,
+        "website": 590,
+        "good_loan": 0,
+        "call_center": 0,
+        "service_center": 1,
+        "mobile_website": 1333,
+        "na_legacy": 0
+      },
+      "total": 2082
+    },
+    {
+      "month": "may",
+      "channels": {
+        "smartphone_app": 73,
+        "chatbot": 46,
+        "website": 648,
+        "good_loan": 0,
+        "call_center": 0,
+        "service_center": 3,
+        "mobile_website": 1146,
+        "na_legacy": 0
+      },
+      "total": 1916
+    },
+    {
+      "month": "june",
+      "channels": {
+        "smartphone_app": 80,
+        "chatbot": 46,
+        "website": 282,
+        "good_loan": 0,
+        "call_center": 0,
+        "service_center": 9,
+        "mobile_website": 781,
+        "na_legacy": 1
+      },
+      "total": 1199
+    },
+    {
+      "month": "july",
+      "channels": {
+        "smartphone_app": 80,
+        "chatbot": 54,
+        "website": 454,
+        "good_loan": 0,
+        "call_center": 0,
+        "service_center": 4,
+        "mobile_website": 1028,
+        "na_legacy": 0
+      },
+      "total": 1620
+    },
+    {
+      "month": "august",
+      "channels": {
+        "smartphone_app": 52,
+        "chatbot": 39,
+        "website": 351,
+        "good_loan": 0,
+        "call_center": 0,
+        "service_center": 8,
+        "mobile_website": 1107,
+        "na_legacy": 0
+      },
+      "total": 1557
+    },
+    {
+      "month": "september",
+      "channels": {
+        "smartphone_app": 55,
+        "chatbot": 34,
+        "website": 212,
+        "good_loan": 0,
+        "call_center": 0,
+        "service_center": 9,
+        "mobile_website": 592,
+        "na_legacy": 0
+      },
+      "total": 902
+    },
+    {
+      "month": "october",
+      "channels": {
+        "smartphone_app": 86,
+        "chatbot": 64,
+        "website": 185,
+        "good_loan": 0,
+        "call_center": 1,
+        "service_center": 12,
+        "mobile_website": 557,
+        "na_legacy": 0
+      },
+      "total": 905
+    },
+    {
+      "month": "november",
+      "channels": {
+        "smartphone_app": 27,
+        "chatbot": 24,
+        "website": 255,
+        "good_loan": 0,
+        "call_center": 0,
+        "service_center": 1,
+        "mobile_website": 809,
+        "na_legacy": 0
+      },
+      "total": 1116
+    },
+    {
+      "month": "december",
+      "channels": {
+        "smartphone_app": 27,
+        "chatbot": 18,
+        "website": 410,
+        "good_loan": 0,
+        "call_center": 0,
+        "service_center": 8,
+        "mobile_website": 711,
+        "na_legacy": 0
+      },
+      "total": 1174
+    }
+  ],
+  "totals_by_channel": {
+    "smartphone_app": 780,
+    "chatbot": 426,
+    "website": 4215,
+    "good_loan": 0,
+    "call_center": 1,
+    "service_center": 67,
+    "mobile_website": 0,
+    "na_legacy": 2
+  }
+}

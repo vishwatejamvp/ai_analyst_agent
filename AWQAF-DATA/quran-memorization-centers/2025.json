@@ -1,0 +1,664 @@
+{
+  "year": 2025,
+  "dataset": "Quran Memorization Centers",
+  "notes": [],
+  "total_centers": 71,
+  "branches": [
+    "Abu Dhabi",
+    "Ajman",
+    "Al Ain",
+    "Al Dhafra",
+    "Fujairah",
+    "Khor Fakkan",
+    "Ras Al Khaimah",
+    "Umm Al Quwain"
+  ],
+  "center_types": [
+    "Endowment (Waqf)",
+    "Government",
+    "Private",
+    "Rented / Endowment",
+    "Unknown"
+  ],
+  "centers": [
+    {
+      "center_name": "مركز الشيخ زايد بن سلطان لتحفيظ القرآن الكريم (ذكور + إناث)",
+      "branch": "Abu Dhabi",
+      "emirate": "Abu Dhabi",
+      "area": "الزعاب",
+      "center_type": "Government",
+      "latitude": 24.467424,
+      "longitude": 54.359801
+    },
+    {
+      "center_name": "مركز أبوظبي لتحفيظ القرآن الكريم",
+      "branch": "Abu Dhabi",
+      "emirate": "Abu Dhabi",
+      "area": "البطين",
+      "center_type": "Endowment (Waqf)",
+      "latitude": 24.458035,
+      "longitude": 54.344046
+    },
+    {
+      "center_name": "مركز هامل الغيث لتحفيظ القرآن الكريم",
+      "branch": "Abu Dhabi",
+      "emirate": "Abu Dhabi",
+      "area": "المشرف",
+      "center_type": "Government",
+      "latitude": 24.433312,
+      "longitude": 54.394034
+    },
+    {
+      "center_name": "مركز حمدان بن محمد لتحفيظ القرآن الكريم",
+      "branch": "Abu Dhabi",
+      "emirate": "Abu Dhabi",
+      "area": "الربدان",
+      "center_type": "Government",
+      "latitude": 24.405405,
+      "longitude": 54.518896
+    },
+    {
+      "center_name": "مركز مبارك هلال المنصوري لتحفيظ القرآن الكريم",
+      "branch": "Abu Dhabi",
+      "emirate": "Abu Dhabi",
+      "area": "مدينة محمد بن زايد",
+      "center_type": "Government",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "center_name": "مركز المدينة لتحفيظ القرآن الكريم",
+      "branch": "Abu Dhabi",
+      "emirate": "Abu Dhabi",
+      "area": "مدينة خليفة أ",
+      "center_type": "Government",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "center_name": "مركز مسلم مكتوم المزروعي لتحفيظ القرآن الكريم",
+      "branch": "Abu Dhabi",
+      "emirate": "Abu Dhabi",
+      "area": "مدينة خليفة أ",
+      "center_type": "Government",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "center_name": "مركز محمد هامل الغيث لتحفيظ القرآن الكريم",
+      "branch": "Abu Dhabi",
+      "emirate": "Abu Dhabi",
+      "area": "بني ياس شرق 7",
+      "center_type": "Endowment (Waqf)",
+      "latitude": 24.296308,
+      "longitude": 54.641861
+    },
+    {
+      "center_name": "مركز الشهامة لتحفيظ القرآن الكريم",
+      "branch": "Abu Dhabi",
+      "emirate": "Abu Dhabi",
+      "area": "الشهامة",
+      "center_type": "Government",
+      "latitude": 24.555023,
+      "longitude": 54.680819
+    },
+    {
+      "center_name": "مركز الشيخ محمد بن زايد لتحفيظ القرآن الكريم",
+      "branch": "Abu Dhabi",
+      "emirate": "Abu Dhabi",
+      "area": "الفلاح",
+      "center_type": "Government",
+      "latitude": 24.420044,
+      "longitude": 54.733056
+    },
+    {
+      "center_name": "مركز درويش بن كرم لتحفيظ القرآن الكريم",
+      "branch": "Abu Dhabi",
+      "emirate": "Abu Dhabi",
+      "area": "شارع الدفاع",
+      "center_type": "Private",
+      "latitude": 24.475903,
+      "longitude": 54.376288
+    },
+    {
+      "center_name": "مركز محمد أحمد العتيبة لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "فلج هزاع",
+      "center_type": "Government",
+      "latitude": 24.12023,
+      "longitude": 55.434483
+    },
+    {
+      "center_name": "مركز الشيخة حصة بنت محمد لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "المعترض",
+      "center_type": "Government",
+      "latitude": 24.218507,
+      "longitude": 55.737355
+    },
+    {
+      "center_name": "مركز صبحة بنت عويضة لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "زاخر",
+      "center_type": "Government",
+      "latitude": 24.128817,
+      "longitude": 55.68664
+    },
+    {
+      "center_name": "مركز سهيل بن عويضة الخييلي لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "زاخر",
+      "center_type": "Endowment (Waqf)",
+      "latitude": 24.128817,
+      "longitude": 55.68664
+    },
+    {
+      "center_name": "مركز التوحيد لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "المقام",
+      "center_type": "Government",
+      "latitude": null,
+      "longitude": 55.630039
+    },
+    {
+      "center_name": "مركز حمد عبيد الكعبي لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "المقام",
+      "center_type": "Government",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "center_name": "مركز الشيخة آمنة بنت صالح لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "المسعودي",
+      "center_type": "Government",
+      "latitude": 24.274551,
+      "longitude": 55.738194
+    },
+    {
+      "center_name": "مركز بن حمودة لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "الجيمي",
+      "center_type": "Government",
+      "latitude": 24.247037,
+      "longitude": 55.720508
+    },
+    {
+      "center_name": "مركز الشيخة مريم بنت سلطان لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "الوقن",
+      "center_type": "Rented / Endowment",
+      "latitude": 23.642639,
+      "longitude": 55.55912
+    },
+    {
+      "center_name": "مركز بن حاذة الكتبي لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "هيلي",
+      "center_type": "Government",
+      "latitude": 24.306296,
+      "longitude": 55.794078
+    },
+    {
+      "center_name": "مركز العين لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "الصاروج",
+      "center_type": "Government",
+      "latitude": 24.204236,
+      "longitude": 55.794108
+    },
+    {
+      "center_name": "مركز القوع لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "القوع",
+      "center_type": "Government",
+      "latitude": 23.39749,
+      "longitude": 55.410881
+    },
+    {
+      "center_name": "مركز سعيد بن السالومي لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "القوع",
+      "center_type": "Government",
+      "latitude": 23.410273,
+      "longitude": 55.42004
+    },
+    {
+      "center_name": "مركز بر الوالدين لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "الهير",
+      "center_type": "Government",
+      "latitude": 24.608971,
+      "longitude": 55.76746
+    },
+    {
+      "center_name": "مركز نعمة لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "نعمة",
+      "center_type": "Government",
+      "latitude": 24.113128,
+      "longitude": 55.704301
+    },
+    {
+      "center_name": "مركز بوحقب لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "مزيد",
+      "center_type": "Government",
+      "latitude": 24.061239,
+      "longitude": 55.848091
+    },
+    {
+      "center_name": "مركز فاطمة سعد بو فلاسة لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "الشعيبة",
+      "center_type": "Government",
+      "latitude": 24.142403,
+      "longitude": 55.643135
+    },
+    {
+      "center_name": "مركز شعاب الأشخر لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "شعاب الاشخر",
+      "center_type": "Government",
+      "latitude": 24.153139,
+      "longitude": 55.720268
+    },
+    {
+      "center_name": "مركز فاخرة أحمد الخييلي لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "أبوسمرة",
+      "center_type": "Government",
+      "latitude": 24.204972,
+      "longitude": 55.389361
+    },
+    {
+      "center_name": "مركز علي ناصر المنصوري لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "اليحر",
+      "center_type": "Government",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "center_name": "مركز الفقع لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "الفقع",
+      "center_type": "Government",
+      "latitude": 24.715849,
+      "longitude": 55.621414
+    },
+    {
+      "center_name": "مركز الشيخ محمد بن خالد لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "رملة زاخر",
+      "center_type": "Government",
+      "latitude": 24.232408,
+      "longitude": 55.714416
+    },
+    {
+      "center_name": "مركز هيلي لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "هيلي",
+      "center_type": "Government",
+      "latitude": 24.259951,
+      "longitude": 55.775269
+    },
+    {
+      "center_name": "مركز محمد بالهويمل العامري لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "زاخر",
+      "center_type": "Government",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "center_name": "مركز عوض بن سعيد الكتبي لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "هيلي",
+      "center_type": "Private",
+      "latitude": 24.164583,
+      "longitude": 55.453605
+    },
+    {
+      "center_name": "مركز الشيخ محمد بن زايد لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "الجيمي",
+      "center_type": "Private",
+      "latitude": 24.152569,
+      "longitude": 55.434378
+    },
+    {
+      "center_name": "مركز عائشة أم المؤمنين لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "هيلي",
+      "center_type": "Private",
+      "latitude": 24.291376,
+      "longitude": 55.781578
+    },
+    {
+      "center_name": "مركز حمدان بن محمد بن خليفة آل نهيان لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "اليحر",
+      "center_type": "Private",
+      "latitude": 24.142089,
+      "longitude": 55.346474
+    },
+    {
+      "center_name": "مركز دار الخير لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "الفوعة",
+      "center_type": "Private",
+      "latitude": 24.194904,
+      "longitude": 55.47357
+    },
+    {
+      "center_name": "مركز رملة الراعي لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "النايفة",
+      "center_type": "Private",
+      "latitude": 24.301987,
+      "longitude": 55.756574
+    },
+    {
+      "center_name": "مركز وديمة بنت زايد لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "أم غافة",
+      "center_type": "Private",
+      "latitude": 24.098307,
+      "longitude": 55.906651
+    },
+    {
+      "center_name": "مركز محمد مفتاح القشاطي لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "الظاهر",
+      "center_type": "Private",
+      "latitude": 24.076981,
+      "longitude": 55.837391
+    },
+    {
+      "center_name": "مركز بن حرمل لتحفيظ القرآن الكريم",
+      "branch": "Al Ain",
+      "emirate": "Abu Dhabi",
+      "area": "المقام",
+      "center_type": "Private",
+      "latitude": 24.103881,
+      "longitude": 55.363491
+    },
+    {
+      "center_name": "مركز بينونة لتحفيظ القرآن الكريم",
+      "branch": "Al Dhafra",
+      "emirate": "Abu Dhabi",
+      "area": "مدينة زايد",
+      "center_type": "Government",
+      "latitude": null,
+      "longitude": 53.617287
+    },
+    {
+      "center_name": "مركز مرابع الظفرة لتحفيظ القرآن الكريم",
+      "branch": "Al Dhafra",
+      "emirate": "Abu Dhabi",
+      "area": "مدينة زايد",
+      "center_type": "Government",
+      "latitude": 23.614886,
+      "longitude": 53.711611
+    },
+    {
+      "center_name": "مركز ليوا لتحفيظ القرآن الكريم",
+      "branch": "Al Dhafra",
+      "emirate": "Abu Dhabi",
+      "area": "ليوا",
+      "center_type": "Government",
+      "latitude": null,
+      "longitude": 53.79616
+    },
+    {
+      "center_name": "مركز المرفأ لتحفيظ القرآن الكريم",
+      "branch": "Al Dhafra",
+      "emirate": "Abu Dhabi",
+      "area": "المرفأ",
+      "center_type": "Government",
+      "latitude": 24.10011,
+      "longitude": null
+    },
+    {
+      "center_name": "مركز بدع المطاوعة لتحفيظ القرآن الكريم",
+      "branch": "Al Dhafra",
+      "emirate": "Abu Dhabi",
+      "area": "بدع المطاوعة",
+      "center_type": "Government",
+      "latitude": 23.77689,
+      "longitude": 52.56977
+    },
+    {
+      "center_name": "مركز الرويس لتحفيظ القرآن الكريم",
+      "branch": "Al Dhafra",
+      "emirate": "Abu Dhabi",
+      "area": "الرويس",
+      "center_type": "Government",
+      "latitude": 24.087889,
+      "longitude": 52.64892
+    },
+    {
+      "center_name": "مركز دلما لتحفيظ القرآن الكريم",
+      "branch": "Al Dhafra",
+      "emirate": "Abu Dhabi",
+      "area": "جزيرة دلما",
+      "center_type": "Government",
+      "latitude": 24.473021,
+      "longitude": 52.311489
+    },
+    {
+      "center_name": "مركز مدينة زايد لتحفيظ القرآن الكريم",
+      "branch": "Al Dhafra",
+      "emirate": "Abu Dhabi",
+      "area": "مدينة زايد",
+      "center_type": "Government",
+      "latitude": null,
+      "longitude": 53.69391
+    },
+    {
+      "center_name": "مركز آية لتحفيظ القرآن الكريم",
+      "branch": "Ajman",
+      "emirate": "Ajman",
+      "area": "الجرف",
+      "center_type": "Government",
+      "latitude": 25.411325,
+      "longitude": 55.486503
+    },
+    {
+      "center_name": "مركز عبيد الحلو لتحفيظ القرآن الكريم - المنامة",
+      "branch": "Ajman",
+      "emirate": "Ajman",
+      "area": "المنامة",
+      "center_type": "Government",
+      "latitude": 25.327806,
+      "longitude": 55.981056
+    },
+    {
+      "center_name": "مركز عبيد الحلو لتحفيظ القرآن الكريم - مزيرع",
+      "branch": "Ajman",
+      "emirate": "Ajman",
+      "area": "مزيرع",
+      "center_type": "Government",
+      "latitude": null,
+      "longitude": 56.038012
+    },
+    {
+      "center_name": "مركز عبدالله منصور العوضي لتحفيظ القرآن الكريم",
+      "branch": "Ajman",
+      "emirate": "Ajman",
+      "area": "الجرف",
+      "center_type": "Government",
+      "latitude": 25.42499,
+      "longitude": 55.51703
+    },
+    {
+      "center_name": "مركز دارأسماء بنت أبي بكر لتحفيظ القران الكريم",
+      "branch": "Ajman",
+      "emirate": "Ajman",
+      "area": "السوان",
+      "center_type": "Government",
+      "latitude": 25.398955,
+      "longitude": 55.436693
+    },
+    {
+      "center_name": "مركز راشد بن حميد النعيمي لتحفيظ القرآن الكريم",
+      "branch": "Ajman",
+      "emirate": "Ajman",
+      "area": "الجرف",
+      "center_type": "Private",
+      "latitude": null,
+      "longitude": 55.444176
+    },
+    {
+      "center_name": "مركز الشيخ زايد بن سلطان لتحفيظ القرآن الكريم",
+      "branch": "Ras Al Khaimah",
+      "emirate": "Ras Al Khaimah",
+      "area": "كورنيش القواسم",
+      "center_type": "Government",
+      "latitude": 25.774587,
+      "longitude": 55.935098
+    },
+    {
+      "center_name": "مركز سالم العلي لتحفيظ القرآن",
+      "branch": "Ras Al Khaimah",
+      "emirate": "Ras Al Khaimah",
+      "area": "القصيدات",
+      "center_type": "Government",
+      "latitude": 25.763212,
+      "longitude": 55.973146
+    },
+    {
+      "center_name": "مركز فاطمة بنت عبدالله الخاروصي",
+      "branch": "Ras Al Khaimah",
+      "emirate": "Ras Al Khaimah",
+      "area": "خزام",
+      "center_type": "Government",
+      "latitude": 25.764524,
+      "longitude": 55.94082
+    },
+    {
+      "center_name": "مركز قباء لتحفيظ القرآن الكريم",
+      "branch": "Ras Al Khaimah",
+      "emirate": "Ras Al Khaimah",
+      "area": "جلفار",
+      "center_type": "Private",
+      "latitude": 25.818613,
+      "longitude": 55.989613
+    },
+    {
+      "center_name": "مركز عمر بن الخطاب لتحفيظ القرآن الكريم",
+      "branch": "Ras Al Khaimah",
+      "emirate": "Ras Al Khaimah",
+      "area": "جلفار",
+      "center_type": "Private",
+      "latitude": 25.820252,
+      "longitude": 55.980154
+    },
+    {
+      "center_name": "مركز الشيخة عهود بنت راشد لتحفيظ القرآن الكريم",
+      "branch": "Umm Al Quwain",
+      "emirate": "Umm Al Quwain",
+      "area": "الراعفة",
+      "center_type": "Government",
+      "latitude": 25.613162,
+      "longitude": 55.698936
+    },
+    {
+      "center_name": "مركز حمد مطر الجابري لتحفيظ القرآن الكريم",
+      "branch": "Umm Al Quwain",
+      "emirate": "Umm Al Quwain",
+      "area": "السلمة",
+      "center_type": "Government",
+      "latitude": 25.543177,
+      "longitude": 55.543026
+    },
+    {
+      "center_name": "مركز فلج المعلا لتحفيظ القرآن الكريم",
+      "branch": "Umm Al Quwain",
+      "emirate": "Umm Al Quwain",
+      "area": "فلج المعلا",
+      "center_type": "Government",
+      "latitude": null,
+      "longitude": 55.852936
+    },
+    {
+      "center_name": "مركز الفجيرة لتحفيظ القرآن الكريم / ذكور",
+      "branch": "Fujairah",
+      "emirate": "Fujairah",
+      "area": "الفصيل",
+      "center_type": "Rented / Endowment",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "center_name": "مركز الفجيرة لتحفيظ القرآن الكريم / إناث",
+      "branch": "Fujairah",
+      "emirate": "Fujairah",
+      "area": "مضب شارع الإتحاد",
+      "center_type": "Rented / Endowment",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "center_name": "مركز زايد لتحفيظ القرآن الكريم",
+      "branch": "Fujairah",
+      "emirate": "Fujairah",
+      "area": "النهضة",
+      "center_type": "Government",
+      "latitude": 25.579832,
+      "longitude": 56.24328
+    },
+    {
+      "center_name": "مركز سعيد محمد الرقباني لتحفيظ القرآن الكريم",
+      "branch": "Fujairah",
+      "emirate": "Fujairah",
+      "area": "قدفع",
+      "center_type": "Government",
+      "latitude": 25.286328,
+      "longitude": 56.354887
+    },
+    {
+      "center_name": "مركز المبارك لتحفيظ القرآن الكريم",
+      "branch": "Khor Fakkan",
+      "emirate": "Sharjah",
+      "area": "القادسية",
+      "center_type": "Unknown",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

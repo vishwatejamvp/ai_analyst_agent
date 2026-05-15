@@ -1,0 +1,173 @@
+{
+  "year": 2021,
+  "dataset": "Umrah Campaigns Historical",
+  "notes": [
+    "Umrah-only campaigns (not Hajj). Sourced from historical aggregate file spanning 2011-2021."
+  ],
+  "total_campaigns": 14,
+  "emirates": [
+    "Abu Dhabi",
+    "Al Ain",
+    "Dubai",
+    "Khor Fakkan",
+    "Ras Al Khaimah",
+    "Sharjah",
+    "الظفرة"
+  ],
+  "campaigns": [
+    {
+      "campaign_name": "الدولية",
+      "campaign_owner": "زايد راشد عويضة القبيسي",
+      "campaign_number": 173,
+      "emirate": "Abu Dhabi",
+      "phone_mobile": "050/6415590",
+      "phone_office": "02/4482000",
+      "phone_fax": "02/4482500",
+      "branch": "",
+      "email": "hajj_omra@bachuae.com"
+    },
+    {
+      "campaign_name": "البرج",
+      "campaign_owner": "يوسف إسماعيل عباس الخوري",
+      "campaign_number": 163,
+      "emirate": "Abu Dhabi",
+      "phone_mobile": "050/6999980",
+      "phone_office": "02/6333387",
+      "phone_fax": "02/6338878",
+      "branch": "",
+      "email": "burjtrvl@emirates.net.ae"
+    },
+    {
+      "campaign_name": "المدائن",
+      "campaign_owner": "سلطان سالم راشد المنصوري",
+      "campaign_number": 407,
+      "emirate": "الظفرة",
+      "phone_mobile": "050/4421021",
+      "phone_office": "02/8843437",
+      "phone_fax": "02/8843439",
+      "branch": "",
+      "email": "sultan.wrm@gmail.com"
+    },
+    {
+      "campaign_name": "بني عمر",
+      "campaign_owner": "حمد محمد فاضل المعمري",
+      "campaign_number": 43,
+      "emirate": "Al Ain",
+      "phone_mobile": "050/4470940",
+      "phone_office": "03/7800812",
+      "phone_fax": "03/7663371",
+      "branch": "",
+      "email": "BaniOmer@hotmail.com"
+    },
+    {
+      "campaign_name": "أنوار الشرق",
+      "campaign_owner": "سعود عبدالعزيز عبدالله النقبي",
+      "campaign_number": 246,
+      "emirate": "Al Ain",
+      "phone_mobile": "050/7733434",
+      "phone_office": "03/7648854",
+      "phone_fax": "03/7648853",
+      "branch": "",
+      "email": "almethali.haj@gmail.com"
+    },
+    {
+      "campaign_name": "الهاشمي",
+      "campaign_owner": "عامر عبدالواحد عبدالرحيم كلنتر",
+      "campaign_number": 79,
+      "emirate": "Dubai",
+      "phone_mobile": "050/2133321",
+      "phone_office": "04/2728904",
+      "phone_fax": "04/2733453",
+      "branch": "",
+      "email": "alhashmiumrah@gmail.com"
+    },
+    {
+      "campaign_name": "الغدير",
+      "campaign_owner": "حسن إبراهيم الحاج حسين",
+      "campaign_number": 207,
+      "emirate": "Dubai",
+      "phone_mobile": "050/6441965",
+      "phone_office": "04/3383311",
+      "phone_fax": "04/3383311",
+      "branch": "",
+      "email": "algadeer.2006@gmail.com"
+    },
+    {
+      "campaign_name": "مضياف",
+      "campaign_owner": "أحمد خالد جمعه أهلي / فاطمة محمد راشد النقبي",
+      "campaign_number": 371,
+      "emirate": "Dubai",
+      "phone_mobile": "050/5399334",
+      "phone_office": "04/3251444",
+      "phone_fax": "04/3251414",
+      "branch": "",
+      "email": "mudyaf-umrah@mudyaf.com"
+    },
+    {
+      "campaign_name": "الأنصاري",
+      "campaign_owner": "حصة علي يوسف المحفوظ",
+      "campaign_number": 169,
+      "emirate": "Dubai",
+      "phone_mobile": "050/6242311",
+      "phone_office": "04/2722527",
+      "phone_fax": "04/2713070",
+      "branch": "الشارقة",
+      "email": "alansarihj@yahoo.com"
+    },
+    {
+      "campaign_name": "الشمار",
+      "campaign_owner": "علي محمد الشمار",
+      "campaign_number": 88,
+      "emirate": "Dubai",
+      "phone_mobile": "050/6789505",
+      "phone_office": "04/2630053",
+      "phone_fax": "04/2521153",
+      "branch": "",
+      "email": "alshammarhajj@gmail.com"
+    },
+    {
+      "campaign_name": "الحمر",
+      "campaign_owner": "محمد علي محمد الملا",
+      "campaign_number": 83,
+      "emirate": "Dubai",
+      "phone_mobile": "050/7292227",
+      "phone_office": "04/3967711",
+      "phone_fax": "04/3968613",
+      "branch": "",
+      "email": "Info.alhamarhajj@gmail.com"
+    },
+    {
+      "campaign_name": "الأصالة",
+      "campaign_owner": "حمد حسن علي الزعابي",
+      "campaign_number": 286,
+      "emirate": "Sharjah",
+      "phone_mobile": "050/6222797",
+      "phone_office": "06/5756662",
+      "phone_fax": "06/5756661",
+      "branch": "",
+      "email": "halshaikh@yahoo.com"
+    },
+    {
+      "campaign_name": "الغانم",
+      "campaign_owner": "عبدالله غانم سيف الزعابي",
+      "campaign_number": 275,
+      "emirate": "Khor Fakkan",
+      "phone_mobile": "050/5607117",
+      "phone_office": "09/2776706",
+      "phone_fax": "09/2776705",
+      "branch": "",
+      "email": "al-ghanim-hajj@hotmail.com"
+    },
+    {
+      "campaign_name": "الملتقى",
+      "campaign_owner": "الشيخ/ سعود فيصل بن سالم القاسمي",
+      "campaign_number": 354,
+      "emirate": "Ras Al Khaimah",
+      "phone_mobile": "050/4880808",
+      "phone_office": "07/2333515",
+      "phone_fax": "07/2333514",
+      "branch": "",
+      "email": "almoltqa-hajj@hotmail.com"
+    }
+  ]
+}

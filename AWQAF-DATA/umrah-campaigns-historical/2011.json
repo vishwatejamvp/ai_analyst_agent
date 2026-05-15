@@ -1,0 +1,216 @@
+{
+  "year": 2011,
+  "dataset": "Umrah Campaigns Historical",
+  "notes": [
+    "Umrah-only campaigns (not Hajj). Sourced from historical aggregate file spanning 2011-2021."
+  ],
+  "total_campaigns": 18,
+  "emirates": [
+    "Abu Dhabi",
+    "Ajman",
+    "Dubai",
+    "Khor Fakkan",
+    "Ras Al Khaimah",
+    "Sharjah"
+  ],
+  "campaigns": [
+    {
+      "campaign_name": "الطارق",
+      "campaign_owner": "ناصر أحمد ناصر النعيمي",
+      "campaign_number": 331,
+      "emirate": "Abu Dhabi",
+      "phone_mobile": "6216603/050",
+      "phone_office": "6336222/02",
+      "phone_fax": "6336202/02",
+      "branch": "",
+      "email": ""
+    },
+    {
+      "campaign_name": "الأماكن",
+      "campaign_owner": "راشد بخيت خلفان المنصوري",
+      "campaign_number": 374,
+      "emirate": "Abu Dhabi",
+      "phone_mobile": "6222335/050",
+      "phone_office": "6278887/02",
+      "phone_fax": "6278886/02",
+      "branch": "",
+      "email": ""
+    },
+    {
+      "campaign_name": "عبدالله سلطان",
+      "campaign_owner": "عبدالله سلطان الخزرجي",
+      "campaign_number": 222,
+      "emirate": "Abu Dhabi",
+      "phone_mobile": "8125250/050",
+      "phone_office": "6392944/02",
+      "phone_fax": "6392188/02",
+      "branch": "",
+      "email": ""
+    },
+    {
+      "campaign_name": "الدولية",
+      "campaign_owner": "زايد راشد بن عويضة القبيسي",
+      "campaign_number": 173,
+      "emirate": "Abu Dhabi",
+      "phone_mobile": "7124426/050",
+      "phone_office": "4482000/02",
+      "phone_fax": "4482500/02",
+      "branch": "",
+      "email": ""
+    },
+    {
+      "campaign_name": "الظفرة",
+      "campaign_owner": "هلال خلف هلال المزروعي",
+      "campaign_number": 333,
+      "emirate": "Abu Dhabi",
+      "phone_mobile": "6115165/050",
+      "phone_office": "6724545/02",
+      "phone_fax": "6767676/02",
+      "branch": "",
+      "email": ""
+    },
+    {
+      "campaign_name": "مضياف",
+      "campaign_owner": "خالد جمعه حسين علي أهلي",
+      "campaign_number": 371,
+      "emirate": "Dubai",
+      "phone_mobile": "4561902/050",
+      "phone_office": "3251444/04",
+      "phone_fax": "3251414/04",
+      "branch": "",
+      "email": ""
+    },
+    {
+      "campaign_name": "الغدير",
+      "campaign_owner": "حسن إبراهيم الحاج حسين كاظم",
+      "campaign_number": 207,
+      "emirate": "Dubai",
+      "phone_mobile": "6441965/050",
+      "phone_office": "3383318/04",
+      "phone_fax": "3383311/04",
+      "branch": "",
+      "email": ""
+    },
+    {
+      "campaign_name": "ديرة",
+      "campaign_owner": "يوسف محمد بن قطامي الزعابي",
+      "campaign_number": 373,
+      "emirate": "Dubai",
+      "phone_mobile": "5528882/050",
+      "phone_office": "2684455/04",
+      "phone_fax": "2684477/04",
+      "branch": "",
+      "email": ""
+    },
+    {
+      "campaign_name": "الهاشمي",
+      "campaign_owner": "عبدالواحد عبدالرحيم محمد كلنتر",
+      "campaign_number": 79,
+      "emirate": "Dubai",
+      "phone_mobile": "4814214/050",
+      "phone_office": "2728904/04",
+      "phone_fax": "2733453/04",
+      "branch": "",
+      "email": ""
+    },
+    {
+      "campaign_name": "المشاعر",
+      "campaign_owner": "محمد عبدالرحمن محمد صالح",
+      "campaign_number": 78,
+      "emirate": "Dubai",
+      "phone_mobile": "4833300/050",
+      "phone_office": "2582585/04",
+      "phone_fax": "2677678/04",
+      "branch": "",
+      "email": ""
+    },
+    {
+      "campaign_name": "أجنحة الإمارات الذهبية",
+      "campaign_owner": "علي ثاني راشد المطروشي",
+      "campaign_number": 296,
+      "emirate": "Dubai",
+      "phone_mobile": "4520200/050",
+      "phone_office": "2974444/04",
+      "phone_fax": "2978181/04",
+      "branch": "",
+      "email": ""
+    },
+    {
+      "campaign_name": "راشد جاسم بو الحمام",
+      "campaign_owner": "راشد جاسم يوسف بو الحمام",
+      "campaign_number": 105,
+      "emirate": "Sharjah",
+      "phone_mobile": "5632757/050",
+      "phone_office": "5632757/06",
+      "phone_fax": "5632676/06",
+      "branch": "",
+      "email": ""
+    },
+    {
+      "campaign_name": "البيت المعمور",
+      "campaign_owner": "عبدالعزيز عبدالله ناصر النعيمي",
+      "campaign_number": 359,
+      "emirate": "Sharjah",
+      "phone_mobile": "6295353/050",
+      "phone_office": "5350010/06",
+      "phone_fax": "5350040/06",
+      "branch": "",
+      "email": ""
+    },
+    {
+      "campaign_name": "الغانم",
+      "campaign_owner": "عبدالله غانم سيف الزعابي",
+      "campaign_number": 275,
+      "emirate": "Khor Fakkan",
+      "phone_mobile": "5607117/050",
+      "phone_office": "2776706/09",
+      "phone_fax": "2776705/09",
+      "branch": "",
+      "email": ""
+    },
+    {
+      "campaign_name": "السلام",
+      "campaign_owner": "عمر سعيد عبيد الزعابي",
+      "campaign_number": 375,
+      "emirate": "Ajman",
+      "phone_mobile": "6508507/050",
+      "phone_office": "7495151/06",
+      "phone_fax": "7495152/06",
+      "branch": "",
+      "email": ""
+    },
+    {
+      "campaign_name": "الملتقى",
+      "campaign_owner": "الشيخ/ سعود فيصل بن سالم القاسمي",
+      "campaign_number": 354,
+      "emirate": "Ras Al Khaimah",
+      "phone_mobile": "4880808/050",
+      "phone_office": "2333225/07",
+      "phone_fax": "2337723/07",
+      "branch": "",
+      "email": ""
+    },
+    {
+      "campaign_name": "رأس الخيمة",
+      "campaign_owner": "خلفان حسن سعيد النقبي",
+      "campaign_number": 289,
+      "emirate": "Ras Al Khaimah",
+      "phone_mobile": "6470760/050",
+      "phone_office": "2270988/07",
+      "phone_fax": "2442382/07",
+      "branch": "",
+      "email": ""
+    },
+    {
+      "campaign_name": "عالم الثريا",
+      "campaign_owner": "راشد خليفة بن غازي السويدي",
+      "campaign_number": 376,
+      "emirate": "Ras Al Khaimah",
+      "phone_mobile": "5600008/050",
+      "phone_office": "2339390/07",
+      "phone_fax": "2277676/07",
+      "branch": "",
+      "email": ""
+    }
+  ]
+}

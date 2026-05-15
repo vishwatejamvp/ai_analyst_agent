@@ -1,0 +1,60 @@
+{"question": "hi", "intent": "DISCOVERY", "source": "bootstrap"}
+{"question": "hello", "intent": "DISCOVERY", "source": "bootstrap"}
+{"question": "hey there", "intent": "DISCOVERY", "source": "bootstrap"}
+{"question": "good morning", "intent": "DISCOVERY", "source": "bootstrap"}
+{"question": "salam", "intent": "DISCOVERY", "source": "bootstrap"}
+{"question": "what can I ask?", "intent": "DISCOVERY", "source": "bootstrap"}
+{"question": "what should I ask", "intent": "DISCOVERY", "source": "bootstrap"}
+{"question": "give me a question", "intent": "DISCOVERY", "source": "bootstrap"}
+{"question": "what data is available", "intent": "DISCOVERY", "source": "bootstrap"}
+{"question": "show me the catalog", "intent": "DISCOVERY", "source": "bootstrap"}
+{"question": "where do I start", "intent": "DISCOVERY", "source": "bootstrap"}
+{"question": "list all datasets", "intent": "DISCOVERY", "source": "bootstrap"}
+{"question": "help me get started", "intent": "DISCOVERY", "source": "bootstrap"}
+{"question": "what can you do", "intent": "DISCOVERY", "source": "bootstrap"}
+{"question": "what's in your database", "intent": "DISCOVERY", "source": "bootstrap"}
+{"question": "what's the weather in Dubai?", "intent": "OUT_OF_SCOPE", "source": "bootstrap"}
+{"question": "tell me a joke", "intent": "OUT_OF_SCOPE", "source": "bootstrap"}
+{"question": "what's the capital of Spain", "intent": "OUT_OF_SCOPE", "source": "bootstrap"}
+{"question": "translate hello to arabic", "intent": "OUT_OF_SCOPE", "source": "bootstrap"}
+{"question": "who won the world cup", "intent": "OUT_OF_SCOPE", "source": "bootstrap"}
+{"question": "recommend a restaurant", "intent": "OUT_OF_SCOPE", "source": "bootstrap"}
+{"question": "what's the meaning of life", "intent": "OUT_OF_SCOPE", "source": "bootstrap"}
+{"question": "play me a song", "intent": "OUT_OF_SCOPE", "source": "bootstrap"}
+{"question": "compare hajj permits 2024 vs 2023", "intent": "COMPARISON", "source": "bootstrap"}
+{"question": "occupancy rate versus revenue trend", "intent": "COMPARISON", "source": "bootstrap"}
+{"question": "compare 2023 and 2024 occupancy rate", "intent": "COMPARISON", "source": "bootstrap"}
+{"question": "side by side hajj and umrah permits", "intent": "COMPARISON", "source": "bootstrap"}
+{"question": "revenue this year versus last year", "intent": "COMPARISON", "source": "bootstrap"}
+{"question": "occupancy rate vs revenue per emirate", "intent": "COMPARISON", "source": "bootstrap"}
+{"question": "show comparison between zakat and waqf disbursements", "intent": "COMPARISON", "source": "bootstrap"}
+{"question": "average occupancy rate in 2024", "intent": "ANALYTICAL", "source": "bootstrap"}
+{"question": "monthly trend of occupancy rate", "intent": "ANALYTICAL", "source": "bootstrap"}
+{"question": "how many hajj permits issued in 2024", "intent": "ANALYTICAL", "source": "bootstrap"}
+{"question": "total revenue from real estate endowments by emirate", "intent": "ANALYTICAL", "source": "bootstrap"}
+{"question": "top 5 emirates by total revenue", "intent": "ANALYTICAL", "source": "bootstrap"}
+{"question": "occupancy rate trend across all years", "intent": "ANALYTICAL", "source": "bootstrap"}
+{"question": "explain the unusual pattern in 2023 occupancy", "intent": "ANALYTICAL", "source": "bootstrap"}
+{"question": "show monthly hajj permit counts for 2024", "intent": "ANALYTICAL", "source": "bootstrap"}
+{"question": "what was the highest revenue month in 2024", "intent": "ANALYTICAL", "source": "bootstrap"}
+{"question": "average daily transactions for waqf services", "intent": "ANALYTICAL", "source": "bootstrap"}
+{"question": "total zakat disbursed in 2023", "intent": "ANALYTICAL", "source": "bootstrap"}
+{"question": "summarize the trend in zakat disbursement", "intent": "ANALYTICAL", "source": "bootstrap"}
+{"question": "tell me about hajj weather forecasts", "intent": "ANALYTICAL", "source": "bootstrap-edge"}
+{"question": "graph on occupancy rate and revenue with all available data years", "intent": "ANALYTICAL", "source": "bootstrap"}
+{"question": "by emirate", "intent": "ANALYTICAL", "source": "bootstrap-followup"}
+{"question": "in 2023", "intent": "ANALYTICAL", "source": "bootstrap-followup"}
+{"question": "vs last year", "intent": "ANALYTICAL", "source": "bootstrap-followup"}
+{"question": "exclude refunds", "intent": "ANALYTICAL", "source": "bootstrap-followup"}
+{"question": "average umrah workers permits in 2024", "intent": "ANALYTICAL", "source": "bootstrap"}
+{"question": "highest occupancy month over the last 3 years", "intent": "ANALYTICAL", "source": "bootstrap"}
+{"question": "how does revenue compare between January and June", "intent": "COMPARISON", "source": "bootstrap"}
+{"question": "differences between hajj and umrah permit volumes", "intent": "COMPARISON", "source": "bootstrap"}
+{"question": "hi can you tell me about the data", "intent": "DISCOVERY", "source": "bootstrap-mixed"}
+{"question": "hello what can you tell me", "intent": "DISCOVERY", "source": "bootstrap-mixed"}
+{"question": "what's up with hajj data", "intent": "ANALYTICAL", "source": "bootstrap-edge"}
+{"question": "I want to see emirates ranked by revenue", "intent": "ANALYTICAL", "source": "bootstrap-paraphrase"}
+{"question": "show me a breakdown of occupancy across emirates", "intent": "ANALYTICAL", "source": "bootstrap-paraphrase"}
+{"question": "trend analysis on permit issuance", "intent": "ANALYTICAL", "source": "bootstrap-paraphrase"}
+{"question": "what year had the lowest occupancy", "intent": "ANALYTICAL", "source": "bootstrap-paraphrase"}
+{"question": "okay so what is in here", "intent": "DISCOVERY", "source": "bootstrap-edge"}

@@ -1,0 +1,77 @@
+{
+  "dataset": "Quran Memorization Centers",
+  "source": {
+    "organization": "General Authority for Islamic Affairs, Endowments and Zakat",
+    "department": "Quran Education",
+    "phone": "8008222",
+    "data_sources": "Administrative record",
+    "methodology": "Counting and classifying Quran education centers by type based on administrative records during the specified period"
+  },
+  "coverage": {
+    "area": "Each Emirate within the country",
+    "periodicity": "Yearly /monthly"
+  },
+  "indicator": {
+    "name": "Number of Quran education centers by type",
+    "definition": "Total number of Quran education centers classified by center type during the specified period",
+    "unit": "Number"
+  },
+  "fields": {
+    "center_name": {
+      "original_name": "اسم المركز (Center Name)",
+      "description": "Official name of the Quran memorization center (in Arabic)"
+    },
+    "branch": {
+      "original_name": "الفرع (Branch)",
+      "description": "The city/region where the center is located (e.g. Abu Dhabi, Al Ain, Dubai)"
+    },
+    "emirate": {
+      "original_name": "الامارة (Emirate)",
+      "description": "The UAE emirate the center falls under administratively"
+    },
+    "area": {
+      "original_name": "المنطقة (Area/District)",
+      "description": "The specific neighborhood or district within the city (in Arabic)"
+    },
+    "center_type": {
+      "original_name": "نوع المركز (Center Type)",
+      "description": "Classification of the center: Government, Endowment (Waqf), Private, or Rented"
+    },
+    "latitude": {
+      "original_name": "خطوط العرض (Latitude)",
+      "description": "Geographic latitude coordinate of the center (where available)"
+    },
+    "longitude": {
+      "original_name": "خطوط الطول (Longitude)",
+      "description": "Geographic longitude coordinate of the center (where available)"
+    }
+  },
+  "terms": [
+    {
+      "term": "Quran Education Centers",
+      "original_arabic": "مراكز تعليم القران",
+      "definition": "Accredited educational institutions for teaching and memorizing the Holy Quran for all age groups",
+      "calculation": "Total number of Quran memorization centers for all age groups",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative records"
+    },
+    {
+      "term": "Center Type",
+      "original_arabic": "نوع المركز",
+      "definition": "Classification of the center by ownership/funding: Government (حكومي), Endowment/Waqf (وقف), Private (خاص), or Rented (مستأجر)",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative records"
+    },
+    {
+      "term": "Location Coordinates",
+      "original_arabic": "خطوط الطول - خطوط العرض (احداثيات الموقع)",
+      "definition": "Digital address of the place on the globe, precisely determining its location using latitude and longitude",
+      "calculation": "Total number of centers by location",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative records"
+    }
+  ]
+}

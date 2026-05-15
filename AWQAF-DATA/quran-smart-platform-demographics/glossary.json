@@ -1,0 +1,50 @@
+{
+  "dataset": "Quran Smart Platform Demographics",
+  "source": {
+    "organization": "General Authority for Islamic Affairs, Endowments and Zakat",
+    "department": "Quran Education - Smart Platform",
+    "description": "Data on the smart platform for teaching the Qur'an for the year 2020"
+  },
+  "coverage": {
+    "area": "International (by country)",
+    "periodicity": "Yearly"
+  },
+  "fields": {
+    "country": {
+      "original_name": "الدولة (Country)",
+      "description": "Name of the country (in Arabic)"
+    },
+    "total_students": {
+      "original_name": "عدد الدارسين (Number of Students)",
+      "description": "Total number of learners registered on the smart platform in this country"
+    },
+    "male": {
+      "original_name": "ذكر (Male)",
+      "description": "Number of male learners"
+    },
+    "female": {
+      "original_name": "انثى (Female)",
+      "description": "Number of female learners"
+    },
+    "age_6_10": {
+      "original_name": "10-6 (Age 6-10)",
+      "description": "Number of learners aged 6 to 10 years"
+    },
+    "age_11_20": {
+      "original_name": "20-11 (Age 11-20)",
+      "description": "Number of learners aged 11 to 20 years"
+    },
+    "age_21_30": {
+      "original_name": "30-21 (Age 21-30)",
+      "description": "Number of learners aged 21 to 30 years"
+    },
+    "age_31_50": {
+      "original_name": "50-31 (Age 31-50)",
+      "description": "Number of learners aged 31 to 50 years"
+    },
+    "age_over_50": {
+      "original_name": "فوق 50 (Over 50)",
+      "description": "Number of learners aged over 50 years"
+    }
+  }
+}

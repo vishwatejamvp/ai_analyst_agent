@@ -1,0 +1,185 @@
+{
+  "year": 2024,
+  "dataset": "Certificate \"To Whom It May Concern\" for Zakat Assistance",
+  "notes": [],
+  "data": [
+    {
+      "month": "january",
+      "channels": {
+        "smartphone_app": 9,
+        "chatbot": 59,
+        "website": 553,
+        "good_loan": 0,
+        "call_center": 0,
+        "service_center": 8,
+        "mobile_website": 734,
+        "na_legacy": 0
+      },
+      "total": 1363
+    },
+    {
+      "month": "february",
+      "channels": {
+        "smartphone_app": 313,
+        "chatbot": 47,
+        "website": 203,
+        "good_loan": 0,
+        "call_center": 0,
+        "service_center": 1,
+        "mobile_website": 528,
+        "na_legacy": 0
+      },
+      "total": 1092
+    },
+    {
+      "month": "march",
+      "channels": {
+        "smartphone_app": 1238,
+        "chatbot": 37,
+        "website": 208,
+        "good_loan": 0,
+        "call_center": 0,
+        "service_center": 0,
+        "mobile_website": 604,
+        "na_legacy": 0
+      },
+      "total": 2087
+    },
+    {
+      "month": "april",
+      "channels": {
+        "smartphone_app": 908,
+        "chatbot": 36,
+        "website": 185,
+        "good_loan": 0,
+        "call_center": 0,
+        "service_center": 0,
+        "mobile_website": 493,
+        "na_legacy": 0
+      },
+      "total": 1622
+    },
+    {
+      "month": "may",
+      "channels": {
+        "smartphone_app": 1243,
+        "chatbot": 15,
+        "website": 297,
+        "good_loan": 0,
+        "call_center": 0,
+        "service_center": 4,
+        "mobile_website": 1158,
+        "na_legacy": 0
+      },
+      "total": 2717
+    },
+    {
+      "month": "june",
+      "channels": {
+        "smartphone_app": 758,
+        "chatbot": 38,
+        "website": 138,
+        "good_loan": 0,
+        "call_center": 0,
+        "service_center": 1,
+        "mobile_website": 459,
+        "na_legacy": 0
+      },
+      "total": 1394
+    },
+    {
+      "month": "july",
+      "channels": {
+        "smartphone_app": 1010,
+        "chatbot": 30,
+        "website": 190,
+        "good_loan": 0,
+        "call_center": 0,
+        "service_center": 1,
+        "mobile_website": 439,
+        "na_legacy": 0
+      },
+      "total": 1670
+    },
+    {
+      "month": "august",
+      "channels": {
+        "smartphone_app": 668,
+        "chatbot": 49,
+        "website": 122,
+        "good_loan": 0,
+        "call_center": 0,
+        "service_center": 1,
+        "mobile_website": 503,
+        "na_legacy": 0
+      },
+      "total": 1343
+    },
+    {
+      "month": "september",
+      "channels": {
+        "smartphone_app": 796,
+        "chatbot": 55,
+        "website": 360,
+        "good_loan": 0,
+        "call_center": 0,
+        "service_center": 3,
+        "mobile_website": 858,
+        "na_legacy": 0
+      },
+      "total": 2072
+    },
+    {
+      "month": "october",
+      "channels": {
+        "smartphone_app": 956,
+        "chatbot": 22,
+        "website": 362,
+        "good_loan": 0,
+        "call_center": 1,
+        "service_center": 3,
+        "mobile_website": 638,
+        "na_legacy": 283
+      },
+      "total": 2265
+    },
+    {
+      "month": "november",
+      "channels": {
+        "smartphone_app": 827,
+        "chatbot": 40,
+        "website": 0,
+        "good_loan": 0,
+        "call_center": 0,
+        "service_center": 4,
+        "mobile_website": 0,
+        "na_legacy": 1926
+      },
+      "total": 2797
+    },
+    {
+      "month": "december",
+      "channels": {
+        "smartphone_app": 673,
+        "chatbot": 75,
+        "website": 10,
+        "good_loan": 0,
+        "call_center": 0,
+        "service_center": 7,
+        "mobile_website": 0,
+        "na_legacy": 1650
+      },
+      "total": 2415
+    }
+  ],
+  "totals_by_channel": {
+    "smartphone_app": 9399,
+    "chatbot": 503,
+    "website": 2628,
+    "good_loan": 0,
+    "call_center": 1,
+    "service_center": 33,
+    "mobile_website": 0,
+    "na_legacy": 3859
+  }
+}

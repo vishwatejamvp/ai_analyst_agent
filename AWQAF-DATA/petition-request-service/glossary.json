@@ -1,0 +1,96 @@
+{
+  "dataset": "Statistics of Petition Request Service",
+  "source": {
+    "organization": "General Authority of Islamic Affairs, Endowments and Zakat",
+    "department": "Zakat Fund Management",
+    "phone": "8008222",
+    "data_sources": "Administrative Records",
+    "methodology": "A database containing the names of the Authority's services and total transaction statistics provided during the year 2025, classified by month"
+  },
+  "coverage": {
+    "area": "All Emirates of the Country",
+    "periodicity": "Monthly and Yearly"
+  },
+  "indicator": {
+    "name": "Statistics of Petition Request Service",
+    "definition": "A report reviewing the number of customers by channel and month",
+    "unit": "Numbers"
+  },
+  "fields": {
+    "ipad": {
+      "original_name": "Ipad",
+      "description": "Number of petition requests submitted via iPad devices at the Authority"
+    },
+    "smartphone_app": {
+      "original_name": "Smartphone Applications",
+      "description": "Number of petition requests submitted via the Authority's smartphone application"
+    },
+    "website": {
+      "original_name": "Website",
+      "description": "Number of petition requests submitted via the Authority's website"
+    },
+    "service_center": {
+      "original_name": "Service Delivery Center",
+      "description": "Number of petition requests submitted in person at the Authority's service delivery center"
+    },
+    "mobile_website": {
+      "original_name": "Mobile Website",
+      "description": "Number of petition requests submitted via the Authority's mobile website (smartphone browser)"
+    },
+    "total": {
+      "original_name": "Total",
+      "description": "Total petition requests across all channels for the given month"
+    }
+  },
+  "terms": [
+    {
+      "term": "Total",
+      "definition": "Total requests by month",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Service Delivery Center",
+      "definition": "Authority Service Delivery Center",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Website",
+      "definition": "Authority Website",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Smartphone Applications",
+      "definition": "Authority's Smartphone App",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Ipad",
+      "definition": "Authority by Ipad",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Mobile Website",
+      "definition": "Authority Website via Smartphone",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Month",
+      "definition": "The month in which the service was provided.",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    }
+  ]
+}

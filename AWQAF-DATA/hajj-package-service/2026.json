@@ -1,0 +1,80 @@
+{
+  "year": 2026,
+  "dataset": "Monthly Statistics for Hajj Package Service",
+  "notes": [],
+  "months": {
+    "january": {
+      "website_transactions": 57,
+      "smart_app_transactions": 5,
+      "total_transactions": 62,
+      "hajj_package_recipients": 0
+    },
+    "february": {
+      "website_transactions": 97,
+      "smart_app_transactions": 16,
+      "total_transactions": 113,
+      "hajj_package_recipients": 0
+    },
+    "march": {
+      "website_transactions": 0,
+      "smart_app_transactions": 0,
+      "total_transactions": 0,
+      "hajj_package_recipients": 0
+    },
+    "april": {
+      "website_transactions": 0,
+      "smart_app_transactions": 0,
+      "total_transactions": 0,
+      "hajj_package_recipients": 0
+    },
+    "may": {
+      "website_transactions": 0,
+      "smart_app_transactions": 0,
+      "total_transactions": 0,
+      "hajj_package_recipients": 0
+    },
+    "june": {
+      "website_transactions": 0,
+      "smart_app_transactions": 0,
+      "total_transactions": 0,
+      "hajj_package_recipients": 0
+    },
+    "july": {
+      "website_transactions": 0,
+      "smart_app_transactions": 0,
+      "total_transactions": 0,
+      "hajj_package_recipients": 0
+    },
+    "august": {
+      "website_transactions": 0,
+      "smart_app_transactions": 0,
+      "total_transactions": 0,
+      "hajj_package_recipients": 0
+    },
+    "september": {
+      "website_transactions": 0,
+      "smart_app_transactions": 0,
+      "total_transactions": 0,
+      "hajj_package_recipients": 0
+    },
+    "october": {
+      "website_transactions": 0,
+      "smart_app_transactions": 0,
+      "total_transactions": 0,
+      "hajj_package_recipients": 0
+    },
+    "november": {
+      "website_transactions": 0,
+      "smart_app_transactions": 0,
+      "total_transactions": 0,
+      "hajj_package_recipients": 0
+    },
+    "december": {
+      "website_transactions": 0,
+      "smart_app_transactions": 0,
+      "total_transactions": 0,
+      "hajj_package_recipients": 0
+    }
+  },
+  "totals": {}
+}

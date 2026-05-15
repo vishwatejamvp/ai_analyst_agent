@@ -1,0 +1,56 @@
+{
+  "dataset": "Monthly Statistics for Teaching the Holy Quran Service",
+  "source": {
+    "Indicator": "الاحصائيات الشهرية لخدمة تعليم القرآن الكريم",
+    "Indicator Definition": "حصر اعداد المعاملات لخدمة تعليم القرآن الكريم",
+    "Dataset Name_EN": "Statistics of Teaching the Holy Quran",
+    "Dataset Name_AR": "إحصائيات خدمة تعليم القرآن الكريم",
+    "Description_EN": "It is a statistic that limits the number of registered for the service of teaching the Holy Quran according to the channels of service provision",
+    "Description_AR": "هي إحصائية تحصر أعداد المسجلين لخدمة تعليم القرآن الكريم حسب قنوات تقديم الخدمة",
+    "Source (URL of original source)": "https://www.awqaf.gov.ae/login?page=L3F1cmFuQ2VudGVyL3JlZ2lzdHJhdGlvbg==",
+    "Data Owner_EN": "General Authority of Islamic Affairs & Endowments",
+    "Data Owner_AR": "الهيئة العامة لشؤون الإسلامية والأوقاف",
+    "Owner_Tel": "26143666",
+    "Last Update Date": "2024-02-14 00:00:00",
+    "Calculation Methodology": "أعداد المسجلين لخدمة تعليم القرآن الكريم",
+    "Language": "اللغة العربية",
+    "Key terms / Tags": "-"
+  },
+  "coverage": {
+    "periodicity": "Monthly",
+    "years": [
+      2023
+    ]
+  },
+  "indicator": {
+    "name": "Monthly transactions for Teaching the Holy Quran Service",
+    "channels": [
+      "Website",
+      "Smart Application"
+    ]
+  },
+  "fields": {
+    "website_transactions": {
+      "description": "Number of transactions via the website",
+      "unit": "count"
+    },
+    "smart_app_transactions": {
+      "description": "Number of transactions via the smart application",
+      "unit": "count"
+    },
+    "total_transactions": {
+      "description": "Sum of website and smart app transactions",
+      "unit": "count"
+    }
+  },
+  "terms": [
+    {
+      "term": "المعاملات على حسب الأشهر",
+      "definition": "عدد المعاملات المقدمة عبر القنوات الرقمية حسب الأشهر"
+    },
+    {
+      "term": "قنوات تقديم الخدمة",
+      "definition": "القنوات المتاحة لتقديم الخدمة ( الموقع الالكتروني و التطبيق الذكي)"
+    }
+  ]
+}

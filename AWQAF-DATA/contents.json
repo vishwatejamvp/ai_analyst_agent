@@ -1,0 +1,436 @@
+{
+  "title": "General Authority of Islamic Affairs, Endowments and Zakat — Open Data",
+  "description": "Extracted and structured datasets from the UAE General Authority of Islamic Affairs, Endowments and Zakat (GAIAEZ). Each folder contains a glossary.json (metadata, field definitions, dictionary terms), per-year JSON files with the full nested data, and an all_records.json with flattened records optimized for vector store ingestion.",
+  "source_organization": "General Authority of Islamic Affairs, Endowments and Zakat (الهيئة العامة للشؤون الإسلامية والأوقاف والزكاة)",
+  "website": "AWQAF.GOV.AE",
+  "phone": "8008222",
+  "datasets": [
+    {
+      "folder": "occupancy-rates-and-revenues",
+      "original_name": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level For",
+      "dataset_name": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+      "department": "Emirates Endowment Department",
+      "purpose": "Tracks the monthly occupancy rates and rental revenues collected from the Authority's real estate endowment properties (residential, commercial, and industrial units) across all emirates except Abu Dhabi.",
+      "data_type": "time_series",
+      "granularity": "emirate × month",
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "key_metrics": [
+        "occupancy_rate_pct",
+        "revenues_collected_aed"
+      ],
+      "coverage": "All Emirates except Abu Dhabi (Dubai, Sharjah, Ajman, Umm Al Quwain, Ras Al Khaimah, Fujairah)"
+    },
+    {
+      "folder": "hajj-package-service",
+      "original_name": "Monthly Statistics for Hajj Package Service",
+      "dataset_name": "Monthly Statistics for Hajj Package Service",
+      "department": "Hajj and Umrah Affairs — Pilgrims and Umrah Performers Department",
+      "purpose": "Counts monthly transactions for the Hajj permit service (registration, screening, medical examination, and permit issuance) broken down by service delivery channel (website vs smart application), and tracks the number of Hajj package recipients.",
+      "data_type": "time_series",
+      "granularity": "month",
+      "years": [
+        2025,
+        2026
+      ],
+      "key_metrics": [
+        "website_transactions",
+        "smart_app_transactions",
+        "total_transactions",
+        "hajj_package_recipients"
+      ],
+      "coverage": "All Emirates"
+    },
+    {
+      "folder": "hajj-umrah-campaigns",
+      "original_name": "List of approved Hajj and Umrah campaigns",
+      "dataset_name": "List of Approved Hajj and Umrah Campaigns",
+      "department": "Hajj and Umrah",
+      "purpose": "A directory/registry of all licensed Hajj and Umrah campaign companies in the UAE, including their registration details, contact information, emirate, activity type (Hajj and Umrah vs Umrah only), and branch locations.",
+      "data_type": "directory",
+      "granularity": "per campaign",
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "key_metrics": [
+        "campaign_count",
+        "activity_type",
+        "emirate"
+      ],
+      "coverage": "All Emirates"
+    },
+    {
+      "folder": "quran-education-registration",
+      "original_name": "Statistics on student registration in the Holy Quran education service",
+      "dataset_name": "Statistics on Student Registration in the Holy Quran Education Service",
+      "department": "Quran Education",
+      "purpose": "Tracks monthly student registration transactions for the Holy Quran education service, broken down by service delivery channel (website vs smart application).",
+      "data_type": "time_series",
+      "granularity": "month",
+      "years": [
+        2025,
+        2026
+      ],
+      "key_metrics": [
+        "website_registrations",
+        "smart_app_registrations",
+        "total_registrations"
+      ],
+      "coverage": "All Emirates"
+    },
+    {
+      "folder": "quran-memorization-centers",
+      "original_name": "General Authority for Islamic Affairs, Endowments and Zakat Centers for Quran Memorization",
+      "dataset_name": "Quran Memorization Centers",
+      "department": "Quran Education",
+      "purpose": "A directory of all Quran memorization centers operated or overseen by the Authority, including center name, branch/emirate, area, center type (Government, Endowment/Waqf, Private, Rented), and geographic coordinates. Years 2021-2022 use a legacy format with English names, year established, and student gender but no coordinates.",
+      "data_type": "directory",
+      "granularity": "per center",
+      "years": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "key_metrics": [
+        "center_count",
+        "center_type",
+        "branch"
+      ],
+      "coverage": "All Emirates"
+    },
+    {
+      "folder": "quran-memorization-circles",
+      "original_name": "Statistics on Quran memorization circles and their students for the year",
+      "dataset_name": "Quran Memorization Circles and Students",
+      "department": "Quran Education",
+      "purpose": "A directory of mosques hosting Quran memorization circles (halaqat), including the mosque name, branch/city, area, number of memorization circles per mosque, and geographic coordinates.",
+      "data_type": "directory",
+      "granularity": "per mosque",
+      "years": [
+        2024,
+        2025,
+        2026
+      ],
+      "key_metrics": [
+        "mosque_count",
+        "quran_circles",
+        "branch"
+      ],
+      "coverage": "All Emirates"
+    },
+    {
+      "folder": "zakat-payment-service",
+      "original_name": "Zakat Payment Service Statistics",
+      "dataset_name": "Zakat Payment Service Statistics",
+      "department": "Zakat Fund Management",
+      "purpose": "Tracks monthly Zakat fund collection statistics across all payment channels (bank transfers, mobile apps, ATMs, kiosks, electronic payments, direct payers, etc.), recording both the number of payers and the total funds collected per channel. Aligned with SDG 1 (No Poverty) and SDG 8 (Decent Work and Economic Growth).",
+      "data_type": "time_series",
+      "granularity": "channel × month",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "key_metrics": [
+        "number_of_payers",
+        "funds_collected_aed"
+      ],
+      "coverage": "All Emirates"
+    },
+    {
+      "folder": "zakat-disbursement",
+      "original_name": "Key Outcomes of Zakat Disbursement",
+      "dataset_name": "Key Outcomes of Zakat Disbursement",
+      "department": "Zakat Fund Management",
+      "purpose": "Tracks monthly Zakat disbursement outcomes across beneficiary project categories (orphans' families, widows, people of determination, low income, divorcees, patients, new Muslims, job seekers, debtors, senior citizens, disaster victims, etc.), recording the number of eligible families served and the total expenditures per project.",
+      "data_type": "time_series",
+      "granularity": "project × month",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "key_metrics": [
+        "eligible_families",
+        "zakat_expenditures_aed"
+      ],
+      "coverage": "All Emirates"
+    },
+    {
+      "folder": "petition-request-service",
+      "original_name": "Statistics of Petition Request Service",
+      "dataset_name": "Statistics of Petition Request Service",
+      "department": "Zakat Fund Management",
+      "purpose": "Tracks monthly petition request volumes by service delivery channel (iPad, smartphone app, website, in-person service center, mobile website), providing insight into how customers interact with the Authority's petition services.",
+      "data_type": "time_series",
+      "granularity": "month",
+      "years": [
+        2023,
+        2024,
+        2025
+      ],
+      "key_metrics": [
+        "ipad",
+        "smartphone_app",
+        "website",
+        "service_center",
+        "mobile_website",
+        "total"
+      ],
+      "coverage": "All Emirates"
+    },
+    {
+      "folder": "zakat-certificate-service",
+      "original_name": "Statistics of a Certificate To Whom It May Concern for Obtaining Zakat Assistance Service",
+      "dataset_name": "Certificate \"To Whom It May Concern\" for Zakat Assistance",
+      "department": "Zakat Fund Management",
+      "purpose": "Tracks monthly request volumes for the \"To Whom It May Concern\" certificate used to obtain Zakat assistance, broken down by service delivery channel (smartphone app, chatbot, website, Good Loan project, call center, in-person service center, mobile website).",
+      "data_type": "time_series",
+      "granularity": "month",
+      "years": [
+        2023,
+        2024,
+        2025
+      ],
+      "key_metrics": [
+        "smartphone_app",
+        "chatbot",
+        "website",
+        "good_loan",
+        "call_center",
+        "service_center",
+        "mobile_website",
+        "total"
+      ],
+      "coverage": "All Emirates"
+    },
+    {
+      "folder": "zakat-calculation-service",
+      "original_name": "Zakat Calculation Service Statistics",
+      "dataset_name": "Zakat Calculation Service Statistics",
+      "department": "Zakat Fund Management",
+      "purpose": "Tracks monthly Zakat calculation request volumes by service delivery channel (website, smartphone app, mobile website, Zaki WhatsApp platform, call center, in-person service center). Earlier years (2022-2023) include additional channels like IVR, SMS, fax, email, and live chat.",
+      "data_type": "time_series",
+      "granularity": "month",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "key_metrics": [
+        "website",
+        "smartphone_app",
+        "mobile_website",
+        "zaki_platform",
+        "call_center",
+        "service_center",
+        "total"
+      ],
+      "coverage": "All Emirates"
+    },
+    {
+      "folder": "hajj-permit-service",
+      "original_name": "Monthly Statistics for Hajj Permit Service",
+      "dataset_name": "Monthly Statistics for Hajj Permit Service",
+      "department": "Hajj and Umrah Affairs",
+      "purpose": "Tracks monthly Hajj permit transactions by service delivery channel (website, smart application) and the number of Hajj package recipients.",
+      "data_type": "time_series",
+      "granularity": "month",
+      "years": [
+        2023,
+        2024
+      ],
+      "key_metrics": [
+        "website_transactions",
+        "smart_app_transactions",
+        "hajj_package_recipients"
+      ],
+      "coverage": "All Emirates"
+    },
+    {
+      "folder": "hajj-umrah-workers-permits",
+      "original_name": "Monthly data for Hajj and Umrah workers' permits service",
+      "dataset_name": "Monthly Statistics for Hajj and Umrah Workers Permits Service",
+      "department": "Hajj and Umrah Affairs",
+      "purpose": "Tracks monthly transactions for the Hajj and Umrah workers' permits service by channel (website, smart application).",
+      "data_type": "time_series",
+      "granularity": "month",
+      "years": [
+        2023
+      ],
+      "key_metrics": [
+        "website_transactions",
+        "smart_app_transactions",
+        "total_transactions"
+      ],
+      "coverage": "All Emirates"
+    },
+    {
+      "folder": "hajj-umrah-campaigns-renewal",
+      "original_name": "Monthly data for renewed Hajj and Umrah campaigns Service",
+      "dataset_name": "Monthly Statistics for Hajj and Umrah Campaigns Renewal Service",
+      "department": "Hajj and Umrah Affairs",
+      "purpose": "Tracks monthly transactions for the Hajj and Umrah campaign renewal service by channel (website, smart application).",
+      "data_type": "time_series",
+      "granularity": "month",
+      "years": [
+        2023
+      ],
+      "key_metrics": [
+        "website_transactions",
+        "smart_app_transactions",
+        "total_transactions"
+      ],
+      "coverage": "All Emirates"
+    },
+    {
+      "folder": "quran-teaching-service",
+      "original_name": "Monthly data for Teaching the Holy Quran service",
+      "dataset_name": "Monthly Statistics for Teaching the Holy Quran Service",
+      "department": "Quran Education",
+      "purpose": "Tracks monthly transactions for the Holy Quran teaching service by channel (website, smart application). Distinct from the student registration dataset.",
+      "data_type": "time_series",
+      "granularity": "month",
+      "years": [
+        2023
+      ],
+      "key_metrics": [
+        "website_transactions",
+        "smart_app_transactions",
+        "total_transactions"
+      ],
+      "coverage": "All Emirates"
+    },
+    {
+      "folder": "quran-smart-platform-demographics",
+      "original_name": "Data on the smart platform for teaching the Qur'an for the year 2020",
+      "dataset_name": "Quran Smart Platform Demographics",
+      "department": "Quran Education",
+      "purpose": "Demographics of learners enrolled in the smart platform for remote Quran teaching, broken down by country of origin, gender (male/female), and age group (6-10, 11-20, 21-30, 31-50, 50+). Covers learners from over 100 countries.",
+      "data_type": "demographics",
+      "granularity": "per country",
+      "years": [
+        2020
+      ],
+      "key_metrics": [
+        "total_students",
+        "male",
+        "female",
+        "age_6_10",
+        "age_11_20",
+        "age_21_30",
+        "age_31_50",
+        "age_over_50"
+      ],
+      "coverage": "International (110+ countries)"
+    },
+    {
+      "folder": "mosques-registry",
+      "original_name": "Detailed data of mosques / Mosques data list",
+      "dataset_name": "Mosques Registry",
+      "department": "Mosques Affairs",
+      "purpose": "A comprehensive directory of mosques across the UAE, including name, number, branch/emirate, area, and mosque type (Friday/Jumu'ah or Congregation/Jama'ah). The 2023 dataset additionally includes geographic coordinates.",
+      "data_type": "directory",
+      "granularity": "per mosque",
+      "years": [
+        2021,
+        2022,
+        2023
+      ],
+      "key_metrics": [
+        "mosque_count",
+        "mosque_type",
+        "branch"
+      ],
+      "coverage": "All Emirates"
+    },
+    {
+      "folder": "umrah-campaigns-historical",
+      "original_name": "2021-Umrah campaigns data",
+      "dataset_name": "Umrah Campaigns Historical",
+      "department": "Hajj and Umrah Affairs",
+      "purpose": "Historical directory of Umrah-only campaign companies approved in the UAE from 2011 to 2021, including campaign name, owner, registration number, emirate, and contact details.",
+      "data_type": "directory",
+      "granularity": "per campaign × year",
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "key_metrics": [
+        "campaign_count",
+        "emirate"
+      ],
+      "coverage": "All Emirates"
+    },
+    {
+      "folder": "quran-centers-directory",
+      "original_name": "Phone numbers / Names / Statistics of Holy Quran memorization centers",
+      "dataset_name": "Quran Centers Directory (Supplementary)",
+      "department": "Quran Education",
+      "purpose": "Three supplementary directories of Quran memorization centers: phone numbers (2020-2021), center names with phone numbers, and a centers list with new-center annotations. Provides additional contact and classification data beyond the main centers dataset.",
+      "data_type": "directory",
+      "granularity": "per center",
+      "years": [
+        2020,
+        2021
+      ],
+      "key_metrics": [
+        "center_count",
+        "branch",
+        "phone"
+      ],
+      "coverage": "All Emirates"
+    },
+    {
+      "folder": "mosques-quran-circles-directory",
+      "original_name": "The names of mosques for memorizing the Holy Quran",
+      "dataset_name": "Mosques Quran Circles Directory",
+      "department": "Quran Education",
+      "purpose": "A directory of mosques hosting Quran memorization circles (halaqat), organized by emirate. Each entry includes the mosque name, region, student gender, and number of circles per mosque.",
+      "data_type": "directory",
+      "granularity": "per mosque",
+      "years": [],
+      "key_metrics": [
+        "mosque_count",
+        "circles_count",
+        "student_gender",
+        "emirate"
+      ],
+      "coverage": "All Emirates"
+    }
+  ]
+}

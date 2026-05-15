@@ -1,0 +1,442 @@
+{
+  "source_file": "phones-2020-2021.xlsx",
+  "description": "Phone numbers of Holy Quran memorization centers (2020-2021)",
+  "total_centers": 62,
+  "centers": [
+    {
+      "number": 1,
+      "area": "البطين",
+      "english_name": "albatin",
+      "arabic_name": "البطين",
+      "phone": "02-6812422"
+    },
+    {
+      "number": 2,
+      "area": "الزعاب",
+      "english_name": "Sheikh Zayed bin Sultan",
+      "arabic_name": "الشيخ زايد بن سلطان \\إناث",
+      "phone": "02-3093996"
+    },
+    {
+      "number": 3,
+      "area": "الزعاب",
+      "english_name": "Sheikh Zayed bin Sultan",
+      "arabic_name": "الشيخ زايد بن سلطان/ ذكور",
+      "phone": "02-3075996"
+    },
+    {
+      "number": 4,
+      "area": "المشرف",
+      "english_name": "hamil algaith",
+      "arabic_name": "هامل الغيث",
+      "phone": "02-4473196",
+      "notes": "02-6790611"
+    },
+    {
+      "number": 5,
+      "area": "بين الجسرين",
+      "english_name": "Sheikh Hamdan bin Mohammed",
+      "arabic_name": "الشيخ حمدان بن محمد",
+      "phone": "02-5588489"
+    },
+    {
+      "number": 6,
+      "area": "مدينة خليفة أ",
+      "english_name": "albayt mutawahid",
+      "arabic_name": "البيت المتوحد",
+      "phone": "02-5558545"
+    },
+    {
+      "number": 7,
+      "area": "الرحبة",
+      "english_name": "Al Rahba",
+      "arabic_name": "الرحبة",
+      "phone": "02-4481194"
+    },
+    {
+      "number": 8,
+      "area": "بني ياس",
+      "english_name": "Emarat",
+      "arabic_name": "الإمارات",
+      "phone": "02-5668604"
+    },
+    {
+      "number": 9,
+      "area": "مدينة خليفة أ",
+      "english_name": "Madina",
+      "arabic_name": "المدينة",
+      "phone": "02-5563862"
+    },
+    {
+      "number": 10,
+      "area": "بني ياس",
+      "english_name": "Mohammed Hamil Al Gaith",
+      "arabic_name": "محمد بن هامل الغيث",
+      "phone": "02-5858548"
+    },
+    {
+      "number": 11,
+      "area": "الكرامة",
+      "english_name": "Abu Dhabi",
+      "arabic_name": "أبوظبي",
+      "phone": "02-4918474"
+    },
+    {
+      "number": 12,
+      "area": "الشهامة",
+      "english_name": "Shahama",
+      "arabic_name": "الشهامة",
+      "phone": "02-5635755"
+    },
+    {
+      "number": 13,
+      "area": "مدينة زايد",
+      "english_name": "ZayedCity",
+      "arabic_name": "مدينة زايد",
+      "phone": "02-6213643"
+    },
+    {
+      "number": 14,
+      "area": "ليوا",
+      "english_name": "Liwa",
+      "arabic_name": "ليوا",
+      "phone": "02-8772338"
+    },
+    {
+      "number": 15,
+      "area": "غياثي",
+      "english_name": "BinAshair",
+      "arabic_name": "بن عشير",
+      "phone": "02-8744023"
+    },
+    {
+      "number": 16,
+      "area": "السلع",
+      "english_name": "Baaya",
+      "arabic_name": "بعيا",
+      "phone": "02-8728299"
+    },
+    {
+      "number": 17,
+      "area": "الفصيل",
+      "english_name": "alfujairah",
+      "arabic_name": "الفجيرة",
+      "phone": "09-2243315"
+    },
+    {
+      "number": 18,
+      "area": "مضب",
+      "english_name": "alfujairah",
+      "arabic_name": "الفجيرة",
+      "phone": "09-2248499"
+    },
+    {
+      "number": 19,
+      "area": "الراس",
+      "english_name": "Ahmed Bin Rashid quran Centre",
+      "arabic_name": "أحمد بن راشد المعلا",
+      "phone": "06-7664230"
+    },
+    {
+      "number": 20,
+      "area": "الراعفة",
+      "english_name": "Sheikha Ohud Bint Rashid quran Centre",
+      "arabic_name": "عهود بنت راشد المعلا",
+      "phone": "06-7681084"
+    },
+    {
+      "number": 21,
+      "area": "الحمره",
+      "english_name": "Umm AL Quain quran Centre",
+      "arabic_name": "أم القيوين",
+      "phone": "06-7641109"
+    },
+    {
+      "number": 22,
+      "area": "القادسية",
+      "english_name": "almubark",
+      "arabic_name": "المبارك",
+      "phone": "09-2770303"
+    },
+    {
+      "number": 23,
+      "area": "القاسية",
+      "english_name": "Albait mutwahed",
+      "arabic_name": "البيت متوحد",
+      "phone": "09-2370271"
+    },
+    {
+      "number": 24,
+      "area": "القصيدات",
+      "english_name": "SALEM ALALI QURAN CENTER",
+      "arabic_name": "مركز سالم العلي",
+      "phone": "07-2215065"
+    },
+    {
+      "number": 25,
+      "area": "القصيدات",
+      "english_name": "Bir.alwalidain",
+      "arabic_name": "مركز بر الوالدين",
+      "phone": "07-2269155"
+    },
+    {
+      "number": 26,
+      "area": "جلفار",
+      "english_name": "gulphar Center",
+      "arabic_name": "مركز جلفار",
+      "phone": "052-1289786"
+    },
+    {
+      "number": 27,
+      "area": "الظيت الجنوبي",
+      "english_name": "Alumm center",
+      "arabic_name": "مركز الأم",
+      "phone": "07-2351041"
+    },
+    {
+      "number": 28,
+      "area": "خزام",
+      "english_name": "maimouna bint al harith center",
+      "arabic_name": "مركز ميمونة بنت الحارث",
+      "phone": "07-2362306"
+    },
+    {
+      "number": 29,
+      "area": "رأس الخيمة",
+      "english_name": "Sheikh Zayed",
+      "arabic_name": "مركز الشيخ زايد",
+      "phone": "050-6900150"
+    },
+    {
+      "number": 30,
+      "area": "البريرات",
+      "english_name": "Malik Bin Ans",
+      "arabic_name": "مركز مالك بن أنس",
+      "phone": "07-2262051"
+    },
+    {
+      "number": 31,
+      "area": "الجرف",
+      "english_name": "Ayah center for Memorizing the Holy Quran and its Sciences",
+      "arabic_name": "مركز آيه لتحفيظ القرآن وعلومه",
+      "phone": "06-7311236"
+    },
+    {
+      "number": 32,
+      "area": "التلة",
+      "english_name": "Hajer Center",
+      "arabic_name": "مركز هاجر لتحفيظ القرآن",
+      "phone": "06-7673064"
+    },
+    {
+      "number": 33,
+      "area": "الجرف",
+      "english_name": "Al Etihad Center",
+      "arabic_name": "مركز الاتحاد",
+      "phone": "06-7497229"
+    },
+    {
+      "number": 34,
+      "area": "السوان",
+      "english_name": "Dar Asma Bint Abi Bakr Center",
+      "arabic_name": "دار أسماء بنت ابي بكر",
+      "phone": "06-7422258"
+    },
+    {
+      "number": 35,
+      "area": "مزيرع",
+      "english_name": "Obaid Alhelow Center",
+      "arabic_name": "مركز عبيد الحلو",
+      "phone": "04-8522449"
+    },
+    {
+      "number": 36,
+      "area": "الرقايب",
+      "english_name": "Abdulla Mansoor Al Awadhi Center",
+      "arabic_name": "مركز عبدالله منصور العوضي",
+      "phone": "06-7489878"
+    },
+    {
+      "number": 37,
+      "area": "المسعودي",
+      "english_name": "Al-Sheikh Amnah Center",
+      "arabic_name": "مركز الشيخة آمنة",
+      "phone": "03-7211952"
+    },
+    {
+      "number": 38,
+      "area": "الخزنة",
+      "english_name": "Alkhaznaa Center",
+      "arabic_name": "مركز الخزنة",
+      "phone": "02-5822127"
+    },
+    {
+      "number": 39,
+      "area": "فلج هزاع",
+      "english_name": "Sheikh Mohammed Bin Khalid Al-Nahyan Center",
+      "arabic_name": "مركز الشيخ محمد بن خالد",
+      "phone": "03-7805354"
+    },
+    {
+      "number": 40,
+      "area": "المعترض",
+      "english_name": "Al-Sheikha Hessa Bint Mohammed Center",
+      "arabic_name": "مركز الشيخة حصة بنت محمد آل نهيان",
+      "phone": "03-7229315"
+    },
+    {
+      "number": 41,
+      "area": "الصاروج",
+      "english_name": "Al Ain Center",
+      "arabic_name": "مركز العين",
+      "phone": "03-7688840"
+    },
+    {
+      "number": 42,
+      "area": "القوع",
+      "english_name": "Alqua Center",
+      "arabic_name": "مركز القوع",
+      "phone": "03-7355420"
+    },
+    {
+      "number": 43,
+      "area": "الهير",
+      "english_name": "Ber Alwaledain Center",
+      "arabic_name": "مركز بر الوالدين",
+      "phone": "03-7320074"
+    },
+    {
+      "number": 44,
+      "area": "هيلي خليف",
+      "english_name": "Bin Hatha Alketbi Center",
+      "arabic_name": "مركز بن حاذه الكتبي",
+      "phone": "03-7821707"
+    },
+    {
+      "number": 45,
+      "area": "الطوية",
+      "english_name": "Bin hmoodah Center",
+      "arabic_name": "مركز بن حمودة",
+      "phone": "03-7802669"
+    },
+    {
+      "number": 46,
+      "area": "مزيد",
+      "english_name": "Abu Hqab Center",
+      "arabic_name": "مركز بوحقب",
+      "phone": "03-7825939"
+    },
+    {
+      "number": 47,
+      "area": "القوع",
+      "english_name": "Saeed Bin Alsalumi Center",
+      "arabic_name": "مركز سعيد السالومي",
+      "phone": "03-7355024"
+    },
+    {
+      "number": 48,
+      "area": "زاخر",
+      "english_name": "Suhail Bin Owaida Center",
+      "arabic_name": "مركز سهيل بن عويضة الخييلي",
+      "phone": "03-7374025"
+    },
+    {
+      "number": 49,
+      "area": "زاخر",
+      "english_name": "Sabha Bint Owais Center",
+      "arabic_name": "مركز صبحة بنت عويص العامري",
+      "phone": "03-7374831"
+    },
+    {
+      "number": 50,
+      "area": "نعمة",
+      "english_name": "Neama Center",
+      "arabic_name": "مركز نعمة",
+      "phone": "03-7370038"
+    },
+    {
+      "number": 51,
+      "area": "صناعية هيلي",
+      "english_name": "Hili Center",
+      "arabic_name": "مركز هيلي",
+      "phone": "03-7846412"
+    },
+    {
+      "number": 52,
+      "area": "فلج هزاع",
+      "english_name": "Mohammad Ahmad Al-Otaiba Center",
+      "arabic_name": "مركزمحمد أحمد العتيبة",
+      "phone": "03-7370067"
+    },
+    {
+      "number": 53,
+      "area": "مريجب",
+      "english_name": "Alsheikh Mohammed Bin Zayed Al-Nahyan Center",
+      "arabic_name": "مركز الشيخ محمد بن زايد آل نهيان",
+      "phone": "03-7622112"
+    },
+    {
+      "number": 54,
+      "area": "هيلي",
+      "english_name": "Aishz Um Almuminin Center",
+      "arabic_name": "مركز عائشة أم المؤمنين",
+      "phone": "03-7543905"
+    },
+    {
+      "number": 55,
+      "area": "الروضة الشرقية",
+      "english_name": "Alsheikha Moza Bint Butti Center",
+      "arabic_name": "مركز الشيخة موزة بنت بطي",
+      "phone": "03-7812050"
+    },
+    {
+      "number": 56,
+      "area": "اليحر",
+      "english_name": "Alforqan Center",
+      "arabic_name": "مركز الفرقان",
+      "phone": "03-7814151"
+    },
+    {
+      "number": 57,
+      "area": "الظاهر",
+      "english_name": "Alqashate Center",
+      "arabic_name": "مركز القشاطي",
+      "phone": "03-7842227"
+    },
+    {
+      "number": 58,
+      "area": "المقام",
+      "english_name": "Bin Harmal Center",
+      "arabic_name": "مركز بن حرمل",
+      "phone": "03-7680555"
+    },
+    {
+      "number": 59,
+      "area": "الفوعة",
+      "english_name": "Dar Alkear Center",
+      "arabic_name": "مركز دار الخير",
+      "phone": "منقطع"
+    },
+    {
+      "number": 60,
+      "area": "النايفة",
+      "english_name": "Ramlet Alraie Center",
+      "arabic_name": "مركز رملة الراعي",
+      "phone": "03-7844910"
+    },
+    {
+      "number": 61,
+      "area": "هيلي",
+      "english_name": "Awad Bin Saeed Alketbi Center",
+      "arabic_name": "مركز عوض الكتبي",
+      "phone": "03-7844255"
+    },
+    {
+      "number": 62,
+      "area": "أم غافة",
+      "english_name": "Wdaima Bint Zayed Center",
+      "arabic_name": "وديمة بنت زايد",
+      "phone": "03-7833771"
+    }
+  ]
+}

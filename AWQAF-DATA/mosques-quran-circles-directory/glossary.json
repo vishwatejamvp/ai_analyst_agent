@@ -1,0 +1,28 @@
+{
+  "dataset": "Mosques Quran Circles Directory",
+  "source": {
+    "organization": "General Authority for Islamic Affairs, Endowments and Zakat",
+    "department": "Quran Education"
+  },
+  "fields": {
+    "emirate": {
+      "description": "The emirate where the mosque is located"
+    },
+    "mosque_name": {
+      "original_name": "أسماء المساجد التابعة للمركز",
+      "description": "Name of the mosque (in Arabic)"
+    },
+    "region": {
+      "original_name": "المنطقة",
+      "description": "The area/district where the mosque is located (in Arabic)"
+    },
+    "student_gender": {
+      "original_name": "جنس الدارسين",
+      "description": "Gender of students attending circles at this mosque (Male/Female)"
+    },
+    "circles_count": {
+      "original_name": "عدد الحلقات",
+      "description": "Number of Quran memorization circles held at this mosque"
+    }
+  }
+}

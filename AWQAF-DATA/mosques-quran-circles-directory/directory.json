@@ -1,0 +1,2650 @@
+{
+  "dataset": "Mosques Quran Circles Directory",
+  "notes": [],
+  "total_mosques": 372,
+  "total_circles": 756,
+  "by_emirate": {
+    "Abu Dhabi": {
+      "mosques": 108,
+      "circles": 365
+    },
+    "Al Ain": {
+      "mosques": 101,
+      "circles": 153
+    },
+    "Al Dhafra": {
+      "mosques": 50,
+      "circles": 106
+    },
+    "Sharjah": {
+      "mosques": 23,
+      "circles": 23
+    },
+    "Ajman": {
+      "mosques": 35,
+      "circles": 38
+    },
+    "Ras Al Khaimah": {
+      "mosques": 17,
+      "circles": 27
+    },
+    "Umm Al Quwain": {
+      "mosques": 20,
+      "circles": 24
+    },
+    "Fujairah": {
+      "mosques": 15,
+      "circles": 16
+    },
+    "Khor Fakkan": {
+      "mosques": 3,
+      "circles": 4
+    }
+  },
+  "mosques": [
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الشيخ هزاع بن سلطان",
+      "region": "النادي السياحي",
+      "student_gender": "Male",
+      "circles_count": 5
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد العزيز",
+      "region": "جزيره الريم",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الشيخ خليفه بن زايد",
+      "region": "السوق القديم",
+      "student_gender": "Male",
+      "circles_count": 4
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد عبدالله راشد الظاهري",
+      "region": "مدينة زايد",
+      "student_gender": "Male",
+      "circles_count": 3
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد عبدالخالق عبدالله خوري",
+      "region": "شارع الجوازات",
+      "student_gender": "Male",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الفاروق",
+      "region": "جزيرة السعديات",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الصديق",
+      "region": "جزيرة السعديات",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "جامع السعديات",
+      "region": "جزيرة السعديات",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد مريم أم عيسى",
+      "region": "شارع المطار",
+      "student_gender": "Male",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الشيخ زايد بن سلطان الأول",
+      "region": "المشرف",
+      "student_gender": "Male",
+      "circles_count": 3
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الشهيد عبدالرحمن الزعابي",
+      "region": "المرور",
+      "student_gender": "Male",
+      "circles_count": 4
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد محمد بن حارب",
+      "region": "محمد بن زايد",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد بر الوالدين",
+      "region": "محمد بن زايد",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد محمد غنام الهاملي",
+      "region": "محمد بن زايد",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "محمد عبدالعزيز المهيري",
+      "region": "محمد بن زايد",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "محمد خميس البادي",
+      "region": "محمد بن زايد",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "السلام",
+      "region": "محمد بن زايد",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "الشيخة فاطمة بنت مبارك",
+      "region": "محمد بن زايد",
+      "student_gender": "Male",
+      "circles_count": 5
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الشيخ محمد بن خليفة",
+      "region": "محمد بن زايد شرق 10",
+      "student_gender": "Male",
+      "circles_count": 7
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد صغيرة القبيسي",
+      "region": "محمد بن زايد",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد سالم عثيعث العامري",
+      "region": "محمد بن زايد",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الشيخ زايد بن سلطان",
+      "region": "محمد بن زايد",
+      "student_gender": "Male",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد شيخة حمد الجنيبي",
+      "region": "محمد بن زايد",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد حسناء عبد الله عذبان",
+      "region": "محمد بن زايد",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد عبدالله الملا",
+      "region": "محمد بن زايد",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الأبرار",
+      "region": "محمد بن زايد",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد سالم الشعيبي",
+      "region": "محمد بن زايد",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد المدينة",
+      "region": "محمد بن زايد",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الزعاب",
+      "region": "محمد بن زايد",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد فاطمة المطوع",
+      "region": "محمد بن زايد",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد أبو موسى الأشعري",
+      "region": "محمد بن زايد",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد آمنة الخوري",
+      "region": "محمد بن زايد",
+      "student_gender": "Male",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد السعادة (حلقلة كبار)",
+      "region": "محمد بن زايد",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الإمام النووي",
+      "region": "بني ياس",
+      "student_gender": "Male",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد بخيتة سالم الكتبي",
+      "region": "بني ياس",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الرحيم",
+      "region": "بنى ياس شرق 6",
+      "student_gender": "Male",
+      "circles_count": 0
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد زيد الرويعي المنهالي",
+      "region": "بني ياس",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد ميدان الوثبة 561",
+      "region": "سباقات الهجن",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد أسعد بن زرارة",
+      "region": "بني ياس",
+      "student_gender": "Male",
+      "circles_count": 5
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد أنس بن مالك",
+      "region": "الوثبة",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الشهيد يوسف الوهيبي",
+      "region": "النهضة العسكرية",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد عائشة بنت ابي بكر",
+      "region": "بني ياس",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "عمرو بن عنبسة السلمي",
+      "region": "الختم",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "رافع بن عنجدة",
+      "region": "الوثبة شمال",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد العباس بن عبدالمطلب",
+      "region": "النهضة العسكرية",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد هدفة علي العامري",
+      "region": "الوثبة جنوب",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الباسط",
+      "region": "خليفه أ",
+      "student_gender": "Male",
+      "circles_count": 3
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد غانم بن حمودة",
+      "region": "خليفه أ",
+      "student_gender": "Male",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الخليل ( الكرامة سابقاً)",
+      "region": "شخبوط",
+      "student_gender": "Male",
+      "circles_count": 5
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الشهيد عبدالحميد سلطان الحمادي",
+      "region": "الشوامخ",
+      "student_gender": "Male",
+      "circles_count": 7
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد كلثم عتيق",
+      "region": "شخبوط",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد فاطمة هامل الغيث",
+      "region": "شخبوط",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "الشهيد البستكي",
+      "region": "خليفه أ",
+      "student_gender": "Male",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد محمد ناجي الحارثي",
+      "region": "شخبوط",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد لؤلؤة الراحة",
+      "region": "شاطئ الراحة",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد التعايش",
+      "region": "خليفه أ",
+      "student_gender": "Male",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد أبو أيوب الأنصاري",
+      "region": "خليفه أ",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد احمد جمعة الزعابي",
+      "region": "خليفه أ",
+      "student_gender": "Male",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "ناصر مذكر الهاجري",
+      "region": "خليفة أ",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الشيخ زايد بن سلطان",
+      "region": "الباهية القديمة",
+      "student_gender": "Male",
+      "circles_count": 6
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الشهيد سيف خميس المهيري",
+      "region": "الرحبة",
+      "student_gender": "Male",
+      "circles_count": 3
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد ابو سفيان بن الحارث",
+      "region": "الشليلة",
+      "student_gender": "Male",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الشيخ سيف بن زايد",
+      "region": "الباهية الجديدة ( باهية البحر )",
+      "student_gender": "Male",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الشيخ حمدان بن زايد",
+      "region": "السمحة شرق",
+      "student_gender": "Male",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الشهيد زكريا الزعابي",
+      "region": "السمحة غرب",
+      "student_gender": "Male",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الشيخ خليفة بن زايد",
+      "region": "الباهية الجديدة ( باهية البحر )",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "الإخلاص",
+      "region": "الرحبة",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الشهيد جمعة الكعبي",
+      "region": "جزيرة ياس غرب",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد ياس ايكرز",
+      "region": "جزيرة ياس شرق",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الشيخ محمد بن زايد",
+      "region": "الفلاح القديمة",
+      "student_gender": "Male",
+      "circles_count": 3
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد عثمان بن عفان",
+      "region": "الشامخة",
+      "student_gender": "Male",
+      "circles_count": 5
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الشيخ خليفة بن زايد",
+      "region": "الفلاح الجديدة",
+      "student_gender": "Male",
+      "circles_count": 4
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد النعمان بن مقرن",
+      "region": "الشامخة",
+      "student_gender": "Male",
+      "circles_count": 4
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد فاطمة ابراهيم السامان",
+      "region": "قصر روضة الريف",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد حامل المسك",
+      "region": "الرياض",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد جعفر بن الزبير",
+      "region": "الشامخة",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "الشيخة عفراء آل حامد",
+      "region": "الشامخة",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد آل عمران",
+      "region": "الرياض",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "الشيخ منصور بن زايد",
+      "region": "الشامخة",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد تميم بن أوس الداري",
+      "region": "الشامخة",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "زيد بن ثابت",
+      "region": "الشامخة",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد التسامح",
+      "region": "الشامخة",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "الشيخ زايد بن سلطان 800",
+      "region": "الباهية",
+      "student_gender": "Female",
+      "circles_count": 4
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "ياس أكرز",
+      "region": "جزيرة ياس",
+      "student_gender": "Female",
+      "circles_count": 4
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "نادي تراث الامارات",
+      "region": "السمحة",
+      "student_gender": "Female",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "سلمة بن الأكوع",
+      "region": "الشليلة الصدر",
+      "student_gender": "Female",
+      "circles_count": 4
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "شخبوط بن زايد",
+      "region": "الشهامة الجديدة",
+      "student_gender": "Female",
+      "circles_count": 4
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "المهاجرين",
+      "region": "الرحبة أ",
+      "student_gender": "Female",
+      "circles_count": 4
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "أبي سفيان بن الحارث",
+      "region": "الشليلة الصدر",
+      "student_gender": "Female",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "فاطمة هامل الغيث",
+      "region": "مدينة شخبوط",
+      "student_gender": "Female",
+      "circles_count": 8
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد خليفة بن زايد",
+      "region": "الكورنيش",
+      "student_gender": "Female",
+      "circles_count": 15
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد عمر بن الخطاب",
+      "region": "الكرامة",
+      "student_gender": "Female",
+      "circles_count": 12
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد عبدالله الظاهري",
+      "region": "مدينة زايد",
+      "student_gender": "Female",
+      "circles_count": 18
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد هزاع بن سلطان",
+      "region": "النادي السياحي",
+      "student_gender": "Female",
+      "circles_count": 15
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد مريم بنت عبدالله",
+      "region": "الخالدية",
+      "student_gender": "Female",
+      "circles_count": 9
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد أحمد السويدي",
+      "region": "البطين",
+      "student_gender": "Female",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد بن حمودة",
+      "region": "مدينة زايد",
+      "student_gender": "Female",
+      "circles_count": 5
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الشيخة فاطمة بنت مبارك",
+      "region": "مدينة محمد بن زايد",
+      "student_gender": "Female",
+      "circles_count": 22
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مركز ناي التراث النسائي",
+      "region": "مدينة محمد بن زايد",
+      "student_gender": "Female",
+      "circles_count": 4
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "روضه عبدالله المطوع",
+      "region": "الوثبة العسكرية",
+      "student_gender": "Female",
+      "circles_count": 6
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد زيد بن حارثة",
+      "region": "الوثبة العسكرية",
+      "student_gender": "Female",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الشهيد خالد محمد",
+      "region": "الوثبة العسكرية",
+      "student_gender": "Female",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الباسط",
+      "region": "خليفة",
+      "student_gender": "Female",
+      "circles_count": 23
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الخليل",
+      "region": "شخبوط",
+      "student_gender": "Female",
+      "circles_count": 16
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد أبي بن كعب",
+      "region": "المرور",
+      "student_gender": "Female",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد فاطمة إبراهيم السامان",
+      "region": "روضة الريف",
+      "student_gender": "Female",
+      "circles_count": 4
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "كنة خليفة القمزي",
+      "region": "شوامخ 19",
+      "student_gender": "Female",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Abu Dhabi",
+      "mosque_name": "مسجد الشيخ خليفة بن زايد",
+      "region": "الفلاح الجديدة",
+      "student_gender": "Female",
+      "circles_count": 24
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد الشيخ زايد بن سلطان",
+      "region": "الوقن",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد مسلم الزفنة العامري",
+      "region": "الوقن",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد سلطان عبدالله الشامسي",
+      "region": "الوقن",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد الشهيد عمر",
+      "region": "أم غافة",
+      "student_gender": "ذكر",
+      "circles_count": 4
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد الشيخ زايد بن سلطان آل نهيان",
+      "region": "هيلي",
+      "student_gender": "ذكر",
+      "circles_count": 5
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد محمد أحمد الحميري",
+      "region": "صناعية هيلي",
+      "student_gender": "ذكر",
+      "circles_count": 3
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد عذيبة سيف الكتبي",
+      "region": "هيلي - الرميلة",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد عايض الأحبابي",
+      "region": "النايفة",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد الشيخ سلطان بن زايد",
+      "region": "ناهل",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد مضحية حمد محمد علي المزروعي",
+      "region": "سويحان",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد سهيل مبارك الكتبي",
+      "region": "الهير",
+      "student_gender": "ذكر",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد بخيته سهيل الخيلي",
+      "region": "الشويب",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد عيد الغبشي العامري",
+      "region": "الهير",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد الشيخ طحنون بن محمد آل نهيان",
+      "region": "الهير",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد مستشفى سويحان",
+      "region": "سويحان",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد محمد سعيد الدرعي",
+      "region": "القوع",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد حميد سيف الدرعي",
+      "region": "القوع",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد الشيخ زايد",
+      "region": "القوع",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد علي سالم هاشل الكويتي",
+      "region": "شعاب الاشخر",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد روضه فلاح",
+      "region": "نعمه",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد حمد محمد لخييلي",
+      "region": "عشارج",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد السعاده",
+      "region": "جبل حفيت",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد قماد راشد المنصوري",
+      "region": "عشارج",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد علي سعيد المري",
+      "region": "شعاب الاشخر",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد عبية الشامسي",
+      "region": "شعاب الاشخر",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد عويص علي الدرعي",
+      "region": "نعمه",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد جمعه محمد المهيري",
+      "region": "شعبه الوطاه",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد الامانة ( آمنة حمد حمد غانم المهيري )",
+      "region": "فلج هزاع",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد عبد الله الغيثي",
+      "region": "الخبيصي",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد شخبوط بن سلطان آل نهيان",
+      "region": "المرخانية",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد مريم راشد الظاهري",
+      "region": "البطين",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد موزة سلطان الكندي المرر",
+      "region": "عود التوبة",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "جامع عقبة بن نافع",
+      "region": "شبهانة الخبيصي",
+      "student_gender": "ذكر",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد سعيد عبد الله الدرمكي",
+      "region": "الخبيصي",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مركز أبو بكر الصديق / صناعية العين",
+      "region": "صناعية العين",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد الشهيد محمد راشد الظاهري",
+      "region": "الجاهلي",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد نادي العين",
+      "region": "المطاوعة",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد الشيخ مبارك بن محمد آل نهيان",
+      "region": "النيادات",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "الشيخ خليفة بن زايد آل نهيان",
+      "region": "النيادات",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد أحمد عبد الله العفريت الكويتي",
+      "region": "الصاروج",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد الرجاء",
+      "region": "المناصير الجديده",
+      "student_gender": "ذكر - أنثى",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "جامع بن حرمل",
+      "region": "المقام",
+      "student_gender": "ذكر",
+      "circles_count": 6
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد محمد غانم السويدي",
+      "region": "الروضة الشرقية",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد محمد راشد بخيت الراشدي",
+      "region": "الروضة الشرقية",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد ريم سعيد الدرعي",
+      "region": "الروضة الشرقية",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد يوسف محمد خاجة",
+      "region": "الروضة الشرقية",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد بخيته سهيل عويضة الخييلي",
+      "region": "غنيمه",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد سليمان عبدالله الشامسي",
+      "region": "الروضة الشرقية",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد التقوى (مظفر العامري )",
+      "region": "الطوية",
+      "student_gender": "ذكر - أنثى",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد العباس بن عبد المطلب (حمد بن بداح)",
+      "region": "المرخانية",
+      "student_gender": "ذكر",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد سعد بن أبي رافع (فاطمة الغافري)",
+      "region": "الجيمي / الخريس",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "جامع الإمام الشافعي (محمد صالح الرميثي)",
+      "region": "الجيمي / العامرية",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد عفراء مانع العتيبة",
+      "region": "الجيمي / مريجب",
+      "student_gender": "أنثى",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد حموده بن علي الظاهري / اليحر",
+      "region": "اليحر",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد حموده بن علي الظاهري/الجيمي",
+      "region": "الجيمي",
+      "student_gender": "ذكر",
+      "circles_count": 7
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد الشيخ سلطان بن زايد",
+      "region": "المويجعي",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد صابر حارب مغيرة الخيلي",
+      "region": "المويجعي",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد الشيخة سلامة بنت بطي",
+      "region": "المويجعي",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد حمد سهيل الكتبي",
+      "region": "الجاهلي",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد شمسة بنت محمد",
+      "region": "الجاهلي",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد سعيد عبيد النيادي",
+      "region": "المويجعي",
+      "student_gender": "أنثى",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد الشيخ عيسى بن زايد آل نهيان",
+      "region": "المسعودي",
+      "student_gender": "ذكر",
+      "circles_count": 11
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد راشد محمد سعيد الظاهري/ الاستقامة",
+      "region": "الجيمي العامرية",
+      "student_gender": "ذكر",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد حسنة مطر الحلامي",
+      "region": "القطارة",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد عبد الله بن عباس",
+      "region": "الجيمي / مريجب",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد شما فاضل المزروعي",
+      "region": "مريجب",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد جديع الاحبابي",
+      "region": "المرخانية",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد الشيخ زايد بن سلطان آل نهيان",
+      "region": "الظاهر",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد أحمد سالم الكعبي",
+      "region": "الظاهر",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد سيف محمد مطر النيادي",
+      "region": "الظاهر",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "جامع المرحوم راشد النيادي",
+      "region": "معسكر الشركات",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد عبد الله خوري",
+      "region": "فلج هزاع",
+      "student_gender": "ذكر",
+      "circles_count": 9
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد الصغيرة سحمي جابر الاحبابي",
+      "region": "السلامات",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد الشهيد سعد محمد صالح الاحبابي",
+      "region": "السلامات",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد يحيى مسعد فاضل الكشادي",
+      "region": "السلامات",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد محمد سعيد خميس الريسي",
+      "region": "اليحر العالية",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد الشهيد بطي عائل الاحبابي",
+      "region": "السلامات",
+      "student_gender": "أنثى",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد عبدالله أحمد الزرعوني",
+      "region": "وسط المدينة",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد أنس بن النضر ( على نفقة علي عزيز مكتوم الشريفي )",
+      "region": "زاخر",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "الشهيد حمود علي العامري",
+      "region": "العامره / اليحر",
+      "student_gender": "ذكر",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "علي ناصر عبدالله المنصوري",
+      "region": "العامره حي عاليه",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "فاطمة محمد غانم السويدي",
+      "region": "فلج هزاع",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مبارك هادي الاحبابي",
+      "region": "العامرة جنوب",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد سعيد ناصر الشبلي",
+      "region": "الخالدية",
+      "student_gender": "أنثى",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "سلمى عبدالله شاهين الظاهري",
+      "region": "البطين",
+      "student_gender": "ذكر - أنثى",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد عمر بن عبدالعزيز",
+      "region": "فلج هزاع",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد بن بدوة",
+      "region": "فلج هزاع",
+      "student_gender": "ذكر",
+      "circles_count": 5
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد فاطمة سالم عبيد الدرمكي",
+      "region": "الفوعة",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد المر سيف الغفلي",
+      "region": "الفوعة",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد الشيخة لطيفة بنت زايد",
+      "region": "الفوعة",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد القلم",
+      "region": "الفوعة",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد راشد سعيد راشد الجابري",
+      "region": "الريف",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد سعيد بن حطاب الظاهري",
+      "region": "الفوعة",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد الفضل بن عباس",
+      "region": "المقام 314",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد عبدالعزيز الغيثي",
+      "region": "شعاب الأشخر 931",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد التوحيد",
+      "region": "المقام 313",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد الشهيد خميس البلوشي",
+      "region": "المقام 319",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد عبدالله بن رواحة",
+      "region": "المقام 321",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد سالم محمد سالم بالهويمل العامري",
+      "region": "زاخر",
+      "student_gender": "ذكر",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد الرضوان",
+      "region": "المقام 1030",
+      "student_gender": "أنثى",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Ain",
+      "mosque_name": "مسجد عثمان بن عفان",
+      "region": "المناصير الجديده",
+      "student_gender": "ذكر",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد خليفة المريخي",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Male",
+      "circles_count": 3
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد سلطان بالفارة القبيسي",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Male",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد خلفان بن بطي",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد الرحمه",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد مرشد المرر",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد مصبح الكندي",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد عتيق عطشان",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد جمعة سالم المحيربي",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد عابر خلفان الهاملي",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد الدفاع القديم",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد محمد سالم بن معنس العامري",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد احمد حميد المزروعي",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد أنس بن مالك",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد بيعة الرضوان",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Female",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد الرحمه",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Female",
+      "circles_count": 3
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد الدفاع",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Female",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد التسامح",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Female",
+      "circles_count": 3
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد جمعه المحيربي",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Female",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد مرشد المرر",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Female",
+      "circles_count": 3
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد سلطان بالفاره",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Female",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد سعيد زايد المزروعي",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Female",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد محمد العامري",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Female",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد أحمد حميد",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Female",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد ساري بلوش",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Female",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد سالم عبيد",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Female",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد سالم برطاع الهاملي",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Female",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجدحمد عبدالله",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Female",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجدالمريخي",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Female",
+      "circles_count": 4
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد بن هميلة",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Female",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد خلفان عابر",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Female",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد عشير",
+      "region": "الظفرة (مدينة زايد )",
+      "student_gender": "Female",
+      "circles_count": 4
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "الشيخه سلامة بنت بطي",
+      "region": "الظفرة ( ليوا )",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مبارك قذلان المزروعي",
+      "region": "الظفرة ( ليوا )",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "محمد عبدالله بالقطري",
+      "region": "الظفرة ( ليوا )",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "صالح الكمدي المزروعي",
+      "region": "الظفرة ( ليوا )",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "الحارث بن الغيث",
+      "region": "الظفرة ( ليوا )",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد المهاجرين",
+      "region": "الظفرة ( المرفأ )",
+      "student_gender": "ذكور واناث",
+      "circles_count": 5
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد راشد المزروعي",
+      "region": "الظفرة ( المرفأ )",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد المسعود",
+      "region": "الظفرة ( المرفأ )",
+      "student_gender": "ذكور واناث",
+      "circles_count": 7
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد حبيب صياح",
+      "region": "الظفرة ( المرفأ )",
+      "student_gender": "Female",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد الغبة",
+      "region": "الظفرة ( المرفأ )",
+      "student_gender": "Female",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد ياسر الخاجة",
+      "region": "الظفرة ( المرفأ )",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد مجلس مبارك بن قران",
+      "region": "الظفرة (غياثي )",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد مبارك بن قران",
+      "region": "الظفرة (غياثي )",
+      "student_gender": "ذكور واناث",
+      "circles_count": 4
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد حمدان",
+      "region": "الظفرة (غياثي )",
+      "student_gender": "Female",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد عاضه سفر بن رويشد البقمي",
+      "region": "الظفرة ( بدع المطاوعة )",
+      "student_gender": "ذكور واناث",
+      "circles_count": 5
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد عائشة ام المؤمنين",
+      "region": "رويس 4",
+      "student_gender": "Female",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد معاذ بن جبل",
+      "region": "رويس5",
+      "student_gender": "Male",
+      "circles_count": 10
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد قران خميس المنصوري",
+      "region": "الظفرة ( السلع )",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Al Dhafra",
+      "mosque_name": "مسجد المرابع",
+      "region": "الظفرة ( السلع )",
+      "student_gender": "ذكور واناث",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Sharjah",
+      "mosque_name": "الامام ابن تيمية",
+      "region": "الغافية",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Sharjah",
+      "mosque_name": "عمار بن ياسر",
+      "region": "الجزات",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Sharjah",
+      "mosque_name": "أسيد بن حضير",
+      "region": "االعزرة",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Sharjah",
+      "mosque_name": "أبو أيوب الأنصاري",
+      "region": "الشهباء",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Sharjah",
+      "mosque_name": "الفردوس",
+      "region": "الخان",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Sharjah",
+      "mosque_name": "المخلصون",
+      "region": "البوطينة",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Sharjah",
+      "mosque_name": "الإجابة",
+      "region": "البوطينة",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Sharjah",
+      "mosque_name": "الاتحاد",
+      "region": "تجارية مويلح",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Sharjah",
+      "mosque_name": "الحارث بن النعم",
+      "region": "الفشت",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Sharjah",
+      "mosque_name": "الحمد",
+      "region": "تجارية مويلح",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Sharjah",
+      "mosque_name": "عدي بن حاتم",
+      "region": "المليحة",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Sharjah",
+      "mosque_name": "عبد الرحمن بن أبي بكر",
+      "region": "العزرة",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Sharjah",
+      "mosque_name": "الأنصار",
+      "region": "المجاز",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Sharjah",
+      "mosque_name": "ابراهيم الخليل",
+      "region": "الرحمانية 7",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Sharjah",
+      "mosque_name": "سعيد بن عثمان",
+      "region": "الرحمانية2",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Sharjah",
+      "mosque_name": "الراحمون",
+      "region": "النهدة",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Sharjah",
+      "mosque_name": "الإمام حفص",
+      "region": "القرائن5",
+      "student_gender": "Female",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Sharjah",
+      "mosque_name": "الشهيد يحيى سالم موسى الحليان",
+      "region": "الطرفانة",
+      "student_gender": "Female",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Sharjah",
+      "mosque_name": "الضياء",
+      "region": "تجارية مويلح",
+      "student_gender": "Female",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Sharjah",
+      "mosque_name": "بني شيبة",
+      "region": "المريجة",
+      "student_gender": "Female",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Sharjah",
+      "mosque_name": "أبو الدرداء",
+      "region": "الغبيبة",
+      "student_gender": "Female",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Sharjah",
+      "mosque_name": "ابن الجزري",
+      "region": "السيوح",
+      "student_gender": "Female",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Sharjah",
+      "mosque_name": "دائرة الخدمات الإجتماعية",
+      "region": "الحمرية",
+      "student_gender": "Female",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "الشهيد جمعة بن جوهر",
+      "region": "المويهات3",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "عبدالرحمن أمين",
+      "region": "الروضة3",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "حمد بن عبيد",
+      "region": "الروضة3",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "هاجر",
+      "region": "التلة",
+      "student_gender": "Male",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "فوزي بن مرعي",
+      "region": "الروضة2",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "أبو عبيدة الجراح",
+      "region": "المويهات2",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "الشيخ راشد بن سعيد آل مكتوم",
+      "region": "الصفيا",
+      "student_gender": "Female",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "سراقة بن مالك",
+      "region": "الجرف 1",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "عبدالله الرميثي",
+      "region": "الحميدية 1",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "الشعالي",
+      "region": "الصناعية الجديدة",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "خالد بن الوليد",
+      "region": "الرميلة 2",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "شيخة بنت خلفان الجلاف",
+      "region": "الروضة 1",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "عبدالله علي الحمراني",
+      "region": "النعيمية 2",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "النبي أيوب ( عليه السلام )",
+      "region": "النعيمية 3",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "النعيمية",
+      "region": "النعيمية 3",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "الشيخ عبدالله بن حميد النعيمي ( رحمه الله )",
+      "region": "النخيل 1",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "فاطمة العويد",
+      "region": "الرقايب 1",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "كلثم بنت خصيف بن مصبح",
+      "region": "الصناعية الجديدة",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "راشد غانم",
+      "region": "الرقايب 1",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "مسجد ابن جابر",
+      "region": "ليوارة 1",
+      "student_gender": "Male",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "مصلى العيد",
+      "region": "البستان",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "مسجد اسامة بن زيد",
+      "region": "ليوارة 1",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "راشد بن حميد",
+      "region": "البستان",
+      "student_gender": "Female",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "مصلى العيد",
+      "region": "البستان",
+      "student_gender": "Female",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "عبد الرحمن بن عوف",
+      "region": "البستان",
+      "student_gender": "Female",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "مسجد خلفان بن عبدالله الشامسي",
+      "region": "النخيل",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "مسجد عيسى بن سلطان السويدي",
+      "region": "النخيل1",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "مسجد الزبير بن العوام",
+      "region": "النخيل",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "مسجد الرقايب",
+      "region": "الرقايب",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "مسجد مبارك محمد علي الخوار النعيمي",
+      "region": "الرقايب",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "مسجد المهاجرين",
+      "region": "الروضة 1",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "الريان",
+      "region": "الروضة 2",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "جامع الغلا",
+      "region": "الروضة 2",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "الشيخ عبدالله بن راشد النعيمي",
+      "region": "الروضه2",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ajman",
+      "mosque_name": "مسجد نهى حميد العليلي",
+      "region": "الروضة3",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ras Al Khaimah",
+      "mosque_name": "مسجد الصحابة",
+      "region": "جلفار",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ras Al Khaimah",
+      "mosque_name": "مسجد أبو أيوب الأنصاري",
+      "region": "جلفار",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ras Al Khaimah",
+      "mosque_name": "مسجد محمد علي البرق",
+      "region": "جلفار",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ras Al Khaimah",
+      "mosque_name": "مسجد أحمد بن شيبان",
+      "region": "البريرات",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ras Al Khaimah",
+      "mosque_name": "مسجد الشهيد سعيد",
+      "region": "الغيل",
+      "student_gender": "Female",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ras Al Khaimah",
+      "mosque_name": "مسجد الشيخ راشد بن حميد",
+      "region": "أذن",
+      "student_gender": "Female",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ras Al Khaimah",
+      "mosque_name": "مسجد محمد بن صبيح",
+      "region": "أذن",
+      "student_gender": "Female",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ras Al Khaimah",
+      "mosque_name": "مسجد إسماعيل الخاجه",
+      "region": "الغيل",
+      "student_gender": "Female",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Ras Al Khaimah",
+      "mosque_name": "مسجد محمد صديق الخاجه",
+      "region": "أذن",
+      "student_gender": "Female",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Ras Al Khaimah",
+      "mosque_name": "مسجد ام المؤمنين عائشة",
+      "region": "وادي كوب",
+      "student_gender": "Female",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Ras Al Khaimah",
+      "mosque_name": "مسجد أبوبكر الصديق",
+      "region": "أذن",
+      "student_gender": "Female",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ras Al Khaimah",
+      "mosque_name": "مسجد شيخة العسعوسي",
+      "region": "المعيريض",
+      "student_gender": "Female",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Ras Al Khaimah",
+      "mosque_name": "مسجد حصة الصباح",
+      "region": "المعيريض",
+      "student_gender": "Female",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Ras Al Khaimah",
+      "mosque_name": "مسجد مفتاح الخاطري",
+      "region": "سهيلة",
+      "student_gender": "Female",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Ras Al Khaimah",
+      "mosque_name": "مسجد الصحابة",
+      "region": "إعسمة",
+      "student_gender": "Female",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Ras Al Khaimah",
+      "mosque_name": "مسجد عمر بن الخطاب",
+      "region": "وادي صفني",
+      "student_gender": "Female",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Ras Al Khaimah",
+      "mosque_name": "مسجد الشيخ راشد بن سعيد",
+      "region": "القور المنيعي",
+      "student_gender": "Female",
+      "circles_count": 4
+    },
+    {
+      "emirate": "Umm Al Quwain",
+      "mosque_name": "سلمان الفارسي",
+      "region": "الرملة 2",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Umm Al Quwain",
+      "mosque_name": "أحمد هيبتان البلوشي",
+      "region": "الرملة 2",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Umm Al Quwain",
+      "mosque_name": "عائشة عبيد هلال",
+      "region": "الرملة 2",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Umm Al Quwain",
+      "mosque_name": "النور",
+      "region": "الرملة 1",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Umm Al Quwain",
+      "mosque_name": "محمود الرئيسي",
+      "region": "الرملة 3",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Umm Al Quwain",
+      "mosque_name": "الشيخة نيلاء النعيمي",
+      "region": "محمد بن راشد 1",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Umm Al Quwain",
+      "mosque_name": "الشيخ إبراهيم بن سعيد المعلا",
+      "region": "عود الطاير 1",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Umm Al Quwain",
+      "mosque_name": "الامام أحمد بن حنبل",
+      "region": "السلمة 3",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Umm Al Quwain",
+      "mosque_name": "هند بنت مكتوم",
+      "region": "الراعفة",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Umm Al Quwain",
+      "mosque_name": "عقيل بن أبي طالب",
+      "region": "مهذب",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Umm Al Quwain",
+      "mosque_name": "أبي ذر الغفاري",
+      "region": "السلمة 1",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Umm Al Quwain",
+      "mosque_name": "مسجد خميس بن علي",
+      "region": "الرمله 2 - أم القيوين",
+      "student_gender": "Female",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Umm Al Quwain",
+      "mosque_name": "جامع فلج المعلا",
+      "region": "فلج المعلا",
+      "student_gender": "إناث وذكور",
+      "circles_count": 4
+    },
+    {
+      "emirate": "Umm Al Quwain",
+      "mosque_name": "مسجد خالد بن الوليد",
+      "region": "الراشدية",
+      "student_gender": "Female",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Umm Al Quwain",
+      "mosque_name": "مسجد المغيرة بن شعبة",
+      "region": "فلج المعلا",
+      "student_gender": "Female",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Umm Al Quwain",
+      "mosque_name": "مسجد ميمونة بنت الحارث",
+      "region": "السلمة",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Umm Al Quwain",
+      "mosque_name": "مسجد أسماء بنت مزينة",
+      "region": "الحوية",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Umm Al Quwain",
+      "mosque_name": "مسجد الرضوان",
+      "region": "الدار البيضاء",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Umm Al Quwain",
+      "mosque_name": "مسجد أحمد علي الطويل",
+      "region": "المدر 2",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Umm Al Quwain",
+      "mosque_name": "مسجد احمد بن راشد المعلا",
+      "region": "الرأس",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Fujairah",
+      "mosque_name": "مسجد الشهيد عبدالعزيز العبدولي",
+      "region": "البدية",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Fujairah",
+      "mosque_name": "مسجد الفطيم",
+      "region": "البدية",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Fujairah",
+      "mosque_name": "مسجد قدفع",
+      "region": "قدفع",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Fujairah",
+      "mosque_name": "مسجد زيد بن الخطاب",
+      "region": "قدفع",
+      "student_gender": "Male",
+      "circles_count": 2
+    },
+    {
+      "emirate": "Fujairah",
+      "mosque_name": "مسجد عامر بن الاكوع",
+      "region": "القرية",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Fujairah",
+      "mosque_name": "مسجد عمير بن الحارث",
+      "region": "مربح",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Fujairah",
+      "mosque_name": "مسجد سلمان الفارسي",
+      "region": "البدية",
+      "student_gender": "أنثى",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Fujairah",
+      "mosque_name": "مسجد عبدالعزيز العبدولي",
+      "region": "البدية",
+      "student_gender": "أنثى",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Fujairah",
+      "mosque_name": "مسجد هاجر فتحي البلوشي",
+      "region": "وادي السدر",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Fujairah",
+      "mosque_name": "مسجد أنس بن قتادة",
+      "region": "الطويين",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Fujairah",
+      "mosque_name": "مسجد الصدق",
+      "region": "رول ضدنا",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Fujairah",
+      "mosque_name": "مسجد عمرو بن الطلق",
+      "region": "رول ضدنا",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Fujairah",
+      "mosque_name": "الشهيد أحمد سبيل المرشدي",
+      "region": "مضب",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Fujairah",
+      "mosque_name": "محمد بن زايد",
+      "region": "مدينه محمد بن زايد",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Fujairah",
+      "mosque_name": "الاتحاد",
+      "region": "مسافي -الفجيرة",
+      "student_gender": "أنثى",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Khor Fakkan",
+      "mosque_name": "مسجد النور",
+      "region": "خورفكان",
+      "student_gender": "Female",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Khor Fakkan",
+      "mosque_name": "مسجد الريان",
+      "region": "خورفكان",
+      "student_gender": "Male",
+      "circles_count": 1
+    },
+    {
+      "emirate": "Khor Fakkan",
+      "mosque_name": "مسجد الشيخ زايد",
+      "region": "دبا الحصن",
+      "student_gender": "اناث/ذكور",
+      "circles_count": 2
+    }
+  ]
+}

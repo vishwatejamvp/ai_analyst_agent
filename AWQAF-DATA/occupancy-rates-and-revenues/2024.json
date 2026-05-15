@@ -1,0 +1,375 @@
+{
+  "year": 2024,
+  "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+  "notes": [],
+  "data": [
+    {
+      "emirate": "Dubai",
+      "months": {
+        "january": {
+          "occupancy_rate": 0.7955,
+          "revenues_collected": 131150.0
+        },
+        "february": {
+          "occupancy_rate": 0.7955,
+          "revenues_collected": 141625.0
+        },
+        "march": {
+          "occupancy_rate": 0.7727,
+          "revenues_collected": 93725.0
+        },
+        "april": {
+          "occupancy_rate": 0.7727,
+          "revenues_collected": 178700.0
+        },
+        "may": {
+          "occupancy_rate": 0.8409,
+          "revenues_collected": 144955.0
+        },
+        "june": {
+          "occupancy_rate": 0.8636,
+          "revenues_collected": 175705.0
+        },
+        "july": {
+          "occupancy_rate": 0.8409,
+          "revenues_collected": 78595.0
+        },
+        "august": {
+          "occupancy_rate": 0.8409,
+          "revenues_collected": 165975.0
+        },
+        "september": {
+          "occupancy_rate": 0.8864,
+          "revenues_collected": 185175.0
+        },
+        "october": {
+          "occupancy_rate": 0.9318,
+          "revenues_collected": 182295.0
+        },
+        "november": {
+          "occupancy_rate": 0.9318,
+          "revenues_collected": 141650.0
+        },
+        "december": {
+          "occupancy_rate": 0.9318,
+          "revenues_collected": 151135.0
+        }
+      }
+    },
+    {
+      "emirate": "Sharjah",
+      "months": {
+        "january": {
+          "occupancy_rate": 0.4971,
+          "revenues_collected": 147400.0
+        },
+        "february": {
+          "occupancy_rate": 0.4971,
+          "revenues_collected": 211240.0
+        },
+        "march": {
+          "occupancy_rate": 0.5087,
+          "revenues_collected": 142200.0
+        },
+        "april": {
+          "occupancy_rate": 0.5202,
+          "revenues_collected": 245750.0
+        },
+        "may": {
+          "occupancy_rate": 0.4971,
+          "revenues_collected": 162405.0
+        },
+        "june": {
+          "occupancy_rate": 0.5087,
+          "revenues_collected": 127503.5
+        },
+        "july": {
+          "occupancy_rate": 0.4971,
+          "revenues_collected": 158725.0
+        },
+        "august": {
+          "occupancy_rate": 0.5291,
+          "revenues_collected": 194650.0
+        },
+        "september": {
+          "occupancy_rate": 0.5465,
+          "revenues_collected": 116305.0
+        },
+        "october": {
+          "occupancy_rate": 0.6221,
+          "revenues_collected": 212900.0
+        },
+        "november": {
+          "occupancy_rate": 0.6919,
+          "revenues_collected": 211980.0
+        },
+        "december": {
+          "occupancy_rate": 0.692,
+          "revenues_collected": 136638.33
+        }
+      }
+    },
+    {
+      "emirate": "Ajman",
+      "months": {
+        "january": {
+          "occupancy_rate": 0.5234,
+          "revenues_collected": 664780.27
+        },
+        "february": {
+          "occupancy_rate": 0.5417,
+          "revenues_collected": 633779.27
+        },
+        "march": {
+          "occupancy_rate": 0.5286,
+          "revenues_collected": 515371.27
+        },
+        "april": {
+          "occupancy_rate": 0.5547,
+          "revenues_collected": 643463.27
+        },
+        "may": {
+          "occupancy_rate": 0.5495,
+          "revenues_collected": 623235.27
+        },
+        "june": {
+          "occupancy_rate": 0.513,
+          "revenues_collected": 469511.27
+        },
+        "july": {
+          "occupancy_rate": 0.5496,
+          "revenues_collected": 642774.27
+        },
+        "august": {
+          "occupancy_rate": 0.5499,
+          "revenues_collected": 585410.27
+        },
+        "september": {
+          "occupancy_rate": 0.626,
+          "revenues_collected": 921785.27
+        },
+        "october": {
+          "occupancy_rate": 0.6559,
+          "revenues_collected": 814681.87
+        },
+        "november": {
+          "occupancy_rate": 0.7561,
+          "revenues_collected": 871513.87
+        },
+        "december": {
+          "occupancy_rate": 0.7859,
+          "revenues_collected": 719326.87
+        }
+      }
+    },
+    {
+      "emirate": "Umm Al Quwain",
+      "months": {
+        "january": {
+          "occupancy_rate": 0.4937,
+          "revenues_collected": 375933.33
+        },
+        "february": {
+          "occupancy_rate": 0.5437,
+          "revenues_collected": 188083.33
+        },
+        "march": {
+          "occupancy_rate": 0.5714,
+          "revenues_collected": 133458.33
+        },
+        "april": {
+          "occupancy_rate": 0.5528,
+          "revenues_collected": 177483.33
+        },
+        "may": {
+          "occupancy_rate": 0.5714,
+          "revenues_collected": 166833.33
+        },
+        "june": {
+          "occupancy_rate": 0.5155,
+          "revenues_collected": 75833.33
+        },
+        "july": {
+          "occupancy_rate": 0.528,
+          "revenues_collected": 207983.33
+        },
+        "august": {
+          "occupancy_rate": 0.5217,
+          "revenues_collected": 137483.33
+        },
+        "september": {
+          "occupancy_rate": 0.5217,
+          "revenues_collected": 160143.33
+        },
+        "october": {
+          "occupancy_rate": 0.559,
+          "revenues_collected": 259883.33
+        },
+        "november": {
+          "occupancy_rate": 0.5679,
+          "revenues_collected": 147698.33
+        },
+        "december": {
+          "occupancy_rate": 0.5679,
+          "revenues_collected": 184333.33
+        }
+      }
+    },
+    {
+      "emirate": "Ras Al Khaimah",
+      "months": {
+        "january": {
+          "occupancy_rate": 0.561,
+          "revenues_collected": 668839.5
+        },
+        "february": {
+          "occupancy_rate": 0.5718,
+          "revenues_collected": 463230.5
+        },
+        "march": {
+          "occupancy_rate": 0.6141,
+          "revenues_collected": 377744.45
+        },
+        "april": {
+          "occupancy_rate": 0.6332,
+          "revenues_collected": 529641.52
+        },
+        "may": {
+          "occupancy_rate": 0.6576,
+          "revenues_collected": 542537.5
+        },
+        "june": {
+          "occupancy_rate": 0.6603,
+          "revenues_collected": 295183.5
+        },
+        "july": {
+          "occupancy_rate": 0.664,
+          "revenues_collected": 693168.05
+        },
+        "august": {
+          "occupancy_rate": 0.6413,
+          "revenues_collected": 271873.5
+        },
+        "september": {
+          "occupancy_rate": 0.6467,
+          "revenues_collected": 467292.5
+        },
+        "october": {
+          "occupancy_rate": 0.6814,
+          "revenues_collected": 481906.01
+        },
+        "november": {
+          "occupancy_rate": 0.6814,
+          "revenues_collected": 284147.5
+        },
+        "december": {
+          "occupancy_rate": 0.674,
+          "revenues_collected": 314341.5
+        }
+      }
+    },
+    {
+      "emirate": "Fujairah",
+      "months": {
+        "january": {
+          "occupancy_rate": 0.7194,
+          "revenues_collected": 402301.67
+        },
+        "february": {
+          "occupancy_rate": 0.7115,
+          "revenues_collected": 328488.67
+        },
+        "march": {
+          "occupancy_rate": 0.7244,
+          "revenues_collected": 353439.67
+        },
+        "april": {
+          "occupancy_rate": 0.7244,
+          "revenues_collected": 338817.67
+        },
+        "may": {
+          "occupancy_rate": 0.7248,
+          "revenues_collected": 331581.67
+        },
+        "june": {
+          "occupancy_rate": 0.6938,
+          "revenues_collected": 333016.67
+        },
+        "july": {
+          "occupancy_rate": 0.7093,
+          "revenues_collected": 415506.67
+        },
+        "august": {
+          "occupancy_rate": 0.6938,
+          "revenues_collected": 292526.67
+        },
+        "september": {
+          "occupancy_rate": 0.7245,
+          "revenues_collected": 356581.67
+        },
+        "october": {
+          "occupancy_rate": 0.7245,
+          "revenues_collected": 371223.33
+        },
+        "november": {
+          "occupancy_rate": 0.7576,
+          "revenues_collected": 248441.67
+        },
+        "december": {
+          "occupancy_rate": 0.7689,
+          "revenues_collected": 257841.67
+        }
+      }
+    }
+  ],
+  "totals": {
+    "january": {
+      "occupancy_rate": 0.5713,
+      "revenues_collected": 2390404.77
+    },
+    "february": {
+      "occupancy_rate": 0.5835,
+      "revenues_collected": 1966446.77
+    },
+    "march": {
+      "occupancy_rate": 0.5975,
+      "revenues_collected": 1615938.72
+    },
+    "april": {
+      "occupancy_rate": 0.6091,
+      "revenues_collected": 2113855.79
+    },
+    "may": {
+      "occupancy_rate": 0.616,
+      "revenues_collected": 1971547.77
+    },
+    "june": {
+      "occupancy_rate": 0.5965,
+      "revenues_collected": 1476753.27
+    },
+    "july": {
+      "occupancy_rate": 0.6103,
+      "revenues_collected": 2196752.32
+    },
+    "august": {
+      "occupancy_rate": 0.6048,
+      "revenues_collected": 1647918.77
+    },
+    "september": {
+      "occupancy_rate": 0.6367,
+      "revenues_collected": 2207282.77
+    },
+    "october": {
+      "occupancy_rate": 0.6691,
+      "revenues_collected": 2322889.54
+    },
+    "november": {
+      "occupancy_rate": 0.7099,
+      "revenues_collected": 1905431.37
+    },
+    "december": {
+      "occupancy_rate": 0.7203,
+      "revenues_collected": 1763616.7
+    }
+  }
+}

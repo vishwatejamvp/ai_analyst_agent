@@ -1,0 +1,99 @@
+{
+  "dataset": "List of Approved Hajj and Umrah Campaigns",
+  "source": {
+    "organization": "General Authority of Islamic Affairs, Endowments & Zakat",
+    "department": "Hajj and Umrah",
+    "phone": "8008222",
+    "data_sources": "Administrative records",
+    "methodology": "Total number of approved Hajj and Umrah campaigns during the specified period"
+  },
+  "coverage": {
+    "area": "Each Emirate within the country",
+    "periodicity": "Yearly /monthly"
+  },
+  "indicator": {
+    "name": "Number of Hajj and Umrah campaigns",
+    "definition": "Number of Hajj and Umrah campaigns during a specific time period",
+    "unit": "Number"
+  },
+  "fields": {
+    "campaign_name": {
+      "original_name": "Campaign name",
+      "description": "Official registered name of the Hajj/Umrah campaign"
+    },
+    "campaign_owner": {
+      "original_name": "Name of the Campaign Owner",
+      "description": "Full name of the individual or entity that owns the campaign"
+    },
+    "campaign_number": {
+      "original_name": "Campaign number",
+      "description": "Unique registration number assigned to the campaign by the Authority"
+    },
+    "emirate": {
+      "original_name": "Emirate / City",
+      "description": "The UAE emirate where the campaign is registered"
+    },
+    "activity_type": {
+      "original_name": "Activity Type",
+      "description": "Type of licensed service: 'Hajj and Umrah' or 'Umrah' only"
+    },
+    "phone_mobile": {
+      "original_name": "Phone - Mobile",
+      "description": "Mobile phone number of the campaign contact"
+    },
+    "phone_office": {
+      "original_name": "Phone - Office",
+      "description": "Office/landline phone number of the campaign"
+    },
+    "branch": {
+      "original_name": "Branch",
+      "description": "Other emirates where the campaign has branch offices (empty if none)"
+    },
+    "email": {
+      "original_name": "E-mail",
+      "description": "Email address of the campaign"
+    }
+  },
+  "terms": [
+    {
+      "term": "Campaign",
+      "definition": "Any company or sole proprietorship licensed under the provisions of Cabinet Resolution No. (32) of 2028 concerning the Hajj and Umrah law to engage in contracting activities",
+      "calculation": "Total number of Hajj and Umrah campaigns",
+      "unit": "number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative records"
+    },
+    {
+      "term": "Number of Hajj and Umrah campaigns",
+      "definition": "Total number of licensed campaigns, companies, or offices that organize and provide services for Hajj and Umrah trips during a specific period of time.",
+      "calculation": "",
+      "unit": "",
+      "detail_level": "",
+      "data_source": ""
+    },
+    {
+      "term": "Activity",
+      "definition": "A licensed service activity practiced by companies accredited by the General Authority for Islamic Affairs, Endowments, and Zakat, aimed at organizing and providing Hajj and Umrah services to citizens and residents in accordance with approved regulations.",
+      "calculation": "Total number of Hajj and Umrah campaigns + Total number of Umrah campaigns",
+      "unit": "number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative records"
+    },
+    {
+      "term": "Emirate",
+      "definition": "It is an administrative region belonging to the state where licenses are granted and through which the competent authorities supervise the activities of Hajj and Umrah campaigns.",
+      "calculation": "Total number of Hajj and Umrah campaigns classified by emirate",
+      "unit": "number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative records"
+    },
+    {
+      "term": "Branch",
+      "definition": "It is a site or office affiliated with the campaign or licensed company, operating under its management within a specific emirate to provide Hajj and Umrah services.",
+      "calculation": "Total number of campaign branches nationwide",
+      "unit": "number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative records"
+    }
+  ]
+}

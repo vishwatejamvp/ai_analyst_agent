@@ -1,0 +1,165 @@
+{
+  "year": 2023,
+  "dataset": "Zakat Calculation Service Statistics",
+  "notes": [
+    "2023 data includes IVR and SMS channels not present in later years"
+  ],
+  "data": [
+    {
+      "month": "january",
+      "channels": {
+        "service_center": 0,
+        "call_center": 33,
+        "website": 29,
+        "ivr": 7,
+        "mobile_website": 23,
+        "smartphone_app": 24,
+        "sms": 2
+      },
+      "total": 118
+    },
+    {
+      "month": "february",
+      "channels": {
+        "service_center": 1,
+        "call_center": 30,
+        "website": 81,
+        "ivr": 11,
+        "mobile_website": 47,
+        "smartphone_app": 56,
+        "sms": 7
+      },
+      "total": 233
+    },
+    {
+      "month": "march",
+      "channels": {
+        "service_center": 3,
+        "call_center": 124,
+        "website": 102,
+        "ivr": 27,
+        "mobile_website": 72,
+        "smartphone_app": 38,
+        "sms": 12
+      },
+      "total": 378
+    },
+    {
+      "month": "april",
+      "channels": {
+        "service_center": 5,
+        "call_center": 102,
+        "website": 38,
+        "ivr": 54,
+        "mobile_website": 214,
+        "smartphone_app": 28,
+        "sms": 10
+      },
+      "total": 3
+    },
+    {
+      "month": "may",
+      "channels": {
+        "service_center": 0,
+        "call_center": 37,
+        "website": 31,
+        "ivr": 9,
+        "mobile_website": 26,
+        "smartphone_app": 8,
+        "sms": 6
+      },
+      "total": 4
+    },
+    {
+      "month": "june",
+      "channels": {
+        "service_center": 0,
+        "call_center": 22,
+        "website": 4,
+        "ivr": 17,
+        "mobile_website": 31,
+        "smartphone_app": 7,
+        "sms": 8
+      },
+      "total": 89
+    },
+    {
+      "month": "july",
+      "channels": {
+        "service_center": 1,
+        "call_center": 17,
+        "website": 11,
+        "ivr": 15,
+        "mobile_website": 20,
+        "smartphone_app": 1,
+        "sms": 15
+      },
+      "total": 80
+    },
+    {
+      "month": "august",
+      "channels": {
+        "service_center": 0,
+        "call_center": 15,
+        "website": 13,
+        "ivr": 17,
+        "mobile_website": 24,
+        "smartphone_app": 12,
+        "sms": 7
+      },
+      "total": 88
+    },
+    {
+      "month": "september",
+      "channels": {
+        "service_center": 0,
+        "call_center": 14,
+        "website": 5,
+        "ivr": 6,
+        "mobile_website": 22,
+        "smartphone_app": 6,
+        "sms": 3
+      },
+      "total": 56
+    },
+    {
+      "month": "october",
+      "channels": {
+        "service_center": 0,
+        "call_center": 34,
+        "website": 16,
+        "ivr": 6,
+        "mobile_website": 27,
+        "smartphone_app": 16,
+        "sms": 4
+      },
+      "total": 103
+    },
+    {
+      "month": "november",
+      "channels": {
+        "service_center": 0,
+        "call_center": 30,
+        "website": 9,
+        "ivr": 9,
+        "mobile_website": 16,
+        "smartphone_app": 1,
+        "sms": 11
+      },
+      "total": 76
+    },
+    {
+      "month": "december",
+      "channels": {
+        "service_center": 0,
+        "call_center": 27,
+        "website": 11,
+        "ivr": 3,
+        "mobile_website": 20,
+        "smartphone_app": 6,
+        "sms": 0
+      },
+      "total": 67
+    }
+  ]
+}

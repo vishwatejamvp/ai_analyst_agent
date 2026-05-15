@@ -1,0 +1,27 @@
+{
+  "year": 2026,
+  "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+  "notes": [],
+  "months": {
+    "january": {
+      "website_registrations": 0,
+      "smart_app_registrations": 0,
+      "total_registrations": 0
+    },
+    "february": {
+      "website_registrations": 1890,
+      "smart_app_registrations": 2002,
+      "total_registrations": 3892
+    },
+    "march": {
+      "website_registrations": 0,
+      "smart_app_registrations": 0,
+      "total_registrations": 0
+    }
+  },
+  "totals": {
+    "website_registrations": 1890,
+    "smart_app_registrations": 2002,
+    "total_registrations": 3892
+  }
+}

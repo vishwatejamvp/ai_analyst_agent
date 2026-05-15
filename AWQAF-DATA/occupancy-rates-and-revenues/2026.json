@@ -1,0 +1,67 @@
+{
+  "year": 2026,
+  "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+  "notes": [],
+  "data": [
+    {
+      "emirate": "Dubai",
+      "months": {
+        "january": {
+          "occupancy_rate": 0.993,
+          "revenues_collected": 698039.0
+        }
+      }
+    },
+    {
+      "emirate": "Sharjah",
+      "months": {
+        "january": {
+          "occupancy_rate": 0.971,
+          "revenues_collected": 296810.33
+        }
+      }
+    },
+    {
+      "emirate": "Ajman",
+      "months": {
+        "january": {
+          "occupancy_rate": 0.884,
+          "revenues_collected": 911681.99
+        }
+      }
+    },
+    {
+      "emirate": "Umm Al Quwain",
+      "months": {
+        "january": {
+          "occupancy_rate": 0.802,
+          "revenues_collected": 376286.67
+        }
+      }
+    },
+    {
+      "emirate": "Ras Al Khaimah",
+      "months": {
+        "january": {
+          "occupancy_rate": 0.766,
+          "revenues_collected": 709600.83
+        }
+      }
+    },
+    {
+      "emirate": "Fujairah",
+      "months": {
+        "january": {
+          "occupancy_rate": 0.896,
+          "revenues_collected": 480681.67
+        }
+      }
+    }
+  ],
+  "totals": {
+    "january": {
+      "occupancy_rate": 0.8686,
+      "revenues_collected": 3473100.49
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "year": 2023,
+  "dataset": "Monthly Statistics for Hajj Permit Service",
+  "notes": [],
+  "months": {
+    "january": {
+      "website_transactions": 0,
+      "smart_app_transactions": 0,
+      "hajj_package_recipients": 0
+    },
+    "february": {
+      "website_transactions": 5790,
+      "smart_app_transactions": 18315,
+      "hajj_package_recipients": 0
+    },
+    "march": {
+      "website_transactions": 1543,
+      "smart_app_transactions": 3149,
+      "hajj_package_recipients": 0
+    },
+    "april": {
+      "website_transactions": 74,
+      "smart_app_transactions": 0,
+      "hajj_package_recipients": 0
+    },
+    "may": {
+      "website_transactions": 662,
+      "smart_app_transactions": 0,
+      "hajj_package_recipients": 0
+    },
+    "june": {
+      "website_transactions": 189,
+      "smart_app_transactions": 0,
+      "hajj_package_recipients": 6228
+    },
+    "july": {
+      "website_transactions": 0,
+      "smart_app_transactions": 0,
+      "hajj_package_recipients": 0
+    },
+    "august": {
+      "website_transactions": 0,
+      "smart_app_transactions": 0,
+      "hajj_package_recipients": 0
+    },
+    "september": {
+      "website_transactions": 0,
+      "smart_app_transactions": 0,
+      "hajj_package_recipients": 0
+    },
+    "october": {
+      "website_transactions": 0,
+      "smart_app_transactions": 0,
+      "hajj_package_recipients": 0
+    },
+    "november": {
+      "website_transactions": 0,
+      "smart_app_transactions": 0,
+      "hajj_package_recipients": 0
+    },
+    "december": {
+      "website_transactions": 0,
+      "smart_app_transactions": 0,
+      "hajj_package_recipients": 0
+    }
+  }
+}

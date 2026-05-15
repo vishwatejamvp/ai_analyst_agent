@@ -1,0 +1,652 @@
+{
+  "source_file": "centers-with-new.xlsx",
+  "description": "Statistics of Holy Quran memorization centers and new centers",
+  "total_centers": 92,
+  "centers": [
+    {
+      "number": 1,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز أبوظبي لتحفيظ القرآن الكريم",
+      "area": "البطين",
+      "center_count": 15
+    },
+    {
+      "number": 2,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز الشيخ زايد بن سلطان لتحفيظ القرآن الكريم - ذكور",
+      "area": "الزعاب",
+      "center_count": null
+    },
+    {
+      "number": 3,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز الشيخ زايد بن سلطان لتحفيظ القرآن الكريم - إناث",
+      "area": "الزعاب",
+      "center_count": null
+    },
+    {
+      "number": 4,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز هامل الغيث لتحفيظ القرآن الكريم",
+      "area": "المشرف",
+      "center_count": null
+    },
+    {
+      "number": 5,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز درويش بن كرم لتحفيظ القرآن الكريم (أهلي) (جديد)",
+      "area": "شارع الدفاع بالقرب من تقنية الطلاب",
+      "center_count": null
+    },
+    {
+      "number": 6,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز حمدان بن محمد لتحفيظ القرآن الكريم",
+      "area": "بين الجسرين",
+      "center_count": null
+    },
+    {
+      "number": 7,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز مبارك هلال المنصوري لتحفيظ القرآن الكريم (جديد)",
+      "area": "مدينة محمد بن زايد",
+      "center_count": null
+    },
+    {
+      "number": 8,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز المدينة لتحفيظ القرآن الكريم",
+      "area": "مدينة خليفة",
+      "center_count": null
+    },
+    {
+      "number": 9,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز مسلم مكتوم المزروعي لتحفيظ القرآن الكريم",
+      "area": "مدينة خليفة",
+      "center_count": null
+    },
+    {
+      "number": 10,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز محمد هامل الغيث لتحفيظ القرآن الكريم",
+      "area": "بني ياس شرق 7",
+      "center_count": null
+    },
+    {
+      "number": 11,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز الإمارات لتحفيظ القرآن الكريم",
+      "area": "بني ياس شرق 7",
+      "center_count": null
+    },
+    {
+      "number": 12,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز عثمان بن عفان لتحفيظ القرآن الكريم (جديد)",
+      "area": "بني ياس شرق 5",
+      "center_count": null
+    },
+    {
+      "number": 13,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز الشهامة لتحفيظ القرآن الكريم",
+      "area": "الشهامة",
+      "center_count": null
+    },
+    {
+      "number": 14,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز الشيخ محمد بن زايد لتحفيظ القرآن الكريم",
+      "area": "الفلاح",
+      "center_count": null
+    },
+    {
+      "number": 15,
+      "branch": "Abu Dhabi",
+      "center_name": "مركز راشد محمد مهران البلوشي لتحفيظ القرآن الكريم (جديد)",
+      "area": "الشامخة",
+      "center_count": null,
+      "notes": "لم يتم التسليم"
+    },
+    {
+      "number": 1,
+      "branch": "Al Ain",
+      "center_name": "مركز محمد أحمد العتيبة لتحفيظ القرآن الكريم",
+      "area": "فلج هزاع",
+      "center_count": 42
+    },
+    {
+      "number": 2,
+      "branch": "Al Ain",
+      "center_name": "مركز الشيخة حصة بنت محمد لتحفيظ القرآن الكريم",
+      "area": "المعترض",
+      "center_count": null
+    },
+    {
+      "number": 3,
+      "branch": "Al Ain",
+      "center_name": "مركز صبحة بنت عويص لتحفيظ القرآن الكريم",
+      "area": "زاخر",
+      "center_count": null
+    },
+    {
+      "number": 4,
+      "branch": "Al Ain",
+      "center_name": "مركز سهيل بن عويضة الخييلي لتحفيظ القرآن الكريم",
+      "area": "زاخر",
+      "center_count": null
+    },
+    {
+      "number": 5,
+      "branch": "Al Ain",
+      "center_name": "مركز الشيخة آمنة لتحفيظ القرآن الكريم",
+      "area": "المسعودي",
+      "center_count": null
+    },
+    {
+      "number": 6,
+      "branch": "Al Ain",
+      "center_name": "مركز الشيخ محمد بن خالد لتحفيظ القرآن الكريم",
+      "area": "فلج هزاع",
+      "center_count": null
+    },
+    {
+      "number": 7,
+      "branch": "Al Ain",
+      "center_name": "مركز بن حمودة لتحفيظ القرآن الكريم",
+      "area": "الجيمي",
+      "center_count": null
+    },
+    {
+      "number": 8,
+      "branch": "Al Ain",
+      "center_name": "مركز الشيخة مريم بنت سلطان لتحفيظ القرآن الكريم",
+      "area": "الوقن",
+      "center_count": null
+    },
+    {
+      "number": 9,
+      "branch": "Al Ain",
+      "center_name": "مركز أبو بكر الصديق لتحفيظ القرآن الكريم",
+      "area": "الفوعة",
+      "center_count": null
+    },
+    {
+      "number": 10,
+      "branch": "Al Ain",
+      "center_name": "مركز بن حاذة الكتبي لتحفيظ القرآن الكريم",
+      "area": "هيلي",
+      "center_count": null
+    },
+    {
+      "number": 11,
+      "branch": "Al Ain",
+      "center_name": "مركز العين لتحفيظ القرآن الكريم",
+      "area": "الصاروج",
+      "center_count": null
+    },
+    {
+      "number": 12,
+      "branch": "Al Ain",
+      "center_name": "مركز هيلي لتحفيظ القرآن الكريم",
+      "area": "هيلي",
+      "center_count": null
+    },
+    {
+      "number": 13,
+      "branch": "Al Ain",
+      "center_name": "مركز القوع لتحفيظ القرآن الكريم",
+      "area": "القوع",
+      "center_count": null
+    },
+    {
+      "number": 14,
+      "branch": "Al Ain",
+      "center_name": "مركز بر الوالدين لتحفيظ القرآن الكريم",
+      "area": "الهير",
+      "center_count": null
+    },
+    {
+      "number": 15,
+      "branch": "Al Ain",
+      "center_name": "مركز نعمة لتحفيظ القرآن الكريم",
+      "area": "نعمة",
+      "center_count": null
+    },
+    {
+      "number": 16,
+      "branch": "Al Ain",
+      "center_name": "مركز سعيد بن السالومي لتحفيظ القرآن الكريم",
+      "area": "القوع",
+      "center_count": null
+    },
+    {
+      "number": 17,
+      "branch": "Al Ain",
+      "center_name": "مركز عوض بن سعيد الكتبي ( أهلي )",
+      "area": "هيلي",
+      "center_count": null
+    },
+    {
+      "number": 18,
+      "branch": "Al Ain",
+      "center_name": "مركز الشيخة موزة بنت بطي ( أهلي )",
+      "area": "الشعيبة",
+      "center_count": null
+    },
+    {
+      "number": 19,
+      "branch": "Al Ain",
+      "center_name": "مركز الشيخ محمد بن زايد ( أهلي )",
+      "area": "الجيمي",
+      "center_count": null
+    },
+    {
+      "number": 20,
+      "branch": "Al Ain",
+      "center_name": "مركز عائشة أم المؤمنين ( أهلي )",
+      "area": "هيلي",
+      "center_count": null
+    },
+    {
+      "number": 21,
+      "branch": "Al Ain",
+      "center_name": "مركز الفرقان ( أهلي )",
+      "area": "اليحر",
+      "center_count": null
+    },
+    {
+      "number": 22,
+      "branch": "Al Ain",
+      "center_name": "مركز دار الخير ( أهلي )",
+      "area": "الفوعة",
+      "center_count": null
+    },
+    {
+      "number": 23,
+      "branch": "Al Ain",
+      "center_name": "مركز رملة الراعي ( أهلي )",
+      "area": "النايفة",
+      "center_count": null
+    },
+    {
+      "number": 24,
+      "branch": "Al Ain",
+      "center_name": "مركز وديمة بنت زايد ( أهلي )",
+      "area": "أم غافة",
+      "center_count": null
+    },
+    {
+      "number": 25,
+      "branch": "Al Ain",
+      "center_name": "مركز محمد مفتاح القشاطي ( أهلي )",
+      "area": "الظاهر",
+      "center_count": null
+    },
+    {
+      "number": 26,
+      "branch": "Al Ain",
+      "center_name": "مركز بن حرمل ( أهلي )",
+      "area": "المقام",
+      "center_count": null
+    },
+    {
+      "number": 27,
+      "branch": "Al Ain",
+      "center_name": "مركز بو حقب لتحفيظ القرآن الكريم",
+      "area": "مزيد",
+      "center_count": null
+    },
+    {
+      "number": 28,
+      "branch": "Al Ain",
+      "center_name": "مركز فاطمة سعد بو فلاسة لتحفيظ القرآن الكريم",
+      "area": "الشعيبة",
+      "center_count": null
+    },
+    {
+      "number": 29,
+      "branch": "Al Ain",
+      "center_name": "مركز بالأصلي لتحفيظ القرآن الكريم",
+      "area": "هيلي",
+      "center_count": null
+    },
+    {
+      "number": 30,
+      "branch": "Al Ain",
+      "center_name": "مركز القطيطي لتحفيظ القرآن الكريم",
+      "area": "الظاهر",
+      "center_count": null
+    },
+    {
+      "number": 31,
+      "branch": "Al Ain",
+      "center_name": "مركز الفقع لتحفيظ القرآن الكريم",
+      "area": "الفقع",
+      "center_count": null
+    },
+    {
+      "number": 32,
+      "branch": "Al Ain",
+      "center_name": "مركز عفراء لتحفيظ القرآن الكريم ( فقع رقم 2) (جديد)",
+      "area": "الفقع",
+      "center_count": null
+    },
+    {
+      "number": 33,
+      "branch": "Al Ain",
+      "center_name": "مركز ناهل لتحفيظ القرآن الكريم",
+      "area": "ناهل",
+      "center_count": null
+    },
+    {
+      "number": 34,
+      "branch": "Al Ain",
+      "center_name": "مركز الصحابة لتحفيظ القرآن الكريم",
+      "area": "المناصير",
+      "center_count": null
+    },
+    {
+      "number": 35,
+      "branch": "Al Ain",
+      "center_name": "مركز سويحان لتحفيظ القرآن الكريم (ملحق مسجد)",
+      "area": "سويحان",
+      "center_count": null
+    },
+    {
+      "number": 36,
+      "branch": "Al Ain",
+      "center_name": "مركز فاخرة أحمد الخييلي لتحفيظ القرآن الكريم",
+      "area": "ابوسمرة",
+      "center_count": null
+    },
+    {
+      "number": 37,
+      "branch": "Al Ain",
+      "center_name": "مركز شعاب الاشخر لتحفيظ القرآن الكريم",
+      "area": "شعاب الاشخر",
+      "center_count": null
+    },
+    {
+      "number": 38,
+      "branch": "Al Ain",
+      "center_name": "مركز سالم مغيير الخييلي لتحفيظ القرآن الكريم",
+      "area": "البصرة",
+      "center_count": null
+    },
+    {
+      "number": 39,
+      "branch": "Al Ain",
+      "center_name": "مركز علي ناصر المنصوري لتحفيظ القرآن الكريم",
+      "area": "اليحر",
+      "center_count": null
+    },
+    {
+      "number": 40,
+      "branch": "Al Ain",
+      "center_name": "مركز الفوعة لتحفيظ القرآن الكريم",
+      "area": "الفوعة",
+      "center_count": null
+    },
+    {
+      "number": 41,
+      "branch": "Al Ain",
+      "center_name": "مركز سالم بالهويمل لتحفيظ القرآن الكريم (جديد)",
+      "area": "زاخر",
+      "center_count": null
+    },
+    {
+      "number": 42,
+      "branch": "Al Ain",
+      "center_name": "مركز حمد عبيد الكعبي لتحفيظ القرآن الكريم (جديد)",
+      "area": "المقام",
+      "center_count": null
+    },
+    {
+      "number": 1,
+      "branch": "Al Dhafra",
+      "center_name": "مركز بينونة لتحفيظ القرآن الكريم",
+      "area": "مدينة زايد",
+      "center_count": 11
+    },
+    {
+      "number": 2,
+      "branch": "Al Dhafra",
+      "center_name": "مركز مرابع الظفرة لتحفيظ القرآن الكريم",
+      "area": "مدينة زايد",
+      "center_count": null
+    },
+    {
+      "number": 3,
+      "branch": "Al Dhafra",
+      "center_name": "مركز ليوا لتحفيظ القرآن الكريم",
+      "area": "ليوا",
+      "center_count": null
+    },
+    {
+      "number": 4,
+      "branch": "Al Dhafra",
+      "center_name": "مركز المرفأ لتحفيظ القرآن الكريم",
+      "area": "المرفأ",
+      "center_count": null
+    },
+    {
+      "number": 5,
+      "branch": "Al Dhafra",
+      "center_name": "مركز بن عشير لتحفيظ القرآن الكريم",
+      "area": "غياثي",
+      "center_count": null
+    },
+    {
+      "number": 6,
+      "branch": "Al Dhafra",
+      "center_name": "مركز بدع المطاوعة لتحفيظ القرآن الكريم",
+      "area": "بدع المطاوعة",
+      "center_count": null
+    },
+    {
+      "number": 7,
+      "branch": "Al Dhafra",
+      "center_name": "مركز الرويس لتحفيظ القرآن الكريم",
+      "area": "الرويس",
+      "center_count": null
+    },
+    {
+      "number": 8,
+      "branch": "Al Dhafra",
+      "center_name": "مركز بعيا لتحفيظ القرآن الكريم",
+      "area": "السلع",
+      "center_count": null
+    },
+    {
+      "number": 9,
+      "branch": "Al Dhafra",
+      "center_name": "مركز دلما لتحفيظ القرآن الكريم",
+      "area": "جزيرة دلما",
+      "center_count": null
+    },
+    {
+      "number": 10,
+      "branch": "Al Dhafra",
+      "center_name": "مركز بن عشير المرابع لتحفيظ القرآن الكريم (جديد)",
+      "area": "غياثي",
+      "center_count": null
+    },
+    {
+      "number": 11,
+      "branch": "Al Dhafra",
+      "center_name": "مركز مرابع الظفرة لتحفيظ القرآن الكريم (جديد)",
+      "area": "مدينة زايد",
+      "center_count": null
+    },
+    {
+      "number": 1,
+      "branch": "Ajman",
+      "center_name": "مركز الاتحاد لتحفيظ القران الكريم",
+      "area": "الجرف",
+      "center_count": 7
+    },
+    {
+      "number": 2,
+      "branch": "Ajman",
+      "center_name": "مركز آية لتحفيظ القرآن الكريم و علومه",
+      "area": "الجرف",
+      "center_count": null
+    },
+    {
+      "number": 3,
+      "branch": "Ajman",
+      "center_name": "مركز عبيد الحلو- المنامة",
+      "area": "المنامة",
+      "center_count": null
+    },
+    {
+      "number": 4,
+      "branch": "Ajman",
+      "center_name": "مركز دارأسماء بنت أبي بكر لتحفيظ القران الكريم",
+      "area": "السوان",
+      "center_count": null
+    },
+    {
+      "number": 5,
+      "branch": "Ajman",
+      "center_name": "مركز عبدالله منصور العوضي",
+      "area": "الجرف",
+      "center_count": null
+    },
+    {
+      "number": 6,
+      "branch": "Ajman",
+      "center_name": "مركز هاجر لتحفيظ القران الكريم",
+      "area": "التله",
+      "center_count": null
+    },
+    {
+      "number": 7,
+      "branch": "Ajman",
+      "center_name": "مركز عبيد الحلو- مزيرع",
+      "area": "مزيرع",
+      "center_count": null
+    },
+    {
+      "number": 1,
+      "branch": "Ras Al Khaimah",
+      "center_name": "مركز الأم لتحفيظ القرآن (جديد)",
+      "area": "الظيت الجنوبي",
+      "center_count": 6
+    },
+    {
+      "number": 2,
+      "branch": "Ras Al Khaimah",
+      "center_name": "مركز ميمونة بنت الحارث لتحفيظ القرآن",
+      "area": "خزام",
+      "center_count": null
+    },
+    {
+      "number": 3,
+      "branch": "Ras Al Khaimah",
+      "center_name": "مركز سالم العلي لتحفيظ القرآن",
+      "area": "القصيدات",
+      "center_count": null
+    },
+    {
+      "number": 4,
+      "branch": "Ras Al Khaimah",
+      "center_name": "مركز جلفار لتحفيظ القرآن",
+      "area": "جلفار",
+      "center_count": null
+    },
+    {
+      "number": 5,
+      "branch": "Ras Al Khaimah",
+      "center_name": "مركز قباء لتحفيظ القرآن الكريم (أهلي )",
+      "area": "جلفار ( بجوار مسجد قباء )",
+      "center_count": null
+    },
+    {
+      "number": 6,
+      "branch": "Ras Al Khaimah",
+      "center_name": "مركز عمر بن الخطاب لتحفيظ القرآن الكريم (اهلي )",
+      "area": "جلفار ( شارع الجولان )",
+      "center_count": null
+    },
+    {
+      "number": 1,
+      "branch": "Umm Al Quwain",
+      "center_name": "مركز أحمد بن راشد لتحفيظ القرآن الكريم",
+      "area": "الراس",
+      "center_count": 5
+    },
+    {
+      "number": 2,
+      "branch": "Umm Al Quwain",
+      "center_name": "مركز الشيخ زايد بن سلطان لتحفيظ القرآن الكريم",
+      "area": "النيفه",
+      "center_count": null
+    },
+    {
+      "number": 3,
+      "branch": "Umm Al Quwain",
+      "center_name": "مركز أم القيوين لتحفيظ القرآن الكريم",
+      "area": "الحمره",
+      "center_count": null
+    },
+    {
+      "number": 4,
+      "branch": "Umm Al Quwain",
+      "center_name": "مركز حمد مطر الجابري",
+      "area": "السلمة",
+      "center_count": null
+    },
+    {
+      "number": 5,
+      "branch": "Umm Al Quwain",
+      "center_name": "مركز الشيخة عهود بنت راشد لتحفيظ القرآن الكريم",
+      "area": "الراعفة",
+      "center_count": null
+    },
+    {
+      "number": 1,
+      "branch": "Fujairah",
+      "center_name": "مركز الفجيرة لتحفيظ القرآن الكريم / ذكور",
+      "area": "الفصيل",
+      "center_count": 5
+    },
+    {
+      "number": 2,
+      "branch": "Fujairah",
+      "center_name": "مركز الفجيرة لتحفيظ القرآن الكريم / إناث",
+      "area": "مضب شارع الإتحاد",
+      "center_count": null
+    },
+    {
+      "number": 3,
+      "branch": "Fujairah",
+      "center_name": "مركز زايد لتحفيظ القرآن الكريم",
+      "area": "النهضة",
+      "center_count": null
+    },
+    {
+      "number": 4,
+      "branch": "Fujairah",
+      "center_name": "مركز سعيد محمد الرقباني لتحفيظ القرآن الكريم",
+      "area": "قدفع",
+      "center_count": null
+    },
+    {
+      "number": 5,
+      "branch": "Fujairah",
+      "center_name": "مركز دبا لتحفيظ القرآن الكريم",
+      "area": "دبا المهلب",
+      "center_count": null
+    },
+    {
+      "number": 1,
+      "branch": "Khor Fakkan",
+      "center_name": "مركز المبارك لتحفيظ القرآن الكريم",
+      "area": "القادسية",
+      "center_count": 1
+    }
+  ]
+}

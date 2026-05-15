@@ -1,0 +1,314 @@
+[
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2023,
+    "month": "january",
+    "website_registrations": 2090,
+    "smart_app_registrations": 31,
+    "total_registrations": 2121
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2023,
+    "month": "february",
+    "website_registrations": 173,
+    "smart_app_registrations": 166,
+    "total_registrations": 339
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2023,
+    "month": "march",
+    "website_registrations": 86,
+    "smart_app_registrations": 123,
+    "total_registrations": 209
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2023,
+    "month": "april",
+    "website_registrations": 86,
+    "smart_app_registrations": 118,
+    "total_registrations": 204
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2023,
+    "month": "may",
+    "website_registrations": 92,
+    "smart_app_registrations": 91,
+    "total_registrations": 183
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2023,
+    "month": "june",
+    "website_registrations": 93,
+    "smart_app_registrations": 138,
+    "total_registrations": 231
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2023,
+    "month": "july",
+    "website_registrations": 213,
+    "smart_app_registrations": 599,
+    "total_registrations": 812
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2023,
+    "month": "august",
+    "website_registrations": 157,
+    "smart_app_registrations": 361,
+    "total_registrations": 518
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2023,
+    "month": "september",
+    "website_registrations": 108,
+    "smart_app_registrations": 316,
+    "total_registrations": 424
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2023,
+    "month": "october",
+    "website_registrations": 53,
+    "smart_app_registrations": 248,
+    "total_registrations": 301
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2023,
+    "month": "november",
+    "website_registrations": 48,
+    "smart_app_registrations": 189,
+    "total_registrations": 237
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2023,
+    "month": "december",
+    "website_registrations": 58,
+    "smart_app_registrations": 290,
+    "total_registrations": 348
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2024,
+    "month": "january",
+    "website_registrations": 645,
+    "smart_app_registrations": 420,
+    "total_registrations": 1065
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2024,
+    "month": "february",
+    "website_registrations": 745,
+    "smart_app_registrations": 268,
+    "total_registrations": 1013
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2024,
+    "month": "march",
+    "website_registrations": 859,
+    "smart_app_registrations": 365,
+    "total_registrations": 1224
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2024,
+    "month": "april",
+    "website_registrations": 1305,
+    "smart_app_registrations": 482,
+    "total_registrations": 1787
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2024,
+    "month": "may",
+    "website_registrations": 1307,
+    "smart_app_registrations": 500,
+    "total_registrations": 1807
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2024,
+    "month": "june",
+    "website_registrations": 2153,
+    "smart_app_registrations": 774,
+    "total_registrations": 2927
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2024,
+    "month": "july",
+    "website_registrations": 4522,
+    "smart_app_registrations": 1669,
+    "total_registrations": 6191
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2024,
+    "month": "august",
+    "website_registrations": 2304,
+    "smart_app_registrations": 796,
+    "total_registrations": 3100
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2024,
+    "month": "september",
+    "website_registrations": 4734,
+    "smart_app_registrations": 1428,
+    "total_registrations": 6162
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2024,
+    "month": "october",
+    "website_registrations": 14123,
+    "smart_app_registrations": 3023,
+    "total_registrations": 17146
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2024,
+    "month": "november",
+    "website_registrations": 5938,
+    "smart_app_registrations": 1308,
+    "total_registrations": 7246
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2024,
+    "month": "december",
+    "website_registrations": 1341,
+    "smart_app_registrations": 327,
+    "total_registrations": 1668
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2025,
+    "month": "january",
+    "website_registrations": 0,
+    "smart_app_registrations": 0,
+    "total_registrations": 0
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2025,
+    "month": "february",
+    "website_registrations": 0,
+    "smart_app_registrations": 0,
+    "total_registrations": 0
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2025,
+    "month": "march",
+    "website_registrations": 0,
+    "smart_app_registrations": 0,
+    "total_registrations": 0
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2025,
+    "month": "april",
+    "website_registrations": 6978,
+    "smart_app_registrations": 3685,
+    "total_registrations": 10663
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2025,
+    "month": "may",
+    "website_registrations": 0,
+    "smart_app_registrations": 1,
+    "total_registrations": 1
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2025,
+    "month": "june",
+    "website_registrations": 0,
+    "smart_app_registrations": 0,
+    "total_registrations": 0
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2025,
+    "month": "july",
+    "website_registrations": 3219,
+    "smart_app_registrations": 1117,
+    "total_registrations": 4336
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2025,
+    "month": "august",
+    "website_registrations": 4814,
+    "smart_app_registrations": 3170,
+    "total_registrations": 7984
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2025,
+    "month": "september",
+    "website_registrations": 958,
+    "smart_app_registrations": 553,
+    "total_registrations": 1511
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2025,
+    "month": "october",
+    "website_registrations": 0,
+    "smart_app_registrations": 0,
+    "total_registrations": 0
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2025,
+    "month": "november",
+    "website_registrations": 2448,
+    "smart_app_registrations": 2312,
+    "total_registrations": 4760
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2025,
+    "month": "december",
+    "website_registrations": 575,
+    "smart_app_registrations": 588,
+    "total_registrations": 1163
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2026,
+    "month": "january",
+    "website_registrations": 0,
+    "smart_app_registrations": 0,
+    "total_registrations": 0
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2026,
+    "month": "february",
+    "website_registrations": 1890,
+    "smart_app_registrations": 2002,
+    "total_registrations": 3892
+  },
+  {
+    "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+    "year": 2026,
+    "month": "march",
+    "website_registrations": 0,
+    "smart_app_registrations": 0,
+    "total_registrations": 0
+  }
+]

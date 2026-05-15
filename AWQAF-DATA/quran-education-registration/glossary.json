@@ -1,0 +1,56 @@
+{
+  "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+  "source": {
+    "organization": "General Authority for Islamic Affairs, Endowments and Zakat",
+    "department": "Quran Education",
+    "phone": "8008222",
+    "data_sources": "Administrative record",
+    "methodology": "Counting the number of monthly transactions related to the Holy Quran education service according to administrative records"
+  },
+  "coverage": {
+    "area": "Each Emirate within the country",
+    "periodicity": "Yearly /monthly"
+  },
+  "indicator": {
+    "name": "Monthly statistics for the Holy Quran education service",
+    "definition": "Counting the number of monthly transactions related to the Holy Quran education student registration service",
+    "unit": "Number"
+  },
+  "fields": {
+    "website_registrations": {
+      "original_name": "الموقع الالكتروني (Website)",
+      "parent_group": "Service Delivery Channels",
+      "description": "Number of student registrations submitted via the website"
+    },
+    "smart_app_registrations": {
+      "original_name": "التطبيق الذكي (Smart Application)",
+      "parent_group": "Service Delivery Channels",
+      "description": "Number of student registrations submitted via the smart application"
+    },
+    "total_registrations": {
+      "original_name": null,
+      "parent_group": "Service Delivery Channels",
+      "description": "Sum of website and smart application registrations (computed)"
+    }
+  },
+  "terms": [
+    {
+      "term": "Transactions by month",
+      "original_arabic": "المعاملات حسب الأشهر",
+      "definition": "Number of transactions or requests executed or registered during a specific time period",
+      "calculation": "Number of incoming requests",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative records"
+    },
+    {
+      "term": "Service Delivery Channels",
+      "original_arabic": "قنوات تقديم الخدمة",
+      "definition": "Platforms through which services are provided to customers, including websites and smart applications",
+      "calculation": "Number of incoming requests",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative records"
+    }
+  ]
+}

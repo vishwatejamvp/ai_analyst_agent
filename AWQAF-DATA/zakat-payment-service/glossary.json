@@ -1,0 +1,213 @@
+{
+  "dataset": "Zakat Payment Service Statistics",
+  "source": {
+    "organization": "General Authority of Islamic Affairs, Endowments and Zakat",
+    "department": "Zakat Fund Management",
+    "phone": "8008222",
+    "data_sources": "Administrative Records",
+    "methodology": "Total number of payers and Zakat funds collected classified by type of Zakat collection channels"
+  },
+  "coverage": {
+    "area": "All Emirates of the Country",
+    "periodicity": "Monthly and Yearly"
+  },
+  "indicator": {
+    "name": "Statistics of Zakat Payments and Major Benefactors by Zakat Collection Channels for the Period (2025) (No Poverty _ Decent Work and Economic Growth)",
+    "definition": "A report reviewing Zakat collection channels and the total number of payers and Zakat funds collected by year, highlighting the contribution to Sustainable Development Goals, specifically Goals 1 and 8: No Poverty and Decent Work and Economic Growth.",
+    "unit": "Numbers",
+    "sdg_alignment": "SDG 1 (No Poverty), SDG 8 (Decent Work and Economic Growth)"
+  },
+  "fields": {
+    "channel": {
+      "original_name": "Zakat Collection Channels",
+      "description": "The payment channel through which Zakat funds were collected"
+    },
+    "number_of_payers": {
+      "original_name": "Numbers",
+      "description": "Count of individual Zakat payers who used this channel in the given month",
+      "unit": "count"
+    },
+    "funds_collected_aed": {
+      "original_name": "Funds",
+      "description": "Total Zakat funds collected through this channel in the given month",
+      "unit": "AED"
+    }
+  },
+  "terms": [
+    {
+      "term": "Numbers",
+      "definition": "Number of Payers",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Zakat Expenditures",
+      "definition": "Financial Amounts Collected",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Zakat Collection Channels",
+      "definition": "All channels through which Zakat funds are collected",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Numbers",
+      "definition": "Number of Payers",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Funds",
+      "definition": "Financial Amounts Collected",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Total Number of Payers and Zakat Funds Collected by Year",
+      "definition": "Total Number of Payers and Zakat Funds Collected by Year",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Direct Payers at the Authority",
+      "definition": "The category of payers who pay in person",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Direct Payers in Banks",
+      "definition": "The category of payers who pay via transfer to the Authority's accounts in various banks.",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Dubai Government - Electronic Payment",
+      "definition": "The category of payers who pay via the Dubai Pay channel.",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "DubaiNow",
+      "definition": "The category of payers who pay via the DubaiNow app",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Etisalat - SMS",
+      "definition": "The category of payers who pay via Etisalat SMS service",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Etisalat - ATM",
+      "definition": "The category of payers who pay via Etisalat ATM service",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Kiosk IT",
+      "definition": "The category of payers who pay via Kiosk IT service",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Etihad Miles",
+      "definition": "The category of payers who pay via the Etihad Miles website",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "BANK-IVR",
+      "definition": "The category of payers who pay via smart bank apps",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "BANK-IB",
+      "definition": "The category of payers who pay via bank websites",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "BANK-ATM",
+      "definition": "The category of payers who pay via bank ATMs",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "BANK-MOB",
+      "definition": "The category of payers who pay via bank Interactive Voice Response (IVR)",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "ATMs - Max Box",
+      "definition": "The category of payers who pay via the widespread Max Box service",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "ATM Box - Smart Vision",
+      "definition": "The category of payers who pay via the widespread Smart Vision service",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Abu Dhabi Payment Box TAM",
+      "definition": "The category of payers who pay via the TAM app",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Other Revenues / Expense Returns",
+      "definition": "Amounts obtained from expense returns",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Investment Income / Deposits / Afaq Finance",
+      "definition": "Amounts obtained from investing Zakat surplus",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Directed Zakat Trusts - Major Donors Offices",
+      "definition": "The category of payers who direct their Zakat to various eligible groups and projects",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Directed Charity Trusts - Major Donors Offices",
+      "definition": "The category of benefactors who direct their charities to various eligible groups and projects",
+      "unit": "Dirham",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    }
+  ]
+}

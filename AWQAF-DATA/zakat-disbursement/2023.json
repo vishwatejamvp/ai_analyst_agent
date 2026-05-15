@@ -1,0 +1,1121 @@
+{
+  "year": 2023,
+  "dataset": "Key Outcomes of Zakat Disbursement",
+  "notes": [],
+  "projects": [
+    {
+      "project": "Low Income Project (Da'em)",
+      "months": {
+        "january": {
+          "eligible_families": 86,
+          "zakat_expenditures_aed": 1014025.0
+        },
+        "february": {
+          "eligible_families": 142,
+          "zakat_expenditures_aed": 2396500.0
+        },
+        "march": {
+          "eligible_families": 169,
+          "zakat_expenditures_aed": 1512480.0
+        },
+        "april": {
+          "eligible_families": 224,
+          "zakat_expenditures_aed": 1500800.0
+        },
+        "may": {
+          "eligible_families": 234,
+          "zakat_expenditures_aed": 3790627.0
+        },
+        "june": {
+          "eligible_families": 148,
+          "zakat_expenditures_aed": 2091800.0
+        },
+        "july": {
+          "eligible_families": 172,
+          "zakat_expenditures_aed": 2905100.0
+        },
+        "august": {
+          "eligible_families": 98,
+          "zakat_expenditures_aed": 1445000.0
+        },
+        "september": {
+          "eligible_families": 111,
+          "zakat_expenditures_aed": 1774800.0
+        },
+        "october": {
+          "eligible_families": 114,
+          "zakat_expenditures_aed": 5105865.0
+        },
+        "november": {
+          "eligible_families": 134,
+          "zakat_expenditures_aed": 3583930.0
+        },
+        "december": {
+          "eligible_families": 57,
+          "zakat_expenditures_aed": 1350000.0
+        }
+      }
+    },
+    {
+      "project": "Students Project (Schools / Iqra)",
+      "months": {
+        "january": {
+          "eligible_families": 9,
+          "zakat_expenditures_aed": 63000.0
+        },
+        "february": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "march": {
+          "eligible_families": 260,
+          "zakat_expenditures_aed": 1458412.0
+        },
+        "april": {
+          "eligible_families": 91,
+          "zakat_expenditures_aed": 512361.0
+        },
+        "may": {
+          "eligible_families": 84,
+          "zakat_expenditures_aed": 473015.0
+        },
+        "june": {
+          "eligible_families": 128,
+          "zakat_expenditures_aed": 718270.0
+        },
+        "july": {
+          "eligible_families": 197,
+          "zakat_expenditures_aed": 1119408.0
+        },
+        "august": {
+          "eligible_families": 110,
+          "zakat_expenditures_aed": 627036.25
+        },
+        "september": {
+          "eligible_families": 12,
+          "zakat_expenditures_aed": 120400.0
+        },
+        "october": {
+          "eligible_families": 35,
+          "zakat_expenditures_aed": 235846.0
+        },
+        "november": {
+          "eligible_families": 85,
+          "zakat_expenditures_aed": 501219.0
+        },
+        "december": {
+          "eligible_families": 226,
+          "zakat_expenditures_aed": 1310899.0
+        }
+      }
+    },
+    {
+      "project": "University Students Project",
+      "months": {
+        "january": {
+          "eligible_families": 3,
+          "zakat_expenditures_aed": 55753.0
+        },
+        "february": {
+          "eligible_families": 1,
+          "zakat_expenditures_aed": 5925.0
+        },
+        "march": {
+          "eligible_families": 1,
+          "zakat_expenditures_aed": 15251.0
+        },
+        "april": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "may": {
+          "eligible_families": 3,
+          "zakat_expenditures_aed": 57600.0
+        },
+        "june": {
+          "eligible_families": 3,
+          "zakat_expenditures_aed": 61498.0
+        },
+        "july": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "august": {
+          "eligible_families": 17,
+          "zakat_expenditures_aed": 2136909.7
+        },
+        "september": {
+          "eligible_families": 4,
+          "zakat_expenditures_aed": 722626.0
+        },
+        "october": {
+          "eligible_families": 8,
+          "zakat_expenditures_aed": 351724.0
+        },
+        "november": {
+          "eligible_families": 2,
+          "zakat_expenditures_aed": 76695.0
+        },
+        "december": {
+          "eligible_families": 37,
+          "zakat_expenditures_aed": 756098.0
+        }
+      }
+    },
+    {
+      "project": "Citizen Women Wives of Non-Citizens Project (Mawadda)",
+      "months": {
+        "january": {
+          "eligible_families": 16,
+          "zakat_expenditures_aed": 720000.0
+        },
+        "february": {
+          "eligible_families": 161,
+          "zakat_expenditures_aed": 7422000.0
+        },
+        "march": {
+          "eligible_families": 53,
+          "zakat_expenditures_aed": 2253400.0
+        },
+        "april": {
+          "eligible_families": 27,
+          "zakat_expenditures_aed": 506000.0
+        },
+        "may": {
+          "eligible_families": 91,
+          "zakat_expenditures_aed": 5112000.0
+        },
+        "june": {
+          "eligible_families": 98,
+          "zakat_expenditures_aed": 5634000.0
+        },
+        "july": {
+          "eligible_families": 112,
+          "zakat_expenditures_aed": 5820000.0
+        },
+        "august": {
+          "eligible_families": 89,
+          "zakat_expenditures_aed": 4656000.0
+        },
+        "september": {
+          "eligible_families": 46,
+          "zakat_expenditures_aed": 2459000.0
+        },
+        "october": {
+          "eligible_families": 86,
+          "zakat_expenditures_aed": 4320000.0
+        },
+        "november": {
+          "eligible_families": 30,
+          "zakat_expenditures_aed": 1230000.0
+        },
+        "december": {
+          "eligible_families": 63,
+          "zakat_expenditures_aed": 3402000.0
+        }
+      }
+    },
+    {
+      "project": "People of Determination Project (Amal)",
+      "months": {
+        "january": {
+          "eligible_families": 1,
+          "zakat_expenditures_aed": 72000.0
+        },
+        "february": {
+          "eligible_families": 8,
+          "zakat_expenditures_aed": 218000.0
+        },
+        "march": {
+          "eligible_families": 15,
+          "zakat_expenditures_aed": 511000.0
+        },
+        "april": {
+          "eligible_families": 31,
+          "zakat_expenditures_aed": 897000.0
+        },
+        "may": {
+          "eligible_families": 97,
+          "zakat_expenditures_aed": 2538500.0
+        },
+        "june": {
+          "eligible_families": 12,
+          "zakat_expenditures_aed": 306000.0
+        },
+        "july": {
+          "eligible_families": 7,
+          "zakat_expenditures_aed": 234500.0
+        },
+        "august": {
+          "eligible_families": 57,
+          "zakat_expenditures_aed": 1497000.0
+        },
+        "september": {
+          "eligible_families": 36,
+          "zakat_expenditures_aed": 1013000.0
+        },
+        "october": {
+          "eligible_families": 35,
+          "zakat_expenditures_aed": 1132000.0
+        },
+        "november": {
+          "eligible_families": 12,
+          "zakat_expenditures_aed": 398500.0
+        },
+        "december": {
+          "eligible_families": 56,
+          "zakat_expenditures_aed": 985000.0
+        }
+      }
+    },
+    {
+      "project": "People of Determination Project (Musahama)",
+      "months": {
+        "january": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "february": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "march": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "april": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "may": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "june": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "july": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "august": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "september": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "october": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "november": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "december": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        }
+      }
+    },
+    {
+      "project": "Senior Citizens Project",
+      "months": {
+        "january": {
+          "eligible_families": 8,
+          "zakat_expenditures_aed": 154000.0
+        },
+        "february": {
+          "eligible_families": 25,
+          "zakat_expenditures_aed": 650500.0
+        },
+        "march": {
+          "eligible_families": 113,
+          "zakat_expenditures_aed": 3044000.0
+        },
+        "april": {
+          "eligible_families": 62,
+          "zakat_expenditures_aed": 1335000.0
+        },
+        "may": {
+          "eligible_families": 84,
+          "zakat_expenditures_aed": 2017000.0
+        },
+        "june": {
+          "eligible_families": 46,
+          "zakat_expenditures_aed": 1468000.0
+        },
+        "july": {
+          "eligible_families": 29,
+          "zakat_expenditures_aed": 865000.0
+        },
+        "august": {
+          "eligible_families": 86,
+          "zakat_expenditures_aed": 2262000.0
+        },
+        "september": {
+          "eligible_families": 66,
+          "zakat_expenditures_aed": 1565500.0
+        },
+        "october": {
+          "eligible_families": 47,
+          "zakat_expenditures_aed": 1572000.0
+        },
+        "november": {
+          "eligible_families": 51,
+          "zakat_expenditures_aed": 1494500.0
+        },
+        "december": {
+          "eligible_families": 37,
+          "zakat_expenditures_aed": 1008000.0
+        }
+      }
+    },
+    {
+      "project": "Divorcees Project (Talahum)",
+      "months": {
+        "january": {
+          "eligible_families": 5,
+          "zakat_expenditures_aed": 210000.0
+        },
+        "february": {
+          "eligible_families": 92,
+          "zakat_expenditures_aed": 3531500.0
+        },
+        "march": {
+          "eligible_families": 45,
+          "zakat_expenditures_aed": 1740000.0
+        },
+        "april": {
+          "eligible_families": 35,
+          "zakat_expenditures_aed": 954500.0
+        },
+        "may": {
+          "eligible_families": 118,
+          "zakat_expenditures_aed": 3373500.0
+        },
+        "june": {
+          "eligible_families": 60,
+          "zakat_expenditures_aed": 2170000.0
+        },
+        "july": {
+          "eligible_families": 82,
+          "zakat_expenditures_aed": 3423500.0
+        },
+        "august": {
+          "eligible_families": 63,
+          "zakat_expenditures_aed": 2460000.0
+        },
+        "september": {
+          "eligible_families": 88,
+          "zakat_expenditures_aed": 3036000.0
+        },
+        "october": {
+          "eligible_families": 94,
+          "zakat_expenditures_aed": 3204000.0
+        },
+        "november": {
+          "eligible_families": 67,
+          "zakat_expenditures_aed": 2370000.0
+        },
+        "december": {
+          "eligible_families": 69,
+          "zakat_expenditures_aed": 939000.0
+        }
+      }
+    },
+    {
+      "project": "Orphans' Families Project (Kafel)",
+      "months": {
+        "january": {
+          "eligible_families": 1,
+          "zakat_expenditures_aed": 24000.0
+        },
+        "february": {
+          "eligible_families": 1,
+          "zakat_expenditures_aed": 18000.0
+        },
+        "march": {
+          "eligible_families": 12,
+          "zakat_expenditures_aed": 342000.0
+        },
+        "april": {
+          "eligible_families": 17,
+          "zakat_expenditures_aed": 420000.0
+        },
+        "may": {
+          "eligible_families": 38,
+          "zakat_expenditures_aed": 1002000.0
+        },
+        "june": {
+          "eligible_families": 30,
+          "zakat_expenditures_aed": 727500.0
+        },
+        "july": {
+          "eligible_families": 33,
+          "zakat_expenditures_aed": 804000.0
+        },
+        "august": {
+          "eligible_families": 22,
+          "zakat_expenditures_aed": 594000.0
+        },
+        "september": {
+          "eligible_families": 32,
+          "zakat_expenditures_aed": 828000.0
+        },
+        "october": {
+          "eligible_families": 17,
+          "zakat_expenditures_aed": 480000.0
+        },
+        "november": {
+          "eligible_families": 18,
+          "zakat_expenditures_aed": 504000.0
+        },
+        "december": {
+          "eligible_families": 38,
+          "zakat_expenditures_aed": 475500.0
+        }
+      }
+    },
+    {
+      "project": "Widows Project (Rahma)",
+      "months": {
+        "january": {
+          "eligible_families": 2,
+          "zakat_expenditures_aed": 48000.0
+        },
+        "february": {
+          "eligible_families": 6,
+          "zakat_expenditures_aed": 104500.0
+        },
+        "march": {
+          "eligible_families": 28,
+          "zakat_expenditures_aed": 768000.0
+        },
+        "april": {
+          "eligible_families": 41,
+          "zakat_expenditures_aed": 728000.0
+        },
+        "may": {
+          "eligible_families": 51,
+          "zakat_expenditures_aed": 1214000.0
+        },
+        "june": {
+          "eligible_families": 64,
+          "zakat_expenditures_aed": 972500.0
+        },
+        "july": {
+          "eligible_families": 52,
+          "zakat_expenditures_aed": 854000.0
+        },
+        "august": {
+          "eligible_families": 46,
+          "zakat_expenditures_aed": 818000.0
+        },
+        "september": {
+          "eligible_families": 115,
+          "zakat_expenditures_aed": 2016000.0
+        },
+        "october": {
+          "eligible_families": 51,
+          "zakat_expenditures_aed": 918000.0
+        },
+        "november": {
+          "eligible_families": 38,
+          "zakat_expenditures_aed": 906000.0
+        },
+        "december": {
+          "eligible_families": 43,
+          "zakat_expenditures_aed": 424000.0
+        }
+      }
+    },
+    {
+      "project": "Patients Project (Ajr wa Afiya)",
+      "months": {
+        "january": {
+          "eligible_families": 20,
+          "zakat_expenditures_aed": 158334.0
+        },
+        "february": {
+          "eligible_families": 21,
+          "zakat_expenditures_aed": 286236.0
+        },
+        "march": {
+          "eligible_families": 19,
+          "zakat_expenditures_aed": 358639.0
+        },
+        "april": {
+          "eligible_families": 10,
+          "zakat_expenditures_aed": 400936.0
+        },
+        "may": {
+          "eligible_families": 32,
+          "zakat_expenditures_aed": 656955.0
+        },
+        "june": {
+          "eligible_families": 18,
+          "zakat_expenditures_aed": 197416.0
+        },
+        "july": {
+          "eligible_families": 5,
+          "zakat_expenditures_aed": 38759.0
+        },
+        "august": {
+          "eligible_families": 18,
+          "zakat_expenditures_aed": 362865.0
+        },
+        "september": {
+          "eligible_families": 33,
+          "zakat_expenditures_aed": 672017.0
+        },
+        "october": {
+          "eligible_families": 40,
+          "zakat_expenditures_aed": 786297.0
+        },
+        "november": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 542613.0
+        },
+        "december": {
+          "eligible_families": 21,
+          "zakat_expenditures_aed": 426671.0
+        }
+      }
+    },
+    {
+      "project": "Inmates' Families Project (Tawasul)",
+      "months": {
+        "january": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "february": {
+          "eligible_families": 12,
+          "zakat_expenditures_aed": 528000.0
+        },
+        "march": {
+          "eligible_families": 9,
+          "zakat_expenditures_aed": 384000.0
+        },
+        "april": {
+          "eligible_families": 9,
+          "zakat_expenditures_aed": 386000.0
+        },
+        "may": {
+          "eligible_families": 12,
+          "zakat_expenditures_aed": 413500.0
+        },
+        "june": {
+          "eligible_families": 7,
+          "zakat_expenditures_aed": 390000.0
+        },
+        "july": {
+          "eligible_families": 4,
+          "zakat_expenditures_aed": 138000.0
+        },
+        "august": {
+          "eligible_families": 11,
+          "zakat_expenditures_aed": 438000.0
+        },
+        "september": {
+          "eligible_families": 3,
+          "zakat_expenditures_aed": 120000.0
+        },
+        "october": {
+          "eligible_families": 29,
+          "zakat_expenditures_aed": 1266000.0
+        },
+        "november": {
+          "eligible_families": 8,
+          "zakat_expenditures_aed": 132000.0
+        },
+        "december": {
+          "eligible_families": 6,
+          "zakat_expenditures_aed": 228000.0
+        }
+      }
+    },
+    {
+      "project": "Job Seekers Project (I'ana)",
+      "months": {
+        "january": {
+          "eligible_families": 92,
+          "zakat_expenditures_aed": 2705500.0
+        },
+        "february": {
+          "eligible_families": 53,
+          "zakat_expenditures_aed": 993800.0
+        },
+        "march": {
+          "eligible_families": 62,
+          "zakat_expenditures_aed": 983296.0
+        },
+        "april": {
+          "eligible_families": 63,
+          "zakat_expenditures_aed": 1696800.0
+        },
+        "may": {
+          "eligible_families": 50,
+          "zakat_expenditures_aed": 1059300.0
+        },
+        "june": {
+          "eligible_families": 66,
+          "zakat_expenditures_aed": 1697000.0
+        },
+        "july": {
+          "eligible_families": 49,
+          "zakat_expenditures_aed": 1697000.0
+        },
+        "august": {
+          "eligible_families": 44,
+          "zakat_expenditures_aed": 1348700.0
+        },
+        "september": {
+          "eligible_families": 50,
+          "zakat_expenditures_aed": 1467000.0
+        },
+        "october": {
+          "eligible_families": 69,
+          "zakat_expenditures_aed": 1267566.0
+        },
+        "november": {
+          "eligible_families": 80,
+          "zakat_expenditures_aed": 1256200.0
+        },
+        "december": {
+          "eligible_families": 33,
+          "zakat_expenditures_aed": 1089000.0
+        }
+      }
+    },
+    {
+      "project": "Debtors Project (Khalas)",
+      "months": {
+        "january": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "february": {
+          "eligible_families": 5,
+          "zakat_expenditures_aed": 257179.0
+        },
+        "march": {
+          "eligible_families": 3,
+          "zakat_expenditures_aed": 303970.87
+        },
+        "april": {
+          "eligible_families": 18,
+          "zakat_expenditures_aed": 642787.0
+        },
+        "may": {
+          "eligible_families": 11,
+          "zakat_expenditures_aed": 463603.17
+        },
+        "june": {
+          "eligible_families": 10,
+          "zakat_expenditures_aed": 329298.0
+        },
+        "july": {
+          "eligible_families": 5,
+          "zakat_expenditures_aed": 252602.0
+        },
+        "august": {
+          "eligible_families": 3,
+          "zakat_expenditures_aed": 166020.0
+        },
+        "september": {
+          "eligible_families": 2,
+          "zakat_expenditures_aed": 39244.0
+        },
+        "october": {
+          "eligible_families": 3,
+          "zakat_expenditures_aed": 91322.3
+        },
+        "november": {
+          "eligible_families": 3,
+          "zakat_expenditures_aed": 100971.0
+        },
+        "december": {
+          "eligible_families": 1,
+          "zakat_expenditures_aed": 30000.0
+        }
+      }
+    },
+    {
+      "project": "New Muslims Project (Ummati)",
+      "months": {
+        "january": {
+          "eligible_families": 39,
+          "zakat_expenditures_aed": 195000.0
+        },
+        "february": {
+          "eligible_families": 95,
+          "zakat_expenditures_aed": 475000.0
+        },
+        "march": {
+          "eligible_families": 90,
+          "zakat_expenditures_aed": 450000.0
+        },
+        "april": {
+          "eligible_families": 78,
+          "zakat_expenditures_aed": 390000.0
+        },
+        "may": {
+          "eligible_families": 127,
+          "zakat_expenditures_aed": 635000.0
+        },
+        "june": {
+          "eligible_families": 95,
+          "zakat_expenditures_aed": 475000.0
+        },
+        "july": {
+          "eligible_families": 132,
+          "zakat_expenditures_aed": 660000.0
+        },
+        "august": {
+          "eligible_families": 86,
+          "zakat_expenditures_aed": 430000.0
+        },
+        "september": {
+          "eligible_families": 110,
+          "zakat_expenditures_aed": 550000.0
+        },
+        "october": {
+          "eligible_families": 102,
+          "zakat_expenditures_aed": 480000.0
+        },
+        "november": {
+          "eligible_families": 34,
+          "zakat_expenditures_aed": 75000.0
+        },
+        "december": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        }
+      }
+    },
+    {
+      "project": "Zakat Al-Fitr Project",
+      "months": {
+        "january": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "february": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "march": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "april": {
+          "eligible_families": 1526,
+          "zakat_expenditures_aed": 3052000.0
+        },
+        "may": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "june": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "july": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "august": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "september": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "october": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "november": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "december": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        }
+      }
+    },
+    {
+      "project": "Disaster Victims Project",
+      "months": {
+        "january": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "february": {
+          "eligible_families": 2,
+          "zakat_expenditures_aed": 10217.0
+        },
+        "march": {
+          "eligible_families": 3,
+          "zakat_expenditures_aed": 27058.0
+        },
+        "april": {
+          "eligible_families": 1,
+          "zakat_expenditures_aed": 5000.0
+        },
+        "may": {
+          "eligible_families": 2,
+          "zakat_expenditures_aed": 22217.0
+        },
+        "june": {
+          "eligible_families": 1,
+          "zakat_expenditures_aed": 1903.0
+        },
+        "july": {
+          "eligible_families": 1,
+          "zakat_expenditures_aed": 5000.0
+        },
+        "august": {
+          "eligible_families": 1,
+          "zakat_expenditures_aed": 20000.0
+        },
+        "september": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "october": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "november": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "december": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        }
+      }
+    },
+    {
+      "project": "University Students Sustainability Project",
+      "months": {
+        "january": {
+          "eligible_families": 11,
+          "zakat_expenditures_aed": 158400.0
+        },
+        "february": {
+          "eligible_families": 38,
+          "zakat_expenditures_aed": 547200.0
+        },
+        "march": {
+          "eligible_families": 109,
+          "zakat_expenditures_aed": 1569600.0
+        },
+        "april": {
+          "eligible_families": 18,
+          "zakat_expenditures_aed": 259605.0
+        },
+        "may": {
+          "eligible_families": 2,
+          "zakat_expenditures_aed": 28800.0
+        },
+        "june": {
+          "eligible_families": 1,
+          "zakat_expenditures_aed": 14400.0
+        },
+        "july": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "august": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "september": {
+          "eligible_families": 30,
+          "zakat_expenditures_aed": 432000.0
+        },
+        "october": {
+          "eligible_families": 86,
+          "zakat_expenditures_aed": 1238400.0
+        },
+        "november": {
+          "eligible_families": 42,
+          "zakat_expenditures_aed": 602800.0
+        },
+        "december": {
+          "eligible_families": 3,
+          "zakat_expenditures_aed": 43200.0
+        }
+      }
+    },
+    {
+      "project": "Eid Clothing Project",
+      "months": {
+        "january": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "february": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "march": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "april": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "may": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "june": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "july": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "august": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "september": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "october": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "november": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        },
+        "december": {
+          "eligible_families": 0,
+          "zakat_expenditures_aed": 0.0
+        }
+      }
+    },
+    {
+      "project": "Emergency Cases / COVID-19",
+      "months": {
+        "january": {
+          "eligible_families": 23,
+          "zakat_expenditures_aed": 426000.0
+        },
+        "february": {
+          "eligible_families": 22,
+          "zakat_expenditures_aed": 426000.0
+        },
+        "march": {
+          "eligible_families": 20,
+          "zakat_expenditures_aed": 309000.0
+        },
+        "april": {
+          "eligible_families": 24,
+          "zakat_expenditures_aed": 450000.0
+        },
+        "may": {
+          "eligible_families": 35,
+          "zakat_expenditures_aed": 584000.0
+        },
+        "june": {
+          "eligible_families": 31,
+          "zakat_expenditures_aed": 465000.0
+        },
+        "july": {
+          "eligible_families": 23,
+          "zakat_expenditures_aed": 336000.0
+        },
+        "august": {
+          "eligible_families": 21,
+          "zakat_expenditures_aed": 369000.0
+        },
+        "september": {
+          "eligible_families": 29,
+          "zakat_expenditures_aed": 501000.0
+        },
+        "october": {
+          "eligible_families": 22,
+          "zakat_expenditures_aed": 357000.0
+        },
+        "november": {
+          "eligible_families": 24,
+          "zakat_expenditures_aed": 411000.0
+        },
+        "december": {
+          "eligible_families": 15,
+          "zakat_expenditures_aed": 243000.0
+        }
+      }
+    },
+    {
+      "project": "Modest Families Project",
+      "months": {
+        "january": {
+          "eligible_families": 12,
+          "zakat_expenditures_aed": 432000.0
+        },
+        "february": {
+          "eligible_families": 18,
+          "zakat_expenditures_aed": 562053.0
+        },
+        "march": {
+          "eligible_families": 9,
+          "zakat_expenditures_aed": 380600.0
+        },
+        "april": {
+          "eligible_families": 113,
+          "zakat_expenditures_aed": 682000.0
+        },
+        "may": {
+          "eligible_families": 17,
+          "zakat_expenditures_aed": 981150.0
+        },
+        "june": {
+          "eligible_families": 9,
+          "zakat_expenditures_aed": 366000.0
+        },
+        "july": {
+          "eligible_families": 15,
+          "zakat_expenditures_aed": 509005.0
+        },
+        "august": {
+          "eligible_families": 8,
+          "zakat_expenditures_aed": 204000.0
+        },
+        "september": {
+          "eligible_families": 7,
+          "zakat_expenditures_aed": 260000.0
+        },
+        "october": {
+          "eligible_families": 15,
+          "zakat_expenditures_aed": 576000.0
+        },
+        "november": {
+          "eligible_families": 17,
+          "zakat_expenditures_aed": 912000.0
+        },
+        "december": {
+          "eligible_families": 14,
+          "zakat_expenditures_aed": 672000.0
+        }
+      }
+    }
+  ],
+  "totals": {}
+}

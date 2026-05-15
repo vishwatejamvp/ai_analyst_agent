@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.eggs/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Data / generated
+data/uploads/*
+!data/uploads/.gitkeep
+data/charts/*
+!data/charts/.gitkeep
+data/faiss_index/*
+!data/faiss_index/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Eval harness — saved per-run results (kept local only)
+tests/eval/last_run.json
+tests/eval/results/

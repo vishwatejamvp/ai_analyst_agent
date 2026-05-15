@@ -1,0 +1,59 @@
+{
+  "dataset": "Monthly Statistics for Hajj Package Service",
+  "source": {
+    "organization": "General Authority of Islamic Affairs, Endowments & Zakat",
+    "department": "Hajj and Umrah Affairs - Pilgrims and Umrah Performers Department",
+    "phone": "8008222",
+    "data_sources": "Administrative records",
+    "methodology": "The indicator is calculated by summing the number of those who obtained the Hajj package and are registered according to the administrative records."
+  },
+  "coverage": {
+    "area": "Each Emirate within the country",
+    "periodicity": "Yearly /monthly"
+  },
+  "indicator": {
+    "name": "Monthly statistics for Hajj permit service",
+    "definition": "Counting the number of transactions related to Hajj permit service",
+    "unit": "Number"
+  },
+  "fields": {
+    "website_transactions": {
+      "original_name": "Website",
+      "parent_group": "Service Delivery Channels",
+      "description": "Number of Hajj permit transactions submitted via the website"
+    },
+    "smart_app_transactions": {
+      "original_name": "Smart Application",
+      "parent_group": "Service Delivery Channels",
+      "description": "Number of Hajj permit transactions submitted via the smart application"
+    },
+    "total_transactions": {
+      "original_name": null,
+      "parent_group": "Service Delivery Channels",
+      "description": "Sum of website and smart application transactions (computed)"
+    },
+    "hajj_package_recipients": {
+      "original_name": "No. of Hajj Package Recipients",
+      "parent_group": null,
+      "description": "Number of individuals who received the Hajj package in that month"
+    }
+  },
+  "terms": [
+    {
+      "term": "Hajj package",
+      "definition": "A set of procedures (registration, screening, medical examination, and permit issuance)",
+      "calculation": "Number of Beneficiaries",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Electronic system"
+    },
+    {
+      "term": "Customers",
+      "definition": "All those who registered for the Hajj package service",
+      "calculation": "Total Number of Registered Individuals for Hajj Permits",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Electronic system"
+    }
+  ]
+}

@@ -1,0 +1,1778 @@
+[
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "january",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 68.18,
+    "revenues_collected_aed": 99350.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "february",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 70.45,
+    "revenues_collected_aed": 30750.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "march",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 72.73,
+    "revenues_collected_aed": 124945.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "april",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 68.18,
+    "revenues_collected_aed": 88575.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "may",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 72.73,
+    "revenues_collected_aed": 64468.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "june",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 72.73,
+    "revenues_collected_aed": 86439.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "july",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 81.82,
+    "revenues_collected_aed": 160514.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "august",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 88.64,
+    "revenues_collected_aed": 105079.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "september",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 86.36,
+    "revenues_collected_aed": 42864.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "october",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 88.64,
+    "revenues_collected_aed": 145579.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "november",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 86.36,
+    "revenues_collected_aed": 96489.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "december",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 72.73,
+    "revenues_collected_aed": 130714.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "january",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 54.34,
+    "revenues_collected_aed": 80875.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "february",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 53.76,
+    "revenues_collected_aed": 84250.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "march",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 54.34,
+    "revenues_collected_aed": 119450.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "april",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 54.34,
+    "revenues_collected_aed": 86100.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "may",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 57.8,
+    "revenues_collected_aed": 133318.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "june",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 57.8,
+    "revenues_collected_aed": 60899.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "july",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 48.55,
+    "revenues_collected_aed": 128889.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "august",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 61.27,
+    "revenues_collected_aed": 175229.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "september",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 65.9,
+    "revenues_collected_aed": 143334.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "october",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 68.21,
+    "revenues_collected_aed": 187489.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "november",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 68.79,
+    "revenues_collected_aed": 107789.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "december",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 69.94,
+    "revenues_collected_aed": 237089.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "january",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 60.47,
+    "revenues_collected_aed": 584690.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "february",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 55.61,
+    "revenues_collected_aed": 452152.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "march",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 57.44,
+    "revenues_collected_aed": 515429.83
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "april",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 58.75,
+    "revenues_collected_aed": 474970.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "may",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 59.9,
+    "revenues_collected_aed": 550560.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "june",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 57.55,
+    "revenues_collected_aed": 288842.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "july",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 57.29,
+    "revenues_collected_aed": 679137.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "august",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 57.29,
+    "revenues_collected_aed": 310992.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "september",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 59.38,
+    "revenues_collected_aed": 513280.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "october",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 66.15,
+    "revenues_collected_aed": 618756.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "november",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 61.72,
+    "revenues_collected_aed": 369957.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "december",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 61.72,
+    "revenues_collected_aed": 428256.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "january",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 54.73,
+    "revenues_collected_aed": 300025.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "february",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 54.73,
+    "revenues_collected_aed": 67950.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "march",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 54.73,
+    "revenues_collected_aed": 36625.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "april",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 54.73,
+    "revenues_collected_aed": 117700.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "may",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 56.08,
+    "revenues_collected_aed": 126068.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "june",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 56.0,
+    "revenues_collected_aed": 41594.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "july",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 57.05,
+    "revenues_collected_aed": 138989.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "august",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 56.29,
+    "revenues_collected_aed": 103204.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "september",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 56.29,
+    "revenues_collected_aed": 62439.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "october",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 56.29,
+    "revenues_collected_aed": 165859.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "november",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 53.64,
+    "revenues_collected_aed": 97329.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "december",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 50.63,
+    "revenues_collected_aed": 107764.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "january",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 77.84,
+    "revenues_collected_aed": 806580.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "february",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 79.78,
+    "revenues_collected_aed": 162583.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "march",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 78.17,
+    "revenues_collected_aed": 260685.75
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "april",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 78.17,
+    "revenues_collected_aed": 312925.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "may",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 79.25,
+    "revenues_collected_aed": 412198.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "june",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 79.78,
+    "revenues_collected_aed": 259096.94
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "july",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 79.51,
+    "revenues_collected_aed": 515414.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "august",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 78.71,
+    "revenues_collected_aed": 174616.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "september",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 78.98,
+    "revenues_collected_aed": 386149.17
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "october",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 79.09,
+    "revenues_collected_aed": 423405.02
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "november",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 78.82,
+    "revenues_collected_aed": 128785.75
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "december",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 77.81,
+    "revenues_collected_aed": 315277.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "january",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 81.51,
+    "revenues_collected_aed": 325575.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "february",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 82.35,
+    "revenues_collected_aed": 292495.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "march",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 79.05,
+    "revenues_collected_aed": 242060.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "april",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 77.87,
+    "revenues_collected_aed": 223479.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "may",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 78.66,
+    "revenues_collected_aed": 304742.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "june",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 77.87,
+    "revenues_collected_aed": 226905.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "july",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 77.47,
+    "revenues_collected_aed": 350805.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "august",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 78.66,
+    "revenues_collected_aed": 222115.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "september",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 78.35,
+    "revenues_collected_aed": 251750.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "october",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 79.53,
+    "revenues_collected_aed": 252025.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "november",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 80.31,
+    "revenues_collected_aed": 304792.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2023,
+    "month": "december",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 79.53,
+    "revenues_collected_aed": 252925.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "january",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 79.55,
+    "revenues_collected_aed": 131150.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "february",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 79.55,
+    "revenues_collected_aed": 141625.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "march",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 77.27,
+    "revenues_collected_aed": 93725.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "april",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 77.27,
+    "revenues_collected_aed": 178700.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "may",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 84.09,
+    "revenues_collected_aed": 144955.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "june",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 86.36,
+    "revenues_collected_aed": 175705.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "july",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 84.09,
+    "revenues_collected_aed": 78595.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "august",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 84.09,
+    "revenues_collected_aed": 165975.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "september",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 88.64,
+    "revenues_collected_aed": 185175.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "october",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 93.18,
+    "revenues_collected_aed": 182295.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "november",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 93.18,
+    "revenues_collected_aed": 141650.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "december",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 93.18,
+    "revenues_collected_aed": 151135.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "january",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 49.71,
+    "revenues_collected_aed": 147400.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "february",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 49.71,
+    "revenues_collected_aed": 211240.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "march",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 50.87,
+    "revenues_collected_aed": 142200.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "april",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 52.02,
+    "revenues_collected_aed": 245750.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "may",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 49.71,
+    "revenues_collected_aed": 162405.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "june",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 50.87,
+    "revenues_collected_aed": 127503.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "july",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 49.71,
+    "revenues_collected_aed": 158725.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "august",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 52.91,
+    "revenues_collected_aed": 194650.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "september",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 54.65,
+    "revenues_collected_aed": 116305.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "october",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 62.21,
+    "revenues_collected_aed": 212900.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "november",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 69.19,
+    "revenues_collected_aed": 211980.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "december",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 69.2,
+    "revenues_collected_aed": 136638.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "january",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 52.34,
+    "revenues_collected_aed": 664780.27
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "february",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 54.17,
+    "revenues_collected_aed": 633779.27
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "march",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 52.86,
+    "revenues_collected_aed": 515371.27
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "april",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 55.47,
+    "revenues_collected_aed": 643463.27
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "may",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 54.95,
+    "revenues_collected_aed": 623235.27
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "june",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 51.3,
+    "revenues_collected_aed": 469511.27
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "july",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 54.96,
+    "revenues_collected_aed": 642774.27
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "august",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 54.99,
+    "revenues_collected_aed": 585410.27
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "september",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 62.6,
+    "revenues_collected_aed": 921785.27
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "october",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 65.59,
+    "revenues_collected_aed": 814681.87
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "november",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 75.61,
+    "revenues_collected_aed": 871513.87
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "december",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 78.59,
+    "revenues_collected_aed": 719326.87
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "january",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 49.37,
+    "revenues_collected_aed": 375933.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "february",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 54.37,
+    "revenues_collected_aed": 188083.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "march",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 57.14,
+    "revenues_collected_aed": 133458.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "april",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 55.28,
+    "revenues_collected_aed": 177483.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "may",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 57.14,
+    "revenues_collected_aed": 166833.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "june",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 51.55,
+    "revenues_collected_aed": 75833.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "july",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 52.8,
+    "revenues_collected_aed": 207983.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "august",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 52.17,
+    "revenues_collected_aed": 137483.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "september",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 52.17,
+    "revenues_collected_aed": 160143.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "october",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 55.9,
+    "revenues_collected_aed": 259883.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "november",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 56.79,
+    "revenues_collected_aed": 147698.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "december",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 56.79,
+    "revenues_collected_aed": 184333.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "january",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 56.1,
+    "revenues_collected_aed": 668839.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "february",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 57.18,
+    "revenues_collected_aed": 463230.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "march",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 61.41,
+    "revenues_collected_aed": 377744.45
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "april",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 63.32,
+    "revenues_collected_aed": 529641.52
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "may",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 65.76,
+    "revenues_collected_aed": 542537.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "june",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 66.03,
+    "revenues_collected_aed": 295183.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "july",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 66.4,
+    "revenues_collected_aed": 693168.05
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "august",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 64.13,
+    "revenues_collected_aed": 271873.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "september",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 64.67,
+    "revenues_collected_aed": 467292.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "october",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 68.14,
+    "revenues_collected_aed": 481906.01
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "november",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 68.14,
+    "revenues_collected_aed": 284147.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "december",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 67.4,
+    "revenues_collected_aed": 314341.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "january",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 71.94,
+    "revenues_collected_aed": 402301.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "february",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 71.15,
+    "revenues_collected_aed": 328488.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "march",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 72.44,
+    "revenues_collected_aed": 353439.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "april",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 72.44,
+    "revenues_collected_aed": 338817.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "may",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 72.48,
+    "revenues_collected_aed": 331581.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "june",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 69.38,
+    "revenues_collected_aed": 333016.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "july",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 70.93,
+    "revenues_collected_aed": 415506.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "august",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 69.38,
+    "revenues_collected_aed": 292526.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "september",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 72.45,
+    "revenues_collected_aed": 356581.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "october",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 72.45,
+    "revenues_collected_aed": 371223.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "november",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 75.76,
+    "revenues_collected_aed": 248441.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2024,
+    "month": "december",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 76.89,
+    "revenues_collected_aed": 257841.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "january",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 97.73,
+    "revenues_collected_aed": 142254.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "february",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 95.45,
+    "revenues_collected_aed": 153610.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "march",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 97.06,
+    "revenues_collected_aed": 234234.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "april",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 94.12,
+    "revenues_collected_aed": 282459.93
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "may",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 100.0,
+    "revenues_collected_aed": 286570.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "june",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 100.0,
+    "revenues_collected_aed": 341250.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "july",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 100.0,
+    "revenues_collected_aed": 326110.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "august",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 100.0,
+    "revenues_collected_aed": 409741.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "september",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 98.53,
+    "revenues_collected_aed": 640924.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "october",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 95.59,
+    "revenues_collected_aed": 447781.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "november",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 95.59,
+    "revenues_collected_aed": 449155.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "december",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 99.29,
+    "revenues_collected_aed": 1251045.75
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "january",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 70.93,
+    "revenues_collected_aed": 242053.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "february",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 73.26,
+    "revenues_collected_aed": 280833.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "march",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 74.42,
+    "revenues_collected_aed": 126383.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "april",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 76.74,
+    "revenues_collected_aed": 306783.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "may",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 79.65,
+    "revenues_collected_aed": 277033.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "june",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 87.79,
+    "revenues_collected_aed": 251899.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "july",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 88.95,
+    "revenues_collected_aed": 355266.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "august",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 90.7,
+    "revenues_collected_aed": 241213.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "september",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 91.28,
+    "revenues_collected_aed": 267313.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "october",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 92.53,
+    "revenues_collected_aed": 314743.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "november",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 93.1,
+    "revenues_collected_aed": 392711.95
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "december",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 94.83,
+    "revenues_collected_aed": 214404.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "january",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 80.16,
+    "revenues_collected_aed": 989255.99
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "february",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 80.98,
+    "revenues_collected_aed": 793052.69
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "march",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 80.71,
+    "revenues_collected_aed": 726089.19
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "april",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 83.15,
+    "revenues_collected_aed": 875389.19
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "may",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 87.47,
+    "revenues_collected_aed": 803243.57
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "june",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 86.68,
+    "revenues_collected_aed": 1136304.05
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "july",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 86.68,
+    "revenues_collected_aed": 1144825.42
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "august",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 85.9,
+    "revenues_collected_aed": 952341.49
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "september",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 85.5,
+    "revenues_collected_aed": 875486.19
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "october",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 89.1,
+    "revenues_collected_aed": 947183.19
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "november",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 90.8,
+    "revenues_collected_aed": 814273.19
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "december",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 87.41,
+    "revenues_collected_aed": 689211.64
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "january",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 59.26,
+    "revenues_collected_aed": 428733.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "february",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 59.26,
+    "revenues_collected_aed": 147083.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "march",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 59.26,
+    "revenues_collected_aed": 173033.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "april",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 58.79,
+    "revenues_collected_aed": 325633.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "may",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 66.06,
+    "revenues_collected_aed": 125833.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "june",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 67.88,
+    "revenues_collected_aed": 141758.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "july",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 68.67,
+    "revenues_collected_aed": 282166.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "august",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 71.08,
+    "revenues_collected_aed": 295616.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "september",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 74.69,
+    "revenues_collected_aed": 246616.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "october",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 78.34,
+    "revenues_collected_aed": 297166.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "november",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 80.13,
+    "revenues_collected_aed": 223166.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "december",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 81.41,
+    "revenues_collected_aed": 266866.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "january",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 77.2,
+    "revenues_collected_aed": 889982.3
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "february",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 78.02,
+    "revenues_collected_aed": 459532.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "march",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 78.3,
+    "revenues_collected_aed": 274801.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "april",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 78.67,
+    "revenues_collected_aed": 627992.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "may",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 79.01,
+    "revenues_collected_aed": 556103.32
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "june",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 79.01,
+    "revenues_collected_aed": 306649.17
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "july",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 79.61,
+    "revenues_collected_aed": 794577.04
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "august",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 79.61,
+    "revenues_collected_aed": 442035.83
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "september",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 78.12,
+    "revenues_collected_aed": 510112.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "october",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 76.73,
+    "revenues_collected_aed": 492847.73
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "november",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 77.07,
+    "revenues_collected_aed": 300087.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "december",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 77.26,
+    "revenues_collected_aed": 340417.5
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "january",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 83.4,
+    "revenues_collected_aed": 602167.17
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "february",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 83.4,
+    "revenues_collected_aed": 430269.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "march",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 83.02,
+    "revenues_collected_aed": 364827.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "april",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 85.6,
+    "revenues_collected_aed": 484146.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "may",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 85.99,
+    "revenues_collected_aed": 464386.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "june",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 86.38,
+    "revenues_collected_aed": 465066.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "july",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 86.77,
+    "revenues_collected_aed": 312641.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "august",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 86.77,
+    "revenues_collected_aed": 518071.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "september",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 87.31,
+    "revenues_collected_aed": 318336.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "october",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 88.52,
+    "revenues_collected_aed": 769433.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "november",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 88.52,
+    "revenues_collected_aed": 354266.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2025,
+    "month": "december",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 89.26,
+    "revenues_collected_aed": 364410.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2026,
+    "month": "january",
+    "emirate": "Dubai",
+    "occupancy_rate_pct": 99.3,
+    "revenues_collected_aed": 698039.0
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2026,
+    "month": "january",
+    "emirate": "Sharjah",
+    "occupancy_rate_pct": 97.1,
+    "revenues_collected_aed": 296810.33
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2026,
+    "month": "january",
+    "emirate": "Ajman",
+    "occupancy_rate_pct": 88.4,
+    "revenues_collected_aed": 911681.99
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2026,
+    "month": "january",
+    "emirate": "Umm Al Quwain",
+    "occupancy_rate_pct": 80.2,
+    "revenues_collected_aed": 376286.67
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2026,
+    "month": "january",
+    "emirate": "Ras Al Khaimah",
+    "occupancy_rate_pct": 76.6,
+    "revenues_collected_aed": 709600.83
+  },
+  {
+    "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+    "year": 2026,
+    "month": "january",
+    "emirate": "Fujairah",
+    "occupancy_rate_pct": 89.6,
+    "revenues_collected_aed": 480681.67
+  }
+]

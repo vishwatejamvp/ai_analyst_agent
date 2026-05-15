@@ -1,0 +1,163 @@
+{
+  "year": 2024,
+  "dataset": "Zakat Calculation Service Statistics",
+  "notes": [],
+  "data": [
+    {
+      "month": "january",
+      "channels": {
+        "na_legacy": 0,
+        "call_center": 0,
+        "service_center": 0,
+        "website": 1128,
+        "smartphone_app": 215,
+        "zaki_platform": 25,
+        "mobile_website": 4943
+      },
+      "total": 6311
+    },
+    {
+      "month": "february",
+      "channels": {
+        "na_legacy": 0,
+        "call_center": 0,
+        "service_center": 0,
+        "website": 1687,
+        "smartphone_app": 161,
+        "zaki_platform": 4,
+        "mobile_website": 8619
+      },
+      "total": 10471
+    },
+    {
+      "month": "march",
+      "channels": {
+        "na_legacy": 0,
+        "call_center": 0,
+        "service_center": 0,
+        "website": 4976,
+        "smartphone_app": 1180,
+        "zaki_platform": 46,
+        "mobile_website": 46914
+      },
+      "total": 53116
+    },
+    {
+      "month": "april",
+      "channels": {
+        "na_legacy": 0,
+        "call_center": 0,
+        "service_center": 0,
+        "website": 2543,
+        "smartphone_app": 1291,
+        "zaki_platform": 31,
+        "mobile_website": 28559
+      },
+      "total": 32424
+    },
+    {
+      "month": "may",
+      "channels": {
+        "na_legacy": 0,
+        "call_center": 0,
+        "service_center": 0,
+        "website": 813,
+        "smartphone_app": 173,
+        "zaki_platform": 11,
+        "mobile_website": 4484
+      },
+      "total": 5481
+    },
+    {
+      "month": "june",
+      "channels": {
+        "na_legacy": 0,
+        "call_center": 0,
+        "service_center": 0,
+        "website": 863,
+        "smartphone_app": 188,
+        "zaki_platform": 3,
+        "mobile_website": 5280
+      },
+      "total": 6334
+    },
+    {
+      "month": "july",
+      "channels": {
+        "na_legacy": 1,
+        "call_center": 0,
+        "service_center": 0,
+        "website": 771,
+        "smartphone_app": 125,
+        "zaki_platform": 6,
+        "mobile_website": 3618
+      },
+      "total": 4521
+    },
+    {
+      "month": "august",
+      "channels": {
+        "na_legacy": 0,
+        "call_center": 0,
+        "service_center": 0,
+        "website": 554,
+        "smartphone_app": 148,
+        "zaki_platform": 15,
+        "mobile_website": 2497
+      },
+      "total": 3214
+    },
+    {
+      "month": "september",
+      "channels": {
+        "na_legacy": 0,
+        "call_center": 0,
+        "service_center": 0,
+        "website": 313,
+        "smartphone_app": 325,
+        "zaki_platform": 9,
+        "mobile_website": 237
+      },
+      "total": 884
+    },
+    {
+      "month": "october",
+      "channels": {
+        "na_legacy": 0,
+        "call_center": 0,
+        "service_center": 0,
+        "website": 239,
+        "smartphone_app": 221,
+        "zaki_platform": 8,
+        "mobile_website": 234
+      },
+      "total": 702
+    },
+    {
+      "month": "november",
+      "channels": {
+        "na_legacy": 0,
+        "call_center": 0,
+        "service_center": 0,
+        "website": 209,
+        "smartphone_app": 189,
+        "zaki_platform": 1,
+        "mobile_website": 168
+      },
+      "total": 567
+    },
+    {
+      "month": "december",
+      "channels": {
+        "na_legacy": 0,
+        "call_center": 1,
+        "service_center": 0,
+        "website": 97,
+        "smartphone_app": 249,
+        "zaki_platform": 1,
+        "mobile_website": 115
+      },
+      "total": 463
+    }
+  ]
+}

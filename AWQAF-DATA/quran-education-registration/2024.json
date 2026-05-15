@@ -1,0 +1,72 @@
+{
+  "year": 2024,
+  "dataset": "Statistics on Student Registration in the Holy Quran Education Service",
+  "notes": [],
+  "months": {
+    "january": {
+      "website_registrations": 645,
+      "smart_app_registrations": 420,
+      "total_registrations": 1065
+    },
+    "february": {
+      "website_registrations": 745,
+      "smart_app_registrations": 268,
+      "total_registrations": 1013
+    },
+    "march": {
+      "website_registrations": 859,
+      "smart_app_registrations": 365,
+      "total_registrations": 1224
+    },
+    "april": {
+      "website_registrations": 1305,
+      "smart_app_registrations": 482,
+      "total_registrations": 1787
+    },
+    "may": {
+      "website_registrations": 1307,
+      "smart_app_registrations": 500,
+      "total_registrations": 1807
+    },
+    "june": {
+      "website_registrations": 2153,
+      "smart_app_registrations": 774,
+      "total_registrations": 2927
+    },
+    "july": {
+      "website_registrations": 4522,
+      "smart_app_registrations": 1669,
+      "total_registrations": 6191
+    },
+    "august": {
+      "website_registrations": 2304,
+      "smart_app_registrations": 796,
+      "total_registrations": 3100
+    },
+    "september": {
+      "website_registrations": 4734,
+      "smart_app_registrations": 1428,
+      "total_registrations": 6162
+    },
+    "october": {
+      "website_registrations": 14123,
+      "smart_app_registrations": 3023,
+      "total_registrations": 17146
+    },
+    "november": {
+      "website_registrations": 5938,
+      "smart_app_registrations": 1308,
+      "total_registrations": 7246
+    },
+    "december": {
+      "website_registrations": 1341,
+      "smart_app_registrations": 327,
+      "total_registrations": 1668
+    }
+  },
+  "totals": {
+    "website_registrations": 39976,
+    "smart_app_registrations": 11360,
+    "total_registrations": 51336
+  }
+}

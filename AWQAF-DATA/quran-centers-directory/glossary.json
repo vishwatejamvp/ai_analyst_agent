@@ -1,0 +1,48 @@
+{
+  "dataset": "Quran Centers Directory",
+  "source": {
+    "organization": "General Authority for Islamic Affairs, Endowments and Zakat",
+    "department": "Quran Education",
+    "phone": "8008222"
+  },
+  "description": "Supplementary directory data for Holy Quran memorization centers, including center phone numbers, branch listings, and new center annotations.",
+  "files": {
+    "phones-2020-2021.xlsx": "Phone numbers of Holy Quran memorization centers (2020-2021)",
+    "centers-with-new.xlsx": "Statistics of Holy Quran memorization centers and new centers",
+    "names-with-phones.xlsx": "Names and phone numbers of Quran memorization centers"
+  },
+  "fields": {
+    "number": {
+      "original_name": "م",
+      "description": "Row number / serial index within the listing"
+    },
+    "area": {
+      "original_name": "المنطقة",
+      "description": "The neighborhood or district where the center is located (in Arabic)"
+    },
+    "branch": {
+      "original_name": "الفرع",
+      "description": "The city/emirate branch (e.g. Abu Dhabi, Al Ain, Dubai)"
+    },
+    "center_name": {
+      "original_name": "اسم المركز",
+      "description": "Name of the Quran memorization center (in Arabic)"
+    },
+    "english_name": {
+      "original_name": "name of center",
+      "description": "Transliterated English name of the center (phones file only)"
+    },
+    "arabic_name": {
+      "original_name": "أسم المركز",
+      "description": "Arabic name of the center (phones file only)"
+    },
+    "phone": {
+      "original_name": "رقم الهاتف",
+      "description": "Phone number of the center"
+    },
+    "center_count": {
+      "original_name": "العدد المراكز",
+      "description": "Number of sub-centers or circles under this center"
+    }
+  }
+}

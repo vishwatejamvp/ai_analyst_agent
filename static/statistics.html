@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zakat Payment Service Statistics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --surface: #f8fafc;
+      --border: #e2e8f0;
+      --border-strong: #cbd5e1;
+      --text: #0f172a;
+      --text-muted: #475569;
+      --accent: #1d4ed8;
+      --accent-hover: #1e40af;
+      --radius: 12px;
+      --shadow: 0 1px 3px rgba(15, 23, 42, 0.08), 0 4px 14px rgba(15, 23, 42, 0.06);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      background: var(--surface);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 1.875rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--text);
+    }
+
+    .subtitle {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+
+    .filter-controls {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+      align-items: flex-end;
+    }
+
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .filter-group label {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .filter-group select {
+      padding: 0.625rem 1rem;
+      border: 1px solid var(--border-strong);
+      border-radius: 8px;
+      font-size: 0.875rem;
+      background: white;
+      color: var(--text);
+      min-width: 200px;
+      cursor: pointer;
+      transition: border-color 0.2s;
+    }
+
+    .filter-group select:hover {
+      border-color: var(--accent);
+    }
+
+    .filter-group select:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.1);
+    }
+
+    .tabs {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .tab {
+      padding: 0.75rem 1.5rem;
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid transparent;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-bottom: -2px;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .tab:hover {
+      color: var(--text);
+      background: var(--surface);
+    }
+
+    .tab.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    .tab-icon {
+      font-size: 1rem;
+    }
+
+    .statistics-panel {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      box-shadow: var(--shadow);
+      min-height: 600px;
+    }
+
+    .chart-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .chart-title {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .chart-subtitle {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      margin-top: 0.25rem;
+    }
+
+    .metric-toggle {
+      display: flex;
+      gap: 0.5rem;
+      background: var(--surface);
+      padding: 0.25rem;
+      border-radius: 6px;
+    }
+
+    .metric-toggle button {
+      padding: 0.5rem 1rem;
+      border: none;
+      background: transparent;
+      border-radius: 4px;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .metric-toggle button:hover {
+      color: var(--text);
+    }
+
+    .metric-toggle button.active {
+      background: white;
+      color: var(--accent);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    }
+
+    #chartContainer {
+      width: 100%;
+      height: 550px;
+      position: relative;
+    }
+
+    .loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 500px;
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    .spinner {
+      border: 2px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      animation: spin 0.8s linear infinite;
+      margin-right: 0.75rem;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .legend-container {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8125rem;
+    }
+
+    .legend-color {
+      width: 12px;
+      height: 12px;
+      border-radius: 2px;
+    }
+
+    .info-note {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      background: var(--surface);
+      border-left: 3px solid var(--accent);
+      border-radius: 4px;
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+    }
+
+    .stats-summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .stat-card {
+      background: var(--surface);
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.25rem;
+    }
+
+    .stat-value {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .stat-unit {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      margin-left: 0.25rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Zakat Payment Service Statistics 2025</h1>
+      <p class="subtitle">Comprehensive analysis of Zakat collection channels and performance metrics</p>
+    </header>
+
+    <div class="filter-controls">
+      <div class="filter-group">
+        <label for="yearSelector">Year</label>
+        <select id="yearSelector">
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <option value="2025" selected>2025</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="monthSelector">Select Month</label>
+        <select id="monthSelector">
+          <option value="">All Months</option>
+          <option value="01" selected>January</option>
+          <option value="02">February</option>
+          <option value="03">March</option>
+          <option value="04">April</option>
+          <option value="05">May</option>
+          <option value="06">June</option>
+          <option value="07">July</option>
+          <option value="08">August</option>
+          <option value="09">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="bars">
+        <span class="tab-icon">📊</span>
+        Bars
+      </button>
+      <button class="tab" data-tab="trend">
+        <span class="tab-icon">📈</span>
+        Trend
+      </button>
+      <button class="tab" data-tab="distribution">
+        <span class="tab-icon">🍩</span>
+        Distribution
+      </button>
+      <button class="tab" data-tab="total">
+        <span class="tab-icon">🔢</span>
+        Total
+      </button>
+    </div>
+
+    <div class="statistics-panel">
+      <div class="stats-summary" id="statsSummary" style="display: none;">
+        <div class="stat-card">
+          <div class="stat-label">Total Channels</div>
+          <div class="stat-value" id="totalChannels">0</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Total Payers</div>
+          <div class="stat-value" id="totalPayers">0</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Total Funds</div>
+          <div class="stat-value">
+            <span id="totalFunds">0</span>
+            <span class="stat-unit">AED</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="chart-header">
+        <div>
+          <h2 class="chart-title" id="chartTitle">Channel Comparison</h2>
+          <p class="chart-subtitle" id="chartSubtitle">Dual metrics view</p>
+        </div>
+        <div class="metric-toggle">
+          <button class="active" data-metric="all">Both Metrics</button>
+          <button data-metric="numbers">Numbers Only</button>
+          <button data-metric="funds">Funds Only</button>
+        </div>
+      </div>
+
+      <div id="chartContainer">
+        <div class="loading">
+          <div class="spinner"></div>
+          Loading statistics...
+        </div>
+      </div>
+
+      <div class="legend-container" id="legendContainer" style="display: none;">
+        <div class="legend-item">
+          <div class="legend-color" style="background: #3b82f6;"></div>
+          <span>Number of Payers</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background: #10b981;"></div>
+          <span>Funds Collected (AED)</span>
+        </div>
+      </div>
+
+      <div class="info-note" id="infoNote">
+        <strong>Note:</strong> Select different metrics to compare channel performance. Dual-axis visualization shows both payer counts and fund amounts.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let chart = null;
+    let currentData = null;
+    let currentTab = 'bars';
+    let currentMetric = 'all';
+
+    // Color palette
+    const COLORS = {
+      numbers: '#3b82f6',
+      funds: '#10b981',
+      accent: '#8b5cf6',
+      warning: '#f59e0b',
+      danger: '#ef4444'
+    };
+
+    // Initialize chart
+    function initChart() {
+      const container = document.getElementById('chartContainer');
+      chart = echarts.init(container);
+    }
+
+    // Fetch data from backend
+    async function fetchData(year, month) {
+      try {
+        const monthParam = month ? `&month=${month}` : '';
+        const response = await fetch(`/api/statistics/zakat-payment?year=${year}${monthParam}`);
+        
+        if (!response.ok) {
+          throw new Error('Failed to fetch data');
+        }
+        
+        const data = await response.json();
+        currentData = data;
+        return data;
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        return null;
+      }
+    }
+
+    // Update summary statistics
+    function updateSummary(data) {
+      if (!data) return;
+      
+      document.getElementById('totalChannels').textContent = data.channels.length;
+      document.getElementById('totalPayers').textContent = data.total_payers.toLocaleString();
+      document.getElementById('totalFunds').textContent = data.total_funds.toLocaleString(undefined, {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      });
+      document.getElementById('statsSummary').style.display = 'grid';
+    }
+
+    // Format large numbers
+    function formatNumber(value, isAED = false) {
+      if (value >= 1e6) {
+        return (value / 1e6).toFixed(1) + 'M' + (isAED ? ' AED' : '');
+      }
+      if (value >= 1e3) {
+        return (value / 1e3).toFixed(1) + 'K' + (isAED ? ' AED' : '');
+      }
+      return value.toLocaleString() + (isAED ? ' AED' : '');
+    }
+
+    // Render chart based on current tab and metric
+    function renderChart(data, tab, metric) {
+      if (!chart || !data || !data.channels || data.channels.length === 0) {
+        console.warn('No data to render');
+        return;
+      }
+
+      const channels = data.channels.map(c => c.channel);
+      const numbers = data.channels.map(c => c.number_of_payers);
+      const funds = data.channels.map(c => c.funds_collected_aed);
+
+      let option = {};
+
+      switch (tab) {
+        case 'bars':
+          option = createBarChart(channels, numbers, funds, metric);
+          break;
+        case 'trend':
+          option = createTrendChart(data, metric);
+          break;
+        case 'distribution':
+          option = createDistributionChart(channels, numbers, funds, metric);
+          break;
+        case 'total':
+          option = createTotalView(data);
+          break;
+      }
+
+      chart.setOption(option, true);
+      
+      // Update UI elements
+      updateChartHeader(data, tab, metric);
+      updateLegend(tab, metric);
+    }
+
+    // Update chart header
+    function updateChartHeader(data, tab, metric) {
+      const titles = {
+        bars: 'Channel Comparison',
+        trend: 'Monthly Trend Analysis',
+        distribution: 'Distribution by Channel',
+        total: 'Total Summary'
+      };
+      
+      const subtitles = {
+        all: 'Dual metrics view (Numbers & Funds)',
+        numbers: 'Number of payers',
+        funds: 'Funds collected in AED'
+      };
+      
+      document.getElementById('chartTitle').textContent = 
+        `${titles[tab]} — ${data.channels.length} channels`;
+      document.getElementById('chartSubtitle').textContent = subtitles[metric] || '';
+    }
+
+    // Update legend visibility
+    function updateLegend(tab, metric) {
+      const legendContainer = document.getElementById('legendContainer');
+      legendContainer.style.display = (tab === 'bars' && metric === 'all') ? 'flex' : 'none';
+    }
+
+    // Create bar chart with dual axes
+    function createBarChart(channels, numbers, funds, metric) {
+      const series = [];
+      const yAxis = [];
+
+      if (metric === 'all' || metric === 'numbers') {
+        series.push({
+          name: 'Number of Payers',
+          type: 'bar',
+          data: numbers,
+          yAxisIndex: 0,
+          itemStyle: { 
+            color: COLORS.numbers,
+            borderRadius: [4, 4, 0, 0]
+          },
+          label: {
+            show: false
+          },
+          barMaxWidth: 40
+        });
+        yAxis.push({
+          type: 'value',
+          name: 'Number of Payers',
+          position: 'left',
+          nameTextStyle: {
+            color: COLORS.numbers,
+            fontWeight: 600
+          },
+          axisLabel: {
+            formatter: '{value}',
+            color: '#64748b'
+          },
+          axisLine: {
+            show: true,
+            lineStyle: { color: COLORS.numbers }
+          },
+          splitLine: {
+            lineStyle: { type: 'dashed', color: '#e2e8f0' }
+          }
+        });
+      }
+
+      if (metric === 'all' || metric === 'funds') {
+        series.push({
+          name: 'Funds Collected (AED)',
+          type: 'bar',
+          data: funds,
+          yAxisIndex: metric === 'all' ? 1 : 0,
+          itemStyle: { 
+            color: COLORS.funds,
+            borderRadius: [4, 4, 0, 0]
+          },
+          label: {
+            show: false
+          },
+          barMaxWidth: 40
+        });
+        
+        yAxis.push({
+          type: 'value',
+          name: 'Funds (AED)',
+          position: metric === 'all' ? 'right' : 'left',
+          nameTextStyle: {
+            color: COLORS.funds,
+            fontWeight: 600
+          },
+          axisLabel: {
+            formatter: (value) => formatNumber(value, false),
+            color: '#64748b'
+          },
+          axisLine: {
+            show: true,
+            lineStyle: { color: COLORS.funds }
+          },
+          splitLine: {
+            show: metric !== 'all',
+            lineStyle: { type: 'dashed', color: '#e2e8f0' }
+          }
+        });
+      }
+
+      return {
+        tooltip: {
+          trigger: 'axis',
+          axisPointer: { type: 'shadow' },
+          confine: false,
+          appendToBody: true,
+          backgroundColor: 'rgba(255, 255, 255, 0.95)',
+          borderColor: '#e2e8f0',
+          borderWidth: 1,
+          textStyle: {
+            color: '#0f172a',
+            fontSize: 13
+          },
+          padding: 12,
+          formatter: function(params) {
+            let result = `<div style="font-weight: 600; margin-bottom: 8px; color: #0f172a;">${params[0].axisValue}</div>`;
+            params.forEach(param => {
+              const isNumbers = param.seriesName.includes('Payers');
+              const value = isNumbers 
+                ? param.value.toLocaleString() + ' payers'
+                : formatNumber(param.value, true);
+              result += `<div style="margin: 4px 0;">
+                ${param.marker} 
+                <span style="color: #64748b;">${param.seriesName}:</span> 
+                <strong>${value}</strong>
+              </div>`;
+            });
+            return result;
+          }
+        },
+        grid: {
+          left: '3%',
+          right: metric === 'all' ? '5%' : '3%',
+          bottom: '20%',
+          top: '10%',
+          containLabel: true
+        },
+        xAxis: {
+          type: 'category',
+          data: channels,
+          axisLabel: {
+            rotate: 45,
+            interval: 0,
+            fontSize: 11,
+            color: '#475569',
+            overflow: 'truncate',
+            width: 100,
+            formatter: function(value) {
+              // Truncate long channel names
+              return value.length > 25 ? value.substring(0, 25) + '...' : value;
+            }
+          },
+          axisLine: {
+            lineStyle: { color: '#cbd5e1' }
+          }
+        },
+        yAxis: yAxis,
+        series: series,
+        dataZoom: channels.length > 15 ? [
+          {
+            type: 'slider',
+            show: true,
+            xAxisIndex: 0,
+            start: 0,
+            end: Math.min(100, (15 / channels.length) * 100),
+            height: 20,
+            bottom: 10
+          }
+        ] : []
+      };
+    }
+
+    // Create trend chart (time series)
+    async function createTrendChart(data, metric) {
+      // Fetch trend data for the year
+      const year = document.getElementById('yearSelector').value;
+      
+      try {
+        const response = await fetch(`/api/statistics/zakat-payment/trend?year=${year}`);
+        const trendData = await response.json();
+        
+        // Transform series data for ECharts
+        const series = [];
+        const allPeriods = new Set();
+        
+        // Collect all periods
+        Object.values(trendData.series).forEach(channelData => {
+          channelData.forEach(point => allPeriods.add(point.period));
+        });
+        
+        const periods = Array.from(allPeriods).sort();
+        
+        // Get top 5 channels by total funds
+        const channelTotals = Object.entries(trendData.series).map(([channel, data]) => ({
+          channel,
+          total: data.reduce((sum, point) => sum + point.funds_collected_aed, 0)
+        })).sort((a, b) => b.total - a.total).slice(0, 5);
+        
+        channelTotals.forEach(({channel}, idx) => {
+          const channelData = trendData.series[channel];
+          const dataMap = new Map(channelData.map(d => [d.period, d]));
+          
+          if (metric === 'all' || metric === 'funds') {
+            series.push({
+              name: channel + ' (Funds)',
+              type: 'line',
+              data: periods.map(p => dataMap.get(p)?.funds_collected_aed || 0),
+              smooth: true,
+              symbol: 'circle',
+              symbolSize: 6,
+              lineStyle: { width: 2 }
+            });
+          }
+          
+          if (metric === 'all' || metric === 'numbers') {
+            series.push({
+              name: channel + ' (Payers)',
+              type: 'line',
+              data: periods.map(p => dataMap.get(p)?.number_of_payers || 0),
+              smooth: true,
+              symbol: 'circle',
+              symbolSize: 6,
+              lineStyle: { width: 2, type: 'dashed' }
+            });
+          }
+        });
+        
+        return {
+          tooltip: {
+            trigger: 'axis',
+            confine: false,
+            appendToBody: true,
+            backgroundColor: 'rgba(255, 255, 255, 0.95)',
+            borderColor: '#e2e8f0',
+            borderWidth: 1,
+            textStyle: { color: '#0f172a' },
+            padding: 12
+          },
+          legend: {
+            data: series.map(s => s.name),
+            top: 10,
+            type: 'scroll',
+            textStyle: { fontSize: 11 }
+          },
+          grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '10%',
+            top: '15%',
+            containLabel: true
+          },
+          xAxis: {
+            type: 'category',
+            data: periods,
+            boundaryGap: false,
+            axisLabel: {
+              formatter: (value) => {
+                const [year, month] = value.split('-');
+                const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+                               'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                return months[parseInt(month) - 1];
+              }
+            }
+          },
+          yAxis: {
+            type: 'value',
+            axisLabel: {
+              formatter: (value) => formatNumber(value)
+            }
+          },
+          series: series
+        };
+      } catch (error) {
+        console.error('Error fetching trend data:', error);
+        // Fallback to simple bar chart
+        return createBarChart(
+          data.channels.map(c => c.channel),
+          data.channels.map(c => c.number_of_payers),
+          data.channels.map(c => c.funds_collected_aed),
+          metric
+        );
+      }
+    }
+
+    // Create distribution pie/donut chart
+    function createDistributionChart(channels, numbers, funds, metric) {
+      const dataField = metric === 'numbers' ? numbers : funds;
+      const label = metric === 'numbers' ? 'Payers' : 'Funds (AED)';
+      
+      const data = channels.map((channel, idx) => ({
+        name: channel,
+        value: dataField[idx]
+      })).filter(d => d.value > 0).sort((a, b) => b.value - a.value);
+
+      // Show top 10 + Others
+      const top10 = data.slice(0, 10);
+      const others = data.slice(10);
+      
+      if (others.length > 0) {
+        const othersSum = others.reduce((sum, item) => sum + item.value, 0);
+        top10.push({ name: `Others (${others.length} channels)`, value: othersSum });
+      }
+
+      return {
+        tooltip: {
+          trigger: 'item',
+          confine: false,
+          appendToBody: true,
+          backgroundColor: 'rgba(255, 255, 255, 0.95)',
+          borderColor: '#e2e8f0',
+          borderWidth: 1,
+          formatter: function(params) {
+            const value = metric === 'numbers' 
+              ? params.value.toLocaleString() + ' payers'
+              : formatNumber(params.value, true);
+            return `<strong>${params.name}</strong><br/>${value} (${params.percent}%)`;
+          }
+        },
+        legend: {
+          orient: 'vertical',
+          right: 10,
+          top: 'center',
+          type: 'scroll',
+          textStyle: { fontSize: 11 },
+          formatter: function(name) {
+            return name.length > 30 ? name.substring(0, 30) + '...' : name;
+          }
+        },
+        series: [{
+          name: label,
+          type: 'pie',
+          radius: ['45%', '70%'],
+          center: ['40%', '50%'],
+          avoidLabelOverlap: true,
+          itemStyle: {
+            borderRadius: 8,
+            borderColor: '#fff',
+            borderWidth: 2
+          },
+          label: {
+            show: true,
+            formatter: '{d}%',
+            fontSize: 11
+          },
+          emphasis: {
+            label: {
+              show: true,
+              fontSize: 14,
+              fontWeight: 'bold'
+            }
+          },
+          data: top10
+        }]
+      };
+    }
+
+    // Create total KPI view
+    function createTotalView(data) {
+      return {
+        title: {
+          text: data.period_label,
+          left: 'center',
+          top: '15%',
+          textStyle: {
+            fontSize: 28,
+            fontWeight: 600,
+            color: '#0f172a'
+          }
+        },
+        graphic: [
+          {
+            type: 'group',
+            left: 'center',
+            top: 'center',
+            children: [
+              {
+                type: 'text',
+                style: {
+                  text: formatNumber(data.total_funds, true),
+                  fontSize: 52,
+                  fontWeight: 'bold',
+                  fill: COLORS.funds
+                },
+                top: -60
+              },
+              {
+                type: 'text',
+                style: {
+                  text: 'Total Funds Collected',
+                  fontSize: 18,
+                  fill: '#64748b'
+                },
+                top: 10
+              },
+              {
+                type: 'text',
+                style: {
+                  text: data.total_payers.toLocaleString() + ' Payers',
+                  fontSize: 32,
+                  fontWeight: 'bold',
+                  fill: COLORS.numbers
+                },
+                top: 80
+              },
+              {
+                type: 'text',
+                style: {
+                  text: 'across ' + data.channels.length + ' channels',
+                  fontSize: 16,
+                  fill: '#94a3b8'
+                },
+                top: 130
+              }
+            ]
+          }
+        ]
+      };
+    }
+
+    // Event handlers
+    async function updateChart() {
+      const year = document.getElementById('yearSelector').value;
+      const month = document.getElementById('monthSelector').value;
+      
+      const data = await fetchData(year, month);
+      if (data) {
+        updateSummary(data);
+        renderChart(data, currentTab, currentMetric);
+      }
+    }
+
+    // Tab switching
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', function() {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+        currentTab = this.dataset.tab;
+        renderChart(currentData, currentTab, currentMetric);
+      });
+    });
+
+    // Metric toggle
+    document.querySelectorAll('.metric-toggle button').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.metric-toggle button').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        currentMetric = this.dataset.metric;
+        renderChart(currentData, currentTab, currentMetric);
+      });
+    });
+
+    // Filter changes
+    document.getElementById('yearSelector').addEventListener('change', updateChart);
+    document.getElementById('monthSelector').addEventListener('change', updateChart);
+
+    // Initialize
+    window.addEventListener('load', async () => {
+      initChart();
+      await updateChart();
+    });
+
+    // Handle window resize
+    window.addEventListener('resize', () => {
+      if (chart) {
+        chart.resize();
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,4148 @@
+{
+  "year": 2026,
+  "dataset": "Quran Memorization Circles and Students",
+  "notes": [],
+  "total_mosques": 516,
+  "total_circles": 1125,
+  "branches": [
+    "Abu Dhabi",
+    "Ajman",
+    "Al Ain",
+    "Al Dhafra",
+    "Fujairah",
+    "Khor Fakkan",
+    "Ras Al Khaimah",
+    "Sharjah",
+    "Umm Al Quwain"
+  ],
+  "mosques": [
+    {
+      "mosque_name": "جامع الشيخ زايد بن سلطان 700",
+      "branch": "Abu Dhabi",
+      "area": "الباهية",
+      "quran_circles": 6,
+      "latitude": 24.516047,
+      "longitude": 54.666195
+    },
+    {
+      "mosque_name": "مسجد شخبوط بن سلطان 550",
+      "branch": "Abu Dhabi",
+      "area": "الشهامة الجديدة",
+      "quran_circles": 4,
+      "latitude": 24.542138,
+      "longitude": 54.690803
+    },
+    {
+      "mosque_name": "مسجد الريحان",
+      "branch": "Abu Dhabi",
+      "area": "جزيرة ياس",
+      "quran_circles": 4,
+      "latitude": 24.504402,
+      "longitude": 54.613344
+    },
+    {
+      "mosque_name": "مسجد سلمة بن الأكوع",
+      "branch": "Abu Dhabi",
+      "area": "الشليلة",
+      "quran_circles": 2,
+      "latitude": 24.636617,
+      "longitude": 54.670824
+    },
+    {
+      "mosque_name": "مسجد أبي سفيان بن الحارث",
+      "branch": "Abu Dhabi",
+      "area": "الشليلة",
+      "quran_circles": 2,
+      "latitude": 24.633812,
+      "longitude": 54.690053
+    },
+    {
+      "mosque_name": "مسجد المهاجرين",
+      "branch": "Abu Dhabi",
+      "area": "الرحبة",
+      "quran_circles": 4,
+      "latitude": 24.611741,
+      "longitude": 54.707765
+    },
+    {
+      "mosque_name": "مسجد الشيخ حمدان بن محمد",
+      "branch": "Abu Dhabi",
+      "area": "السمحة",
+      "quran_circles": 4,
+      "latitude": 24.668911,
+      "longitude": 54.772361
+    },
+    {
+      "mosque_name": "مسجد الشيخة فاطمة بنت مبارك",
+      "branch": "Abu Dhabi",
+      "area": "محمد بن زايد",
+      "quran_circles": 20,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد حسناء بنت عذبان",
+      "branch": "Abu Dhabi",
+      "area": "محمد بن زايد",
+      "quran_circles": 3,
+      "latitude": 24.321226,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد أبو موسى الاشعري",
+      "branch": "Abu Dhabi",
+      "area": "محمد بن زايد",
+      "quran_circles": 4,
+      "latitude": 24.310209,
+      "longitude": 54.56441
+    },
+    {
+      "mosque_name": "مسجد الشيخ منصور بن زايد",
+      "branch": "Abu Dhabi",
+      "area": "الشامخة",
+      "quran_circles": 6,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد المروة",
+      "branch": "Abu Dhabi",
+      "area": "محمد بن زايد",
+      "quran_circles": 2,
+      "latitude": 24.315592,
+      "longitude": 54.577358
+    },
+    {
+      "mosque_name": "مسجد سيف خادم الرميثي",
+      "branch": "Abu Dhabi",
+      "area": "الشامخة",
+      "quran_circles": 2,
+      "latitude": 25.168372,
+      "longitude": 55.415763
+    },
+    {
+      "mosque_name": "مسجد حبيب بن زيد",
+      "branch": "Abu Dhabi",
+      "area": "الشامخة",
+      "quran_circles": 4,
+      "latitude": 25.312424,
+      "longitude": 55.527695
+    },
+    {
+      "mosque_name": "مسجد البلاغ",
+      "branch": "Abu Dhabi",
+      "area": "الفلاح القديمة",
+      "quran_circles": 2,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد الشهيد محمد علي الحوسني",
+      "branch": "Abu Dhabi",
+      "area": "الفلاح القديمة",
+      "quran_circles": 3,
+      "latitude": 24.421425,
+      "longitude": 54.745676
+    },
+    {
+      "mosque_name": "مسجد الصدق",
+      "branch": "Abu Dhabi",
+      "area": "الشامخة",
+      "quran_circles": 4,
+      "latitude": 24.388713,
+      "longitude": 54.681967
+    },
+    {
+      "mosque_name": "مسجد الشهيد حسن خليل الحوسني",
+      "branch": "Abu Dhabi",
+      "area": "الفلاح القديمة",
+      "quran_circles": 6,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد الابرار",
+      "branch": "Abu Dhabi",
+      "area": "الشامخة",
+      "quran_circles": 2,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد إبراهيم بن الحارث القرشي",
+      "branch": "Abu Dhabi",
+      "area": "الشامخة",
+      "quran_circles": 4,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد يعقوب علية السلام",
+      "branch": "Abu Dhabi",
+      "area": "الرياض",
+      "quran_circles": 3,
+      "latitude": 24.337448,
+      "longitude": 54.739934
+    },
+    {
+      "mosque_name": "مسجد الفلاح F",
+      "branch": "Abu Dhabi",
+      "area": "الفلاح الجديدة",
+      "quran_circles": 6,
+      "latitude": 24.429059,
+      "longitude": 54.71793
+    },
+    {
+      "mosque_name": "مسجد الشيخ خليفة بن زايد",
+      "branch": "Abu Dhabi",
+      "area": "الفلاح الجديدة",
+      "quran_circles": 6,
+      "latitude": 24.446031,
+      "longitude": 54.717219
+    },
+    {
+      "mosque_name": "مسجد جوعان الظاهري",
+      "branch": "Abu Dhabi",
+      "area": "الفلاح الجديدة",
+      "quran_circles": 4,
+      "latitude": 24.449881,
+      "longitude": 54.725853
+    },
+    {
+      "mosque_name": "مسجد قماشة بنت سهيل المزروعي",
+      "branch": "Abu Dhabi",
+      "area": "الفلاح الجديدة",
+      "quran_circles": 2,
+      "latitude": 24.46058,
+      "longitude": 54.711229
+    },
+    {
+      "mosque_name": "مسجد فاطمة السامان",
+      "branch": "Abu Dhabi",
+      "area": "الريف",
+      "quran_circles": 4,
+      "latitude": 24.456216,
+      "longitude": 54.669668
+    },
+    {
+      "mosque_name": "مركز الشيخ محمد بن زايد",
+      "branch": "Abu Dhabi",
+      "area": "الفلاح القديمة",
+      "quran_circles": 4,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد الشهيد محمد جاسم الحمادي",
+      "branch": "Abu Dhabi",
+      "area": "الشامخة",
+      "quran_circles": 4,
+      "latitude": 24.400758,
+      "longitude": 54.724722
+    },
+    {
+      "mosque_name": "مسجد رضا الوالدين",
+      "branch": "Abu Dhabi",
+      "area": "بني ياس شرق 4",
+      "quran_circles": 5,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد سعيد السيد المحرمي 454",
+      "branch": "Abu Dhabi",
+      "area": "الغابات",
+      "quran_circles": 5,
+      "latitude": 24.310135,
+      "longitude": 54.637343
+    },
+    {
+      "mosque_name": "مسجد عمر بن عبدالعزيز",
+      "branch": "Abu Dhabi",
+      "area": "النهضة العسكرية",
+      "quran_circles": 10,
+      "latitude": 24.256614,
+      "longitude": 54.71701
+    },
+    {
+      "mosque_name": "مسجد زيد بن حارثة",
+      "branch": "Abu Dhabi",
+      "area": "النهضة العسكرية",
+      "quran_circles": 1,
+      "latitude": 24.265209,
+      "longitude": 54.692007
+    },
+    {
+      "mosque_name": "مسجد الشهيد محمد خالد",
+      "branch": "Abu Dhabi",
+      "area": "الوثبة جنوب",
+      "quran_circles": 1,
+      "latitude": 24.264316,
+      "longitude": 54.670075
+    },
+    {
+      "mosque_name": "مسجد الباسط",
+      "branch": "Abu Dhabi",
+      "area": "خليفة",
+      "quran_circles": 19,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد الخليل",
+      "branch": "Abu Dhabi",
+      "area": "شخبوط",
+      "quran_circles": 17,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "فاطمه هامل الغيث",
+      "branch": "Abu Dhabi",
+      "area": "مدينه شخبوط",
+      "quran_circles": 7,
+      "latitude": 24.348234,
+      "longitude": 54.6151
+    },
+    {
+      "mosque_name": "مسجد هزاع بن سلطان",
+      "branch": "Abu Dhabi",
+      "area": "النادي السياحي",
+      "quran_circles": 6,
+      "latitude": 24.497902,
+      "longitude": 54.375789
+    },
+    {
+      "mosque_name": "مريم بنت عبدالله",
+      "branch": "Abu Dhabi",
+      "area": "الخالدية",
+      "quran_circles": 10,
+      "latitude": 24.478489,
+      "longitude": 54.356016
+    },
+    {
+      "mosque_name": "مسجد علي بن غانم",
+      "branch": "Abu Dhabi",
+      "area": "مدينة زايد ابوظبي",
+      "quran_circles": 3,
+      "latitude": 24.482749,
+      "longitude": 54.362198
+    },
+    {
+      "mosque_name": "مسجد عمر بن الخطاب",
+      "branch": "Abu Dhabi",
+      "area": "الكرامة",
+      "quran_circles": 9,
+      "latitude": 24.464877,
+      "longitude": 54.370971
+    },
+    {
+      "mosque_name": "مسجد عبدالله راشد الظاهري",
+      "branch": "Abu Dhabi",
+      "area": "مدينة زايد ابوظبي",
+      "quran_circles": 7,
+      "latitude": 24.478496,
+      "longitude": 54.366032
+    },
+    {
+      "mosque_name": "مسجد أحمد السويدي",
+      "branch": "Abu Dhabi",
+      "area": "منطقة البطين",
+      "quran_circles": 1,
+      "latitude": 24.462103,
+      "longitude": 54.336863
+    },
+    {
+      "mosque_name": "مسجد الشيخ خليفة بن زايد",
+      "branch": "Abu Dhabi",
+      "area": "السوق القديم",
+      "quran_circles": 11,
+      "latitude": 24.48451,
+      "longitude": 54.352734
+    },
+    {
+      "mosque_name": "عبدالله بن الزبير رضي الله عنه",
+      "branch": "Abu Dhabi",
+      "area": "الغابات",
+      "quran_circles": 1,
+      "latitude": 24.3204,
+      "longitude": 54.62339
+    },
+    {
+      "mosque_name": "الشهيد صالح حسن بن عمرو",
+      "branch": "Abu Dhabi",
+      "area": "بني ياس شرق 7",
+      "quran_circles": 1,
+      "latitude": 24.30042,
+      "longitude": 54.64681
+    },
+    {
+      "mosque_name": "بخيتة سالم الكتبي",
+      "branch": "Abu Dhabi",
+      "area": "المفرق",
+      "quran_circles": 1,
+      "latitude": 24.31242,
+      "longitude": 54.609
+    },
+    {
+      "mosque_name": "كنه سالم سهيل العامري",
+      "branch": "Abu Dhabi",
+      "area": "بني ياس شرق 10",
+      "quran_circles": 1,
+      "latitude": 24.29771,
+      "longitude": 54.64918
+    },
+    {
+      "mosque_name": "سعيد السيد المحرمي",
+      "branch": "Abu Dhabi",
+      "area": "الغابات",
+      "quran_circles": 1,
+      "latitude": 24.31011,
+      "longitude": 54.63728
+    },
+    {
+      "mosque_name": "شيخة أحمد علي السويدي",
+      "branch": "Abu Dhabi",
+      "area": "بنى ياس شرق 2",
+      "quran_circles": 1,
+      "latitude": 24.32301,
+      "longitude": 54.6285
+    },
+    {
+      "mosque_name": "الرحيم",
+      "branch": "Abu Dhabi",
+      "area": "بنى ياس شرق 6",
+      "quran_circles": 1,
+      "latitude": 24.31726,
+      "longitude": 54.63686
+    },
+    {
+      "mosque_name": "زيد الرويعي المنهالي",
+      "branch": "Abu Dhabi",
+      "area": "بني ياس غرب",
+      "quran_circles": 1,
+      "latitude": 24.28934,
+      "longitude": 54.63304
+    },
+    {
+      "mosque_name": "الشيخ هزاع بن سلطان",
+      "branch": "Abu Dhabi",
+      "area": "النادي السياحي",
+      "quran_circles": 3,
+      "latitude": 24.49799,
+      "longitude": 54.37581
+    },
+    {
+      "mosque_name": "الصحابة",
+      "branch": "Abu Dhabi",
+      "area": "النادي السياحي",
+      "quran_circles": 1,
+      "latitude": 24.49956,
+      "longitude": 54.37781
+    },
+    {
+      "mosque_name": "مطر بن مطر الحلامي الحلامي",
+      "branch": "Abu Dhabi",
+      "area": "شارع خليفة",
+      "quran_circles": 1,
+      "latitude": 24.48878,
+      "longitude": 54.3578
+    },
+    {
+      "mosque_name": "بلال بن رباح رضي الله عنه",
+      "branch": "Abu Dhabi",
+      "area": "الزاهية",
+      "quran_circles": 1,
+      "latitude": 24.49168,
+      "longitude": 54.38016
+    },
+    {
+      "mosque_name": "عمير بن يوسف",
+      "branch": "Abu Dhabi",
+      "area": "الزاهية",
+      "quran_circles": 1,
+      "latitude": 24.5045,
+      "longitude": 54.37687
+    },
+    {
+      "mosque_name": "العزيز",
+      "branch": "Abu Dhabi",
+      "area": "جزيره الريم",
+      "quran_circles": 1,
+      "latitude": 24.49333,
+      "longitude": 54.39599
+    },
+    {
+      "mosque_name": "الشيخ خليفه بن زايد الأول",
+      "branch": "Abu Dhabi",
+      "area": "السوق القديم",
+      "quran_circles": 2,
+      "latitude": 24.48784,
+      "longitude": 54.35216
+    },
+    {
+      "mosque_name": "الشهيد عبدالرحمن حسن الزعابي",
+      "branch": "Abu Dhabi",
+      "area": "المرور",
+      "quran_circles": 2,
+      "latitude": 24.44148,
+      "longitude": 54.41014
+    },
+    {
+      "mosque_name": "قباء",
+      "branch": "Abu Dhabi",
+      "area": "الزاهية",
+      "quran_circles": 1,
+      "latitude": 24.48957,
+      "longitude": 54.38287
+    },
+    {
+      "mosque_name": "الشيخ حمد بن طحنون آل نهيان",
+      "branch": "Abu Dhabi",
+      "area": "المرور",
+      "quran_circles": 1,
+      "latitude": 24.47202,
+      "longitude": 54.34039
+    },
+    {
+      "mosque_name": "أبي بن كعب رضي الله عنه",
+      "branch": "Abu Dhabi",
+      "area": "الزعفرانة",
+      "quran_circles": 1,
+      "latitude": 24.43702,
+      "longitude": 54.43724
+    },
+    {
+      "mosque_name": "عمر بن الخطاب رضي الله عنه",
+      "branch": "Abu Dhabi",
+      "area": "المنهل",
+      "quran_circles": 2,
+      "latitude": null,
+      "longitude": 54.371
+    },
+    {
+      "mosque_name": "عمرو بن عنبسة السلمي رضي الله عنه",
+      "branch": "Abu Dhabi",
+      "area": "الختم",
+      "quran_circles": 2,
+      "latitude": 24.19037,
+      "longitude": 54.99877
+    },
+    {
+      "mosque_name": "أنس بن مالك رضي الله عنه",
+      "branch": "Abu Dhabi",
+      "area": "النهضة العسكرية",
+      "quran_circles": 3,
+      "latitude": 24.25826,
+      "longitude": 54.71183
+    },
+    {
+      "mosque_name": "الشهيد يوسف الوهيبي",
+      "branch": "Abu Dhabi",
+      "area": "النهضة العسكرية",
+      "quran_circles": 3,
+      "latitude": 24.2606,
+      "longitude": null
+    },
+    {
+      "mosque_name": "سعيد سالم بن سلمة المنصوري",
+      "branch": "Abu Dhabi",
+      "area": "شمال الوثبة",
+      "quran_circles": 2,
+      "latitude": 24.27636,
+      "longitude": 54.68455
+    },
+    {
+      "mosque_name": "العباس بن عبدالمطلب رضي الله عنه",
+      "branch": "Abu Dhabi",
+      "area": "الوثبة",
+      "quran_circles": 3,
+      "latitude": 24.25323,
+      "longitude": 54.72456
+    },
+    {
+      "mosque_name": "حمد سالم كردوس العامري",
+      "branch": "Abu Dhabi",
+      "area": "شارع الدفاع",
+      "quran_circles": 1,
+      "latitude": 24.47563,
+      "longitude": 54.37895
+    },
+    {
+      "mosque_name": "الشيخة مريم بنت عبدالله",
+      "branch": "Abu Dhabi",
+      "area": "الخالدية 1",
+      "quran_circles": 1,
+      "latitude": 24.47902,
+      "longitude": 54.35617
+    },
+    {
+      "mosque_name": "عبدالله راشد الظاهري",
+      "branch": "Abu Dhabi",
+      "area": "مدينة زايد",
+      "quran_circles": 3,
+      "latitude": 24.47886,
+      "longitude": 54.36624
+    },
+    {
+      "mosque_name": "عبدالله حسين خوري",
+      "branch": "Abu Dhabi",
+      "area": "شارع النجدة",
+      "quran_circles": 1,
+      "latitude": 24.48957,
+      "longitude": 54.36952
+    },
+    {
+      "mosque_name": "عبدالخالق عبدالله الخوري",
+      "branch": "Abu Dhabi",
+      "area": "شارع الجوازات",
+      "quran_circles": 2,
+      "latitude": 24.48287,
+      "longitude": 54.37255
+    },
+    {
+      "mosque_name": "مريم أم عيسى عليهما السلام",
+      "branch": "Abu Dhabi",
+      "area": "شارع المطار",
+      "quran_circles": 1,
+      "latitude": 24.45062,
+      "longitude": 54.38545
+    },
+    {
+      "mosque_name": "سعيد سعيد علي",
+      "branch": "Abu Dhabi",
+      "area": "المرور",
+      "quran_circles": 1,
+      "latitude": 24.45257,
+      "longitude": 54.40047
+    },
+    {
+      "mosque_name": "الشيخ سعيد بن زايد أل نهيان",
+      "branch": "Abu Dhabi",
+      "area": "جزيرة السعديات",
+      "quran_circles": 1,
+      "latitude": 24.56509,
+      "longitude": 54.4587
+    },
+    {
+      "mosque_name": "الشيخ زايد بن سلطان الأول آل نهيان",
+      "branch": "Abu Dhabi",
+      "area": "المشرف",
+      "quran_circles": 2,
+      "latitude": 24.42801,
+      "longitude": 54.40802
+    },
+    {
+      "mosque_name": "راشد خميس المنصوري",
+      "branch": "Abu Dhabi",
+      "area": "المرور",
+      "quran_circles": 1,
+      "latitude": 24.44425,
+      "longitude": 54.39741
+    },
+    {
+      "mosque_name": "فاطمة إبراهيم السامان",
+      "branch": "Abu Dhabi",
+      "area": "قصر روضة الريف",
+      "quran_circles": 1,
+      "latitude": 24.4564,
+      "longitude": 54.66959
+    },
+    {
+      "mosque_name": "الشهيد عبدالله أحمد عبدالله الحوسني",
+      "branch": "Abu Dhabi",
+      "area": "الفلاح الجديدة",
+      "quran_circles": 1,
+      "latitude": 24.43305,
+      "longitude": 54.74218
+    },
+    {
+      "mosque_name": "الرجاء",
+      "branch": "Abu Dhabi",
+      "area": "الفلاح الجديدة",
+      "quran_circles": 1,
+      "latitude": 24.4561,
+      "longitude": 54.71769
+    },
+    {
+      "mosque_name": "جوعان سالم الظاهري",
+      "branch": "Abu Dhabi",
+      "area": "الفلاح الجديدة",
+      "quran_circles": 1,
+      "latitude": 24.44994,
+      "longitude": 54.72584
+    },
+    {
+      "mosque_name": "الطاعة",
+      "branch": "Abu Dhabi",
+      "area": "الفلاح الجديدة",
+      "quran_circles": 1,
+      "latitude": 24.44429,
+      "longitude": 54.73407
+    },
+    {
+      "mosque_name": "الفلاح",
+      "branch": "Abu Dhabi",
+      "area": "الفلاح الجديدة",
+      "quran_circles": 1,
+      "latitude": 24.42917,
+      "longitude": 54.71795
+    },
+    {
+      "mosque_name": "التقى",
+      "branch": "Abu Dhabi",
+      "area": "الفلاح الجديدة",
+      "quran_circles": 1,
+      "latitude": 24.43008,
+      "longitude": 54.72931
+    },
+    {
+      "mosque_name": "الشيخ خليفة بن زايد آل نهيان",
+      "branch": "Abu Dhabi",
+      "area": "الفلاح الجديدة",
+      "quran_circles": 1,
+      "latitude": 24.44611,
+      "longitude": 54.71706
+    },
+    {
+      "mosque_name": "حامل المسك",
+      "branch": "Abu Dhabi",
+      "area": "مدينة الرياض",
+      "quran_circles": 1,
+      "latitude": 24.36729,
+      "longitude": 54.7578
+    },
+    {
+      "mosque_name": "الكوثر",
+      "branch": "Abu Dhabi",
+      "area": "مدينة الرياض",
+      "quran_circles": 1,
+      "latitude": 24.3224,
+      "longitude": 54.74227
+    },
+    {
+      "mosque_name": "آل عمران",
+      "branch": "Abu Dhabi",
+      "area": "مدينة الرياض",
+      "quran_circles": 1,
+      "latitude": 24.33189,
+      "longitude": 54.75861
+    },
+    {
+      "mosque_name": "لقمان الحكيم",
+      "branch": "Abu Dhabi",
+      "area": "مدينة الرياض",
+      "quran_circles": 1,
+      "latitude": 24.40714,
+      "longitude": 54.76019
+    },
+    {
+      "mosque_name": "الشيخة عفراء بنت حامد آل حامد",
+      "branch": "Abu Dhabi",
+      "area": "الشامخة",
+      "quran_circles": 1,
+      "latitude": 24.39152,
+      "longitude": 54.6938
+    },
+    {
+      "mosque_name": "زيد بن ثابت رضي الله عنه",
+      "branch": "Abu Dhabi",
+      "area": "الشامخة",
+      "quran_circles": 1,
+      "latitude": 24.39795,
+      "longitude": 54.74563
+    },
+    {
+      "mosque_name": "التقوى",
+      "branch": "Abu Dhabi",
+      "area": "الشامخة",
+      "quran_circles": 1,
+      "latitude": 24.3799,
+      "longitude": 54.72592
+    },
+    {
+      "mosque_name": "عثمان بن عفان ر ضي الله عنه",
+      "branch": "Abu Dhabi",
+      "area": "الشامخة",
+      "quran_circles": 1,
+      "latitude": 24.38127,
+      "longitude": 54.70867
+    },
+    {
+      "mosque_name": "الشيخ منصور بن زايد آل نهيان",
+      "branch": "Abu Dhabi",
+      "area": "الشامخة",
+      "quran_circles": 1,
+      "latitude": 24.37525,
+      "longitude": 54.69894
+    },
+    {
+      "mosque_name": "بلال بن مالك المزني رضي الله عنه",
+      "branch": "Abu Dhabi",
+      "area": "الشامخة",
+      "quran_circles": 1,
+      "latitude": 24.37312,
+      "longitude": 54.70689
+    },
+    {
+      "mosque_name": "تميم بن أوس الداري رضي الله عنه",
+      "branch": "Abu Dhabi",
+      "area": "الشامخة",
+      "quran_circles": 1,
+      "latitude": 24.38397,
+      "longitude": 54.70024
+    },
+    {
+      "mosque_name": "الإمام أبو حنيفة",
+      "branch": "Abu Dhabi",
+      "area": "الشامخة",
+      "quran_circles": 1,
+      "latitude": 24.37201,
+      "longitude": 54.71936
+    },
+    {
+      "mosque_name": "محمد عيدروس المظفري",
+      "branch": "Abu Dhabi",
+      "area": "الشامخة",
+      "quran_circles": 1,
+      "latitude": 24.35713,
+      "longitude": 54.69818
+    },
+    {
+      "mosque_name": "فاطمة عقيل آل خاجة",
+      "branch": "Abu Dhabi",
+      "area": "الشامخة",
+      "quran_circles": 1,
+      "latitude": 24.38865,
+      "longitude": 54.7313
+    },
+    {
+      "mosque_name": "عبدالله بن حذافة السهمي رضي الله عنه",
+      "branch": "Abu Dhabi",
+      "area": "الشامخة",
+      "quran_circles": 1,
+      "latitude": 24.3829,
+      "longitude": 54.7217
+    },
+    {
+      "mosque_name": "النعيم",
+      "branch": "Abu Dhabi",
+      "area": "الفلاح الجديدة",
+      "quran_circles": 1,
+      "latitude": 24.59329,
+      "longitude": 54.72352
+    },
+    {
+      "mosque_name": "هدفة علي العامري",
+      "branch": "Abu Dhabi",
+      "area": "الوثبة جنوب",
+      "quran_circles": 1,
+      "latitude": 24.27535,
+      "longitude": 54.6482
+    },
+    {
+      "mosque_name": "أسعد بن زرارة الأنصاري رضي الله عنه",
+      "branch": "Abu Dhabi",
+      "area": "بني ياس شرق 13",
+      "quran_circles": 3,
+      "latitude": 24.28409,
+      "longitude": 54.65781
+    },
+    {
+      "mosque_name": "مبخوت بخيت طناف المنهالي",
+      "branch": "Abu Dhabi",
+      "area": "بني ياس شرق 8",
+      "quran_circles": 1,
+      "latitude": 24.29713,
+      "longitude": 54.63665
+    },
+    {
+      "mosque_name": "رافع بن عنجدة رضي الله عنه",
+      "branch": "Abu Dhabi",
+      "area": "الوثبة",
+      "quran_circles": 1,
+      "latitude": 24.27461,
+      "longitude": 54.66665
+    },
+    {
+      "mosque_name": "عائشة بنت أبي بكر الصديق رضي الله عنهما",
+      "branch": "Abu Dhabi",
+      "area": "بنى ياس شرق 1/6",
+      "quran_circles": 1,
+      "latitude": null,
+      "longitude": 54.64242
+    },
+    {
+      "mosque_name": "محمد مسلم سالم المنهالي",
+      "branch": "Abu Dhabi",
+      "area": "بني ياس 10",
+      "quran_circles": 1,
+      "latitude": 24.30033,
+      "longitude": 54.65072
+    },
+    {
+      "mosque_name": "لؤلؤة الراحة",
+      "branch": "Abu Dhabi",
+      "area": "شاطئ الراحة",
+      "quran_circles": 1,
+      "latitude": 24.44099,
+      "longitude": 54.56758
+    },
+    {
+      "mosque_name": "خفية عبدالله محمد صالح السويدي",
+      "branch": "Abu Dhabi",
+      "area": "مدينة خليفة",
+      "quran_circles": 1,
+      "latitude": 24.4291,
+      "longitude": 54.58267
+    },
+    {
+      "mosque_name": "المرحمة",
+      "branch": "Abu Dhabi",
+      "area": "مدينة خليفة",
+      "quran_circles": 1,
+      "latitude": 24.41841,
+      "longitude": 54.41841
+    },
+    {
+      "mosque_name": "الرحمة",
+      "branch": "Abu Dhabi",
+      "area": "مدينة خليفة",
+      "quran_circles": 1,
+      "latitude": 24.42019,
+      "longitude": 54.59956
+    },
+    {
+      "mosque_name": "الباسط",
+      "branch": "Abu Dhabi",
+      "area": "مدينة خليفة",
+      "quran_circles": 2,
+      "latitude": 24.4715,
+      "longitude": 54.59378
+    },
+    {
+      "mosque_name": "ناصر بن مذكر الهاجري",
+      "branch": "Abu Dhabi",
+      "area": "مدينة خليفة",
+      "quran_circles": 1,
+      "latitude": 24.4157,
+      "longitude": 54.58099
+    },
+    {
+      "mosque_name": "عبدالله علي الهاشلي",
+      "branch": "Abu Dhabi",
+      "area": "مدينة خليفة",
+      "quran_circles": 1,
+      "latitude": 24.39957,
+      "longitude": 54.56176
+    },
+    {
+      "mosque_name": "أبو أيوب الأنصاري رضي الله عنه",
+      "branch": "Abu Dhabi",
+      "area": "مدينة خليفة",
+      "quran_circles": 1,
+      "latitude": 24.42435,
+      "longitude": 54.57748
+    },
+    {
+      "mosque_name": "التعايش",
+      "branch": "Abu Dhabi",
+      "area": "مدينة خليفة",
+      "quran_circles": 1,
+      "latitude": null,
+      "longitude": 54.56081
+    },
+    {
+      "mosque_name": "عبد الله بن عمر بافرج",
+      "branch": "Abu Dhabi",
+      "area": "مدينة خليفة",
+      "quran_circles": 1,
+      "latitude": 24.41816,
+      "longitude": 54.57088
+    },
+    {
+      "mosque_name": "الرسالة",
+      "branch": "Abu Dhabi",
+      "area": "مدينة خليفة",
+      "quran_circles": 1,
+      "latitude": 24.40795,
+      "longitude": 54.60018
+    },
+    {
+      "mosque_name": "غانم بن علي بن حموده",
+      "branch": "Abu Dhabi",
+      "area": "مدينة خليفة",
+      "quran_circles": 1,
+      "latitude": 24.40823,
+      "longitude": 54.55488
+    },
+    {
+      "mosque_name": "الشهيد محمد علي البستكي",
+      "branch": "Abu Dhabi",
+      "area": "مدينة خليفة",
+      "quran_circles": 1,
+      "latitude": 24.41291,
+      "longitude": 54.60694
+    },
+    {
+      "mosque_name": "حدائق الغولف",
+      "branch": "Abu Dhabi",
+      "area": "خليفة",
+      "quran_circles": 1,
+      "latitude": 24.49168,
+      "longitude": 54.53287
+    },
+    {
+      "mosque_name": "النعمان بن مقرن المزني رضي الله عنه",
+      "branch": "Abu Dhabi",
+      "area": "الشامخة",
+      "quran_circles": 1,
+      "latitude": 24.41135,
+      "longitude": 54.74386
+    },
+    {
+      "mosque_name": "الشهيد محمد علي حسن الحوسني",
+      "branch": "Abu Dhabi",
+      "area": "الفلاح القديمة",
+      "quran_circles": 1,
+      "latitude": 24.42593,
+      "longitude": 54.72069
+    },
+    {
+      "mosque_name": "الشهيد سيف محمد سيف علي بالروب القبيسي",
+      "branch": "Abu Dhabi",
+      "area": "الفلاح القديمة",
+      "quran_circles": 1,
+      "latitude": 24.59272,
+      "longitude": 54.70095
+    },
+    {
+      "mosque_name": "الشيخ محمد بن زايد آل نهيان آل نهيان",
+      "branch": "Abu Dhabi",
+      "area": "الفلاح القديمة",
+      "quran_circles": 1,
+      "latitude": 24.42339,
+      "longitude": 54.73232
+    },
+    {
+      "mosque_name": "الغفران",
+      "branch": "Abu Dhabi",
+      "area": "الشامخة",
+      "quran_circles": 1,
+      "latitude": 24.35555,
+      "longitude": 54.68953
+    },
+    {
+      "mosque_name": "حبيب بن زيد الآنصاري رضي الله عنه",
+      "branch": "Abu Dhabi",
+      "area": "الشامخة",
+      "quran_circles": 1,
+      "latitude": 24.3909,
+      "longitude": 54.71287
+    },
+    {
+      "mosque_name": "جعفر بن الزبير بن العوام رضي الله عنهما",
+      "branch": "Abu Dhabi",
+      "area": "الشامخة",
+      "quran_circles": 1,
+      "latitude": 24.40803,
+      "longitude": 54.7289
+    },
+    {
+      "mosque_name": "تمام بن العباس بن عبدالمطلب رضي الله عنهما",
+      "branch": "Abu Dhabi",
+      "area": "الشامخة",
+      "quran_circles": 1,
+      "latitude": 24.38448,
+      "longitude": 54.73429
+    },
+    {
+      "mosque_name": "عمير بن سعد رضي الله عنه",
+      "branch": "Abu Dhabi",
+      "area": "الفلاح القديمة",
+      "quran_circles": 1,
+      "latitude": 24.42676,
+      "longitude": 54.75502
+    },
+    {
+      "mosque_name": "سيف خادم الرميثي",
+      "branch": "Abu Dhabi",
+      "area": "الشامخة",
+      "quran_circles": 1,
+      "latitude": 24.40858,
+      "longitude": 54.7343
+    },
+    {
+      "mosque_name": "عتيق محمد خلف المزروعي",
+      "branch": "Abu Dhabi",
+      "area": "الشوامخ",
+      "quran_circles": 1,
+      "latitude": 24.38441,
+      "longitude": 54.66795
+    },
+    {
+      "mosque_name": "الشهيد زايد مسلم سهيل العامري",
+      "branch": "Abu Dhabi",
+      "area": "الشوامخ",
+      "quran_circles": 1,
+      "latitude": 24.36045,
+      "longitude": 54.65308
+    },
+    {
+      "mosque_name": "بخيت طناف المنهالي",
+      "branch": "Abu Dhabi",
+      "area": "الشوامخ",
+      "quran_circles": 1,
+      "latitude": 24.33074,
+      "longitude": 54.63601
+    },
+    {
+      "mosque_name": "الشهيد عبدالحميد الحمادي",
+      "branch": "Abu Dhabi",
+      "area": "الشوامخ",
+      "quran_circles": 1,
+      "latitude": 24.35057,
+      "longitude": 54.64703
+    },
+    {
+      "mosque_name": "كنة خليفة القمزي",
+      "branch": "Abu Dhabi",
+      "area": "الشوامخ",
+      "quran_circles": 1,
+      "latitude": 24.34277,
+      "longitude": 54.65195
+    },
+    {
+      "mosque_name": "الأم",
+      "branch": "Abu Dhabi",
+      "area": "الشوامخ",
+      "quran_circles": 1,
+      "latitude": 24.37875,
+      "longitude": 54.6631
+    },
+    {
+      "mosque_name": "الشوامخ",
+      "branch": "Abu Dhabi",
+      "area": "الشوامخ",
+      "quran_circles": 1,
+      "latitude": 24.36534,
+      "longitude": 54.66474
+    },
+    {
+      "mosque_name": "السكينة",
+      "branch": "Abu Dhabi",
+      "area": "حي المزن",
+      "quran_circles": 1,
+      "latitude": 24.33944,
+      "longitude": 54.67448
+    },
+    {
+      "mosque_name": "هادي الهمامي",
+      "branch": "Abu Dhabi",
+      "area": "الشوامخ",
+      "quran_circles": 1,
+      "latitude": 24.37126,
+      "longitude": 54.67053
+    },
+    {
+      "mosque_name": "الخليل",
+      "branch": "Abu Dhabi",
+      "area": "مدينة شخبوط",
+      "quran_circles": 1,
+      "latitude": 24.38507,
+      "longitude": 54.65398
+    },
+    {
+      "mosque_name": "الكرامة",
+      "branch": "Abu Dhabi",
+      "area": "مدينة شخبوط",
+      "quran_circles": 1,
+      "latitude": 24.36239,
+      "longitude": 54.62774
+    },
+    {
+      "mosque_name": "كلثم عتيق راشد المهيري",
+      "branch": "Abu Dhabi",
+      "area": "مدينة شخبوط",
+      "quran_circles": 1,
+      "latitude": 24.37885,
+      "longitude": 54.63415
+    },
+    {
+      "mosque_name": "بدر فارس هلال الهلالي",
+      "branch": "Abu Dhabi",
+      "area": "مدينة شخبوط",
+      "quran_circles": 1,
+      "latitude": 24.3509,
+      "longitude": 54.62759
+    },
+    {
+      "mosque_name": "فاطمة هامل الغيث",
+      "branch": "Abu Dhabi",
+      "area": "مدينة شخبوط",
+      "quran_circles": 1,
+      "latitude": 24.36204,
+      "longitude": 54.62422
+    },
+    {
+      "mosque_name": "ناجي حسن أحمد الحارثي",
+      "branch": "Abu Dhabi",
+      "area": "مدينة شخبوط",
+      "quran_circles": 1,
+      "latitude": 24.35913,
+      "longitude": 54.61746
+    },
+    {
+      "mosque_name": "سعيد محمد الزبيدي",
+      "branch": "Abu Dhabi",
+      "area": "مدينة شخبوط",
+      "quran_circles": 1,
+      "latitude": 24.3767,
+      "longitude": 54.6495
+    },
+    {
+      "mosque_name": "سيف حميد الدرعي",
+      "branch": "Abu Dhabi",
+      "area": "مدينة شخبوط",
+      "quran_circles": 1,
+      "latitude": 24.39944,
+      "longitude": 54.64223
+    },
+    {
+      "mosque_name": "صقر عبييد الظاهري وموزة احمد الظاهري",
+      "branch": "Abu Dhabi",
+      "area": "مدينة زايد الجديدة",
+      "quran_circles": 1,
+      "latitude": 24.3573,
+      "longitude": 54.61002
+    },
+    {
+      "mosque_name": "سالم حمد ناصر الشعيبي",
+      "branch": "Abu Dhabi",
+      "area": "مدينة محمد بن زايد",
+      "quran_circles": 1,
+      "latitude": 24.34467,
+      "longitude": 54.5471
+    },
+    {
+      "mosque_name": "الشيخة فاطمة بنت مبارك",
+      "branch": "Abu Dhabi",
+      "area": "مدينة محمد بن زايد",
+      "quran_circles": 2,
+      "latitude": 24.34086,
+      "longitude": 57.55445
+    },
+    {
+      "mosque_name": "محمد خميس البادي",
+      "branch": "Abu Dhabi",
+      "area": "مدينة محمد بن زايد",
+      "quran_circles": 1,
+      "latitude": null,
+      "longitude": 54.556851
+    },
+    {
+      "mosque_name": "صغيرة رييع أحمد القبيسي 669",
+      "branch": "Abu Dhabi",
+      "area": "مدينة محمد بن زايد",
+      "quran_circles": 1,
+      "latitude": 24.33048,
+      "longitude": 54.56448
+    },
+    {
+      "mosque_name": "حسناء عبدالله عذبان",
+      "branch": "Abu Dhabi",
+      "area": "مدينة محمد بن زايد",
+      "quran_circles": 1,
+      "latitude": 24.32143,
+      "longitude": 54.54645
+    },
+    {
+      "mosque_name": "السعادة",
+      "branch": "Abu Dhabi",
+      "area": "مدينة محمد بن زايد",
+      "quran_circles": 1,
+      "latitude": 24.30546,
+      "longitude": 54.58064
+    },
+    {
+      "mosque_name": "عبدالله الملا",
+      "branch": "Abu Dhabi",
+      "area": "مدينة محمد بن زايد",
+      "quran_circles": 1,
+      "latitude": 24.31267,
+      "longitude": 54.57171
+    },
+    {
+      "mosque_name": "مبارك بن قران المنصوري",
+      "branch": "Abu Dhabi",
+      "area": "محمد بن زايد",
+      "quran_circles": 1,
+      "latitude": 24.34937,
+      "longitude": 54.55277
+    },
+    {
+      "mosque_name": "الشيبه خميس عبدالله الشرياني",
+      "branch": "Abu Dhabi",
+      "area": "محمد بن زايد",
+      "quran_circles": 1,
+      "latitude": 24.32131,
+      "longitude": 54.54825
+    },
+    {
+      "mosque_name": "السلام",
+      "branch": "Abu Dhabi",
+      "area": "مدينة محمد بن زايد",
+      "quran_circles": 1,
+      "latitude": 24.35363,
+      "longitude": 54.55824
+    },
+    {
+      "mosque_name": "بر الوالدين",
+      "branch": "Abu Dhabi",
+      "area": "مدينة محمد بن زايد",
+      "quran_circles": 1,
+      "latitude": 24.3669,
+      "longitude": 54.55207
+    },
+    {
+      "mosque_name": "شيخة حمد الجنيبي",
+      "branch": "Abu Dhabi",
+      "area": "مدينة محمد بن زايد",
+      "quran_circles": 1,
+      "latitude": 24.38093,
+      "longitude": 54.5397
+    },
+    {
+      "mosque_name": "مجمع مزيد مول",
+      "branch": "Abu Dhabi",
+      "area": "مدينة محمد بن زايد",
+      "quran_circles": 1,
+      "latitude": 24.37105,
+      "longitude": 54.53895
+    },
+    {
+      "mosque_name": "الأبرار",
+      "branch": "Abu Dhabi",
+      "area": "مدينة محمد بن زايد",
+      "quran_circles": 1,
+      "latitude": 24.35369,
+      "longitude": 54.54854
+    },
+    {
+      "mosque_name": "أحمد عبدالله أمين العوضي",
+      "branch": "Abu Dhabi",
+      "area": "مدينة محمد بن زايد",
+      "quran_circles": 1,
+      "latitude": 24.34532,
+      "longitude": 54.56837
+    },
+    {
+      "mosque_name": "محمد غنام الهاملي",
+      "branch": "Abu Dhabi",
+      "area": "مدينة محمد بن زايد",
+      "quran_circles": 1,
+      "latitude": 24.3599,
+      "longitude": 54.54615
+    },
+    {
+      "mosque_name": "الشيخ شخبوط بن سلطان آل نهيان",
+      "branch": "Abu Dhabi",
+      "area": "الشهامة الجديدة",
+      "quran_circles": 1,
+      "latitude": 24.54211,
+      "longitude": 54.69089
+    },
+    {
+      "mosque_name": "الشهيد خليل إبراهيم جمعة المرزوقي",
+      "branch": "Abu Dhabi",
+      "area": "الصدر",
+      "quran_circles": 1,
+      "latitude": 24.61794,
+      "longitude": 54.64351
+    },
+    {
+      "mosque_name": "الشهيد جمعة محمد الكعبي",
+      "branch": "Abu Dhabi",
+      "area": "جزيرة ياس غرب",
+      "quran_circles": 1,
+      "latitude": 24.49542,
+      "longitude": 54.58764
+    },
+    {
+      "mosque_name": "الشيخ خليفة بن زايد آل نهيان",
+      "branch": "Abu Dhabi",
+      "area": "الباهية الجديدة",
+      "quran_circles": 1,
+      "latitude": 24.5415,
+      "longitude": 54.6347
+    },
+    {
+      "mosque_name": "الشيخ زايد بن سلطان آل نهيان",
+      "branch": "Abu Dhabi",
+      "area": "الباهية القديمة",
+      "quran_circles": 1,
+      "latitude": 24.51588,
+      "longitude": 54.66528
+    },
+    {
+      "mosque_name": "عمر بن الخطاب رضي الله عنه",
+      "branch": "Abu Dhabi",
+      "area": "الباهية القديمة",
+      "quran_circles": 1,
+      "latitude": 24.53443,
+      "longitude": 54.67058
+    },
+    {
+      "mosque_name": "جلمود جمعة الشامسي",
+      "branch": "Abu Dhabi",
+      "area": "الباهية القديمة",
+      "quran_circles": 1,
+      "latitude": 24.54366,
+      "longitude": 54.67074
+    },
+    {
+      "mosque_name": "الريحان",
+      "branch": "Abu Dhabi",
+      "area": "جزيرة ياس شرق",
+      "quran_circles": 1,
+      "latitude": 24.5043,
+      "longitude": 54.61353
+    },
+    {
+      "mosque_name": "عتيق ماجد المهيري",
+      "branch": "Abu Dhabi",
+      "area": "الرحبة",
+      "quran_circles": 1,
+      "latitude": 24.61863,
+      "longitude": 54.71245
+    },
+    {
+      "mosque_name": "الشهيد سيف خميس المهيري",
+      "branch": "Abu Dhabi",
+      "area": "الرحبة",
+      "quran_circles": 1,
+      "latitude": 24.59269,
+      "longitude": 54.70094
+    },
+    {
+      "mosque_name": "الشيخ حمدان بن زايد آل نهيان",
+      "branch": "Abu Dhabi",
+      "area": "السمحة شرق",
+      "quran_circles": 2,
+      "latitude": 24.66955,
+      "longitude": 54.77247
+    },
+    {
+      "mosque_name": "أبو سفيان بن الحارث رضي الله عنه",
+      "branch": "Abu Dhabi",
+      "area": "الشليلة",
+      "quran_circles": 1,
+      "latitude": 24.634,
+      "longitude": 54.69011
+    },
+    {
+      "mosque_name": "الشهيد زكريا الزعابي",
+      "branch": "Abu Dhabi",
+      "area": "السمحة غرب",
+      "quran_circles": 1,
+      "latitude": 24.67173,
+      "longitude": 54.74849
+    },
+    {
+      "mosque_name": "الشهامة",
+      "branch": "Abu Dhabi",
+      "area": "الشهامة القديمة",
+      "quran_circles": 1,
+      "latitude": 24.56189,
+      "longitude": 54.68868
+    },
+    {
+      "mosque_name": "ماجد راشد مهران البلوشي",
+      "branch": "Abu Dhabi",
+      "area": "السمحة شرق",
+      "quran_circles": 1,
+      "latitude": 24.65561,
+      "longitude": 54.75709
+    },
+    {
+      "mosque_name": "عوشة عبدالله معضد المزروعي",
+      "branch": "Abu Dhabi",
+      "area": "السمحة غرب",
+      "quran_circles": 1,
+      "latitude": 24.67834,
+      "longitude": 54.75478
+    },
+    {
+      "mosque_name": "الحباب بن المنذر رضي الله عنه",
+      "branch": "Abu Dhabi",
+      "area": "الشليلة",
+      "quran_circles": 1,
+      "latitude": 24.27249,
+      "longitude": 55.75256
+    },
+    {
+      "mosque_name": "مسجد أبوبكر الصديق رضي الله عنه",
+      "branch": "Abu Dhabi",
+      "area": "الرحبة",
+      "quran_circles": 1,
+      "latitude": 24.63492,
+      "longitude": 54.68845
+    },
+    {
+      "mosque_name": "سلمان عبدالواحد المرزوقي",
+      "branch": "Abu Dhabi",
+      "area": "السمحة غرب",
+      "quran_circles": 1,
+      "latitude": 24.66851,
+      "longitude": 54.75354
+    },
+    {
+      "mosque_name": "الشيخ زايد بن سلطان آل نهيان",
+      "branch": "Abu Dhabi",
+      "area": "مدينة محمد بن زايد",
+      "quran_circles": 1,
+      "latitude": 24.29681,
+      "longitude": 54.56236
+    },
+    {
+      "mosque_name": "سارة سعيد المزروعي",
+      "branch": "Abu Dhabi",
+      "area": "مدينة محمد بن زايد",
+      "quran_circles": 1,
+      "latitude": 24.33731,
+      "longitude": 54.53085
+    },
+    {
+      "mosque_name": "فاطمة أحمد المطوع",
+      "branch": "Abu Dhabi",
+      "area": "مدينة محمد بن زايد",
+      "quran_circles": 1,
+      "latitude": 24.32994,
+      "longitude": 54.53728
+    },
+    {
+      "mosque_name": "الشيخ محمد بن خليفة آل نهيان",
+      "branch": "Abu Dhabi",
+      "area": "مدينة محمد بن زايد",
+      "quran_circles": 1,
+      "latitude": 24.33142,
+      "longitude": 54.53196
+    },
+    {
+      "mosque_name": "مريم جمال محمد أمين الخوري",
+      "branch": "Abu Dhabi",
+      "area": "مدينة محمد بن زايد",
+      "quran_circles": 1,
+      "latitude": 24.32341,
+      "longitude": 54.53169
+    },
+    {
+      "mosque_name": "علي إبراهيم سعد البطيح",
+      "branch": "Abu Dhabi",
+      "area": "مدينة محمد بن زايد",
+      "quran_circles": 1,
+      "latitude": 24.34174,
+      "longitude": 54.53325
+    },
+    {
+      "mosque_name": "سالم محمد بن عثعيث العامري",
+      "branch": "Abu Dhabi",
+      "area": "مدينة محمد بن زايد",
+      "quran_circles": 1,
+      "latitude": 24.31882,
+      "longitude": 54.57585
+    },
+    {
+      "mosque_name": "صغيرة ربيع القبيسي 320",
+      "branch": "Abu Dhabi",
+      "area": "مصفح الشعبية",
+      "quran_circles": 1,
+      "latitude": 24.32593,
+      "longitude": 54.53198
+    },
+    {
+      "mosque_name": "الشهيد عادل صديق محمد الاسمني",
+      "branch": "Abu Dhabi",
+      "area": "ربدان",
+      "quran_circles": 1,
+      "latitude": 24.39965,
+      "longitude": 54.48852
+    },
+    {
+      "mosque_name": "الرواشد",
+      "branch": "Abu Dhabi",
+      "area": "بني ياس شرق 7",
+      "quran_circles": 7,
+      "latitude": 24.303987,
+      "longitude": 54.639611
+    },
+    {
+      "mosque_name": "حمودة بن علي",
+      "branch": "Abu Dhabi",
+      "area": "الغابات",
+      "quran_circles": 8,
+      "latitude": 24.316906,
+      "longitude": 54.631774
+    },
+    {
+      "mosque_name": "مسلم مكتوم المزروعي",
+      "branch": "Abu Dhabi",
+      "area": "الشوامخ 11",
+      "quran_circles": 7,
+      "latitude": 24.312172,
+      "longitude": 54.658339
+    },
+    {
+      "mosque_name": "مسجد حاتم الأصم/ راشد حمد الظاهري",
+      "branch": "Al Ain",
+      "area": "المويجعي",
+      "quran_circles": 2,
+      "latitude": 24.210719,
+      "longitude": 55.730742
+    },
+    {
+      "mosque_name": "مسجد ( الأمانه) آمنة حمد غانم المهيرى",
+      "branch": "Al Ain",
+      "area": "فلج هزاع",
+      "quran_circles": 2,
+      "latitude": 24.192502,
+      "longitude": 55.73087
+    },
+    {
+      "mosque_name": "مسجد مريم راشد الظاهري",
+      "branch": "Al Ain",
+      "area": "البطين",
+      "quran_circles": 2,
+      "latitude": 24.19619,
+      "longitude": 55.61158
+    },
+    {
+      "mosque_name": "مسجد شخبوط بن سلطان آل نهيان",
+      "branch": "Al Ain",
+      "area": "المرخانية",
+      "quran_circles": 2,
+      "latitude": 24.218439,
+      "longitude": 55.66295
+    },
+    {
+      "mosque_name": "مسجد عبد الله راشد الغيثي",
+      "branch": "Al Ain",
+      "area": "الخبيصي",
+      "quran_circles": 4,
+      "latitude": 24.242366,
+      "longitude": 55.708452
+    },
+    {
+      "mosque_name": "مسجد جامع عقبة بن نافع",
+      "branch": "Al Ain",
+      "area": "الخبيصي",
+      "quran_circles": 5,
+      "latitude": 24.229802,
+      "longitude": 55.699842
+    },
+    {
+      "mosque_name": "مسجد سعيد عبدالله الدرمكي",
+      "branch": "Al Ain",
+      "area": "الخبيصي",
+      "quran_circles": 1,
+      "latitude": 24.240634,
+      "longitude": 55.70536
+    },
+    {
+      "mosque_name": "مسجد الشيخة حصة بنت محمد",
+      "branch": "Al Ain",
+      "area": "المعترض",
+      "quran_circles": 1,
+      "latitude": 24.226487,
+      "longitude": 55.741527
+    },
+    {
+      "mosque_name": "مسجد الشهيد سعيد راشد النيادي",
+      "branch": "Al Ain",
+      "area": "مزيد",
+      "quran_circles": 1,
+      "latitude": 24.044062,
+      "longitude": 55.841976
+    },
+    {
+      "mosque_name": "مسجد شبيب الظاهري",
+      "branch": "Al Ain",
+      "area": "الطويه",
+      "quran_circles": 8,
+      "latitude": 24.268305,
+      "longitude": 55.708881
+    },
+    {
+      "mosque_name": "جامع عمر بن عبد العزيز",
+      "branch": "Al Ain",
+      "area": "الخبيصي",
+      "quran_circles": 2,
+      "latitude": 24.231946,
+      "longitude": 55.703761
+    },
+    {
+      "mosque_name": "مسجد الشيخ سلطان بن زايد آل نهيان",
+      "branch": "Al Ain",
+      "area": "البصرة",
+      "quran_circles": 15,
+      "latitude": 24.211545,
+      "longitude": 55.714461
+    },
+    {
+      "mosque_name": "مسجد عيسى ربيع السويدي",
+      "branch": "Al Ain",
+      "area": "النيادات",
+      "quran_circles": 2,
+      "latitude": 24.213258,
+      "longitude": 55.783245
+    },
+    {
+      "mosque_name": "جامع موزه بنت عبيد",
+      "branch": "Al Ain",
+      "area": "الصناعية",
+      "quran_circles": 2,
+      "latitude": 24.18127,
+      "longitude": 55.763826
+    },
+    {
+      "mosque_name": "جامع شهداء القوات المسلحة",
+      "branch": "Al Ain",
+      "area": "الجاهلي",
+      "quran_circles": 1,
+      "latitude": 24.212828,
+      "longitude": 55.750376
+    },
+    {
+      "mosque_name": "مسجد ورثة علي طالب الخليفي",
+      "branch": "Al Ain",
+      "area": "الظاهرة",
+      "quran_circles": 1,
+      "latitude": 24.013339,
+      "longitude": 55.562351
+    },
+    {
+      "mosque_name": "مسجد أحمد عبدالله سلطان العفريت الكويتي",
+      "branch": "Al Ain",
+      "area": "الصاروج",
+      "quran_circles": 1,
+      "latitude": 24.188895,
+      "longitude": 55.806017
+    },
+    {
+      "mosque_name": "مسجد الشيخة سلامة بنت بطي",
+      "branch": "Al Ain",
+      "area": "الجاهلي",
+      "quran_circles": 1,
+      "latitude": 24.213877,
+      "longitude": 55.752779
+    },
+    {
+      "mosque_name": "مسجد بن بدوة",
+      "branch": "Al Ain",
+      "area": "فلج هزاع",
+      "quran_circles": 8,
+      "latitude": 24.186775,
+      "longitude": 55.736665
+    },
+    {
+      "mosque_name": "مسجد عمر بن عبدالعزيز",
+      "branch": "Al Ain",
+      "area": "فلج هزاع",
+      "quran_circles": 2,
+      "latitude": 24.177111,
+      "longitude": 55.72352
+    },
+    {
+      "mosque_name": "مسجد مبارك هادي الاحبابي",
+      "branch": "Al Ain",
+      "area": "العامره",
+      "quran_circles": 1,
+      "latitude": 24.214155,
+      "longitude": 55.545008
+    },
+    {
+      "mosque_name": "سعيد ناصر الشبلي (حلقة تطوع)",
+      "branch": "Al Ain",
+      "area": "الخالديه",
+      "quran_circles": 1,
+      "latitude": 24.156619,
+      "longitude": 55.681243
+    },
+    {
+      "mosque_name": "مسجد فاطمة محمد غانم السويدي",
+      "branch": "Al Ain",
+      "area": "فلج هزاع",
+      "quran_circles": 1,
+      "latitude": 24.178915,
+      "longitude": 55.716414
+    },
+    {
+      "mosque_name": "عبدالله راشد المخمري",
+      "branch": "Al Ain",
+      "area": "العامره",
+      "quran_circles": 1,
+      "latitude": 24.245933,
+      "longitude": 55.555286
+    },
+    {
+      "mosque_name": "مسجد زيد حمد خميس المزروعي",
+      "branch": "Al Ain",
+      "area": "فلج هزاع",
+      "quran_circles": 1,
+      "latitude": 24.248734,
+      "longitude": 55.570186
+    },
+    {
+      "mosque_name": "مسجد علي ناصر عبدالله المنصوري",
+      "branch": "Al Ain",
+      "area": "حي عالية",
+      "quran_circles": 1,
+      "latitude": 24.193754,
+      "longitude": 55.538314
+    },
+    {
+      "mosque_name": "مسجد سلمى عبد الله شاهين الظاهري",
+      "branch": "Al Ain",
+      "area": "الخالديه",
+      "quran_circles": 4,
+      "latitude": 24.206818,
+      "longitude": 55.618927
+    },
+    {
+      "mosque_name": "مسجد محمد أحمد الحميري",
+      "branch": "Al Ain",
+      "area": "صناعية هيلي",
+      "quran_circles": 6,
+      "latitude": 24.270609,
+      "longitude": 55.778114
+    },
+    {
+      "mosque_name": "مسجد عذيبه بنت سيف الكتبي",
+      "branch": "Al Ain",
+      "area": "هيلي الرميلة",
+      "quran_circles": 2,
+      "latitude": 24.279781,
+      "longitude": 55.760611
+    },
+    {
+      "mosque_name": "مسجد عايض الأحبابي",
+      "branch": "Al Ain",
+      "area": "النايفة",
+      "quran_circles": 2,
+      "latitude": 24.294974,
+      "longitude": 55.759189
+    },
+    {
+      "mosque_name": "مسجد الشيخ زايد",
+      "branch": "Al Ain",
+      "area": "هيلي",
+      "quran_circles": 12,
+      "latitude": 24.288895,
+      "longitude": 55.769834
+    },
+    {
+      "mosque_name": "مسجد خوري محمد يحيى",
+      "branch": "Al Ain",
+      "area": "فلج هزاع",
+      "quran_circles": 7,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد يحيى مسعد فاضل الكشادي",
+      "branch": "Al Ain",
+      "area": "السلامات",
+      "quran_circles": 1,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد الصغيرة سحمي الاحبابي",
+      "branch": "Al Ain",
+      "area": "السلامات",
+      "quran_circles": 1,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد محمد خميس الريسي",
+      "branch": "Al Ain",
+      "area": "السلامات",
+      "quran_circles": 1,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد سعد محمد الاحبابي",
+      "branch": "Al Ain",
+      "area": "السلامات",
+      "quran_circles": 1,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد بطي الاحبابي",
+      "branch": "Al Ain",
+      "area": "السلامات",
+      "quran_circles": 2,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد المحسنين",
+      "branch": "Al Ain",
+      "area": "السلامات",
+      "quran_circles": 1,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد انس بن النضير",
+      "branch": "Al Ain",
+      "area": "زاخر",
+      "quran_circles": 1,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد موزة سلطان الكندي",
+      "branch": "Al Ain",
+      "area": "عود التوبة",
+      "quran_circles": 1,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد عبدالله الزرعوني",
+      "branch": "Al Ain",
+      "area": "السوق",
+      "quran_circles": 1,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد عبدالله المحيربي",
+      "branch": "Al Ain",
+      "area": "البصرة",
+      "quran_circles": 1,
+      "latitude": 24.216613,
+      "longitude": 55.719672
+    },
+    {
+      "mosque_name": "مسجدحمد سهيل الكتبي",
+      "branch": "Al Ain",
+      "area": "الجاهلي",
+      "quran_circles": 1,
+      "latitude": 24.214337,
+      "longitude": 55.757234
+    },
+    {
+      "mosque_name": "مسجد صابر حارب مغيرة الخيلي",
+      "branch": "Al Ain",
+      "area": "المويجعي",
+      "quran_circles": 1,
+      "latitude": 24.211188,
+      "longitude": 55.693328
+    },
+    {
+      "mosque_name": "مسجد عثمان بن عفان",
+      "branch": "Al Ain",
+      "area": "المناصير",
+      "quran_circles": 9,
+      "latitude": 24.207862,
+      "longitude": 55.719814
+    },
+    {
+      "mosque_name": "مسجد شمسة بنت محمد مسجد",
+      "branch": "Al Ain",
+      "area": "الجاهلي",
+      "quran_circles": 1,
+      "latitude": 24.206278,
+      "longitude": 55.745556
+    },
+    {
+      "mosque_name": "مسجد سعيد مصبح النيادي",
+      "branch": "Al Ain",
+      "area": "الصاروج",
+      "quran_circles": 2,
+      "latitude": 24.203804,
+      "longitude": 58.087692
+    },
+    {
+      "mosque_name": "مسجد الشهيد محمد راشد الظاهري",
+      "branch": "Al Ain",
+      "area": "الجاهلي",
+      "quran_circles": 2,
+      "latitude": 24.199904,
+      "longitude": 56.460285
+    },
+    {
+      "mosque_name": "مسجد أحمد بن بداح",
+      "branch": "Al Ain",
+      "area": "الخبيصي",
+      "quran_circles": 2,
+      "latitude": 24.238331,
+      "longitude": 55.696728
+    },
+    {
+      "mosque_name": "مسجد صالح محمد الرميثي",
+      "branch": "Al Ain",
+      "area": "الطوية",
+      "quran_circles": 1,
+      "latitude": 24.246853,
+      "longitude": 55.720635
+    },
+    {
+      "mosque_name": "مسجد مظفرالعامري",
+      "branch": "Al Ain",
+      "area": "الطوية",
+      "quran_circles": 4,
+      "latitude": 24.267686,
+      "longitude": 55.70331
+    },
+    {
+      "mosque_name": "مسجد الإمام الشافعي",
+      "branch": "Al Ain",
+      "area": "الجيمي /العامرية",
+      "quran_circles": 1,
+      "latitude": 24.246853,
+      "longitude": 55.720635
+    },
+    {
+      "mosque_name": "مسجد عفراء حارب العتيبة",
+      "branch": "Al Ain",
+      "area": "مريجب",
+      "quran_circles": 2,
+      "latitude": 24.263399,
+      "longitude": 55.734455
+    },
+    {
+      "mosque_name": "المتقين",
+      "branch": "Al Ain",
+      "area": "القطارة",
+      "quran_circles": 1,
+      "latitude": 24.246853,
+      "longitude": 55.720635
+    },
+    {
+      "mosque_name": "مسجد بن حموده",
+      "branch": "Al Ain",
+      "area": "العامره",
+      "quran_circles": 1,
+      "latitude": 24.246853,
+      "longitude": 55.720634
+    },
+    {
+      "mosque_name": "مسجد بن حموده",
+      "branch": "Al Ain",
+      "area": "الجيمي",
+      "quran_circles": 6,
+      "latitude": 24.246853,
+      "longitude": 55.720635
+    },
+    {
+      "mosque_name": "مسجد سعيد سالم بوحقب الشامسي",
+      "branch": "Al Ain",
+      "area": "مزيد",
+      "quran_circles": 6,
+      "latitude": 24.061185,
+      "longitude": 56.136733
+    },
+    {
+      "mosque_name": "مسجد الشيخ زايد",
+      "branch": "Al Ain",
+      "area": "مزيد",
+      "quran_circles": 2,
+      "latitude": 24.036191,
+      "longitude": 55.844099
+    },
+    {
+      "mosque_name": "مسجد الهدى",
+      "branch": "Al Ain",
+      "area": "مزيد",
+      "quran_circles": 1,
+      "latitude": 24.040154,
+      "longitude": 55.85337
+    },
+    {
+      "mosque_name": "مسجد احمد سالم الكعبي",
+      "branch": "Al Ain",
+      "area": "الظاهر 5",
+      "quran_circles": 1,
+      "latitude": 24.105528,
+      "longitude": 55.839833
+    },
+    {
+      "mosque_name": "مسجد الشيخ زايد",
+      "branch": "Al Ain",
+      "area": "الظاهر 5",
+      "quran_circles": 1,
+      "latitude": 24.110702,
+      "longitude": 55.851997
+    },
+    {
+      "mosque_name": "مسجد المرحوم راشد محمد النيادي",
+      "branch": "Al Ain",
+      "area": "الشركات",
+      "quran_circles": 1,
+      "latitude": 24.025832,
+      "longitude": 56.985336
+    },
+    {
+      "mosque_name": "مسجد الفضل بن عباس",
+      "branch": "Al Ain",
+      "area": "المقام 314",
+      "quran_circles": 1,
+      "latitude": 24.310579,
+      "longitude": 54.617702
+    },
+    {
+      "mosque_name": "مسجد عبد العزيز الغيثي",
+      "branch": "Al Ain",
+      "area": "زاخر",
+      "quran_circles": 1,
+      "latitude": 24.144455,
+      "longitude": 55.689343
+    },
+    {
+      "mosque_name": "مسجد التوحيد",
+      "branch": "Al Ain",
+      "area": "المقام 313",
+      "quran_circles": 1,
+      "latitude": 24.126247,
+      "longitude": 55.738613
+    },
+    {
+      "mosque_name": "مسجد عبدالله بن رواحه",
+      "branch": "Al Ain",
+      "area": "المقام 321",
+      "quran_circles": 1,
+      "latitude": 24.181028,
+      "longitude": 55.608394
+    },
+    {
+      "mosque_name": "مسجد سالم محمد بن هويمل العامري",
+      "branch": "Al Ain",
+      "area": "زاخر",
+      "quran_circles": 1,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد مبارك راشد المنصوري",
+      "branch": "Al Ain",
+      "area": "الروضة الشرقية",
+      "quran_circles": 2,
+      "latitude": 24.161309,
+      "longitude": 55.668576
+    },
+    {
+      "mosque_name": "مسجد الرضوان",
+      "branch": "Al Ain",
+      "area": "المقام 1030",
+      "quran_circles": 2,
+      "latitude": 24.186001,
+      "longitude": 55.632938
+    },
+    {
+      "mosque_name": "مسجد علي محضي الشامسي",
+      "branch": "Al Ain",
+      "area": "زاخر",
+      "quran_circles": 1,
+      "latitude": 24.144707,
+      "longitude": 55.684088
+    },
+    {
+      "mosque_name": "مسجد هيا مسفر الهاجري",
+      "branch": "Al Ain",
+      "area": "المقام",
+      "quran_circles": 1,
+      "latitude": 24.264061,
+      "longitude": 55.716195
+    },
+    {
+      "mosque_name": "مسجد محمد غانم السويدي",
+      "branch": "Al Ain",
+      "area": "الروضة الشرقية",
+      "quran_circles": 2,
+      "latitude": 24.140634,
+      "longitude": 55.636895
+    },
+    {
+      "mosque_name": "مسجد محمد راشد بخيت الراشدي",
+      "branch": "Al Ain",
+      "area": "الروضة الشرقية",
+      "quran_circles": 2,
+      "latitude": 24.14487,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد ريم سعيد الدرعي",
+      "branch": "Al Ain",
+      "area": "الروضة الشرقية",
+      "quran_circles": 2,
+      "latitude": 24.167191,
+      "longitude": 55.659532
+    },
+    {
+      "mosque_name": "مسجد يوسف محمد خاجة",
+      "branch": "Al Ain",
+      "area": "الروضة الشرقية",
+      "quran_circles": 2,
+      "latitude": 24.15809,
+      "longitude": 55.654458
+    },
+    {
+      "mosque_name": "مسجد سليمان عبدالله الشامسي",
+      "branch": "Al Ain",
+      "area": "الروضة الشرقية",
+      "quran_circles": 2,
+      "latitude": 24.139447,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد فاضل سيف الكعبي",
+      "branch": "Al Ain",
+      "area": "غنيمه",
+      "quran_circles": 2,
+      "latitude": 24.147309,
+      "longitude": 55.630955
+    },
+    {
+      "mosque_name": "مسجد موزة جمعة محمد المهري",
+      "branch": "Al Ain",
+      "area": "شعبه الوطاه",
+      "quran_circles": 1,
+      "latitude": 24.118562,
+      "longitude": 55.728926
+    },
+    {
+      "mosque_name": "مسجد علي سالم هاشل الكويتي",
+      "branch": "Al Ain",
+      "area": "شعاب الاشخر",
+      "quran_circles": 1,
+      "latitude": 24.156218,
+      "longitude": 55.71576
+    },
+    {
+      "mosque_name": "مسجد حمد محمد راشد الخيلي",
+      "branch": "Al Ain",
+      "area": "عشارج",
+      "quran_circles": 1,
+      "latitude": 24.19618,
+      "longitude": 55.657934
+    },
+    {
+      "mosque_name": "مسجد عبية الشامسي",
+      "branch": "Al Ain",
+      "area": "شعاب الاشخر",
+      "quran_circles": 1,
+      "latitude": 24.078291,
+      "longitude": 55.84058
+    },
+    {
+      "mosque_name": "مسجد النخوة",
+      "branch": "Al Ain",
+      "area": "جبل حفيت",
+      "quran_circles": 2,
+      "latitude": 24.080513,
+      "longitude": 55.739369
+    },
+    {
+      "mosque_name": "مسجد عويص علي الدرعي",
+      "branch": "Al Ain",
+      "area": "نعمه",
+      "quran_circles": 1,
+      "latitude": 24.109699,
+      "longitude": 55.707578
+    },
+    {
+      "mosque_name": "مسجد الشيخ سعيد بن شخبوط ال نهيان",
+      "branch": "Al Ain",
+      "area": "عشارج",
+      "quran_circles": 1,
+      "latitude": 24.201891,
+      "longitude": 55.655106
+    },
+    {
+      "mosque_name": "مسجد الشهيد عمر",
+      "branch": "Al Ain",
+      "area": "أم غافة",
+      "quran_circles": 19,
+      "latitude": 24.091784,
+      "longitude": 55.927975
+    },
+    {
+      "mosque_name": "مسجد الشيخ زايد بن سلطان",
+      "branch": "Al Ain",
+      "area": "الوقن",
+      "quran_circles": 1,
+      "latitude": 23.640234,
+      "longitude": 55.640234
+    },
+    {
+      "mosque_name": "مسجد سلطان عبدالله الشامسي",
+      "branch": "Al Ain",
+      "area": "الوقن",
+      "quran_circles": 1,
+      "latitude": 23.64301,
+      "longitude": 55.56505
+    },
+    {
+      "mosque_name": "مسجد مسلم الزفنة",
+      "branch": "Al Ain",
+      "area": "الوقن",
+      "quran_circles": 1,
+      "latitude": 23.62574,
+      "longitude": 55.56462
+    },
+    {
+      "mosque_name": "مسجد بن حرمل",
+      "branch": "Al Ain",
+      "area": "المقام",
+      "quran_circles": 11,
+      "latitude": 24.17739,
+      "longitude": 55.611404
+    },
+    {
+      "mosque_name": "مسجد الرجاء",
+      "branch": "Al Ain",
+      "area": "المناصير",
+      "quran_circles": 13,
+      "latitude": 24.205308,
+      "longitude": 55.713983
+    },
+    {
+      "mosque_name": "مسجد الشيخ زايد",
+      "branch": "Al Ain",
+      "area": "القوع",
+      "quran_circles": 3,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد محمد راشد الكتبي",
+      "branch": "Al Ain",
+      "area": "الظاهر",
+      "quran_circles": 1,
+      "latitude": 24.086667,
+      "longitude": 55.859638
+    },
+    {
+      "mosque_name": "مسجد عفراء الظاهري",
+      "branch": "Al Ain",
+      "area": "الفقع",
+      "quran_circles": 1,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد سلطان هاشل الكتبي",
+      "branch": "Al Ain",
+      "area": "الشويب",
+      "quran_circles": 1,
+      "latitude": 24.742228,
+      "longitude": 55.801361
+    },
+    {
+      "mosque_name": "مسجد بخيتة سهيل الخييلي",
+      "branch": "Al Ain",
+      "area": "الشويب",
+      "quran_circles": 1,
+      "latitude": 24.748588,
+      "longitude": 55.81587
+    },
+    {
+      "mosque_name": "مسجد عيد الغبشي العامري",
+      "branch": "Al Ain",
+      "area": "الهير",
+      "quran_circles": 1,
+      "latitude": 24.584807,
+      "longitude": 55.747762
+    },
+    {
+      "mosque_name": "مسجد سهيل مبارك الكتبي",
+      "branch": "Al Ain",
+      "area": "الهير",
+      "quran_circles": 1,
+      "latitude": 24.612452,
+      "longitude": 55.762406
+    },
+    {
+      "mosque_name": "مسجد البشاير",
+      "branch": "Al Ain",
+      "area": "رملة سويحان",
+      "quran_circles": 1,
+      "latitude": 24.459189,
+      "longitude": 55.319082
+    },
+    {
+      "mosque_name": "مسجد الكوثر",
+      "branch": "Al Ain",
+      "area": "رملة سويحان",
+      "quran_circles": 1,
+      "latitude": 24.460161,
+      "longitude": 55.32249
+    },
+    {
+      "mosque_name": "مسجد سلطان بن زايد",
+      "branch": "Al Ain",
+      "area": "ناهل",
+      "quran_circles": 1,
+      "latitude": 24.513359,
+      "longitude": 55.500689
+    },
+    {
+      "mosque_name": "مسجد فاطمة سالم عبيد الدرمكي",
+      "branch": "Al Ain",
+      "area": "الفوعة",
+      "quran_circles": 1,
+      "latitude": 24.345145,
+      "longitude": 55.803546
+    },
+    {
+      "mosque_name": "مسجد المر سيف الغفلي",
+      "branch": "Al Ain",
+      "area": "الفوعة",
+      "quran_circles": 1,
+      "latitude": 24.351187,
+      "longitude": 55.796294
+    },
+    {
+      "mosque_name": "مسجدسعيد حطاب الظاهري",
+      "branch": "Al Ain",
+      "area": "الفوعة",
+      "quran_circles": 1,
+      "latitude": 24.352805,
+      "longitude": 55.787984
+    },
+    {
+      "mosque_name": "مسجد الشيخة لطيفة",
+      "branch": "Al Ain",
+      "area": "الفوعة",
+      "quran_circles": 1,
+      "latitude": 24.343172,
+      "longitude": 55.781686
+    },
+    {
+      "mosque_name": "مسجد القلم",
+      "branch": "Al Ain",
+      "area": "الفوعة",
+      "quran_circles": 1,
+      "latitude": 24.349967,
+      "longitude": 55.789772
+    },
+    {
+      "mosque_name": "مسجد راشد سعيد راشد الجابري",
+      "branch": "Al Ain",
+      "area": "هيلي الريف",
+      "quran_circles": 1,
+      "latitude": 24.307175,
+      "longitude": 55.79843
+    },
+    {
+      "mosque_name": "مسجد الشيخ عيسى بن زايد",
+      "branch": "Al Ain",
+      "area": "المسعودي",
+      "quran_circles": 16,
+      "latitude": 24.273468,
+      "longitude": 55.741226
+    },
+    {
+      "mosque_name": "مسجد راشد محمد سعيد الظاهري/ الاستقامة",
+      "branch": "Al Ain",
+      "area": "الجيمي / العامرية",
+      "quran_circles": 5,
+      "latitude": 24.256462,
+      "longitude": 55.72711
+    },
+    {
+      "mosque_name": "مسجد عبد الله بن عباس",
+      "branch": "Al Ain",
+      "area": "الجيمي/ مريجب",
+      "quran_circles": 2,
+      "latitude": 24.26024,
+      "longitude": 55.733373
+    },
+    {
+      "mosque_name": "مسجد حسنة مطر الحلامي",
+      "branch": "Al Ain",
+      "area": "القطارة",
+      "quran_circles": 2,
+      "latitude": 24.267529,
+      "longitude": 55.741676
+    },
+    {
+      "mosque_name": "مسجد شما فاضل المزروعي",
+      "branch": "Al Ain",
+      "area": "المريجب",
+      "quran_circles": 1,
+      "latitude": 24.26082,
+      "longitude": 55.729812
+    },
+    {
+      "mosque_name": "مسجد جديع الاحبابي",
+      "branch": "Al Ain",
+      "area": "المرخانية",
+      "quran_circles": 2,
+      "latitude": 24.240366,
+      "longitude": 55.672815
+    },
+    {
+      "mosque_name": "مسجد أبو بكر الصديق (سلطان بالفارة)",
+      "branch": "Al Dhafra",
+      "area": "مدينة زايد",
+      "quran_circles": 4,
+      "latitude": 23.651375,
+      "longitude": 53.707942
+    },
+    {
+      "mosque_name": "مسجد الدفاع القديم",
+      "branch": "Al Dhafra",
+      "area": "مدينة زايد",
+      "quran_circles": 1,
+      "latitude": 23.628172,
+      "longitude": 53.731576
+    },
+    {
+      "mosque_name": "مسجد أحمد حميد المزروعي",
+      "branch": "Al Dhafra",
+      "area": "مدينة زايد",
+      "quran_circles": 6,
+      "latitude": 23.653,
+      "longitude": 53.618477
+    },
+    {
+      "mosque_name": "مسجد جمعة سالم المحيربي",
+      "branch": "Al Dhafra",
+      "area": "مدينة زايد",
+      "quran_circles": 7,
+      "latitude": 23.65416,
+      "longitude": 53.694388
+    },
+    {
+      "mosque_name": "مسجد عوض سهيل العامري",
+      "branch": "Al Dhafra",
+      "area": "مدينة زايد",
+      "quran_circles": 1,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد خليفة سعيد المريخي",
+      "branch": "Al Dhafra",
+      "area": "مدينة زايد",
+      "quran_circles": 9,
+      "latitude": 23.650786,
+      "longitude": 53.694225
+    },
+    {
+      "mosque_name": "مسجد أنس بن مالك /بينونة",
+      "branch": "Al Dhafra",
+      "area": "مدينة زايد",
+      "quran_circles": 1,
+      "latitude": 23.647509,
+      "longitude": 53.623894
+    },
+    {
+      "mosque_name": "مسجد مجلس مدينة زايد",
+      "branch": "Al Dhafra",
+      "area": "مدينة زايد",
+      "quran_circles": 3,
+      "latitude": 23.648648,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد التسامح / النخوه",
+      "branch": "Al Dhafra",
+      "area": "مدينة زايد",
+      "quran_circles": 4,
+      "latitude": 23.6424,
+      "longitude": 53.6902
+    },
+    {
+      "mosque_name": "مسجد مرشد علي مرشد المرر",
+      "branch": "Al Dhafra",
+      "area": "مدينة زايد",
+      "quran_circles": 2,
+      "latitude": 23.656931,
+      "longitude": 53.709508
+    },
+    {
+      "mosque_name": "مسجد علي مصبح الكندي المرر",
+      "branch": "Al Dhafra",
+      "area": "مدينة زايد",
+      "quran_circles": 1,
+      "latitude": 23.655865,
+      "longitude": 53.724551
+    },
+    {
+      "mosque_name": "مسجد الحزم /محمد مبارك المنصوري",
+      "branch": "Al Dhafra",
+      "area": "مدينة زايد",
+      "quran_circles": 1,
+      "latitude": 23.64842,
+      "longitude": 53.68788
+    },
+    {
+      "mosque_name": "بيعة الرضوان",
+      "branch": "Al Dhafra",
+      "area": "مدينة زايد",
+      "quran_circles": 1,
+      "latitude": 23.632564,
+      "longitude": 53.699301
+    },
+    {
+      "mosque_name": "مسجد سعيد زايد المزروعي",
+      "branch": "Al Dhafra",
+      "area": "مدينة زايد",
+      "quran_circles": 3,
+      "latitude": 23.605735,
+      "longitude": 53.711806
+    },
+    {
+      "mosque_name": "مسجد سالم محمد معنس العامري",
+      "branch": "Al Dhafra",
+      "area": "مدينة زايد",
+      "quran_circles": 4,
+      "latitude": 23.62403,
+      "longitude": 53.70251
+    },
+    {
+      "mosque_name": "مسجد ساري بن بلوش / بينونة2",
+      "branch": "Al Dhafra",
+      "area": "مدينة زايد",
+      "quran_circles": 2,
+      "latitude": 23.64886,
+      "longitude": 53.61719
+    },
+    {
+      "mosque_name": "مسجد سالم بن عبيدالمنصوري",
+      "branch": "Al Dhafra",
+      "area": "مدينة زايد",
+      "quran_circles": 2,
+      "latitude": 23.652151,
+      "longitude": 53.615433
+    },
+    {
+      "mosque_name": "مسجد عشير علي المزروعي",
+      "branch": "Al Dhafra",
+      "area": "مدينة زايد",
+      "quran_circles": 2,
+      "latitude": 23.636861,
+      "longitude": 53.700953
+    },
+    {
+      "mosque_name": "مسجد خلفان بطي القبيسي",
+      "branch": "Al Dhafra",
+      "area": "مدينة زايد",
+      "quran_circles": 2,
+      "latitude": 23.641659,
+      "longitude": 53.70726
+    },
+    {
+      "mosque_name": "مسجد ضبابة عيسى المزروعي",
+      "branch": "Al Dhafra",
+      "area": "ليوا",
+      "quran_circles": 1,
+      "latitude": 23.131653,
+      "longitude": 53.82446
+    },
+    {
+      "mosque_name": "مسجد سعيد سالم المنصوري /النشاش",
+      "branch": "Al Dhafra",
+      "area": "ليوا",
+      "quran_circles": 2,
+      "latitude": 23.088651,
+      "longitude": 54.0429
+    },
+    {
+      "mosque_name": "مسجد صالح الكمدي المزروعي",
+      "branch": "Al Dhafra",
+      "area": "ليوا",
+      "quran_circles": 1,
+      "latitude": 23.118345,
+      "longitude": 53.608639
+    },
+    {
+      "mosque_name": "مسجد عبدالله بن حويليل المنصوري",
+      "branch": "Al Dhafra",
+      "area": "ليوا",
+      "quran_circles": 2,
+      "latitude": 23.132806,
+      "longitude": 53.759405
+    },
+    {
+      "mosque_name": "مسجد مبارك قذلان المزروعي",
+      "branch": "Al Dhafra",
+      "area": "ليوا",
+      "quran_circles": 1,
+      "latitude": 23.115268,
+      "longitude": 53.610645
+    },
+    {
+      "mosque_name": "مسجد الشيخة سلامة بنت بطي",
+      "branch": "Al Dhafra",
+      "area": "ليوا",
+      "quran_circles": 3,
+      "latitude": 23.1444,
+      "longitude": 53.7962
+    },
+    {
+      "mosque_name": "مسجد محمد بالقطري/المارية الغربية",
+      "branch": "Al Dhafra",
+      "area": "ليوا",
+      "quran_circles": 1,
+      "latitude": 23.103401,
+      "longitude": 53.58264
+    },
+    {
+      "mosque_name": "مسجد مسعود راشد المنصوري",
+      "branch": "Al Dhafra",
+      "area": "ليوا",
+      "quran_circles": 1,
+      "latitude": 22.9875,
+      "longitude": 53.4149
+    },
+    {
+      "mosque_name": "مسجد ابو بكر الصديق /المطلعيات",
+      "branch": "Al Dhafra",
+      "area": "الرويس",
+      "quran_circles": 14,
+      "latitude": 24.087889,
+      "longitude": 52.64892
+    },
+    {
+      "mosque_name": "مسجد الياش",
+      "branch": "Al Dhafra",
+      "area": "الرويس",
+      "quran_circles": 6,
+      "latitude": 24.067523,
+      "longitude": 52.652277
+    },
+    {
+      "mosque_name": "مسجد مبارك بن قران المنصوري",
+      "branch": "Al Dhafra",
+      "area": "بن عشير",
+      "quran_circles": 6,
+      "latitude": 23.832094,
+      "longitude": 52.81072
+    },
+    {
+      "mosque_name": "مسجد مجلس مبارك بن قرآن",
+      "branch": "Al Dhafra",
+      "area": "بن عشير",
+      "quran_circles": 6,
+      "latitude": 23.918126,
+      "longitude": 52.792752
+    },
+    {
+      "mosque_name": "مسجد حمدان بن زايد/بينونة",
+      "branch": "Al Dhafra",
+      "area": "بن عشير",
+      "quran_circles": 2,
+      "latitude": 23.908745,
+      "longitude": 52.799612
+    },
+    {
+      "mosque_name": "مسجد احمد المنصوري / مرابع غياثي الجديد",
+      "branch": "Al Dhafra",
+      "area": "بن عشير",
+      "quran_circles": 2,
+      "latitude": 23.90359,
+      "longitude": 52.79712
+    },
+    {
+      "mosque_name": "مسجد مضحية عبدالله المرر",
+      "branch": "Al Dhafra",
+      "area": "بن عشير",
+      "quran_circles": 1,
+      "latitude": 23.825271,
+      "longitude": 52.817055
+    },
+    {
+      "mosque_name": "مسجد احمد الهاملي",
+      "branch": "Al Dhafra",
+      "area": "بن عشير",
+      "quran_circles": 2,
+      "latitude": 23.91406,
+      "longitude": 52.79552
+    },
+    {
+      "mosque_name": "مسجد محمد محمد القصيلي المنصوري",
+      "branch": "Al Dhafra",
+      "area": "بن عشير",
+      "quran_circles": 2,
+      "latitude": 23.942933,
+      "longitude": 52.758404
+    },
+    {
+      "mosque_name": "مسجد عفراء حمدان المنصوري",
+      "branch": "Al Dhafra",
+      "area": "بعيا",
+      "quran_circles": 1,
+      "latitude": 24.069173,
+      "longitude": 51.754682
+    },
+    {
+      "mosque_name": "مسجد مرابع السلع",
+      "branch": "Al Dhafra",
+      "area": "بعيا",
+      "quran_circles": 3,
+      "latitude": 24.05549,
+      "longitude": 51.750337
+    },
+    {
+      "mosque_name": "مسجد الشيخ حامد بن احمد ال حامد",
+      "branch": "Al Dhafra",
+      "area": "بعيا",
+      "quran_circles": 2,
+      "latitude": 24.064181,
+      "longitude": 51.755038
+    },
+    {
+      "mosque_name": "الشامخة",
+      "branch": "Al Dhafra",
+      "area": "بعيا",
+      "quran_circles": 1,
+      "latitude": 24.075316,
+      "longitude": 51.754919
+    },
+    {
+      "mosque_name": "مسجدحمد خميس المنصوري",
+      "branch": "Al Dhafra",
+      "area": "بعيا",
+      "quran_circles": 1,
+      "latitude": 24.071015,
+      "longitude": 51.759623
+    },
+    {
+      "mosque_name": "مسجد قران خميس قران المنصوري",
+      "branch": "Al Dhafra",
+      "area": "بعيا",
+      "quran_circles": 3,
+      "latitude": 24.062394,
+      "longitude": 51.750798
+    },
+    {
+      "mosque_name": "مسجد الوتيد",
+      "branch": "Al Dhafra",
+      "area": "بدع المطاوعة",
+      "quran_circles": 2,
+      "latitude": 23.783989,
+      "longitude": 52.569447
+    },
+    {
+      "mosque_name": "مسجد سعيد راشد هميلة المزروعي",
+      "branch": "Al Dhafra",
+      "area": "المرفأ",
+      "quran_circles": 2,
+      "latitude": 24.06446,
+      "longitude": 53.45375
+    },
+    {
+      "mosque_name": "مسجد الغبة",
+      "branch": "Al Dhafra",
+      "area": "المرفأ",
+      "quran_circles": 2,
+      "latitude": 24.09762,
+      "longitude": 53.5033
+    },
+    {
+      "mosque_name": "مسجد صياح حبيب المزروعي",
+      "branch": "Al Dhafra",
+      "area": "المرفأ",
+      "quran_circles": 1,
+      "latitude": 24.069035,
+      "longitude": 53.470356
+    },
+    {
+      "mosque_name": "مسجد ياسر محمود الخاجة",
+      "branch": "Al Dhafra",
+      "area": "المرفأ",
+      "quran_circles": 1,
+      "latitude": 24.101687,
+      "longitude": 53.495533
+    },
+    {
+      "mosque_name": "مسجد خصواني راشد المحيربي",
+      "branch": "Al Dhafra",
+      "area": "المرفأ",
+      "quran_circles": 1,
+      "latitude": 24.060017,
+      "longitude": 53.453655
+    },
+    {
+      "mosque_name": "مسجد غابة المغيرة",
+      "branch": "Al Dhafra",
+      "area": "المرفأ",
+      "quran_circles": 3,
+      "latitude": 24.058115,
+      "longitude": 53.46291
+    },
+    {
+      "mosque_name": "مسجد عبد الله المسعود",
+      "branch": "Al Dhafra",
+      "area": "المرفأ",
+      "quran_circles": 3,
+      "latitude": 24.060017,
+      "longitude": 53.453655
+    },
+    {
+      "mosque_name": "مسجد الامام ابن تيمية",
+      "branch": "Sharjah",
+      "area": "الغافية",
+      "quran_circles": 1,
+      "latitude": 55.435515,
+      "longitude": 55.435515
+    },
+    {
+      "mosque_name": "مسجدعمار بن ياسر",
+      "branch": "Sharjah",
+      "area": "الجزات",
+      "quran_circles": 1,
+      "latitude": 24.443669,
+      "longitude": 54.412773
+    },
+    {
+      "mosque_name": "مسجد أسيد بن حضير",
+      "branch": "Sharjah",
+      "area": "العزرة",
+      "quran_circles": 1,
+      "latitude": 25.370438,
+      "longitude": 55.445722
+    },
+    {
+      "mosque_name": "مسجد الفردوس",
+      "branch": "Sharjah",
+      "area": "الخان",
+      "quran_circles": 1,
+      "latitude": 25.306999,
+      "longitude": 55.364296
+    },
+    {
+      "mosque_name": "مسجد الإجابة",
+      "branch": "Sharjah",
+      "area": "البوطينة",
+      "quran_circles": 1,
+      "latitude": 25.374058,
+      "longitude": 55.402219
+    },
+    {
+      "mosque_name": "مسجد الاتحاد",
+      "branch": "Sharjah",
+      "area": "تجارية مويلح",
+      "quran_circles": 1,
+      "latitude": 25.299513,
+      "longitude": 55.445626
+    },
+    {
+      "mosque_name": "مسجد الحارث بن النعمان",
+      "branch": "Sharjah",
+      "area": "الفشت",
+      "quran_circles": 1,
+      "latitude": 25.817064,
+      "longitude": 55.149594
+    },
+    {
+      "mosque_name": "مسجد الحمد",
+      "branch": "Sharjah",
+      "area": "تجارية مويلح",
+      "quran_circles": 1,
+      "latitude": 25.301541,
+      "longitude": 55.447104
+    },
+    {
+      "mosque_name": "مسجد عدي بن حاتم",
+      "branch": "Sharjah",
+      "area": "المليحة",
+      "quran_circles": 1,
+      "latitude": 25.311192,
+      "longitude": 55.450497
+    },
+    {
+      "mosque_name": "مسجد ابراهيم الخليل",
+      "branch": "Sharjah",
+      "area": "الرحمانية 7",
+      "quran_circles": 1,
+      "latitude": 25.340862,
+      "longitude": 55.608245
+    },
+    {
+      "mosque_name": "مسجد سعيد بن عثمان",
+      "branch": "Sharjah",
+      "area": "الرحمانية2",
+      "quran_circles": 1,
+      "latitude": 25.343911,
+      "longitude": 55.55019
+    },
+    {
+      "mosque_name": "مسجد الصحابي دحية الكلبي",
+      "branch": "Sharjah",
+      "area": "المدينة الجامعية الشارقة",
+      "quran_circles": 1,
+      "latitude": 25.299204,
+      "longitude": 55.487819
+    },
+    {
+      "mosque_name": "مسجد الراحمون",
+      "branch": "Sharjah",
+      "area": "النهدة",
+      "quran_circles": 1,
+      "latitude": 25.300636,
+      "longitude": 55.366269
+    },
+    {
+      "mosque_name": "مسجد الإمام حفص",
+      "branch": "Sharjah",
+      "area": "القرائن5",
+      "quran_circles": 1,
+      "latitude": 25.29203,
+      "longitude": 55.502904
+    },
+    {
+      "mosque_name": "مسجد الشهيد يحيى سالم موسى الحليان",
+      "branch": "Sharjah",
+      "area": "الطرفانة",
+      "quran_circles": 1,
+      "latitude": 25.323809,
+      "longitude": 55.446646
+    },
+    {
+      "mosque_name": "مسجد الضياء",
+      "branch": "Sharjah",
+      "area": "تجارية مويلح",
+      "quran_circles": 1,
+      "latitude": 25.306761,
+      "longitude": 55.447675
+    },
+    {
+      "mosque_name": "مسجد البراء بن مالك",
+      "branch": "Sharjah",
+      "area": "ابوشغارة",
+      "quran_circles": 1,
+      "latitude": 25.313378,
+      "longitude": 55.368761
+    },
+    {
+      "mosque_name": "مسجد ابن الجزري",
+      "branch": "Sharjah",
+      "area": "السيوح",
+      "quran_circles": 1,
+      "latitude": 25.228241,
+      "longitude": 55.598908
+    },
+    {
+      "mosque_name": "مسجد محمد بن المنكدر",
+      "branch": "Sharjah",
+      "area": "الحمرية",
+      "quran_circles": 1,
+      "latitude": 25.336849,
+      "longitude": 55.394283
+    },
+    {
+      "mosque_name": "سراقة بن مالك",
+      "branch": "Ajman",
+      "area": "الجرف 1",
+      "quran_circles": 1,
+      "latitude": 25.418402,
+      "longitude": 55.505512
+    },
+    {
+      "mosque_name": "شيخة بنت راشد النعيمي",
+      "branch": "Ajman",
+      "area": "الحميدية 2",
+      "quran_circles": 1,
+      "latitude": 25.412229,
+      "longitude": 55.538852
+    },
+    {
+      "mosque_name": "عبدالله الرميثي",
+      "branch": "Ajman",
+      "area": "الحميدية 1",
+      "quran_circles": 1,
+      "latitude": 25.407813,
+      "longitude": 55.523468
+    },
+    {
+      "mosque_name": "عيسى بن سلطان السويدي",
+      "branch": "Ajman",
+      "area": "الحميدية 1",
+      "quran_circles": 2,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "الشيخ حميد بن راشد النعيمي",
+      "branch": "Ajman",
+      "area": "الراشدية 2",
+      "quran_circles": 1,
+      "latitude": 25.396189,
+      "longitude": 55.444364
+    },
+    {
+      "mosque_name": "الشيخ راشد بن حميد النعيمي",
+      "branch": "Ajman",
+      "area": "الراشدية 3",
+      "quran_circles": 1,
+      "latitude": 25.401849,
+      "longitude": 55.439955
+    },
+    {
+      "mosque_name": "خديجة بنت محمد",
+      "branch": "Ajman",
+      "area": "الرقايب 1",
+      "quran_circles": 1,
+      "latitude": 25.406251,
+      "longitude": 55.550547
+    },
+    {
+      "mosque_name": "راشد غانم العصري",
+      "branch": "Ajman",
+      "area": "الرقايب 1",
+      "quran_circles": 1,
+      "latitude": 25.402465,
+      "longitude": 55.544047
+    },
+    {
+      "mosque_name": "الرقايب",
+      "branch": "Ajman",
+      "area": "الرقايب 2",
+      "quran_circles": 5,
+      "latitude": 25.396253,
+      "longitude": 55.554967
+    },
+    {
+      "mosque_name": "الشاكرين",
+      "branch": "Ajman",
+      "area": "الرقايب 2",
+      "quran_circles": 1,
+      "latitude": 25.4,
+      "longitude": 55.553889
+    },
+    {
+      "mosque_name": "خالد بن الوليد",
+      "branch": "Ajman",
+      "area": "الرميلة 2",
+      "quran_circles": 1,
+      "latitude": 25.403051,
+      "longitude": 55.433143
+    },
+    {
+      "mosque_name": "شيخة بنت خلفان الجلاف",
+      "branch": "Ajman",
+      "area": "الروضة 1",
+      "quran_circles": 1,
+      "latitude": 25.38799,
+      "longitude": 55.526965
+    },
+    {
+      "mosque_name": "الشيخ عبدالله بن راشد النعيمي",
+      "branch": "Ajman",
+      "area": "الروضة 2",
+      "quran_circles": 1,
+      "latitude": 25.415247,
+      "longitude": 55.442528
+    },
+    {
+      "mosque_name": "الغلا",
+      "branch": "Ajman",
+      "area": "الروضة 2",
+      "quran_circles": 1,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "فوزي النصار وعائشة الخطاب",
+      "branch": "Ajman",
+      "area": "الروضة 2",
+      "quran_circles": 1,
+      "latitude": 25.389225,
+      "longitude": 55.507241
+    },
+    {
+      "mosque_name": "أمين عبدالرحمن الشرفا",
+      "branch": "Ajman",
+      "area": "الروضة 3",
+      "quran_circles": 1,
+      "latitude": 25.394343,
+      "longitude": 55.496357
+    },
+    {
+      "mosque_name": "عبدالقادر المدني",
+      "branch": "Ajman",
+      "area": "الروضة 3",
+      "quran_circles": 1,
+      "latitude": 25.384512,
+      "longitude": 55.500693
+    },
+    {
+      "mosque_name": "أبو بكر الصديق",
+      "branch": "Ajman",
+      "area": "الصفيا",
+      "quran_circles": 2,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "الشيخ راشد بن سعيد آل مكتوم 1",
+      "branch": "Ajman",
+      "area": "الصفيا",
+      "quran_circles": 1,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "الشعالي للألمنيوم",
+      "branch": "Ajman",
+      "area": "الصناعية 2",
+      "quran_circles": 1,
+      "latitude": 25.375526,
+      "longitude": 55.4593
+    },
+    {
+      "mosque_name": "كلثم بنت خصيف",
+      "branch": "Ajman",
+      "area": "الصناعية 2",
+      "quran_circles": 1,
+      "latitude": 25.380441,
+      "longitude": 55.471312
+    },
+    {
+      "mosque_name": "عبيد بن خصيبه المهيري",
+      "branch": "Ajman",
+      "area": "المويهات 1",
+      "quran_circles": 1,
+      "latitude": 25.379016,
+      "longitude": 55.514642
+    },
+    {
+      "mosque_name": "الشهيد سمير محمد مراد البلوشي",
+      "branch": "Ajman",
+      "area": "المويهات 1",
+      "quran_circles": 2,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "أبو عبيدة بن الجراح",
+      "branch": "Ajman",
+      "area": "المويهات 2",
+      "quran_circles": 1,
+      "latitude": 25.374961,
+      "longitude": 55.503657
+    },
+    {
+      "mosque_name": "راشد بن حسين الشامسي",
+      "branch": "Ajman",
+      "area": "المويهات 2",
+      "quran_circles": 4,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "هاجر",
+      "branch": "Ajman",
+      "area": "المويهات 2",
+      "quran_circles": 2,
+      "latitude": 25.375229,
+      "longitude": 55.50767
+    },
+    {
+      "mosque_name": "الشهيد جمعة جوهر جمعة ياقوت الحمادي",
+      "branch": "Ajman",
+      "area": "المويهات 3",
+      "quran_circles": 1,
+      "latitude": 25.364101,
+      "longitude": 55.487152
+    },
+    {
+      "mosque_name": "الشيخ عبدالله بن حميد النعيمي",
+      "branch": "Ajman",
+      "area": "النخيل 1",
+      "quran_circles": 1,
+      "latitude": 25.41518,
+      "longitude": 55.442597
+    },
+    {
+      "mosque_name": "خلفان بن عبدالله الشامسي",
+      "branch": "Ajman",
+      "area": "النخيل 1",
+      "quran_circles": 1,
+      "latitude": 25.409355,
+      "longitude": 55.441232
+    },
+    {
+      "mosque_name": "عبدالله بن علي الحمراني",
+      "branch": "Ajman",
+      "area": "النعيمية 2",
+      "quran_circles": 1,
+      "latitude": 25.385757,
+      "longitude": 55.450362
+    },
+    {
+      "mosque_name": "النبي أيوب (عليه السلام)",
+      "branch": "Ajman",
+      "area": "النعيمية 3",
+      "quran_circles": 1,
+      "latitude": 25.390487,
+      "longitude": 55.434327
+    },
+    {
+      "mosque_name": "النعيمية",
+      "branch": "Ajman",
+      "area": "النعيمية 3",
+      "quran_circles": 1,
+      "latitude": 25.390516,
+      "longitude": 55.440178
+    },
+    {
+      "mosque_name": "ابن جابر",
+      "branch": "Ajman",
+      "area": "ليواره 1",
+      "quran_circles": 1,
+      "latitude": 25.418447,
+      "longitude": 55.445749
+    },
+    {
+      "mosque_name": "فاطمة بنت عبدالرحمن بن علي الجروان",
+      "branch": "Ajman",
+      "area": "ليواره 1",
+      "quran_circles": 1,
+      "latitude": 25.410665,
+      "longitude": 55.444919
+    },
+    {
+      "mosque_name": "يوسف بن ناصر النعيمي",
+      "branch": "Ajman",
+      "area": "محمد بن زايد 1",
+      "quran_circles": 3,
+      "latitude": 25.381892,
+      "longitude": 55.539365
+    },
+    {
+      "mosque_name": "الشهيد حجي سالم محمد الدرسي الكعبي",
+      "branch": "Ajman",
+      "area": "مصفوت 13",
+      "quran_circles": 1,
+      "latitude": 24.816396,
+      "longitude": 56.098867
+    },
+    {
+      "mosque_name": "الشهيد نادر أبو بكر شودري بهادر",
+      "branch": "Ajman",
+      "area": "مصفوت 3",
+      "quran_circles": 1,
+      "latitude": 24.833606,
+      "longitude": 56.041812
+    },
+    {
+      "mosque_name": "عبيد الحلو 1",
+      "branch": "Ajman",
+      "area": "مصفوت 5",
+      "quran_circles": 2,
+      "latitude": 24.833693,
+      "longitude": 56.037935
+    },
+    {
+      "mosque_name": "المضاحية",
+      "branch": "Ajman",
+      "area": "مصفوت 6",
+      "quran_circles": 1,
+      "latitude": 24.828908,
+      "longitude": 56.031771
+    },
+    {
+      "mosque_name": "زيد بن حارثة",
+      "branch": "Ajman",
+      "area": "مصفوت 7",
+      "quran_circles": 1,
+      "latitude": 24.829209,
+      "longitude": 56.043187
+    },
+    {
+      "mosque_name": "مسجد أبو ذر الغفاري",
+      "branch": "Umm Al Quwain",
+      "area": "السلمة",
+      "quran_circles": 1,
+      "latitude": 25.501187,
+      "longitude": 55.57827
+    },
+    {
+      "mosque_name": "مسجد حمد مطر الجابري",
+      "branch": "Umm Al Quwain",
+      "area": "السلمة",
+      "quran_circles": 1,
+      "latitude": 25.487362,
+      "longitude": 55.580827
+    },
+    {
+      "mosque_name": "مسجد الشيخة نيلاء النعيمي",
+      "branch": "Umm Al Quwain",
+      "area": "الهبوب - محمد بن راشد 1",
+      "quran_circles": 1,
+      "latitude": 25.474056,
+      "longitude": 55.611172
+    },
+    {
+      "mosque_name": "مسجد احمد هيبنان البلوشي",
+      "branch": "Umm Al Quwain",
+      "area": "الرملة2",
+      "quran_circles": 1,
+      "latitude": 25.506432,
+      "longitude": 55.577153
+    },
+    {
+      "mosque_name": "مسجد عقيل ابن ابي طالب",
+      "branch": "Umm Al Quwain",
+      "area": "مهذب",
+      "quran_circles": 1,
+      "latitude": 25.43506,
+      "longitude": 55.667169
+    },
+    {
+      "mosque_name": "مسجد محمود الرئيسي",
+      "branch": "Umm Al Quwain",
+      "area": "الرملة3",
+      "quran_circles": 1,
+      "latitude": 25.50589,
+      "longitude": 55.584399
+    },
+    {
+      "mosque_name": "مسجد الشيخة هند بنت مكتوم",
+      "branch": "Umm Al Quwain",
+      "area": "الراعفة",
+      "quran_circles": 1,
+      "latitude": 25.607827,
+      "longitude": 55.694906
+    },
+    {
+      "mosque_name": "مسجد الشيخ إبراهيم بن سعيد المعلا",
+      "branch": "Umm Al Quwain",
+      "area": "السلمة 2",
+      "quran_circles": 1,
+      "latitude": 25.483718,
+      "longitude": 55.59249
+    },
+    {
+      "mosque_name": "مسجد احمد بن حنبل",
+      "branch": "Umm Al Quwain",
+      "area": "السلمة",
+      "quran_circles": 1,
+      "latitude": 25.501725,
+      "longitude": 55.583844
+    },
+    {
+      "mosque_name": "مسجد خميس علي حسن",
+      "branch": "Umm Al Quwain",
+      "area": "الرملة1",
+      "quran_circles": 2,
+      "latitude": 25.503347,
+      "longitude": 55.581016
+    },
+    {
+      "mosque_name": "مسجد ميمونة بنت الحارث",
+      "branch": "Umm Al Quwain",
+      "area": "السلمة 2",
+      "quran_circles": 1,
+      "latitude": 25.495612,
+      "longitude": 55.589627
+    },
+    {
+      "mosque_name": "مسجد علي بن ابي طالب",
+      "branch": "Umm Al Quwain",
+      "area": "الرملة3",
+      "quran_circles": 3,
+      "latitude": 25.508379,
+      "longitude": 55.589915
+    },
+    {
+      "mosque_name": "مسجد احمد علي الطويل",
+      "branch": "Umm Al Quwain",
+      "area": "المدر2",
+      "quran_circles": 1,
+      "latitude": 25.518482,
+      "longitude": 55.54253
+    },
+    {
+      "mosque_name": "مسجد سعيد بن فاضل",
+      "branch": "Umm Al Quwain",
+      "area": "الحمرة",
+      "quran_circles": 2,
+      "latitude": 25.545566,
+      "longitude": 55.549986
+    },
+    {
+      "mosque_name": "مسجد الإمام البخاري",
+      "branch": "Umm Al Quwain",
+      "area": "الروضة",
+      "quran_circles": 3,
+      "latitude": 25.566759,
+      "longitude": 55.556612
+    },
+    {
+      "mosque_name": "مسجد أسماء خليفة آل مزينة",
+      "branch": "Umm Al Quwain",
+      "area": "الحوية",
+      "quran_circles": 1,
+      "latitude": 25.581823,
+      "longitude": 55.559169
+    },
+    {
+      "mosque_name": "مسجد الشيخ راشد بن احمد المعلا",
+      "branch": "Umm Al Quwain",
+      "area": "الراس",
+      "quran_circles": 1,
+      "latitude": 25.574864,
+      "longitude": 55.555821
+    },
+    {
+      "mosque_name": "مسجد فاطمة الفهيم",
+      "branch": "Umm Al Quwain",
+      "area": "الراس",
+      "quran_circles": 1,
+      "latitude": 25.575842,
+      "longitude": 55.5575
+    },
+    {
+      "mosque_name": "مسجد الشهيد سعيد بن عبيد بن فاضل",
+      "branch": "Umm Al Quwain",
+      "area": "السلمة 1",
+      "quran_circles": 1,
+      "latitude": 25.475581,
+      "longitude": 55.63805
+    },
+    {
+      "mosque_name": "مسجد الروضة",
+      "branch": "Umm Al Quwain",
+      "area": "الروضة",
+      "quran_circles": 1,
+      "latitude": 25.554264,
+      "longitude": 55.546679
+    },
+    {
+      "mosque_name": "مسجد الشيخ سلطان بن أحمد المعلا",
+      "branch": "Umm Al Quwain",
+      "area": "الراس",
+      "quran_circles": 2,
+      "latitude": 25.554157,
+      "longitude": 55.546368
+    },
+    {
+      "mosque_name": "مسجد الصحابه",
+      "branch": "Umm Al Quwain",
+      "area": "البطين",
+      "quran_circles": 2,
+      "latitude": 25.535334,
+      "longitude": 55.54698
+    },
+    {
+      "mosque_name": "مسجد عبد العزيز الماجد",
+      "branch": "Umm Al Quwain",
+      "area": "الرقة-الدار البيضاء",
+      "quran_circles": 4,
+      "latitude": 25.564422,
+      "longitude": 55.5731
+    },
+    {
+      "mosque_name": "مسجد عمر بن الخطاب",
+      "branch": "Umm Al Quwain",
+      "area": "عود الطاير السلمه",
+      "quran_circles": 2,
+      "latitude": 25.482678,
+      "longitude": 55.600775
+    },
+    {
+      "mosque_name": "مسجد الجامع الكبير",
+      "branch": "Umm Al Quwain",
+      "area": "فلج المعلا",
+      "quran_circles": 4,
+      "latitude": 25.35345,
+      "longitude": 55.852823
+    },
+    {
+      "mosque_name": "مسجد شيخة المزروعي",
+      "branch": "Umm Al Quwain",
+      "area": "الراشديه",
+      "quran_circles": 1,
+      "latitude": 25.390125,
+      "longitude": 55.84539
+    },
+    {
+      "mosque_name": "مسجد مصعب بن عمير",
+      "branch": "Umm Al Quwain",
+      "area": "فلج المعلا",
+      "quran_circles": 1,
+      "latitude": 25.359108,
+      "longitude": 55.855964
+    },
+    {
+      "mosque_name": "مسجد الشيخة حصة الشامسي",
+      "branch": "Umm Al Quwain",
+      "area": "منطقة النيفة - السلمة",
+      "quran_circles": 2,
+      "latitude": 25.518047,
+      "longitude": 55.579172
+    },
+    {
+      "mosque_name": "مسجد الشيخ احمد بن راشد",
+      "branch": "Umm Al Quwain",
+      "area": "منطقة الرأس",
+      "quran_circles": 1,
+      "latitude": 25.581098,
+      "longitude": 55.605092
+    },
+    {
+      "mosque_name": "مسجد مريم علي خميس بن درويش",
+      "branch": "Umm Al Quwain",
+      "area": "منطقة أم القيوين - البطين",
+      "quran_circles": 1,
+      "latitude": 25.5386,
+      "longitude": 55.543784
+    },
+    {
+      "mosque_name": "مسجد محمد إبراهيم العويني",
+      "branch": "Umm Al Quwain",
+      "area": "منطقة السلمه",
+      "quran_circles": 1,
+      "latitude": 24.901652,
+      "longitude": 56.611835
+    },
+    {
+      "mosque_name": "مسجد عمر بن الخطاب",
+      "branch": "Ras Al Khaimah",
+      "area": "وادي اصفني",
+      "quran_circles": 1,
+      "latitude": 25.173449,
+      "longitude": 56.092411
+    },
+    {
+      "mosque_name": "مسجد فاطمة الخروصي",
+      "branch": "Ras Al Khaimah",
+      "area": "الظيت الجنوبي",
+      "quran_circles": 14,
+      "latitude": 25.731497,
+      "longitude": 55.90999
+    },
+    {
+      "mosque_name": "مسجد الشيخ راشد بن سعيد",
+      "branch": "Ras Al Khaimah",
+      "area": "وادي القور",
+      "quran_circles": 3,
+      "latitude": 24.913061,
+      "longitude": 56.098331
+    },
+    {
+      "mosque_name": "مسجد محمد صديق الخاجة",
+      "branch": "Ras Al Khaimah",
+      "area": "الغيل",
+      "quran_circles": 1,
+      "latitude": 25.719641,
+      "longitude": 55.903712
+    },
+    {
+      "mosque_name": "مسجد إسماعيل الخاجة",
+      "branch": "Ras Al Khaimah",
+      "area": "أذن",
+      "quran_circles": 1,
+      "latitude": 25.467948,
+      "longitude": 55.985814
+    },
+    {
+      "mosque_name": "مسجد أبو بكر الصديق",
+      "branch": "Ras Al Khaimah",
+      "area": "الغيل",
+      "quran_circles": 1,
+      "latitude": 25.467948,
+      "longitude": 55.985814
+    },
+    {
+      "mosque_name": "مسجد الشيخ راشد بن حميد",
+      "branch": "Ras Al Khaimah",
+      "area": "أذن",
+      "quran_circles": 1,
+      "latitude": 25.453517,
+      "longitude": 56.005339
+    },
+    {
+      "mosque_name": "مسجد عبيد ماجد الشويهي",
+      "branch": "Ras Al Khaimah",
+      "area": "الظيت الجنوبي",
+      "quran_circles": 4,
+      "latitude": 25.719641,
+      "longitude": 55.903712
+    },
+    {
+      "mosque_name": "مسجد موزة الطريفي ( بني حسن )",
+      "branch": "Ras Al Khaimah",
+      "area": "مدينة خليفة بن زايد",
+      "quran_circles": 4,
+      "latitude": 25.691682,
+      "longitude": 55.888449
+    },
+    {
+      "mosque_name": "مسجد كعب بن أبي مالك",
+      "branch": "Ras Al Khaimah",
+      "area": "مدينة خليفة بن زايد",
+      "quran_circles": 4,
+      "latitude": 25.699603,
+      "longitude": 55.904118
+    },
+    {
+      "mosque_name": "مسجد شيخة العسعوسي",
+      "branch": "Ras Al Khaimah",
+      "area": "معيريض",
+      "quran_circles": 6,
+      "latitude": 25.809511,
+      "longitude": 55.953192
+    },
+    {
+      "mosque_name": "مسجد الرحمن",
+      "branch": "Ras Al Khaimah",
+      "area": "جلفار",
+      "quran_circles": 7,
+      "latitude": 25.709535,
+      "longitude": 55.911153
+    },
+    {
+      "mosque_name": "مسجد السامان",
+      "branch": "Ras Al Khaimah",
+      "area": "جلفار",
+      "quran_circles": 4,
+      "latitude": 25.808684,
+      "longitude": 55.984743
+    },
+    {
+      "mosque_name": "مسجد على عبدالله الفقير",
+      "branch": "Ras Al Khaimah",
+      "area": "جلفار",
+      "quran_circles": 4,
+      "latitude": 25.843187,
+      "longitude": 56.009675
+    },
+    {
+      "mosque_name": "مسجد حصة الصباح",
+      "branch": "Ras Al Khaimah",
+      "area": "جلفار",
+      "quran_circles": 1,
+      "latitude": 25.811041,
+      "longitude": 55.962602
+    },
+    {
+      "mosque_name": "مسجد حنحون",
+      "branch": "Ras Al Khaimah",
+      "area": "جلفار",
+      "quran_circles": 4,
+      "latitude": 25.837633,
+      "longitude": 56.009595
+    },
+    {
+      "mosque_name": "مسجد مفتاح الخاطري",
+      "branch": "Ras Al Khaimah",
+      "area": "سهيلة",
+      "quran_circles": 2,
+      "latitude": 25.692261,
+      "longitude": 55.966265
+    },
+    {
+      "mosque_name": "مسجد جوهرة الرئيسي",
+      "branch": "Ras Al Khaimah",
+      "area": "البريرات",
+      "quran_circles": 1,
+      "latitude": 25.774383,
+      "longitude": 56.016055
+    },
+    {
+      "mosque_name": "مسجد الصحابة",
+      "branch": "Ras Al Khaimah",
+      "area": "اعسمه",
+      "quran_circles": 3,
+      "latitude": 25.395592,
+      "longitude": 56.163426
+    },
+    {
+      "mosque_name": "مسجد امنه عرار الظاهري",
+      "branch": "Ras Al Khaimah",
+      "area": "خليفة بن زايد",
+      "quran_circles": 6,
+      "latitude": 25.692613,
+      "longitude": 55.882241
+    },
+    {
+      "mosque_name": "مسجد أم المؤمنين",
+      "branch": "Ras Al Khaimah",
+      "area": "الظيت الجنوبي",
+      "quran_circles": 4,
+      "latitude": 25.735532,
+      "longitude": 55.900357
+    },
+    {
+      "mosque_name": "مسجد علي بن ابي طالب",
+      "branch": "Ras Al Khaimah",
+      "area": "الظيت الجنوبي",
+      "quran_circles": 7,
+      "latitude": 25.718774,
+      "longitude": 55.921012
+    },
+    {
+      "mosque_name": "مسجد المرحوم راشد الشامسي",
+      "branch": "Ras Al Khaimah",
+      "area": "الظيت الجنوبي",
+      "quran_circles": 1,
+      "latitude": 25.713256,
+      "longitude": 55.904785
+    },
+    {
+      "mosque_name": "مسجد الشيخ زايد بن سلطان",
+      "branch": "Ras Al Khaimah",
+      "area": "رأس الخيمة كورنيش القواسم",
+      "quran_circles": 10,
+      "latitude": 25.774491,
+      "longitude": 55.935472
+    },
+    {
+      "mosque_name": "مسجد عبدالرحيم",
+      "branch": "Ras Al Khaimah",
+      "area": "رأس الخيمة - السوق القديم",
+      "quran_circles": 2,
+      "latitude": 25.796679,
+      "longitude": 55.948563
+    },
+    {
+      "mosque_name": "مسجد الشيخ سلطان بن صقر القاسمي",
+      "branch": "Ras Al Khaimah",
+      "area": "دفان النخيل",
+      "quran_circles": 6,
+      "latitude": 25.787556,
+      "longitude": 55.967886
+    },
+    {
+      "mosque_name": "مسجد أبو أيوب الأنصاري",
+      "branch": "Ras Al Khaimah",
+      "area": "جلفار",
+      "quran_circles": 1,
+      "latitude": 25.837975,
+      "longitude": 55.99962
+    },
+    {
+      "mosque_name": "مسجد الصحابة",
+      "branch": "Ras Al Khaimah",
+      "area": "جلفار",
+      "quran_circles": 2,
+      "latitude": 25.839093,
+      "longitude": 55.994838
+    },
+    {
+      "mosque_name": "مسجد أحمد بن شيبان",
+      "branch": "Ras Al Khaimah",
+      "area": "البريرات",
+      "quran_circles": 1,
+      "latitude": 25.78178,
+      "longitude": 56.023686
+    },
+    {
+      "mosque_name": "مسجد أحمد بن صياح",
+      "branch": "Ras Al Khaimah",
+      "area": "كدره",
+      "quran_circles": 1,
+      "latitude": 25.188772,
+      "longitude": 56.015277
+    },
+    {
+      "mosque_name": "مسجد حمد الدبدوب",
+      "branch": "Ras Al Khaimah",
+      "area": "الريبية",
+      "quran_circles": 1,
+      "latitude": 25.733989,
+      "longitude": 56.025241
+    },
+    {
+      "mosque_name": "مسجد المرحومة هاجر فتحي البلوشي",
+      "branch": "Fujairah",
+      "area": "وادي السدر",
+      "quran_circles": 1,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد سعد الكلبي",
+      "branch": "Fujairah",
+      "area": "رول ضدنا",
+      "quran_circles": 1,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد ربيعة بن عامر",
+      "branch": "Fujairah",
+      "area": "ضدنا",
+      "quran_circles": 1,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد الشهيد راشد سعيد اليماحي",
+      "branch": "Fujairah",
+      "area": "الطويين",
+      "quran_circles": 1,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد أنس بن قتادة",
+      "branch": "Fujairah",
+      "area": "الطويين",
+      "quran_circles": 1,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد النهضة",
+      "branch": "Fujairah",
+      "area": "النهضة",
+      "quran_circles": 4,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد إسماعيل خاجه",
+      "branch": "Fujairah",
+      "area": "النهضة",
+      "quran_circles": 2,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد عبيد بن خليفة الفلاسي",
+      "branch": "Fujairah",
+      "area": "الرفاع الجديدة",
+      "quran_circles": 2,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد عثمان بن عفان",
+      "branch": "Fujairah",
+      "area": "الرفاع الجديدة",
+      "quran_circles": 2,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد الشهيد هزاع الكعبي",
+      "branch": "Fujairah",
+      "area": "الرفاع القديمة",
+      "quran_circles": 2,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد القادسية",
+      "branch": "Fujairah",
+      "area": "واسط القديمة",
+      "quran_circles": 1,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد الشيخ زايد",
+      "branch": "Fujairah",
+      "area": "المهلب",
+      "quran_circles": 2,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد هلال ابن المعلا",
+      "branch": "Fujairah",
+      "area": "المهلب",
+      "quran_circles": 1,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد خلاد بن رافع",
+      "branch": "Fujairah",
+      "area": "العكامية",
+      "quran_circles": 2,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد عبدالله سلطان السلامي",
+      "branch": "Fujairah",
+      "area": "الرأس",
+      "quran_circles": 1,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد عبدالرحمن الناصر",
+      "branch": "Fujairah",
+      "area": "غوب",
+      "quran_circles": 2,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد محمد بن زايد",
+      "branch": "Fujairah",
+      "area": "مدينه محمد بن زايد",
+      "quran_circles": 1,
+      "latitude": 25.080128,
+      "longitude": 56.314769
+    },
+    {
+      "mosque_name": "مسجد سلمان الفارسي",
+      "branch": "Fujairah",
+      "area": "البدية",
+      "quran_circles": 2,
+      "latitude": 25.431903,
+      "longitude": 56.351031
+    },
+    {
+      "mosque_name": "مسجد ثابت بن خالد",
+      "branch": "Fujairah",
+      "area": "البنايات ال16",
+      "quran_circles": 1,
+      "latitude": 25.123616,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد الشهيد عبدالعزيز العبدولي",
+      "branch": "Fujairah",
+      "area": "البدية",
+      "quran_circles": 3,
+      "latitude": 25.431428,
+      "longitude": 56.343007
+    },
+    {
+      "mosque_name": "قيس بن محصن",
+      "branch": "Fujairah",
+      "area": "البدية",
+      "quran_circles": 1,
+      "latitude": 25.42389,
+      "longitude": 56.345683
+    },
+    {
+      "mosque_name": "جامع راشد بن سعيد",
+      "branch": "Fujairah",
+      "area": "مريشيد",
+      "quran_circles": 2,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "جامع علي بن أبي طالب",
+      "branch": "Fujairah",
+      "area": "مضب",
+      "quran_circles": 2,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "جامع النعمان بن مالك",
+      "branch": "Fujairah",
+      "area": "الفصيل",
+      "quran_circles": 1,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "المركز الثقافي",
+      "branch": "Fujairah",
+      "area": "مسافي",
+      "quran_circles": 1,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "mosque_name": "مسجد الشهيد عبدالعزيز العبدولي",
+      "branch": "Fujairah",
+      "area": "البدية",
+      "quran_circles": 1,
+      "latitude": 25.431203,
+      "longitude": 56.343035
+    },
+    {
+      "mosque_name": "مسجد قدفع",
+      "branch": "Fujairah",
+      "area": "قدفع",
+      "quran_circles": 1,
+      "latitude": 25.290405,
+      "longitude": 56.355169
+    },
+    {
+      "mosque_name": "مسجد زيد بن الخطاب",
+      "branch": "Fujairah",
+      "area": "قدفع",
+      "quran_circles": 1,
+      "latitude": 25.293359,
+      "longitude": 56.360366
+    },
+    {
+      "mosque_name": "مسجد عمير بن الحارث",
+      "branch": "Fujairah",
+      "area": "مربح",
+      "quran_circles": 1,
+      "latitude": 25.27262,
+      "longitude": 56.358895
+    },
+    {
+      "mosque_name": "مسجد الشهيد محمد بن جديد الشحي",
+      "branch": "Fujairah",
+      "area": "قراط",
+      "quran_circles": 1,
+      "latitude": 25.264034,
+      "longitude": 56.34985
+    },
+    {
+      "mosque_name": "مسجد موسى الجاسم",
+      "branch": "Fujairah",
+      "area": "قراط",
+      "quran_circles": 1,
+      "latitude": 25.266672,
+      "longitude": 56.355771
+    },
+    {
+      "mosque_name": "مسجد احمد عبدالكريم الزرعوني و أبنائه",
+      "branch": "Fujairah",
+      "area": "القرية",
+      "quran_circles": 1,
+      "latitude": 25.243062,
+      "longitude": 56.343947
+    },
+    {
+      "mosque_name": "مسجد عامر بن الاكوع",
+      "branch": "Fujairah",
+      "area": "القرية",
+      "quran_circles": 1,
+      "latitude": 25.75947,
+      "longitude": 56.209602
+    },
+    {
+      "mosque_name": "مسجد النور",
+      "branch": "Khor Fakkan",
+      "area": "خورفكان",
+      "quran_circles": 1,
+      "latitude": 25.327199,
+      "longitude": 56.340144
+    },
+    {
+      "mosque_name": "مسجد الريان",
+      "branch": "Khor Fakkan",
+      "area": "خورفكان",
+      "quran_circles": 1,
+      "latitude": 25.353377,
+      "longitude": 56.353018
+    },
+    {
+      "mosque_name": "مسجد الشيخ زايد",
+      "branch": "Khor Fakkan",
+      "area": "دبا الحصن",
+      "quran_circles": 2,
+      "latitude": 25.621254,
+      "longitude": 56.265128
+    }
+  ]
+}

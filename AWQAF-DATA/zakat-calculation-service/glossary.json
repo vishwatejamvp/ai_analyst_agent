@@ -1,0 +1,163 @@
+{
+  "dataset": "Zakat Calculation Service Statistics",
+  "source": {
+    "organization": "General Authority of Islamic Affairs, Endowments and Zakat",
+    "department": "Zakat Fund Management",
+    "phone": "8008222",
+    "data_sources": "Administrative Records",
+    "methodology": "Total numbers of Zakat calculation requests classified by service delivery channel and month"
+  },
+  "coverage": {
+    "area": "All Emirates of the Country",
+    "periodicity": "Monthly and Yearly"
+  },
+  "indicator": {
+    "name": "Zakat Calculation Request Service Statistics",
+    "definition": "A report reviewing the number of customers by channel and month",
+    "unit": "Numbers"
+  },
+  "fields": {
+    "website": {
+      "original_name": "Website / الموقع الإلكتروني",
+      "description": "Number of Zakat calculation requests submitted via the Authority's website"
+    },
+    "smartphone_app": {
+      "original_name": "Smartphone Applications / تطبيقات الهواتف الذكية",
+      "description": "Number of requests submitted via the Authority's smartphone application"
+    },
+    "mobile_website": {
+      "original_name": "Mobile Website / موقع الهاتف المحمول",
+      "description": "Number of requests submitted via the Authority's mobile website (smartphone browser)"
+    },
+    "zaki_platform": {
+      "original_name": "Zaki Platform / منصة زاكي",
+      "description": "Number of requests submitted via the Authority's WhatsApp service (Zaki) at 8008222"
+    },
+    "call_center": {
+      "original_name": "Call Center / مركز الاتصال",
+      "description": "Number of requests submitted via the Authority's call center (8008222)"
+    },
+    "service_center": {
+      "original_name": "Service Delivery Center / مركز تقديم الخدمة",
+      "description": "Number of requests submitted in person at the Authority's service delivery center"
+    },
+    "na_legacy": {
+      "original_name": "N/A",
+      "description": "Transactions documented on a channel that was subsequently cancelled (legacy/deprecated)"
+    },
+    "ivr": {
+      "original_name": "IVR / الرد الآلي",
+      "description": "Number of requests via Interactive Voice Response (used in 2022-2023 only)",
+      "note": "Channel present in 2022-2023 data only"
+    },
+    "sms": {
+      "original_name": "SMS / رسائل نصية",
+      "description": "Number of requests via SMS messages (used in 2022-2023 only)",
+      "note": "Channel present in 2022-2023 data only"
+    },
+    "total": {
+      "original_name": "Total",
+      "description": "Total Zakat calculation requests across all channels for the given month"
+    }
+  },
+  "terms": [
+    {
+      "term": "Number of Requests",
+      "definition": "Number of Zakat calculation requests submitted",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Total by Channel",
+      "definition": "Total requests by channel",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Total Number by Month",
+      "definition": "Total requests by month",
+      "unit": "Number",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "N/A",
+      "definition": "Refers to a channel that was cancelled but a transaction was documented before cancellation.",
+      "unit": "",
+      "detail_level": "",
+      "data_source": ""
+    },
+    {
+      "term": "Call Center",
+      "definition": "Authority Call Center 8008222",
+      "unit": "",
+      "detail_level": "",
+      "data_source": ""
+    },
+    {
+      "term": "Service Delivery Center",
+      "definition": "Authority Service Delivery Center",
+      "unit": "",
+      "detail_level": "",
+      "data_source": ""
+    },
+    {
+      "term": "Website",
+      "definition": "Authority Website",
+      "unit": "",
+      "detail_level": "",
+      "data_source": ""
+    },
+    {
+      "term": "Smartphone Applications",
+      "definition": "Authority's Smartphone App",
+      "unit": "",
+      "detail_level": "",
+      "data_source": ""
+    },
+    {
+      "term": "Zaki Platform",
+      "definition": "Authority WhatsApp at 8008222",
+      "unit": "",
+      "detail_level": "",
+      "data_source": ""
+    },
+    {
+      "term": "Mobile Website",
+      "definition": "Authority Website via Smartphone",
+      "unit": "",
+      "detail_level": "",
+      "data_source": ""
+    },
+    {
+      "term": "Traditional Channels",
+      "definition": "Direct channels, whether in person or by phone",
+      "unit": "",
+      "detail_level": "",
+      "data_source": ""
+    },
+    {
+      "term": "Electronic Channels",
+      "definition": "Electronic channels on the website or other electronic services (Kiosk, etc.)",
+      "unit": "",
+      "detail_level": "",
+      "data_source": ""
+    },
+    {
+      "term": "Smart Channels",
+      "definition": "Smart channels through smartphones, whether an app, mobile website, SMS, etc.",
+      "unit": "",
+      "detail_level": "",
+      "data_source": ""
+    },
+    {
+      "term": "Month",
+      "definition": "The month in which the service was provided.",
+      "unit": "",
+      "detail_level": "",
+      "data_source": ""
+    }
+  ]
+}

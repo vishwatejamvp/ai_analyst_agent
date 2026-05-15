@@ -1,0 +1,92 @@
+{
+  "dataset": "Statistics On Occupancy Rates and Revenues for Real Estate Endowments at the State Level",
+  "source": {
+    "organization": "General Authority of Islamic Affairs, Endowments & Zakat",
+    "department": "Emirates Endowment Department",
+    "phone": "8008222",
+    "data_sources": "Financial and administrative records",
+    "methodology": "The Monthly reports regarding the rental status of the Authority's properties from contracting companies and direct contracts with the Authority are utilized to derive rental rates and revenues."
+  },
+  "coverage": {
+    "area": "All Emirates of the state except the Emirate of Abu Dhabi",
+    "emirates": [
+      "Dubai",
+      "Sharjah",
+      "Ajman",
+      "Umm Al Quwain",
+      "Ras Al Khaimah",
+      "Fujairah"
+    ],
+    "periodicity": "Monthly and annual"
+  },
+  "fields": {
+    "occupancy_rate": {
+      "original_name": "Occupancy rate",
+      "description": "Proportion of rental units that are occupied, expressed as a decimal (0 to 1)",
+      "unit": "ratio"
+    },
+    "occupancy_rate_pct": {
+      "original_name": "Occupancy rate",
+      "description": "Proportion of rental units that are occupied, expressed as a percentage",
+      "unit": "%",
+      "note": "Used in all_records.json (flat format). Equals occupancy_rate * 100."
+    },
+    "revenues_collected": {
+      "original_name": "Revenues collected",
+      "description": "Total funds collected from leasing rental units for that emirate and month",
+      "unit": "AED"
+    },
+    "revenues_collected_aed": {
+      "original_name": "Revenues collected",
+      "description": "Total funds collected from leasing rental units for that emirate and month",
+      "unit": "AED",
+      "note": "Used in all_records.json (flat format). Same value as revenues_collected."
+    },
+    "emirate": {
+      "original_name": "Emirate",
+      "description": "The UAE emirate the data pertains to (excludes Abu Dhabi)"
+    }
+  },
+  "terms": [
+    {
+      "term": "Occupancy Rate",
+      "definition": "Occupancy rate of rental units",
+      "calculation": "Number of occupied units out of total units",
+      "unit": "%",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Monthly Revenues",
+      "definition": "Total funds acquired by the Authority via leasing and investment agreements for the Authority’s properties",
+      "calculation": "Total revenues",
+      "unit": "No.",
+      "detail_level": "All Emirates",
+      "data_source": "Financial Records"
+    },
+    {
+      "term": "Rental Units",
+      "definition": "Residential, commercial, and industrial rental units, buildings, and spaces that the Authority leases out.",
+      "calculation": "Total number of units",
+      "unit": "No.",
+      "detail_level": "All Emirates",
+      "data_source": "Administrative Records"
+    },
+    {
+      "term": "Revenues (Repeated)",
+      "definition": "Funds collected from leasing rental units",
+      "calculation": "Total revenues",
+      "unit": "No.",
+      "detail_level": "All Emirates",
+      "data_source": "Financial Records"
+    },
+    {
+      "term": "Contracting Real Estate Companies",
+      "definition": "Companies responsible for managing leasing operations on behalf of the General Authority of Islamic Affairs, Endowments & Zakat",
+      "calculation": "Number of contracting real estate companies",
+      "unit": "Figure",
+      "detail_level": "All Emirates",
+      "data_source": "Property Management Contracts"
+    }
+  ]
+}

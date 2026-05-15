@@ -1,0 +1,98 @@
+[
+  {
+    "dataset": "Monthly Statistics for Teaching the Holy Quran Service",
+    "year": 2023,
+    "month": "january",
+    "website_transactions": 2090,
+    "smart_app_transactions": 31,
+    "total_transactions": 2121
+  },
+  {
+    "dataset": "Monthly Statistics for Teaching the Holy Quran Service",
+    "year": 2023,
+    "month": "february",
+    "website_transactions": 173,
+    "smart_app_transactions": 166,
+    "total_transactions": 339
+  },
+  {
+    "dataset": "Monthly Statistics for Teaching the Holy Quran Service",
+    "year": 2023,
+    "month": "march",
+    "website_transactions": 86,
+    "smart_app_transactions": 123,
+    "total_transactions": 209
+  },
+  {
+    "dataset": "Monthly Statistics for Teaching the Holy Quran Service",
+    "year": 2023,
+    "month": "april",
+    "website_transactions": 86,
+    "smart_app_transactions": 118,
+    "total_transactions": 204
+  },
+  {
+    "dataset": "Monthly Statistics for Teaching the Holy Quran Service",
+    "year": 2023,
+    "month": "may",
+    "website_transactions": 92,
+    "smart_app_transactions": 91,
+    "total_transactions": 183
+  },
+  {
+    "dataset": "Monthly Statistics for Teaching the Holy Quran Service",
+    "year": 2023,
+    "month": "june",
+    "website_transactions": 93,
+    "smart_app_transactions": 138,
+    "total_transactions": 231
+  },
+  {
+    "dataset": "Monthly Statistics for Teaching the Holy Quran Service",
+    "year": 2023,
+    "month": "july",
+    "website_transactions": 213,
+    "smart_app_transactions": 599,
+    "total_transactions": 812
+  },
+  {
+    "dataset": "Monthly Statistics for Teaching the Holy Quran Service",
+    "year": 2023,
+    "month": "august",
+    "website_transactions": 157,
+    "smart_app_transactions": 361,
+    "total_transactions": 518
+  },
+  {
+    "dataset": "Monthly Statistics for Teaching the Holy Quran Service",
+    "year": 2023,
+    "month": "september",
+    "website_transactions": 108,
+    "smart_app_transactions": 316,
+    "total_transactions": 424
+  },
+  {
+    "dataset": "Monthly Statistics for Teaching the Holy Quran Service",
+    "year": 2023,
+    "month": "october",
+    "website_transactions": 53,
+    "smart_app_transactions": 248,
+    "total_transactions": 301
+  },
+  {
+    "dataset": "Monthly Statistics for Teaching the Holy Quran Service",
+    "year": 2023,
+    "month": "november",
+    "website_transactions": 48,
+    "smart_app_transactions": 189,
+    "total_transactions": 237
+  },
+  {
+    "dataset": "Monthly Statistics for Teaching the Holy Quran Service",
+    "year": 2023,
+    "month": "december",
+    "website_transactions": 58,
+    "smart_app_transactions": 290,
+    "total_transactions": 348
+  }
+]

@@ -1,0 +1,1011 @@
+{
+  "year": 2024,
+  "dataset": "Zakat Payment Service Statistics",
+  "notes": [],
+  "channels": [
+    {
+      "channel": "Direct Payers at the Authority",
+      "months": {
+        "january": {
+          "number_of_payers": 12,
+          "funds_collected_aed": 1273108.0
+        },
+        "february": {
+          "number_of_payers": 28,
+          "funds_collected_aed": 2136607.0
+        },
+        "march": {
+          "number_of_payers": 128,
+          "funds_collected_aed": 57988795.51
+        },
+        "april": {
+          "number_of_payers": 115,
+          "funds_collected_aed": 51949373.52
+        },
+        "may": {
+          "number_of_payers": 17,
+          "funds_collected_aed": 353108.39
+        },
+        "june": {
+          "number_of_payers": 16,
+          "funds_collected_aed": 647308.16
+        },
+        "july": {
+          "number_of_payers": 20,
+          "funds_collected_aed": 419440.14
+        },
+        "august": {
+          "number_of_payers": 5,
+          "funds_collected_aed": 198333.0
+        },
+        "september": {
+          "number_of_payers": 5,
+          "funds_collected_aed": 93010.0
+        },
+        "october": {
+          "number_of_payers": 3,
+          "funds_collected_aed": 523270.0
+        },
+        "november": {
+          "number_of_payers": 1,
+          "funds_collected_aed": 3515000.0
+        },
+        "december": {
+          "number_of_payers": 10,
+          "funds_collected_aed": 784116.0
+        }
+      }
+    },
+    {
+      "channel": "Direct Payers in Banks",
+      "months": {
+        "january": {
+          "number_of_payers": 55,
+          "funds_collected_aed": 1396170.44
+        },
+        "february": {
+          "number_of_payers": 53,
+          "funds_collected_aed": 2665275.35
+        },
+        "march": {
+          "number_of_payers": 904,
+          "funds_collected_aed": 17226104.59
+        },
+        "april": {
+          "number_of_payers": 686,
+          "funds_collected_aed": 4079354.11
+        },
+        "may": {
+          "number_of_payers": 123,
+          "funds_collected_aed": 1192564.64
+        },
+        "june": {
+          "number_of_payers": 0,
+          "funds_collected_aed": -1959560.9
+        },
+        "july": {
+          "number_of_payers": 270,
+          "funds_collected_aed": 2723155.13
+        },
+        "august": {
+          "number_of_payers": 604,
+          "funds_collected_aed": 13148830.58
+        },
+        "september": {
+          "number_of_payers": 1224,
+          "funds_collected_aed": 263710.04
+        },
+        "october": {
+          "number_of_payers": 1283,
+          "funds_collected_aed": 1453997.58
+        },
+        "november": {
+          "number_of_payers": 765,
+          "funds_collected_aed": 15879575.63
+        },
+        "december": {
+          "number_of_payers": 1540,
+          "funds_collected_aed": 1276093.39
+        }
+      }
+    },
+    {
+      "channel": "Dubai Government - Electronic Payment",
+      "months": {
+        "january": {
+          "number_of_payers": 215,
+          "funds_collected_aed": 513710.89
+        },
+        "february": {
+          "number_of_payers": 284,
+          "funds_collected_aed": 538690.76
+        },
+        "march": {
+          "number_of_payers": 738,
+          "funds_collected_aed": 1602782.87
+        },
+        "april": {
+          "number_of_payers": 1830,
+          "funds_collected_aed": 7244774.47
+        },
+        "may": {
+          "number_of_payers": 12113,
+          "funds_collected_aed": 10402767.77
+        },
+        "june": {
+          "number_of_payers": 363,
+          "funds_collected_aed": 1031816.15
+        },
+        "july": {
+          "number_of_payers": 357,
+          "funds_collected_aed": 880857.08
+        },
+        "august": {
+          "number_of_payers": 266,
+          "funds_collected_aed": 976708.55
+        },
+        "september": {
+          "number_of_payers": 298,
+          "funds_collected_aed": 832923.68
+        },
+        "october": {
+          "number_of_payers": 254,
+          "funds_collected_aed": 607008.04
+        },
+        "november": {
+          "number_of_payers": 286,
+          "funds_collected_aed": 663580.42
+        },
+        "december": {
+          "number_of_payers": 216,
+          "funds_collected_aed": 688853.31
+        }
+      }
+    },
+    {
+      "channel": "DubaiNow",
+      "months": {
+        "january": {
+          "number_of_payers": 48,
+          "funds_collected_aed": 51234.0
+        },
+        "february": {
+          "number_of_payers": 48,
+          "funds_collected_aed": 31681.0
+        },
+        "march": {
+          "number_of_payers": 154,
+          "funds_collected_aed": 131496.0
+        },
+        "april": {
+          "number_of_payers": 259,
+          "funds_collected_aed": 961934.0
+        },
+        "may": {
+          "number_of_payers": 478,
+          "funds_collected_aed": 1272269.0
+        },
+        "june": {
+          "number_of_payers": 71,
+          "funds_collected_aed": 241283.0
+        },
+        "july": {
+          "number_of_payers": 91,
+          "funds_collected_aed": 177327.0
+        },
+        "august": {
+          "number_of_payers": 55,
+          "funds_collected_aed": 52941.0
+        },
+        "september": {
+          "number_of_payers": 51,
+          "funds_collected_aed": 19495.0
+        },
+        "october": {
+          "number_of_payers": 57,
+          "funds_collected_aed": 76063.0
+        },
+        "november": {
+          "number_of_payers": 51,
+          "funds_collected_aed": 20821.0
+        },
+        "december": {
+          "number_of_payers": 53,
+          "funds_collected_aed": 38134.0
+        }
+      }
+    },
+    {
+      "channel": "Etisalat - SMS",
+      "months": {
+        "january": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "february": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "march": {
+          "number_of_payers": 1,
+          "funds_collected_aed": 6730.0
+        },
+        "april": {
+          "number_of_payers": 1,
+          "funds_collected_aed": 5600.0
+        },
+        "may": {
+          "number_of_payers": 2,
+          "funds_collected_aed": 25440.0
+        },
+        "june": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "july": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 41180.0
+        },
+        "august": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "september": {
+          "number_of_payers": 1,
+          "funds_collected_aed": 234910.0
+        },
+        "october": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "november": {
+          "number_of_payers": 1,
+          "funds_collected_aed": 3830.0
+        },
+        "december": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        }
+      }
+    },
+    {
+      "channel": "Etisalat - ATM",
+      "months": {
+        "january": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "february": {
+          "number_of_payers": 3,
+          "funds_collected_aed": 260.0
+        },
+        "march": {
+          "number_of_payers": 3,
+          "funds_collected_aed": 260.0
+        },
+        "april": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "may": {
+          "number_of_payers": 2,
+          "funds_collected_aed": 3390.0
+        },
+        "june": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "july": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "august": {
+          "number_of_payers": 3,
+          "funds_collected_aed": 1120.0
+        },
+        "september": {
+          "number_of_payers": 1,
+          "funds_collected_aed": 150.0
+        },
+        "october": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "november": {
+          "number_of_payers": 1,
+          "funds_collected_aed": 120.0
+        },
+        "december": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        }
+      }
+    },
+    {
+      "channel": "Kiosk IT",
+      "months": {
+        "january": {
+          "number_of_payers": 131,
+          "funds_collected_aed": 3186.0
+        },
+        "february": {
+          "number_of_payers": 123,
+          "funds_collected_aed": 1905.0
+        },
+        "march": {
+          "number_of_payers": 254,
+          "funds_collected_aed": 5091.0
+        },
+        "april": {
+          "number_of_payers": 158,
+          "funds_collected_aed": 3193.0
+        },
+        "may": {
+          "number_of_payers": 426,
+          "funds_collected_aed": 18550.0
+        },
+        "june": {
+          "number_of_payers": 84,
+          "funds_collected_aed": 880.0
+        },
+        "july": {
+          "number_of_payers": 91,
+          "funds_collected_aed": 1098.0
+        },
+        "august": {
+          "number_of_payers": 94,
+          "funds_collected_aed": 2520.0
+        },
+        "september": {
+          "number_of_payers": 105,
+          "funds_collected_aed": 2305.0
+        },
+        "october": {
+          "number_of_payers": 111,
+          "funds_collected_aed": 955.0
+        },
+        "november": {
+          "number_of_payers": 93,
+          "funds_collected_aed": 1960.0
+        },
+        "december": {
+          "number_of_payers": 104,
+          "funds_collected_aed": 1230.0
+        }
+      }
+    },
+    {
+      "channel": "Etihad Miles",
+      "months": {
+        "january": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "february": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "march": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "april": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "may": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "june": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "july": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "august": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "september": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "october": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "november": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "december": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        }
+      }
+    },
+    {
+      "channel": "BANK-IVR",
+      "months": {
+        "january": {
+          "number_of_payers": 18,
+          "funds_collected_aed": 232.1
+        },
+        "february": {
+          "number_of_payers": 1,
+          "funds_collected_aed": 500.0
+        },
+        "march": {
+          "number_of_payers": 31,
+          "funds_collected_aed": 16463.75
+        },
+        "april": {
+          "number_of_payers": 30,
+          "funds_collected_aed": 472.11
+        },
+        "may": {
+          "number_of_payers": 12,
+          "funds_collected_aed": 124.22
+        },
+        "june": {
+          "number_of_payers": 12,
+          "funds_collected_aed": 15.73
+        },
+        "july": {
+          "number_of_payers": 27,
+          "funds_collected_aed": 354.96
+        },
+        "august": {
+          "number_of_payers": 31,
+          "funds_collected_aed": 550.0
+        },
+        "september": {
+          "number_of_payers": 6,
+          "funds_collected_aed": 16.0
+        },
+        "october": {
+          "number_of_payers": 13,
+          "funds_collected_aed": 57.87
+        },
+        "november": {
+          "number_of_payers": 11,
+          "funds_collected_aed": 1070.0
+        },
+        "december": {
+          "number_of_payers": 8,
+          "funds_collected_aed": 448.0
+        }
+      }
+    },
+    {
+      "channel": "BANK-IB",
+      "months": {
+        "january": {
+          "number_of_payers": 479,
+          "funds_collected_aed": 100669.0
+        },
+        "february": {
+          "number_of_payers": 450,
+          "funds_collected_aed": 108163.4
+        },
+        "march": {
+          "number_of_payers": 1576,
+          "funds_collected_aed": 1960650.41
+        },
+        "april": {
+          "number_of_payers": 2186,
+          "funds_collected_aed": 1911955.4
+        },
+        "may": {
+          "number_of_payers": 628,
+          "funds_collected_aed": 240754.45
+        },
+        "june": {
+          "number_of_payers": 512,
+          "funds_collected_aed": 204838.0
+        },
+        "july": {
+          "number_of_payers": 514,
+          "funds_collected_aed": 136462.3
+        },
+        "august": {
+          "number_of_payers": 482,
+          "funds_collected_aed": 174348.65
+        },
+        "september": {
+          "number_of_payers": 478,
+          "funds_collected_aed": 135444.23
+        },
+        "october": {
+          "number_of_payers": 468,
+          "funds_collected_aed": 130210.18
+        },
+        "november": {
+          "number_of_payers": 468,
+          "funds_collected_aed": 66689.97
+        },
+        "december": {
+          "number_of_payers": 395,
+          "funds_collected_aed": 54675.97
+        }
+      }
+    },
+    {
+      "channel": "BANK-ATM",
+      "months": {
+        "january": {
+          "number_of_payers": 2011,
+          "funds_collected_aed": 232584.37
+        },
+        "february": {
+          "number_of_payers": 1958,
+          "funds_collected_aed": 251646.45
+        },
+        "march": {
+          "number_of_payers": 3972,
+          "funds_collected_aed": 535613.82
+        },
+        "april": {
+          "number_of_payers": 28,
+          "funds_collected_aed": 5322.0
+        },
+        "may": {
+          "number_of_payers": 8,
+          "funds_collected_aed": 200.0
+        },
+        "june": {
+          "number_of_payers": 3,
+          "funds_collected_aed": 110.0
+        },
+        "july": {
+          "number_of_payers": 4,
+          "funds_collected_aed": 150.0
+        },
+        "august": {
+          "number_of_payers": 2,
+          "funds_collected_aed": 100.0
+        },
+        "september": {
+          "number_of_payers": 2,
+          "funds_collected_aed": 100.0
+        },
+        "october": {
+          "number_of_payers": 265,
+          "funds_collected_aed": 11324.0
+        },
+        "november": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "december": {
+          "number_of_payers": 1,
+          "funds_collected_aed": 10000.0
+        }
+      }
+    },
+    {
+      "channel": "BANK-MOB",
+      "months": {
+        "january": {
+          "number_of_payers": 7333,
+          "funds_collected_aed": 1232174.98
+        },
+        "february": {
+          "number_of_payers": 6699,
+          "funds_collected_aed": 1670891.71
+        },
+        "march": {
+          "number_of_payers": 23694,
+          "funds_collected_aed": 18237545.08
+        },
+        "april": {
+          "number_of_payers": 24409,
+          "funds_collected_aed": 25493581.31
+        },
+        "may": {
+          "number_of_payers": 7437,
+          "funds_collected_aed": 3262613.53
+        },
+        "june": {
+          "number_of_payers": 10520,
+          "funds_collected_aed": 3148826.98
+        },
+        "july": {
+          "number_of_payers": 9119,
+          "funds_collected_aed": 1545771.95
+        },
+        "august": {
+          "number_of_payers": 8421,
+          "funds_collected_aed": 2056276.19
+        },
+        "september": {
+          "number_of_payers": 7828,
+          "funds_collected_aed": 1640917.37
+        },
+        "october": {
+          "number_of_payers": 8055,
+          "funds_collected_aed": 970801.79
+        },
+        "november": {
+          "number_of_payers": 7838,
+          "funds_collected_aed": 1592683.81
+        },
+        "december": {
+          "number_of_payers": 7719,
+          "funds_collected_aed": 1899269.99
+        }
+      }
+    },
+    {
+      "channel": "ATMs - Max Box",
+      "months": {
+        "january": {
+          "number_of_payers": 152,
+          "funds_collected_aed": 1632.0
+        },
+        "february": {
+          "number_of_payers": 170,
+          "funds_collected_aed": 2233.0
+        },
+        "march": {
+          "number_of_payers": 511,
+          "funds_collected_aed": 6060.0
+        },
+        "april": {
+          "number_of_payers": 403,
+          "funds_collected_aed": 9054.0
+        },
+        "may": {
+          "number_of_payers": 721,
+          "funds_collected_aed": 42918.0
+        },
+        "june": {
+          "number_of_payers": 166,
+          "funds_collected_aed": 5958.0
+        },
+        "july": {
+          "number_of_payers": 279,
+          "funds_collected_aed": 5358.0
+        },
+        "august": {
+          "number_of_payers": 167,
+          "funds_collected_aed": 3016.0
+        },
+        "september": {
+          "number_of_payers": 233,
+          "funds_collected_aed": 3021.0
+        },
+        "october": {
+          "number_of_payers": 232,
+          "funds_collected_aed": 3940.0
+        },
+        "november": {
+          "number_of_payers": 323,
+          "funds_collected_aed": 7506.0
+        },
+        "december": {
+          "number_of_payers": 406,
+          "funds_collected_aed": 7034.0
+        }
+      }
+    },
+    {
+      "channel": "ATM Box - Smart Vision",
+      "months": {
+        "january": {
+          "number_of_payers": 32,
+          "funds_collected_aed": 8000.0
+        },
+        "february": {
+          "number_of_payers": 36,
+          "funds_collected_aed": 814767.0
+        },
+        "march": {
+          "number_of_payers": 92,
+          "funds_collected_aed": 823745.0
+        },
+        "april": {
+          "number_of_payers": 75,
+          "funds_collected_aed": 81923.0
+        },
+        "may": {
+          "number_of_payers": 33,
+          "funds_collected_aed": 14493.59
+        },
+        "june": {
+          "number_of_payers": 25,
+          "funds_collected_aed": 1925.54
+        },
+        "july": {
+          "number_of_payers": 75,
+          "funds_collected_aed": 28307.26
+        },
+        "august": {
+          "number_of_payers": 39,
+          "funds_collected_aed": 3012.78
+        },
+        "september": {
+          "number_of_payers": 49,
+          "funds_collected_aed": 3030.0
+        },
+        "october": {
+          "number_of_payers": 34,
+          "funds_collected_aed": 6367.21
+        },
+        "november": {
+          "number_of_payers": 39,
+          "funds_collected_aed": 9507.1
+        },
+        "december": {
+          "number_of_payers": 36,
+          "funds_collected_aed": 24762.88
+        }
+      }
+    },
+    {
+      "channel": "Other Revenues / Expense Returns",
+      "months": {
+        "january": {
+          "number_of_payers": 6,
+          "funds_collected_aed": 404499.0
+        },
+        "february": {
+          "number_of_payers": 9,
+          "funds_collected_aed": 260930.0
+        },
+        "march": {
+          "number_of_payers": 18,
+          "funds_collected_aed": 719429.0
+        },
+        "april": {
+          "number_of_payers": 5,
+          "funds_collected_aed": 113393.0
+        },
+        "may": {
+          "number_of_payers": 13,
+          "funds_collected_aed": 167356.0
+        },
+        "june": {
+          "number_of_payers": 2,
+          "funds_collected_aed": 21000.0
+        },
+        "july": {
+          "number_of_payers": 2,
+          "funds_collected_aed": 40000.0
+        },
+        "august": {
+          "number_of_payers": 2,
+          "funds_collected_aed": 4000.0
+        },
+        "september": {
+          "number_of_payers": 1,
+          "funds_collected_aed": 15000.0
+        },
+        "october": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "november": {
+          "number_of_payers": 2,
+          "funds_collected_aed": 109145.42
+        },
+        "december": {
+          "number_of_payers": 30,
+          "funds_collected_aed": 787238.57
+        }
+      }
+    },
+    {
+      "channel": "Investment Income / Deposits / Afaq Finance",
+      "months": {
+        "january": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "february": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "march": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "april": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "may": {
+          "number_of_payers": 2,
+          "funds_collected_aed": 14618530.0
+        },
+        "june": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "july": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "august": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "september": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "october": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "november": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "december": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        }
+      }
+    },
+    {
+      "channel": "Directed Zakat Trusts - Major Donors Offices",
+      "months": {
+        "january": {
+          "number_of_payers": 6738,
+          "funds_collected_aed": 599952.0
+        },
+        "february": {
+          "number_of_payers": 6163,
+          "funds_collected_aed": 2036908.0
+        },
+        "march": {
+          "number_of_payers": 17661,
+          "funds_collected_aed": 9204640.0
+        },
+        "april": {
+          "number_of_payers": 6933,
+          "funds_collected_aed": 6402821.45
+        },
+        "may": {
+          "number_of_payers": 6381,
+          "funds_collected_aed": 540954.0
+        },
+        "june": {
+          "number_of_payers": 6232,
+          "funds_collected_aed": 3911633.0
+        },
+        "july": {
+          "number_of_payers": 6338,
+          "funds_collected_aed": 28145.0
+        },
+        "august": {
+          "number_of_payers": 6099,
+          "funds_collected_aed": 17105.0
+        },
+        "september": {
+          "number_of_payers": 6276,
+          "funds_collected_aed": 245570.0
+        },
+        "october": {
+          "number_of_payers": 6620,
+          "funds_collected_aed": 2061639.0
+        },
+        "november": {
+          "number_of_payers": 6083,
+          "funds_collected_aed": 7877080.0
+        },
+        "december": {
+          "number_of_payers": 8548,
+          "funds_collected_aed": 1773091.0
+        }
+      }
+    },
+    {
+      "channel": "Directed Charity Trusts - Major Donors Offices",
+      "months": {
+        "january": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "february": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "march": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "april": {
+          "number_of_payers": 1,
+          "funds_collected_aed": 200.0
+        },
+        "may": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "june": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "july": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "august": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "september": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "october": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "november": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        },
+        "december": {
+          "number_of_payers": 0,
+          "funds_collected_aed": 0.0
+        }
+      }
+    }
+  ],
+  "totals": {
+    "january": {
+      "number_of_payers": 17230,
+      "funds_collected_aed": 5817152.78
+    },
+    "february": {
+      "number_of_payers": 16025,
+      "funds_collected_aed": 10520458.67
+    },
+    "march": {
+      "number_of_payers": 49737,
+      "funds_collected_aed": 108465407.03
+    },
+    "april": {
+      "number_of_payers": 37119,
+      "funds_collected_aed": 98262951.37
+    },
+    "may": {
+      "number_of_payers": 28396,
+      "funds_collected_aed": 32156033.59
+    },
+    "june": {
+      "number_of_payers": 18006,
+      "funds_collected_aed": 7256033.66
+    },
+    "july": {
+      "number_of_payers": 17187,
+      "funds_collected_aed": 6027606.82
+    },
+    "august": {
+      "number_of_payers": 16270,
+      "funds_collected_aed": 16638861.75
+    },
+    "september": {
+      "number_of_payers": 16558,
+      "funds_collected_aed": 3489602.32
+    },
+    "october": {
+      "number_of_payers": 17395,
+      "funds_collected_aed": 5845633.67
+    },
+    "november": {
+      "number_of_payers": 15962,
+      "funds_collected_aed": 29748569.35
+    },
+    "december": {
+      "number_of_payers": 19066,
+      "funds_collected_aed": 7344947.11
+    }
+  }
+}
