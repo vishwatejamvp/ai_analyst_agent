@@ -74,7 +74,7 @@ class Settings(BaseSettings):
     # --- Claude ---
     anthropic_api_key: str = Field(default="", alias="ANTHROPIC_API_KEY")
     claude_model: str = Field(
-        default="claude-3-5-sonnet-20241022", alias="CLAUDE_MODEL"
+        default="claude-3-5-sonnet-20240620", alias="CLAUDE_MODEL"
     )
     claude_max_tokens: int = Field(default=1500, alias="CLAUDE_MAX_TOKENS")
     claude_temperature: float = Field(default=0.2, alias="CLAUDE_TEMPERATURE")

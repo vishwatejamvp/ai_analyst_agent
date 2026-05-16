@@ -46,7 +46,7 @@ PRICING: dict[str, ModelPrice] = {
     "claude-haiku-4-0":           ModelPrice(0.80,  4.00),
     "claude-haiku-4":             ModelPrice(0.80,  4.00),
     # Claude 3.5
-    "claude-3-5-sonnet-20241022": ModelPrice(3.00, 15.00),
+    "claude-3-5-sonnet-20240620": ModelPrice(3.00, 15.00),
     "claude-3-5-sonnet-latest":   ModelPrice(3.00, 15.00),
     "claude-3-5-haiku-20241022":  ModelPrice(0.80,  4.00),
     "claude-3-5-haiku-latest":    ModelPrice(0.80,  4.00),
