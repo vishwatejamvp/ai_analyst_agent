@@ -13,7 +13,7 @@ from typing import Iterable
 
 import numpy as np
 
-from utils.config import settings
+from models.config import settings
 from utils.exceptions import VectorStoreError
 from utils.logger import logger
 

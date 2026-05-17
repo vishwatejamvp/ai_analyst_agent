@@ -68,7 +68,7 @@ from pathlib import Path
 from typing import Any
 
 from services.question_intent import QuestionIntent
-from utils.config import settings
+from models.config import settings
 from utils.logger import logger
 
 # ---------------------------------------------------------------------------

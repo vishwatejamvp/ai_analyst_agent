@@ -17,7 +17,7 @@ from pymongo.errors import PyMongoError
 
 from models.enums import TimeBucket
 from models.schemas import AggregationSpec, TimeSpec
-from utils.config import settings
+from models.config import settings
 from utils.exceptions import DatabaseError
 from utils.logger import logger
 
@@ -67,6 +67,7 @@ class MongoService:
         self.uri = uri or settings.effective_mongo_uri
         self.db_name = db_name or settings.mongo_db
         self._client: MongoClient | None = None
+        self.index_advisor = None  # Lazy-loaded to avoid circular imports
 
     # ------------------------------------------------------------------
     # Connection
@@ -177,8 +178,19 @@ class MongoService:
     def aggregate(
         self, collection: str, pipeline: list[dict[str, Any]]
     ) -> list[dict[str, Any]]:
+        import time
+        
+        start = time.time()
+        
         try:
-            return list(self.collection(collection).aggregate(pipeline))
+            result = list(self.collection(collection).aggregate(pipeline))
+            
+            # Log query for index advisor (if enabled)
+            exec_time_ms = (time.time() - start) * 1000
+            if self.index_advisor is not None:
+                self.index_advisor.log_query(collection, pipeline, exec_time_ms)
+            
+            return result
         except PyMongoError as exc:
             raise DatabaseError(f"Mongo aggregate failed: {exc}") from exc
 
@@ -325,10 +337,65 @@ class MongoService:
 
         Time-bucketed paths are sorted ascending by bucket so the chart
         layer can plot lines in chronological order without resorting.
+        
+        Enhanced with dynamic freshness detection: adds metadata to indicate
+        data completeness based on temporal patterns.
         """
         pipeline = self.build_pipeline(spec)
         logger.debug(f"Mongo pipeline on {collection}: {pipeline}")
-        return self.aggregate(collection, pipeline)
+        rows = self.aggregate(collection, pipeline)
+        
+        # Infer data freshness from temporal patterns (time-series only)
+        if spec.time and rows:
+            rows = self._infer_data_freshness(rows)
+        
+        return rows
+    
+    def _infer_data_freshness(self, rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+        """Infer data completeness from temporal patterns.
+        
+        Adds metadata fields to each row:
+        - _data_complete: True if this period likely has complete data
+        - _likely_missing: True if this period likely has missing/incomplete data
+        
+        Detection logic:
+        - Find the last period with non-zero values
+        - Mark all periods after that as likely missing
+        """
+        if not rows:
+            return rows
+        
+        def _safe_number(val: Any) -> float:
+            if val is None:
+                return 0.0
+            if isinstance(val, (int, float)):
+                return float(val)
+            try:
+                return float(str(val).replace(",", ""))
+            except (TypeError, ValueError):
+                return 0.0
+        
+        # Find last non-zero period
+        last_non_zero_idx = None
+        for i in range(len(rows) - 1, -1, -1):
+            if _safe_number(rows[i].get("value")) > 0:
+                last_non_zero_idx = i
+                break
+        
+        # Add metadata to each row
+        enhanced_rows = []
+        for i, row in enumerate(rows):
+            enhanced_row = dict(row)
+            if last_non_zero_idx is not None:
+                enhanced_row["_data_complete"] = i <= last_non_zero_idx
+                enhanced_row["_likely_missing"] = i > last_non_zero_idx
+            else:
+                # All zeros - mark all as potentially missing
+                enhanced_row["_data_complete"] = False
+                enhanced_row["_likely_missing"] = True
+            enhanced_rows.append(enhanced_row)
+        
+        return enhanced_rows
 
     def latest_value(self, collection: str, field: str) -> Any:
         """Return the maximum ``field`` value in ``collection`` (None if empty)."""
@@ -532,3 +599,14 @@ def _build_match(filters: dict[str, Any]) -> dict[str, Any]:
 
 
 mongo_service = MongoService()
+
+# Initialize index advisor if auto-indexing is enabled
+if settings.auto_create_indexes or settings.auto_drop_unused_indexes:
+    from services.mongo_index_advisor import MongoIndexAdvisor
+    
+    mongo_service.index_advisor = MongoIndexAdvisor(
+        mongo_service=mongo_service,
+        analysis_interval=100,
+        slow_query_threshold_ms=100.0,
+    )
+    logger.info("MongoDB index advisor initialized")

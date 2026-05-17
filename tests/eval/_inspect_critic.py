@@ -22,7 +22,7 @@ def main() -> int:
         return 1
     question = sys.argv[1]
 
-    from utils.config import get_settings
+    from models.config import get_settings
     get_settings().critic_enabled = True
 
     from models.schemas import QueryRequest

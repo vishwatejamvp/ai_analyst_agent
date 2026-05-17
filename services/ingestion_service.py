@@ -26,7 +26,7 @@ from models.schemas import IngestResponse
 from services.embedding_service import EmbeddingService, embedding_service
 from services.mongo_service import MongoService, mongo_service
 from services.vector_service import VectorService, vector_service
-from utils.config import settings
+from models.config import settings
 from utils.exceptions import IngestionError
 from utils.logger import logger
 

@@ -48,10 +48,31 @@ from utils.logger import logger
 _AGG_KEYWORDS: dict[str, list[str]] = {
     "sum": ["sum", "total", "totals", "revenue", "sales", "summed", "aggregate"],
     "avg": ["average", "avg", "mean"],
-    "count": ["count", "how many", "number of", "tally"],
+    "count": ["count", "number of", "tally"],  # Removed "how many" - handled by transaction intent
     "min": ["min", "minimum", "lowest", "smallest"],
     "max": ["max", "maximum", "highest", "largest", "top"],
 }
+
+# Transaction verbs that indicate the user wants to SUM transaction counts, not COUNT documents
+_TRANSACTION_VERBS = {
+    "signed", "signed up", "registered", "enrolled", "applied",
+    "submitted", "completed", "transacted", "booked", "purchased",
+    "paid", "donated", "contributed", "renewed", "issued"
+}
+
+# Metric patterns that indicate transaction/count fields (should use SUM, not COUNT)
+_TRANSACTION_METRIC_PATTERNS = [
+    r"_transactions?$",
+    r"_registrations?$",
+    r"_applications?$",
+    r"_permits?$",
+    r"_requests?$",
+    r"_submissions?$",
+    r"_bookings?$",
+    r"_payments?$",
+    r"_recipients?$",
+    r"_renewals?$",
+]
 
 _GROUP_KEYWORDS = ["by", "per", "group by", "grouped by", "for each", "across"]
 
@@ -287,6 +308,28 @@ class RoutingService:
         chosen_source, target, candidates, schema = self._resolve_target(
             data_source, collection, q
         )
+        
+        # CRITICAL FIX: Transaction intent detection
+        # When user asks "how many signed/registered/applied", they want to SUM
+        # the transaction count field, NOT count documents.
+        # This overrides the "count" operation detected from "how many".
+        transaction_intent = self._detect_transaction_intent(q, schema.columns)
+        if transaction_intent:
+            if op == "count":
+                logger.info(
+                    f"Transaction intent detected (verb: '{transaction_intent['verb']}', "
+                    f"metric: '{transaction_intent['metric']}') — overriding COUNT with SUM"
+                )
+                op = "sum"
+                matched.append(f"transaction-intent:{transaction_intent['verb']}")
+            elif op is None:
+                # "how many" without explicit count keyword
+                logger.info(
+                    f"Transaction intent detected (verb: '{transaction_intent['verb']}', "
+                    f"metric: '{transaction_intent['metric']}') — setting operation to SUM"
+                )
+                op = "sum"
+                matched.append(f"transaction-intent:{transaction_intent['verb']}")
 
         # Glossary lookup — surface even on semantic-only paths so the trust
         # panel can mention an applicable definition.
@@ -320,7 +363,7 @@ class RoutingService:
             )
             return self._maybe_refine(semantic_decision, question, schema)
 
-        spec = self._build_aggregation_spec(q, op, schema)
+        spec = self._build_aggregation_spec(q, op, schema, transaction_intent)
         spec.limit = spec.limit or self._extract_top_k(q)
 
         if time_intent and schema.columns:
@@ -395,7 +438,7 @@ class RoutingService:
             return decision
         # Lazy import + lazy resolve of the module-level singleton so
         # we don't pull in the Anthropic SDK when the feature is off.
-        from utils.config import settings  # local to avoid import cycles
+        from models.config import settings  # local to avoid import cycles
 
         if not settings.router_llm_fallback_enabled:
             logger.debug(
@@ -450,6 +493,53 @@ class RoutingService:
                     matched.append(w)
                     return op
         return None
+    
+    @staticmethod
+    def _detect_transaction_intent(q: str, columns: list[str]) -> dict[str, str] | None:
+        """Detect if query is asking for transaction counts (should use SUM, not COUNT).
+        
+        Returns:
+            dict with 'verb' and 'metric' if transaction intent detected, None otherwise
+            
+        Examples:
+            "how many signed through the website" → {"verb": "signed", "metric": "website_transactions"}
+            "how many registered for hajj" → {"verb": "registered", "metric": "total_transactions"}
+        """
+        # Check for transaction verbs
+        matched_verb = None
+        for verb in _TRANSACTION_VERBS:
+            if verb in q:
+                matched_verb = verb
+                break
+        
+        if not matched_verb:
+            return None
+        
+        # Find transaction-related metrics in the schema
+        transaction_metrics = []
+        for col in columns:
+            col_lower = col.lower()
+            # Check if column matches transaction patterns
+            for pattern in _TRANSACTION_METRIC_PATTERNS:
+                if re.search(pattern, col_lower):
+                    transaction_metrics.append(col)
+                    break
+        
+        if not transaction_metrics:
+            return None
+        
+        # Try to match specific channel/type mentioned in query
+        # e.g., "website" → "website_transactions"
+        for metric in transaction_metrics:
+            metric_lower = metric.lower()
+            # Extract channel/type from metric name (e.g., "website" from "website_transactions")
+            metric_parts = metric_lower.replace("_", " ").split()
+            for part in metric_parts:
+                if len(part) > 3 and part in q:  # Avoid matching short words like "app"
+                    return {"verb": matched_verb, "metric": metric}
+        
+        # Fallback: return the first transaction metric found
+        return {"verb": matched_verb, "metric": transaction_metrics[0]}
 
     @staticmethod
     def _extract_top_k(q: str) -> int | None:
@@ -594,11 +684,20 @@ class RoutingService:
         q: str,
         op: str,
         schema: _SchemaSnapshot,
+        transaction_intent: dict[str, str] | None = None,
     ) -> AggregationSpec:
         metric = None
         group_by = None
         if schema.columns:
-            metric = self._guess_metric(q, schema.columns, op)
+            # If transaction intent detected, use that metric directly
+            if transaction_intent and transaction_intent.get("metric"):
+                metric = transaction_intent["metric"]
+                logger.info(
+                    f"Using transaction metric '{metric}' from intent detection "
+                    f"(verb: '{transaction_intent.get('verb')}')"
+                )
+            else:
+                metric = self._guess_metric(q, schema.columns, op)
             group_by = self._guess_group_by(q, schema.columns)
 
 

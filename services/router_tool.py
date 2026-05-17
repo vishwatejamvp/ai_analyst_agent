@@ -70,7 +70,7 @@ from pydantic import BaseModel, Field, ValidationError
 
 from models.enums import DataSource, QueryRoute
 from models.schemas import AggregationSpec, RoutingDecision
-from utils.config import settings
+from models.config import settings
 from utils.exceptions import LLMError
 from utils.logger import logger
 from utils.observability import current_trace

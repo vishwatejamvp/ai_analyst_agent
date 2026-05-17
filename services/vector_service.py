@@ -22,7 +22,7 @@ import numpy as np
 
 from models.schemas import VectorHit
 from services.embedding_service import EmbeddingService, embedding_service
-from utils.config import settings
+from models.config import settings
 from utils.exceptions import VectorStoreError
 from utils.logger import logger
 

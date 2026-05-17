@@ -136,6 +136,101 @@ class Settings(BaseSettings):
         default="", alias="INTENT_DISTILLER_MODEL_PATH"
     )
 
+    # --- Semantic OOS Detection (Build #9) ---
+    # When ``semantic_oos_enabled`` is True, ``question_intent.classify``
+    # uses sentence embeddings to detect out-of-scope questions that don't
+    # match static keyword lists. The detector compares questions against
+    # in-scope and OOS exemplars using cosine similarity. Exemplars can be
+    # updated at runtime without retraining. Off by default so existing
+    # behavior is preserved.
+    semantic_oos_enabled: bool = Field(
+        default=False, alias="SEMANTIC_OOS_ENABLED"
+    )
+    semantic_oos_model: str = Field(
+        default="sentence-transformers/all-MiniLM-L6-v2",
+        alias="SEMANTIC_OOS_MODEL",
+    )
+    semantic_oos_threshold: float = Field(
+        default=0.65,
+        alias="SEMANTIC_OOS_THRESHOLD",
+        ge=0.0,
+        le=1.0,
+    )
+
+    # --- Prompt Injection Defense (Build #10) ---
+    # When ``injection_detection_enabled`` is True, all user questions are
+    # checked for prompt injection attacks before processing. Uses multi-strategy
+    # detection: semantic similarity to known injection patterns, regex patterns,
+    # and structural heuristics. Injection patterns can be updated at runtime
+    # without redeployment. Off by default for backward compatibility.
+    injection_detection_enabled: bool = Field(
+        default=False, alias="INJECTION_DETECTION_ENABLED"
+    )
+    injection_semantic_threshold: float = Field(
+        default=0.70,
+        alias="INJECTION_SEMANTIC_THRESHOLD",
+        ge=0.0,
+        le=1.0,
+    )
+
+    # --- MongoDB Index Advisor (Build #10) ---
+    # When ``auto_create_indexes`` is True, the index advisor automatically
+    # creates indexes for frequently slow queries (>100ms). Indexes are created
+    # in background mode to avoid blocking writes. When ``auto_drop_unused_indexes``
+    # is True, indexes that haven't been used in 7+ days are automatically dropped.
+    # Both off by default for safety.
+    auto_create_indexes: bool = Field(
+        default=False, alias="AUTO_CREATE_INDEXES"
+    )
+    auto_drop_unused_indexes: bool = Field(
+        default=False, alias="AUTO_DROP_UNUSED_INDEXES"
+    )
+
+    # --- Hybrid Session Store (Build #10) ---
+    # When ``redis_url`` is set, sessions use multi-tier storage:
+    # L1 (in-memory) → L2 (Redis) → L3 (MongoDB). Falls back gracefully
+    # if Redis is unavailable. Leave empty to use in-memory only.
+    redis_url: str = Field(default="", alias="REDIS_URL")
+    session_backend: Literal["memory", "hybrid"] = Field(
+        default="memory", alias="SESSION_BACKEND"
+    )
+
+    # --- Adaptive Query Rewriter (Build #10) ---
+    # When ``query_rewriter_enabled`` is True, user queries are checked for
+    # typos and misspellings using fuzzy matching and semantic similarity.
+    # The rewriter learns from user corrections and updates vocabulary
+    # dynamically from actual data. Off by default.
+    query_rewriter_enabled: bool = Field(
+        default=False, alias="QUERY_REWRITER_ENABLED"
+    )
+    query_rewriter_fuzzy_threshold: float = Field(
+        default=0.85,
+        alias="QUERY_REWRITER_FUZZY_THRESHOLD",
+        ge=0.0,
+        le=1.0,
+    )
+    query_rewriter_semantic_threshold: float = Field(
+        default=0.75,
+        alias="QUERY_REWRITER_SEMANTIC_THRESHOLD",
+        ge=0.0,
+        le=1.0,
+    )
+
+    # --- Adaptive Request Queue (Build #10) ---
+    # Async request queue with dynamic prioritization and auto-scaling.
+    # Premium users and simple queries get higher priority. Workers scale
+    # up/down based on queue depth. Off by default (synchronous mode).
+    queue_enabled: bool = Field(default=False, alias="QUEUE_ENABLED")
+    queue_initial_workers: int = Field(
+        default=2, alias="QUEUE_INITIAL_WORKERS", ge=1, le=50
+    )
+    queue_max_workers: int = Field(
+        default=10, alias="QUEUE_MAX_WORKERS", ge=1, le=100
+    )
+    queue_max_size: int = Field(
+        default=1000, alias="QUEUE_MAX_SIZE", ge=10, le=10000
+    )
+
     # --- Follow-up LLM co-reference resolver (Layer 2) ---
     # Deterministic structural follow-up detection
     # (:func:`services.session_patch.analyze_followup`) handles every

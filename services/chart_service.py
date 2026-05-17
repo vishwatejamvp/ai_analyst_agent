@@ -41,7 +41,7 @@ from services.metric_profile import (
     SeriesProfile,
     Unit,
 )
-from utils.config import settings
+from models.config import settings
 from utils.logger import logger
 
 _YM_LABEL_CORE = re.compile(r"^(\d{4})-(\d{2})$")

@@ -546,55 +546,55 @@ def main() -> int:
     # Optional setting overrides — mutate the cached singleton for this
     # process. Safe because each runner invocation is its own process.
     if args.chart_decider is not None:
-        from utils.config import get_settings
+        from models.config import get_settings
         get_settings().chart_decider = args.chart_decider
         print(f"[runner] chart_decider overridden to: {args.chart_decider}")
     if args.reranker is not None:
-        from utils.config import get_settings
+        from models.config import get_settings
         get_settings().reranker_enabled = (args.reranker == "on")
         print(f"[runner] reranker_enabled overridden to: {args.reranker == 'on'}")
     if args.session_summary is not None:
-        from utils.config import get_settings
+        from models.config import get_settings
         get_settings().session_summary_enabled = (args.session_summary == "on")
         print(
             f"[runner] session_summary_enabled overridden to: "
             f"{args.session_summary == 'on'}"
         )
     if args.summary_trigger is not None:
-        from utils.config import get_settings
+        from models.config import get_settings
         get_settings().session_summary_trigger_at = args.summary_trigger
         print(f"[runner] session_summary_trigger_at overridden to: {args.summary_trigger}")
     if args.summary_keep_last is not None:
-        from utils.config import get_settings
+        from models.config import get_settings
         get_settings().session_summary_keep_last = args.summary_keep_last
         print(f"[runner] session_summary_keep_last overridden to: {args.summary_keep_last}")
     if args.llm_router is not None:
-        from utils.config import get_settings
+        from models.config import get_settings
         get_settings().router_llm_fallback_enabled = (args.llm_router == "on")
         print(
             f"[runner] router_llm_fallback_enabled overridden to: "
             f"{args.llm_router == 'on'}"
         )
     if args.critic is not None:
-        from utils.config import get_settings
+        from models.config import get_settings
         get_settings().critic_enabled = (args.critic == "on")
         print(f"[runner] critic_enabled overridden to: {args.critic == 'on'}")
     if args.critic_revise is not None:
-        from utils.config import get_settings
+        from models.config import get_settings
         get_settings().critic_revise_on_flag = (args.critic_revise == "on")
         print(
             f"[runner] critic_revise_on_flag overridden to: "
             f"{args.critic_revise == 'on'}"
         )
     if args.distill is not None:
-        from utils.config import get_settings
+        from models.config import get_settings
         get_settings().intent_distiller_enabled = (args.distill == "on")
         print(
             f"[runner] intent_distiller_enabled overridden to: "
             f"{args.distill == 'on'}"
         )
     if args.distill_threshold is not None:
-        from utils.config import get_settings
+        from models.config import get_settings
         get_settings().intent_distiller_confidence_threshold = (
             float(args.distill_threshold)
         )

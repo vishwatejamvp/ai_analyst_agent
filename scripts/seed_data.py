@@ -19,7 +19,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import pandas as pd  # noqa: E402
 
 from services.ingestion_service import ingestion_service  # noqa: E402
-from utils.config import settings  # noqa: E402
+from models.config import settings  # noqa: E402
 from utils.logger import logger  # noqa: E402
 
 ROWS = [

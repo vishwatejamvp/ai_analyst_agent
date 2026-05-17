@@ -24,7 +24,7 @@ import re
 from dataclasses import dataclass
 from enum import Enum
 
-from utils.config import settings
+from models.config import settings
 from utils.logger import logger
 
 
@@ -108,23 +108,75 @@ _COMPARISON_PHRASES: tuple[str, ...] = (
 )
 
 # Tokens that strongly suggest the question is *not* about AWQAF data.
-# Kept narrow on purpose — false positives would block legitimate questions.
+# Expanded list covers common off-topic categories. False positives would
+# block legitimate questions, so we keep domain anchor protection active.
 _OOS_TOKENS: tuple[str, ...] = (
+    # Entertainment
     "weather",
     "joke",
     "movie",
     "song",
     "lyrics",
-    "recipe",
+    "celebrity",
+    "horoscope",
+    
+    # Finance (non-AWQAF)
     "stock price",
     "crypto",
     "bitcoin",
     "ethereum",
+    "cryptocurrency",
+    "forex",
+    "trading",
+    
+    # Sports
     "football score",
     "cricket score",
+    "sports",
+    "game",
+    "match",
+    "tournament",
+    
+    # Politics
     "election",
-    "horoscope",
-    "celebrity",
+    "president",
+    "prime minister",
+    "government",
+    "politics",
+    "politician",
+    
+    # Technology/Programming
+    "code",
+    "programming",
+    "python",
+    "javascript",
+    "react",
+    "angular",
+    "software",
+    "algorithm",
+    
+    # Food/Travel
+    "recipe",
+    "restaurant",
+    "hotel",
+    "travel",
+    "flight",
+    "booking",
+    "vacation",
+    
+    # Health/Medical
+    "medical",
+    "doctor",
+    "medicine",
+    "health",
+    "disease",
+    "symptom",
+    
+    # News/Current Events
+    "news",
+    "breaking",
+    "latest news",
+    "current events",
 )
 
 # Tokens that anchor a question to the AWQAF domain. If any of these appear,
@@ -182,11 +234,19 @@ class IntentResult:
 
 
 def classify(question: str) -> IntentResult:
-    """Public entry: rule classifier optionally upgraded by the distiller.
+    """Public entry: multi-layer intent classification.
 
+    Classification layers (in order):
+    
+    1. **Rule classifier** (always runs) — Fast, deterministic keyword matching
+    2. **Semantic OOS** (Build #9, optional) — Embedding-based OOS detection
+    3. **Intent distiller** (Build #8, optional) — ML student model
+    
     The deterministic rule classifier (see :func:`_rule_classify`) is
     always run because it is fast, dependency-free, and right most of
-    the time. When ``settings.intent_distiller_enabled`` is True we
+    the time. When ``settings.semantic_oos_enabled`` is True, we check
+    for out-of-scope questions using sentence embeddings before consulting
+    the distiller. When ``settings.intent_distiller_enabled`` is True we
     *additionally* consult the trained student model and apply a
     strict policy:
 
@@ -203,6 +263,27 @@ def classify(question: str) -> IntentResult:
     """
     rule = _rule_classify(question)
 
+    # Layer 2: Semantic OOS detection (Build #9)
+    # Check for out-of-scope questions using embeddings BEFORE distiller.
+    # This catches novel phrasings that don't match static keywords.
+    if settings.semantic_oos_enabled and rule.intent != QuestionIntent.OUT_OF_SCOPE:
+        try:
+            from services.semantic_oos import semantic_oos_detector  # pylint: disable=import-outside-toplevel
+            
+            is_oos, confidence = semantic_oos_detector.is_oos(question)
+            if is_oos:
+                return IntentResult(
+                    QuestionIntent.OUT_OF_SCOPE,
+                    f"semantic OOS detection (confidence={confidence:.2f})",
+                    source="semantic",
+                )
+        except Exception as exc:  # noqa: BLE001  # pylint: disable=broad-exception-caught
+            logger.debug(
+                f"Semantic OOS check failed; continuing with rule: "
+                f"{type(exc).__name__}: {exc}"
+            )
+
+    # Layer 3: Intent distiller (Build #8)
     # Cheap exit when distillation is disabled — keeps existing tests
     # and benchmarks unchanged.
     if not settings.intent_distiller_enabled:

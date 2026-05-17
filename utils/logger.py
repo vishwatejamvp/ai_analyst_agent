@@ -9,7 +9,7 @@ import sys
 
 from loguru import logger as _logger
 
-from utils.config import settings
+from models.config import settings
 
 
 def _configure() -> None:

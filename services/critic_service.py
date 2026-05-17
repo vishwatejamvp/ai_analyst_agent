@@ -48,7 +48,7 @@ from typing import Any, Literal
 
 from pydantic import BaseModel, Field, ValidationError
 
-from utils.config import settings
+from models.config import settings
 from utils.exceptions import LLMError
 from utils.logger import logger
 from utils.observability import current_trace

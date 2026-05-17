@@ -23,7 +23,9 @@ STATIC_DIR = Path(__file__).resolve().parent / "static"
 
 from api.routes import router as api_router
 from api.statistics_routes import router as statistics_router
-from utils.config import settings
+from api.oos_routes import router as oos_router
+from api.admin_routes import router as admin_router
+from models.config import settings
 from utils.exceptions import AIAnalystError
 from utils.logger import logger
 
@@ -67,6 +69,8 @@ def create_app() -> FastAPI:
 
     app.include_router(api_router, prefix="/api/v1")
     app.include_router(statistics_router)
+    app.include_router(oos_router, prefix="/api/v1/oos")
+    app.include_router(admin_router, prefix="/api/v1")
 
     @app.get("/", include_in_schema=False)
     def chat_ui():

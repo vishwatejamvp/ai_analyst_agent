@@ -22,7 +22,7 @@ from sqlalchemy.exc import SQLAlchemyError
 
 from models.enums import TimeBucket
 from models.schemas import AggregationSpec, TimeSpec
-from utils.config import settings
+from models.config import settings
 from utils.exceptions import DatabaseError, UnsafeQueryError
 from utils.logger import logger
 

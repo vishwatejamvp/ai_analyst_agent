@@ -19,7 +19,7 @@ import json
 from typing import Any
 
 from models.schemas import AnalystWarning, TrustPanel, VectorHit
-from utils.config import settings
+from models.config import settings
 
 
 def _trim(rows: list[dict[str, Any]], limit: int) -> list[dict[str, Any]]:

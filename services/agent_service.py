@@ -17,7 +17,7 @@ from tenacity import (
     wait_exponential,
 )
 
-from utils.config import settings
+from models.config import settings
 from utils.exceptions import LLMError
 from utils.logger import logger
 from utils.observability import current_trace

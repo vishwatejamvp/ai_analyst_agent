@@ -51,6 +51,9 @@ class TrendQualityResult:
     series_count: int = 1
     has_data_quality_issue: bool = False
     suggested_alternatives: list[str] = field(default_factory=list)
+    completeness_score: float = 1.0  # 0.0 = all zeros, 1.0 = fully populated
+    non_zero_periods: int = 0
+    total_periods: int = 0
 
 
 class TrendQualityChecker:
@@ -81,6 +84,8 @@ class TrendQualityChecker:
 
         if time_spec is not None:
             self._assess_time_series(result, time_spec, as_of=as_of)
+            # Check for data completeness issues (incomplete vs. legitimately sparse)
+            self._detect_data_completeness(result, rows)
         else:
             self._assess_categorical(result)
 
@@ -134,6 +139,70 @@ class TrendQualityChecker:
                             )
                         )
                         result.has_data_quality_issue = True
+
+    def _detect_data_completeness(
+        self, result: TrendQualityResult, rows: list[dict[str, Any]]
+    ) -> None:
+        """Detect incomplete vs. legitimately sparse data.
+        
+        Distinguishes between:
+        - Incomplete data (only first N periods populated, rest zeros)
+        - Seasonal data (legitimately zero for certain periods)
+        - Bad pipeline data (all values = suspicious placeholder)
+        """
+        if not rows:
+            return
+        
+        values = [_safe_number(r.get("value")) for r in rows]
+        non_zero_count = sum(1 for v in values if v > 0)
+        completeness_ratio = non_zero_count / len(values) if values else 0
+        
+        # Store completeness metrics
+        result.completeness_score = completeness_ratio
+        result.non_zero_periods = non_zero_count
+        result.total_periods = len(values)
+        
+        # Pattern 1: Only first N periods have data, rest are zeros
+        # (suggests data loading stopped mid-year)
+        first_zero_idx = next((i for i, v in enumerate(values) if v == 0), len(values))
+        trailing_zeros = len(values) - first_zero_idx
+        
+        # If more than 50% trailing zeros after some non-zero data
+        if (
+            trailing_zeros > len(values) * 0.5
+            and first_zero_idx > 0
+            and first_zero_idx < len(values)
+        ):
+            result.warnings.append(
+                AnalystWarning(
+                    code=WarningCode.PARTIAL_PERIOD,
+                    message=(
+                        f"Data appears incomplete: only {first_zero_idx} of {len(rows)} periods "
+                        f"contain values. The remaining {trailing_zeros} periods are zero, which "
+                        f"typically indicates data has not yet been loaded rather than actual "
+                        f"zero activity. Verify data freshness before using for reporting."
+                    ),
+                )
+            )
+            result.has_data_quality_issue = True
+            result.suggested_alternatives.append(
+                f"Check if data for periods {first_zero_idx + 1}-{len(rows)} exists in the source system"
+            )
+        
+        # Pattern 2: Very low completeness (< 30%) without trailing pattern
+        # (suggests sparse or test data)
+        elif completeness_ratio < 0.3 and non_zero_count > 0:
+            result.warnings.append(
+                AnalystWarning(
+                    code=WarningCode.SPARSE_DATA,
+                    message=(
+                        f"Data is very sparse: only {non_zero_count} of {len(rows)} periods "
+                        f"have non-zero values ({completeness_ratio:.0%} completeness). "
+                        f"This may indicate incomplete data loading or a test dataset."
+                    ),
+                )
+            )
+            result.has_data_quality_issue = True
 
     # ------------------------------------------------------------------
     # Time series

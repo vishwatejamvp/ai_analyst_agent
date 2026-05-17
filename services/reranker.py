@@ -44,7 +44,7 @@ import time
 from threading import Lock
 from typing import TYPE_CHECKING
 
-from utils.config import settings
+from models.config import settings
 from utils.exceptions import VectorStoreError
 from utils.logger import logger
 from utils.observability import current_trace

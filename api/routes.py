@@ -26,7 +26,10 @@ from services.mongo_service import mongo_service
 from services.mysql_service import mysql_service
 from services.routing_service import routing_service
 from services.vector_service import vector_service
-from utils.config import settings
+from services.prompt_injection_detector import injection_detector
+from services.adaptive_query_rewriter import adaptive_query_rewriter
+from services.adaptive_queue import adaptive_queue
+from models.config import settings
 from utils.exceptions import AIAnalystError
 from utils.logger import logger
 
@@ -236,12 +239,93 @@ def delete_glossary_entry(definition_id: str) -> dict[str, Any]:
 # ---------------------------------------------------------------------------
 @router.post("/analyze", response_model=AnalystResponse, tags=["analyst"])
 def analyze(request: QueryRequest) -> AnalystResponse:
-    """Run the full pipeline: route → fetch → context → LLM → chart."""
+    """Run the full pipeline: route → fetch → context → LLM → chart.
+    
+    With real-time enhancements:
+    - Prompt injection detection (if enabled)
+    - Query rewriting for typos (if enabled)
+    - Async queue support (if enabled)
+    """
     try:
+        # 1. Prompt injection detection
+        if settings.injection_detection_enabled:
+            is_injection, confidence, reason = injection_detector.detect(request.question)
+            if is_injection:
+                logger.warning(
+                    f"Injection detected: {reason} (confidence={confidence:.2f}) "
+                    f"for question: '{request.question[:100]}...'"
+                )
+                raise HTTPException(
+                    status_code=400,
+                    detail="Your question contains patterns that violate our usage policy. "
+                           "Please rephrase and try again."
+                )
+        
+        # 2. Query rewriting for typos/misspellings
+        if settings.query_rewriter_enabled:
+            rewrite_result = adaptive_query_rewriter.rewrite(request.question)
+            if rewrite_result["corrections"]:
+                logger.info(
+                    f"Query rewritten: '{request.question}' → '{rewrite_result['rewritten']}' "
+                    f"(strategy={rewrite_result['strategy']}, confidence={rewrite_result['confidence']:.2f})"
+                )
+                # Use rewritten query
+                request.question = rewrite_result["rewritten"]
+        
+        # 3. Process request
         return analyst_orchestrator.answer(request)
+        
     except AIAnalystError as exc:
         logger.error(f"Analyst pipeline failed: {exc.message}")
         raise HTTPException(status_code=exc.status_code, detail=exc.message) from exc
+
+
+@router.post("/analyze/async", tags=["analyst"])
+def analyze_async(
+    request: QueryRequest,
+    user_tier: str = Query(default="free", description="User tier: free, basic, premium, enterprise")
+) -> dict[str, str]:
+    """Submit analysis request to async queue.
+    
+    Returns task_id for status checking via GET /analyze/status/{task_id}
+    
+    Requires QUEUE_ENABLED=true in configuration.
+    """
+    if not settings.queue_enabled:
+        raise HTTPException(
+            status_code=400,
+            detail="Async queue is disabled. Set QUEUE_ENABLED=true or use POST /analyze"
+        )
+    
+    try:
+        # Prompt injection check (synchronous, fast)
+        if settings.injection_detection_enabled:
+            is_injection, confidence, reason = injection_detector.detect(request.question)
+            if is_injection:
+                raise HTTPException(
+                    status_code=400,
+                    detail="Your question contains patterns that violate our usage policy."
+                )
+        
+        # Enqueue request
+        task_id = adaptive_queue.enqueue(
+            question=request.question,
+            user_tier=user_tier,
+            session_id=request.session_id,
+        )
+        
+        return {
+            "task_id": task_id,
+            "status": "queued",
+            "status_url": f"/api/v1/admin/queue/status/{task_id}"
+        }
+        
+    except ValueError as exc:
+        # Queue full (circuit breaker)
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
+    except Exception as exc:
+        logger.error(f"Failed to enqueue request: {exc}")
+        raise HTTPException(status_code=500, detail="Failed to enqueue request") from exc
 
 
 # ---------------------------------------------------------------------------

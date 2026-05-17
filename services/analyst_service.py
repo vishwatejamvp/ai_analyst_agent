@@ -16,7 +16,7 @@ import hashlib
 import json
 import re
 import time
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from typing import Any
 
@@ -79,7 +79,7 @@ from services.session_summary import (
 from services.trend_quality import TrendQualityChecker, trend_quality_checker
 from services.trust_service import TrustService, trust_service
 from services.vector_service import VectorService, vector_service
-from utils.config import settings
+from models.config import settings
 from utils.exceptions import AIAnalystError, DatabaseError
 from utils.logger import logger
 from services.visualization.shape_analysis import infer_shape
@@ -789,6 +789,7 @@ class _EmptyMetricFinding:
     empty: list[str]
     populated: list[str]
     has_series: bool
+    metric_completeness: dict[str, dict[str, Any]] = field(default_factory=dict)
 
     @property
     def all_empty(self) -> bool:
@@ -1222,8 +1223,35 @@ class AnalystOrchestrator:
                             as_of=as_of,
                         )
                         
-                        # Only use fallback if it doesn't also have quality issues
-                        if not fallback_quality.has_data_quality_issue and fallback_rows:
+                        # Calculate quality scores for both original and fallback
+                        def _safe_number(val: Any) -> float:
+                            if val is None:
+                                return 0.0
+                            if isinstance(val, (int, float)):
+                                return float(val)
+                            try:
+                                return float(str(val).replace(",", ""))
+                            except (TypeError, ValueError):
+                                return 0.0
+                        
+                        original_total = sum(_safe_number(r.get("value")) for r in structured_data)
+                        original_score = quality.completeness_score
+                        
+                        fallback_total = sum(_safe_number(r.get("value")) for r in fallback_rows)
+                        fallback_score = fallback_quality.completeness_score
+                        
+                        # Only use fallback if it's meaningfully better
+                        # Criteria: no quality issues AND (higher completeness OR higher total)
+                        is_fallback_better = (
+                            not fallback_quality.has_data_quality_issue
+                            and fallback_rows
+                            and (
+                                fallback_score > original_score + 0.2  # At least 20% more complete
+                                or (fallback_total > original_total * 2 and fallback_score > 0.3)  # Much higher volume
+                            )
+                        )
+                        
+                        if is_fallback_better:
                             structured_data = fallback_quality.rows
                             warnings = list(exec_warnings) + list(fallback_quality.warnings)
                             
@@ -1233,8 +1261,10 @@ class AnalystOrchestrator:
                                 AnalystWarning(
                                     code=WarningCode.PARTIAL_PERIOD,
                                     message=(
-                                        f"{requested_year} data contains errors (all values = 1). "
-                                        f"Automatically showing {fallback_year} data instead. "
+                                        f"{requested_year} data has quality issues "
+                                        f"({quality.non_zero_periods}/{quality.total_periods} periods populated). "
+                                        f"Automatically showing {fallback_year} data instead "
+                                        f"({fallback_quality.non_zero_periods}/{fallback_quality.total_periods} periods). "
                                         f"Other available years: {', '.join(map(str, alternative_years[1:4]))}."
                                     ),
                                 )
@@ -1242,20 +1272,26 @@ class AnalystOrchestrator:
                             
                             logger.info(
                                 f"Successfully fell back to {fallback_year}: "
-                                f"{len(structured_data)} rows retrieved."
+                                f"{len(structured_data)} rows, completeness {fallback_score:.0%} "
+                                f"vs. {original_score:.0%} for {requested_year}."
                             )
                         else:
-                            # Fallback also has issues, keep original with warning
+                            # Fallback is not better, keep original with enhanced warning
                             logger.warning(
-                                f"Fallback year {fallback_year} also has data quality issues. "
+                                f"Fallback year {fallback_year} also has data quality issues "
+                                f"(completeness: {fallback_score:.0%} vs. original {original_score:.0%}). "
                                 f"Keeping original {requested_year} data with warnings."
                             )
-                            warnings.append(
+                            warnings.insert(
+                                0,
                                 AnalystWarning(
-                                    code=WarningCode.PARTIAL_PERIOD,
+                                    code=WarningCode.ALL_ZERO_OR_FLAT,
                                     message=(
-                                        f"Try querying {fallback_year} instead — "
-                                        f"available years: {', '.join(map(str, alternative_years[:3]))}."
+                                        f"Data quality issue: {requested_year} data appears incomplete or contains "
+                                        f"placeholder values ({quality.non_zero_periods}/{quality.total_periods} periods populated). "
+                                        f"Alternative years ({', '.join(map(str, alternative_years[:3]))}) "
+                                        f"show similar issues. This suggests the data pipeline may not have loaded "
+                                        f"complete data for this dataset. Contact the data owner to verify."
                                     ),
                                 )
                             )
@@ -3328,14 +3364,30 @@ class AnalystOrchestrator:
                 if s is None:
                     continue
                 series_values.setdefault(str(s), []).append(row.get("value"))
+            
+            # Calculate per-metric completeness
+            metric_completeness: dict[str, dict[str, Any]] = {}
             for metric, values in series_values.items():
                 requested.append(metric)
-                if all(_is_empty_value(v) for v in values):
+                non_zero = sum(1 for v in values if not _is_empty_value(v))
+                completeness = non_zero / len(values) if values else 0
+                is_empty = all(_is_empty_value(v) for v in values)
+                
+                metric_completeness[metric] = {
+                    "completeness": completeness,
+                    "non_zero_periods": non_zero,
+                    "total_periods": len(values),
+                    "is_empty": is_empty,
+                }
+                
+                if is_empty:
                     empty.append(metric)
                 else:
                     populated.append(metric)
+            
             return _EmptyMetricFinding(
-                requested, empty, populated, has_series=True
+                requested, empty, populated, has_series=True,
+                metric_completeness=metric_completeness
             )
 
         spec = decision.aggregation
@@ -3345,12 +3397,27 @@ class AnalystOrchestrator:
             return _EmptyMetricFinding(requested, empty, populated, False)
         requested = [spec.metric]
         values = [r.get("value") for r in rows]
-        if values and all(_is_empty_value(v) for v in values):
+        non_zero = sum(1 for v in values if not _is_empty_value(v))
+        completeness = non_zero / len(values) if values else 0
+        is_empty = values and all(_is_empty_value(v) for v in values)
+        
+        metric_completeness = {
+            spec.metric: {
+                "completeness": completeness,
+                "non_zero_periods": non_zero,
+                "total_periods": len(values),
+                "is_empty": is_empty,
+            }
+        }
+        
+        if is_empty:
             empty = [spec.metric]
         else:
             populated = [spec.metric]
+        
         return _EmptyMetricFinding(
-            requested, empty, populated, has_series=False
+            requested, empty, populated, has_series=False,
+            metric_completeness=metric_completeness
         )
 
     def _empty_metric_warning(
