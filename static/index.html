@@ -533,6 +533,18 @@
     const sendBtn = document.getElementById("sendBtn");
     const errorBanner = document.getElementById("errorBanner");
 
+    const SESSION_KEY = "ai_analyst_session_id";
+    function getSessionId() {
+      let id = localStorage.getItem(SESSION_KEY);
+      if (!id) {
+        id = (typeof crypto !== "undefined" && crypto.randomUUID)
+          ? crypto.randomUUID()
+          : "sess-" + Date.now() + "-" + Math.random().toString(36).slice(2, 10);
+        localStorage.setItem(SESSION_KEY, id);
+      }
+      return id;
+    }
+
     function hideWelcome() {
       if (welcomeEl && welcomeEl.parentNode) welcomeEl.remove();
     }
@@ -1342,6 +1354,14 @@
       if (agg.operation) {
         chips.push('<span class="chip muted">' + escapeHtml(agg.operation + (agg.metric ? " · " + agg.metric : "")) + "</span>");
       }
+      if (r.target) {
+        chips.push('<span class="chip muted" title="Mongo collection / table">' + escapeHtml(r.target) + "</span>");
+      }
+      const res = r.resolution || {};
+      if (res.method) {
+        const resLabel = res.method + (res.catalog_slug ? " · " + res.catalog_slug : "");
+        chips.push('<span class="chip muted" title="How the dataset was chosen">' + escapeHtml(resLabel) + "</span>");
+      }
       const metaMs = data.meta && data.meta.elapsed_ms != null ? data.meta.elapsed_ms + " ms" : "";
       if (metaMs) chips.push('<span class="chip muted">' + escapeHtml(metaMs) + "</span>");
 
@@ -1414,7 +1434,10 @@
       sendBtn.disabled = true;
       appendTypingBubble();
 
-      const body = { question: question };
+      const body = {
+        question: question,
+        session_id: getSessionId(),
+      };
 
       try {
         const res = await fetch("/api/v1/analyze", {

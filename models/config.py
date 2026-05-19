@@ -173,6 +173,24 @@ class Settings(BaseSettings):
         le=1.0,
     )
 
+    # --- Semantic Intent Enrichment (Phase 1: Semantic Foundation) ---
+    # When ``intent_enrichment_enabled`` is True, vague analytical queries
+    # (e.g., "what should i look into hajj package") are analyzed using
+    # embedding-based semantic matching to infer the intended operation.
+    # Uses data-driven operation patterns from config/operation_patterns.json
+    # instead of hardcoded regex. This is Phase 1 of the production roadmap:
+    # moving from code-driven (60%) to data-driven (80%) architecture.
+    intent_enrichment_enabled: bool = Field(
+        default=True, alias="INTENT_ENRICHMENT_ENABLED"
+    )
+    intent_enrichment_threshold: float = Field(
+        default=0.5,
+        alias="INTENT_ENRICHMENT_THRESHOLD",
+        ge=0.0,
+        le=1.0,
+        description="Minimum confidence to use inferred operation (0.5 = 50%)"
+    )
+
     # --- MongoDB Index Advisor (Build #10) ---
     # When ``auto_create_indexes`` is True, the index advisor automatically
     # creates indexes for frequently slow queries (>100ms). Indexes are created
@@ -193,6 +211,37 @@ class Settings(BaseSettings):
     redis_url: str = Field(default="", alias="REDIS_URL")
     session_backend: Literal["memory", "hybrid"] = Field(
         default="memory", alias="SESSION_BACKEND"
+    )
+
+    # --- Redis Aggregation Cache ---
+    # When ``aggregation_cache_enabled`` is True, MongoDB aggregation results
+    # are cached in Redis to avoid repeated queries. Cache is automatically
+    # invalidated on data ingestion. TTL varies based on data age:
+    # - Historical data (>1 year old): 15 minutes
+    # - Current year data: 3 minutes
+    # - Default: 5 minutes
+    aggregation_cache_enabled: bool = Field(
+        default=True, alias="AGGREGATION_CACHE_ENABLED"
+    )
+    aggregation_cache_ttl: int = Field(
+        default=300, alias="AGGREGATION_CACHE_TTL", ge=60, le=3600
+    )
+    aggregation_cache_ttl_historical: int = Field(
+        default=900, alias="AGGREGATION_CACHE_TTL_HISTORICAL", ge=60, le=3600
+    )
+    aggregation_cache_ttl_current: int = Field(
+        default=180, alias="AGGREGATION_CACHE_TTL_CURRENT", ge=60, le=3600
+    )
+
+    # --- Redis Metadata Cache ---
+    # When ``metadata_cache_enabled`` is True, collection names and schemas
+    # are cached in Redis globally (shared across all users). This speeds up
+    # routing decisions by avoiding repeated MongoDB schema probes.
+    metadata_cache_enabled: bool = Field(
+        default=True, alias="METADATA_CACHE_ENABLED"
+    )
+    metadata_cache_ttl: int = Field(
+        default=300, alias="METADATA_CACHE_TTL", ge=60, le=3600
     )
 
     # --- Adaptive Query Rewriter (Build #10) ---
@@ -256,7 +305,21 @@ class Settings(BaseSettings):
     # rule field stands. Off by default so existing eval baselines and
     # token budgets are preserved.
     router_llm_fallback_enabled: bool = Field(
-        default=False, alias="ROUTER_LLM_FALLBACK_ENABLED"
+        default=True, alias="ROUTER_LLM_FALLBACK_ENABLED"
+    )
+
+    # --- Catalog-first routing (Build #9) ---
+    # When enabled, ``RoutingService`` resolves the facts collection by
+    # scoring the question against ``awqaf_datasets_metadata`` before
+    # falling back to collection-name token overlap.
+    catalog_routing_enabled: bool = Field(
+        default=True, alias="CATALOG_ROUTING_ENABLED"
+    )
+    catalog_routing_min_score: float = Field(
+        default=3.0,
+        alias="CATALOG_ROUTING_MIN_SCORE",
+        ge=0.0,
+        description="Minimum catalog score to prefer metadata match over name tokens.",
     )
 
     # --- Session summarisation (Build #5) ---

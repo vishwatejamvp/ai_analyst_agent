@@ -12,6 +12,9 @@ already-computed results plus retrieved text rows, never raw arithmetic.
 
 from __future__ import annotations
 
+# Import validation services
+from services.validation_integration import validation_integration
+
 import hashlib
 import json
 import re
@@ -1128,6 +1131,39 @@ class AnalystOrchestrator:
             comparison_intent = intent_result.intent == QuestionIntent.COMPARISON
             decision, patched_from_session = self._decide_with_session(request)
 
+        # ✅ NEW: Check for vague queries BEFORE validation
+        # Catches semantic-only routes that should have been analytical but were too vague
+        if decision.route == QueryRoute.SEMANTIC and decision.target:
+            try:
+                from services.vague_query_handler import vague_query_handler
+                
+                vague_check = vague_query_handler.check(request.question, decision.target)
+                
+                # If query is vague and we're confident about it, show suggestions
+                if vague_check.is_vague and vague_check.confidence < 0.5:
+                    logger.info(
+                        f"Vague query detected: {vague_check.reasoning}. "
+                        f"Showing suggestions instead of empty semantic results."
+                    )
+                    return self._handle_vague_query(request, vague_check, t0)
+            except Exception as exc:  # noqa: BLE001
+                logger.debug(
+                    f"Vague query check failed ({type(exc).__name__}: {exc}); "
+                    f"continuing with normal flow"
+                )
+        
+        # ✅ Validate and auto-correct routing decision
+        decision, validation_warnings, is_valid = validation_integration.validate_and_correct(
+            decision, request.question
+        )
+        
+        # If validation failed completely, return error response
+        if not is_valid and decision.aggregation:
+            logger.error(f"Routing validation failed: {[w.message for w in validation_warnings]}")
+            return self._build_validation_error_response(
+                request, decision, validation_warnings, t0
+            )
+
         structured_data, exec_warnings = self._run_analytical(
             decision,
             question=request.question,
@@ -1143,7 +1179,7 @@ class AnalystOrchestrator:
             as_of=as_of,
         )
         structured_data = quality.rows
-        warnings: list[AnalystWarning] = list(exec_warnings) + list(quality.warnings)
+        warnings: list[AnalystWarning] = list(validation_warnings) + list(exec_warnings) + list(quality.warnings)
 
         defn_warning = _draft_definition_warning(decision)
         if defn_warning is not None:
@@ -1406,6 +1442,8 @@ class AnalystOrchestrator:
             "session_id": request.session_id,
             "patched_from_session": patched_from_session,
         }
+        if request.include_details and decision.resolution is not None:
+            meta["routing_debug"] = decision.resolution.model_dump()
         critic_meta = self._collect_critic_meta()
         if critic_meta is not None:
             meta["critic"] = critic_meta
@@ -1959,6 +1997,98 @@ class AnalystOrchestrator:
             data_source=None,
         )
 
+    def _handle_vague_query(
+        self,
+        request: QueryRequest,
+        vague_check: Any,  # VagueQueryCheck
+        t0: float,
+    ) -> AnalystResponse:
+        """Build response for vague queries with helpful suggestions."""
+        from services.vague_query_handler import vague_query_handler
+        
+        insight = vague_query_handler.format_suggestion_response(
+            request.question,
+            vague_check,
+            target=None  # Will be extracted from vague_check if needed
+        )
+        
+        elapsed_ms = int((time.perf_counter() - t0) * 1000)
+        logger.info(
+            f"Vague query response in {elapsed_ms}ms - "
+            f"confidence: {vague_check.confidence:.2f}"
+        )
+        
+        decision = RoutingDecision(
+            route=QueryRoute.SEMANTIC,
+            data_source=DataSource.AUTO,
+            target=None,
+            reason=f"Vague query detected: {vague_check.reasoning}",
+        )
+        
+        return AnalystResponse(
+            question=request.question,
+            routing=decision,
+            structured_data=[],
+            vector_context=[],
+            insight=insight,
+            chart=None,
+            charts=[],
+            trust=None,
+            warnings=[],
+            provenance=None,
+            meta={
+                "elapsed_ms": elapsed_ms,
+                "vague_query": True,
+                "confidence": vague_check.confidence,
+                "inferred_operation": vague_check.inferred_operation,
+            }
+        )
+    
+    def _build_validation_error_response(
+        self,
+        request: QueryRequest,
+        decision: RoutingDecision,
+        warnings: List[AnalystWarning],
+        t0: float,
+    ) -> AnalystResponse:
+        """Build response for validation failures with helpful error messages"""
+        error_messages = [w.message for w in warnings]
+        
+        insight = (
+            "**Query Validation Failed**\n\n"
+            "The system detected issues with your query that would result in no data:\n\n"
+        )
+        
+        for i, msg in enumerate(error_messages, 1):
+            insight += f"{i}. {msg}\n"
+        
+        insight += (
+            "\n**What you can do:**\n"
+            "- Check the field names and try again\n"
+            "- Ask 'what datasets are available?' to see options\n"
+            "- Try a different time period if the data doesn't exist for your requested dates\n"
+        )
+        
+        elapsed_ms = int((time.perf_counter() - t0) * 1000)
+        logger.info(f"Validation error response in {elapsed_ms}ms")
+        
+        return AnalystResponse(
+            question=request.question,
+            routing=decision,
+            structured_data=[],
+            vector_context=[],
+            insight=insight,
+            chart=None,
+            charts=[],
+            trust=None,
+            warnings=warnings,
+            provenance=None,
+            meta={
+                "elapsed_ms": elapsed_ms,
+                "validation_failed": True
+            }
+        )
+    
     def _build_static_response(
         self,
         *,
@@ -2326,6 +2456,13 @@ class AnalystOrchestrator:
                 (decision.reason or "")
                 + f" Scoped to prior target `{d0.target}` from session context."
             ).strip()
+            from models.schemas import TargetResolution
+
+            decision.resolution = TargetResolution(
+                method="session_scope",
+                score=1.0,
+                top_scores={d0.target or "": 1.0},
+            )
             return decision, True
         decision = self.router.decide(
             request.question,

@@ -1,0 +1,97 @@
+{
+  "version": "1.0.0",
+  "description": "Data-driven operation patterns for semantic intent enrichment. Business logic as data, not code.",
+  
+  "operation_patterns": [
+    {
+      "operation": "sum",
+      "description": "Aggregate numeric values (totals, revenues, transactions)",
+      "semantic_patterns": [
+        "what should i look into {dataset}",
+        "tell me about {dataset}",
+        "show me {dataset}",
+        "analyze {dataset}",
+        "{dataset} overview",
+        "{dataset} summary",
+        "what's in {dataset}",
+        "explore {dataset}",
+        "give me {dataset} data",
+        "show {dataset} information"
+      ],
+      "default_metric_hints": ["total", "transactions", "count", "amount", "revenue"],
+      "confidence_boost": 0.25,
+      "priority": 1
+    },
+    {
+      "operation": "count",
+      "description": "Count records or entities",
+      "semantic_patterns": [
+        "how many {dataset}",
+        "number of {dataset}",
+        "count {dataset}",
+        "{dataset} count"
+      ],
+      "default_metric_hints": [],
+      "confidence_boost": 0.3,
+      "priority": 2
+    },
+    {
+      "operation": "avg",
+      "description": "Calculate averages",
+      "semantic_patterns": [
+        "average {dataset}",
+        "mean {dataset}",
+        "{dataset} average"
+      ],
+      "default_metric_hints": ["rate", "percentage", "score"],
+      "confidence_boost": 0.2,
+      "priority": 3
+    }
+  ],
+  
+  "vague_query_templates": {
+    "time_series": {
+      "template": "total {metric} for {dataset} in {year}",
+      "description": "For datasets with temporal data",
+      "examples": [
+        "total transactions for hajj package service in 2025",
+        "monthly revenue for zakat disbursement in 2024"
+      ]
+    },
+    "directory": {
+      "template": "how many {dataset} are there in {year}?",
+      "description": "For registry/directory datasets",
+      "examples": [
+        "how many mosques are there in 2023?",
+        "count of quran centers in 2024"
+      ]
+    },
+    "comparison": {
+      "template": "compare {metric1} and {metric2} for {dataset} in {year}",
+      "description": "For multi-metric analysis",
+      "examples": [
+        "compare smart app and website transactions for hajj permit service in 2024"
+      ]
+    },
+    "trend": {
+      "template": "monthly trend of {metric} for {dataset} in {year}",
+      "description": "For time-series trend analysis",
+      "examples": [
+        "monthly trend of total transactions for hajj package service in 2025"
+      ]
+    }
+  },
+  
+  "confidence_thresholds": {
+    "high_confidence": 0.75,
+    "medium_confidence": 0.5,
+    "low_confidence": 0.3,
+    "min_acceptable": 0.5
+  },
+  
+  "dataset_type_detection": {
+    "time_series_indicators": ["transactions", "revenue", "amount", "count", "total"],
+    "directory_indicators": ["registry", "directory", "list", "centers", "mosques"],
+    "service_indicators": ["service", "permit", "certificate", "application"]
+  }
+}

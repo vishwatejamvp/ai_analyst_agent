@@ -183,6 +183,9 @@ class IngestionService:
                 f"Ingested {len(inserted_ids)} rows and {added} vectors "
                 f"into '{collection_name}'"
             )
+            
+            # Invalidate Redis caches for this collection
+            self._invalidate_caches(collection_name)
 
         if total_rows == 0:
             raise IngestionError("No rows were ingested (file empty or unreadable)")
@@ -193,6 +196,32 @@ class IngestionService:
             vectors_indexed=total_vectors,
             sample=sample,
         )
+    
+    def _invalidate_caches(self, collection: str) -> None:
+        """Invalidate Redis caches after data ingestion.
+        
+        Ensures users get fresh data after ingestion by clearing:
+        1. Aggregation cache - all cached query results for this collection
+        2. Metadata cache - schema and collection list
+        """
+        try:
+            from services.redis_aggregation_cache import redis_aggregation_cache
+            from services.redis_metadata_cache import redis_metadata_cache
+            
+            # Invalidate aggregation cache
+            deleted_agg = redis_aggregation_cache.invalidate(collection)
+            
+            # Invalidate metadata cache
+            deleted_meta = redis_metadata_cache.invalidate_collection(collection)
+            
+            if deleted_agg > 0 or deleted_meta > 0:
+                logger.info(
+                    f"Invalidated caches for {collection}: "
+                    f"{deleted_agg} aggregation entries, {deleted_meta} metadata entries"
+                )
+        except Exception as exc:  # noqa: BLE001
+            # Cache invalidation failure should not break ingestion
+            logger.warning(f"Cache invalidation failed (non-critical): {exc}")
 
 
 ingestion_service = IngestionService()

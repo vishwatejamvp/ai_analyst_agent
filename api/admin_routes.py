@@ -345,3 +345,66 @@ async def get_system_health() -> dict[str, Any]:
             health["redis"] = f"error: {exc}"
 
     return health
+
+
+# ============================================================================
+# Redis Cache Management
+# ============================================================================
+
+
+@router.get("/cache/metrics")
+async def get_cache_metrics() -> dict[str, Any]:
+    """Get Redis cache metrics for monitoring.
+    
+    Returns hit rates, cache sizes, and performance stats for:
+    - Aggregation cache (query results)
+    - Metadata cache (collection names, schemas)
+    """
+    from services.redis_aggregation_cache import redis_aggregation_cache
+    from services.redis_metadata_cache import redis_metadata_cache
+    
+    return {
+        "aggregation_cache": redis_aggregation_cache.get_metrics(),
+        "metadata_cache": redis_metadata_cache.get_metrics(),
+    }
+
+
+@router.post("/cache/invalidate/{collection}")
+async def invalidate_cache(collection: str) -> dict[str, Any]:
+    """Invalidate all cached data for a specific collection.
+    
+    Useful for forcing fresh data after manual database updates.
+    """
+    from services.redis_aggregation_cache import redis_aggregation_cache
+    from services.redis_metadata_cache import redis_metadata_cache
+    
+    deleted_agg = redis_aggregation_cache.invalidate(collection)
+    deleted_meta = redis_metadata_cache.invalidate_collection(collection)
+    
+    return {
+        "collection": collection,
+        "deleted_aggregation_entries": deleted_agg,
+        "deleted_metadata_entries": deleted_meta,
+        "status": "success"
+    }
+
+
+@router.post("/cache/invalidate-all")
+async def invalidate_all_caches() -> dict[str, Any]:
+    """Invalidate all cached data (aggregations and metadata).
+    
+    Use with caution - will cause temporary performance degradation
+    as caches rebuild.
+    """
+    from services.redis_aggregation_cache import redis_aggregation_cache
+    from services.redis_metadata_cache import redis_metadata_cache
+    
+    deleted_agg = redis_aggregation_cache.invalidate_all()
+    deleted_meta = redis_metadata_cache.invalidate_all()
+    
+    return {
+        "deleted_aggregation_entries": deleted_agg,
+        "deleted_metadata_entries": deleted_meta,
+        "status": "success",
+        "warning": "All caches cleared - expect slower responses until caches rebuild"
+    }

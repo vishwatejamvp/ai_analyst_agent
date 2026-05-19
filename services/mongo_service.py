@@ -340,7 +340,22 @@ class MongoService:
         
         Enhanced with dynamic freshness detection: adds metadata to indicate
         data completeness based on temporal patterns.
+        
+        Enhanced with Redis caching: checks cache before running aggregation,
+        stores result in cache after execution.
         """
+        # Try Redis cache first
+        from services.redis_aggregation_cache import redis_aggregation_cache
+        
+        cached_result = redis_aggregation_cache.get(collection, spec)
+        if cached_result is not None:
+            logger.info(
+                f"Returning cached aggregation for {collection} "
+                f"({len(cached_result)} rows)"
+            )
+            return cached_result
+        
+        # Cache miss - run MongoDB aggregation
         pipeline = self.build_pipeline(spec)
         logger.debug(f"Mongo pipeline on {collection}: {pipeline}")
         rows = self.aggregate(collection, pipeline)
@@ -348,6 +363,9 @@ class MongoService:
         # Infer data freshness from temporal patterns (time-series only)
         if spec.time and rows:
             rows = self._infer_data_freshness(rows)
+        
+        # Store in Redis cache
+        redis_aggregation_cache.set(collection, spec, rows)
         
         return rows
     

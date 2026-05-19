@@ -169,14 +169,28 @@ When the case passes, inspect the trace with
 `request.answer`, and a Claude usage entry with low input/output
 token counts (the summariser prompt is small).
 
+### Catalog-first routing (build #9)
+
+`RoutingService` scores the question against `awqaf_datasets_metadata`
+(slug, display name, purpose, key metrics) before collection-name token
+overlap. The chosen method is exposed on `routing.resolution` and in
+`meta.routing_debug` when `include_details=true`.
+
+Env: `CATALOG_ROUTING_ENABLED` (default true), `CATALOG_ROUTING_MIN_SCORE`
+(default 3.0). Dataset choice is server-side only (catalog routing + session);
+the chat UI sends `question` + `session_id` only. Integrators may use
+`GET /api/v1/datasets` or `collection` on `POST /analyze` when needed.
+
 ### LLM router fallback (build #6 — uncertain rule cases)
 
-Run with `--llm-router on` to let `RoutingService.decide` consult an
-LLM second-opinion when its uncertainty flags fire (no_target,
+Enabled by default (`ROUTER_LLM_FALLBACK_ENABLED=true`). `decide()` consults
+an LLM second-opinion when uncertainty flags fire (no_target,
 missing_metric_for_op, group_by_intent_unmet, op_via_default,
 low_target_overlap, pure_semantic_with_year). Clean queries skip
 the LLM entirely (~$0); only ambiguous ones pay the ~$0.007 / 3 s
 extra round trip.
+
+Run eval with `--llm-router off` to assert rule-only baselines.
 
 ```bash
 python -m tests.eval.runner \

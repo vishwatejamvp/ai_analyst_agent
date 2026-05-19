@@ -33,11 +33,16 @@
 # "top N <col> by <metric>" pattern — it only looks at tokens AFTER the
 # first " by ", so "emirates" (which precedes " by ") is missed. Tracked
 # as a backlog item; this case asserts only what works today.
-{"id": "route-top-001", "level": "routing", "question": "top 5 emirates by total revenue from occupancy and revenues", "expect": {"route": "ANALYTICAL", "operation": "sum"}, "tags": ["analytical", "topk", "characterization"]}
-# Backlog regression case: when "top N <col> by <metric>" group_by extraction
-# is implemented, flip these expects on. Until then, kept as a tagged TODO
-# so `--tag known-gap` makes the gap inventory greppable.
-{"id": "route-top-gap-001", "level": "routing", "question": "top 5 emirates by total revenue from occupancy and revenues", "expect": {"route": "ANALYTICAL", "operation": "sum"}, "tags": ["analytical", "topk", "known-gap"]}
+{"id": "route-top-001", "level": "routing", "question": "top 5 emirates by total revenue from occupancy and revenues", "expect": {"route": "ANALYTICAL", "operation": "sum", "group_by": "emirate"}, "tags": ["analytical", "topk", "characterization"]}
+# Fixed: "top N <col> by <metric>" now extracts group_by from the dimension
+# before "by" (Build #9). Kept as regression inventory under known-gap tag.
+{"id": "route-top-gap-001", "level": "routing", "question": "top 5 emirates by total revenue from occupancy and revenues", "expect": {"route": "ANALYTICAL", "operation": "sum", "group_by": "emirate"}, "tags": ["analytical", "topk", "known-gap"]}
+
+# ─── CATALOG ROUTING (Build #9) ─────────────────────────────────────────────
+# Routing-level cases assert operation/time; target scoring needs live catalog
+# + Mongo in e2e. ``resolution_method`` is checked when the runner exposes it.
+{"id": "route-catalog-groupby-001", "level": "routing", "question": "top 5 emirates by total revenue from occupancy and revenues", "expect": {"route": "ANALYTICAL", "operation": "sum", "group_by": "emirate"}, "tags": ["catalog-routing", "group"]}
+{"id": "route-hajj-permit-001", "level": "routing", "question": "how many hajj permits issued through smart app in 2024", "expect": {"route": "ANALYTICAL", "time_present": true}, "tags": ["catalog-routing", "analytical"]}
 
 # ─── E2E level (skipped automatically when DB / Anthropic key are missing) ───
 {"id": "e2e-occ-2024-001", "level": "e2e", "question": "average occupancy rate in 2024", "expect": {"route": "ANALYTICAL", "operation": "avg", "data_nonempty": true, "text_contains": ["2024"]}, "tags": ["analytical", "time"]}

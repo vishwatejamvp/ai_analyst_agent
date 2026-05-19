@@ -19,6 +19,12 @@ upgrade that will replace pieces of this.
 
 from __future__ import annotations
 
+# Import semantic collection matcher
+from services.semantic_collection_matcher import semantic_matcher
+
+# Import semantic collection matcher
+from services.semantic_collection_matcher import semantic_matcher
+
 import re
 import time
 from dataclasses import dataclass, field
@@ -31,8 +37,14 @@ from models.schemas import (
     GlossaryMatch,
     MetricFormula,
     RoutingDecision,
+    TargetResolution,
     TimeSpec,
 )
+from services.catalog_routing_service import (
+    catalog_routing_service,
+    extract_group_by_before_by,
+)
+from models.config import settings
 from services.knowledge_base_service import (
     KnowledgeBaseService,
     knowledge_base_service,
@@ -305,7 +317,7 @@ class RoutingService:
             matched.append("trend->sum")
 
         # Resolve target up-front so glossary scoping can use it.
-        chosen_source, target, candidates, schema = self._resolve_target(
+        chosen_source, target, candidates, schema, resolution = self._resolve_target(
             data_source, collection, q
         )
         
@@ -348,20 +360,64 @@ class RoutingService:
                 matched.append(f"glossary-op:{op}")
 
         if op is None:
-            semantic_decision = RoutingDecision(
-                route=QueryRoute.SEMANTIC,
-                data_source=DataSource.AUTO,
-                target=target,
-                target_candidates=candidates,
-                reason=(
-                    "No aggregation keywords; pure semantic query."
-                    if is_semantic
-                    else "No aggregation keywords detected; defaulting to semantic search."
-                ),
-                matched_keywords=matched,
-                definition=glossary_match,
-            )
-            return self._maybe_refine(semantic_decision, question, schema)
+            # ✅ NEW: Try semantic intent enrichment before defaulting to SEMANTIC route
+            # This catches vague analytical queries like "what should i look into hajj package"
+            # and either infers the operation or suggests specific questions.
+            try:
+                from services.semantic_intent_enricher import semantic_intent_enricher
+                from models.config import settings
+                
+                enriched = semantic_intent_enricher.enrich(question, target)
+                
+                # If confidence is high enough, use the inferred operation
+                enrichment_threshold = getattr(settings, 'intent_enrichment_threshold', 0.5)
+                if enriched.confidence >= enrichment_threshold and enriched.inferred_operation:
+                    op = enriched.inferred_operation
+                    matched.append(f"semantic-enriched:{op}")
+                    logger.info(
+                        f"Semantic enrichment: inferred operation '{op}' "
+                        f"(confidence: {enriched.confidence:.2f}) - {enriched.reasoning}"
+                    )
+                    # Continue to build aggregation spec below
+                else:
+                    # Low confidence - return semantic decision with enrichment metadata
+                    # The analyst service will check this and potentially show suggestions
+                    semantic_decision = RoutingDecision(
+                        route=QueryRoute.SEMANTIC,
+                        data_source=DataSource.AUTO,
+                        target=target,
+                        target_candidates=candidates,
+                        resolution=resolution,
+                        reason=(
+                            f"No aggregation keywords detected. "
+                            f"Semantic enrichment confidence too low ({enriched.confidence:.2f} < {enrichment_threshold:.2f}). "
+                            f"{enriched.reasoning}"
+                        ),
+                        matched_keywords=matched,
+                        definition=glossary_match,
+                    )
+                    return self._maybe_refine(semantic_decision, question, schema)
+                    
+            except Exception as exc:  # noqa: BLE001
+                logger.warning(
+                    f"Semantic intent enrichment failed ({type(exc).__name__}: {exc}); "
+                    f"falling back to semantic route"
+                )
+                semantic_decision = RoutingDecision(
+                    route=QueryRoute.SEMANTIC,
+                    data_source=DataSource.AUTO,
+                    target=target,
+                    target_candidates=candidates,
+                    resolution=resolution,
+                    reason=(
+                        "No aggregation keywords; pure semantic query."
+                        if is_semantic
+                        else "No aggregation keywords detected; defaulting to semantic search."
+                    ),
+                    matched_keywords=matched,
+                    definition=glossary_match,
+                )
+                return self._maybe_refine(semantic_decision, question, schema)
 
         spec = self._build_aggregation_spec(q, op, schema, transaction_intent)
         spec.limit = spec.limit or self._extract_top_k(q)
@@ -403,6 +459,7 @@ class RoutingService:
             aggregation=spec,
             target=target,
             target_candidates=candidates,
+            resolution=resolution,
             reason=" ".join(reason_bits),
             matched_keywords=matched,
             definition=glossary_match,
@@ -554,53 +611,121 @@ class RoutingService:
         data_source: DataSource,
         collection: str | None,
         question: str,
-    ) -> tuple[DataSource, str | None, list[str], _SchemaSnapshot]:
+    ) -> tuple[DataSource, str | None, list[str], _SchemaSnapshot, TargetResolution | None]:
         """Pick a data source + concrete target + snapshot the schema."""
         if data_source == DataSource.MYSQL:
             tables = self._list_mysql_tables()
-            chosen = collection or _score_target(question, tables)
+            chosen, resolution = self._pick_target(question, tables, collection)
             return (
                 DataSource.MYSQL,
                 chosen,
                 [t for t in tables if t != chosen],
                 self._mysql_schema(chosen),
+                resolution,
             )
 
         if data_source == DataSource.MONGO:
             cols = self._list_mongo_collections()
-            chosen = collection or _score_target(question, cols)
+            chosen, resolution = self._pick_target(question, cols, collection)
             return (
                 DataSource.MONGO,
                 chosen,
                 [c for c in cols if c != chosen],
                 self._mongo_schema(chosen),
+                resolution,
             )
 
         cols = self._list_mongo_collections()
         if cols:
-            chosen = collection or _score_target(question, cols)
+            chosen, resolution = self._pick_target(question, cols, collection)
             return (
                 DataSource.MONGO,
                 chosen,
                 [c for c in cols if c != chosen],
                 self._mongo_schema(chosen),
+                resolution,
             )
 
         tables = self._list_mysql_tables()
         if tables:
-            chosen = collection or _score_target(question, tables)
+            chosen, resolution = self._pick_target(question, tables, collection)
             return (
                 DataSource.MYSQL,
                 chosen,
                 [t for t in tables if t != chosen],
                 self._mysql_schema(chosen),
+                resolution,
             )
 
         logger.warning(
             "Routing could not find any Mongo collection or MySQL table — "
             "target will be None. Check the database connection."
         )
-        return DataSource.MONGO, None, [], _SchemaSnapshot(columns=[], is_mongo=True)
+        return DataSource.MONGO, None, [], _SchemaSnapshot(columns=[], is_mongo=True), None
+
+    def _pick_target(
+        self,
+        question: str,
+        candidates: list[str],
+        explicit: str | None,
+    ) -> tuple[str | None, TargetResolution | None]:
+        """Choose one target from ``candidates`` with catalog-first logic."""
+        if not candidates:
+            return None, None
+
+        if explicit:
+            return explicit, TargetResolution(
+                method="explicit",
+                score=1.0,
+                top_scores={explicit: 1.0},
+            )
+
+        # Catalog-first (AWQAF facts collections only).
+        if settings.catalog_routing_enabled:
+            cat = catalog_routing_service.score_question(
+                question, available_collections=candidates
+            )
+            if cat.method == "catalog" and cat.facts_collection:
+                logger.info(
+                    f"Catalog routing: {cat.facts_collection} "
+                    f"(slug={cat.slug}, score={cat.score:.1f})"
+                )
+                return cat.facts_collection, TargetResolution(
+                    method="catalog",
+                    score=cat.score,
+                    catalog_slug=cat.slug,
+                    top_scores=cat.top_scores,
+                )
+
+        # ✅ NEW: Use semantic matching for better accuracy
+        try:
+            collection, confidence, reasoning = semantic_matcher.find_best_collection(
+                question, candidates
+            )
+            
+            if collection and confidence > 0.5:
+                logger.info(f"Semantic collection match: {reasoning}")
+                return collection, TargetResolution(
+                    method="semantic",
+                    score=confidence,
+                    top_scores={collection: confidence}
+                )
+        except Exception as e:
+            logger.warning(f"Semantic matching failed, falling back to token overlap: {e}")
+
+        # Fallback to token overlap
+        chosen, overlap_scores = _score_target_with_scores(question, candidates)
+        best_overlap = float(overlap_scores.get(chosen or "", 0)) if chosen else 0.0
+        method = "token_overlap" if best_overlap > 0 else "default"
+        return chosen, TargetResolution(
+            method=method,
+            score=best_overlap,
+            top_scores={
+                k: float(v) for k, v in sorted(
+                    overlap_scores.items(), key=lambda x: x[1], reverse=True
+                )[:5]
+            },
+        )
 
     def _mongo_schema(self, collection: str | None) -> _SchemaSnapshot:
         if not collection:
@@ -654,10 +779,32 @@ class RoutingService:
         )
 
     def _cached_listing(self, *, label: str, fetch, slot: str) -> list[str]:
+        """Fetch collection/table listing with 3-tier caching.
+        
+        Cache hierarchy:
+        1. In-memory cache (60s TTL) - fastest
+        2. Redis cache (300s TTL) - shared across instances
+        3. Database query - slowest
+        """
         now = time.monotonic()
+        
+        # Check in-memory cache first (existing logic)
         cached: tuple[float, list[str]] | None = getattr(self, slot)
         if cached is not None and (now - cached[0]) < self._LISTING_TTL_SECONDS:
             return list(cached[1])
+        
+        # Check Redis cache (NEW - only for MongoDB collections)
+        if label == "mongo.list_collections":
+            from services.redis_metadata_cache import redis_metadata_cache
+            
+            redis_cached = redis_metadata_cache.get_collections()
+            if redis_cached is not None:
+                # Promote to in-memory cache
+                setattr(self, slot, (now, redis_cached))
+                logger.debug(f"{label}: Redis cache hit ({len(redis_cached)} collections)")
+                return list(redis_cached)
+        
+        # Cache miss - query database
         try:
             value = list(fetch() or [])
         except Exception as exc:  # noqa: BLE001
@@ -673,7 +820,14 @@ class RoutingService:
                 f"({type(exc).__name__}: {exc}); routing will have no target."
             )
             return []
+        
+        # Store in both caches
         setattr(self, slot, (now, value))
+        
+        if label == "mongo.list_collections":
+            from services.redis_metadata_cache import redis_metadata_cache
+            redis_metadata_cache.set_collections(value)
+        
         return value
 
     # ------------------------------------------------------------------
@@ -803,6 +957,11 @@ class RoutingService:
 
     @staticmethod
     def _guess_group_by(q: str, columns: list[str]) -> str | None:
+        # "top 5 emirates by total revenue" — dimension precedes "by".
+        before_by = extract_group_by_before_by(q, columns)
+        if before_by:
+            return before_by
+
         if not any(kw in q for kw in _GROUP_KEYWORDS):
             return None
 
@@ -961,29 +1120,23 @@ def _question_targets_service_metrics(q: str) -> bool:
 
 
 def _score_target(question: str, candidates: list[str]) -> str | None:
-    """Pick the candidate whose name best matches the question tokens.
+    """Pick the candidate whose name best matches the question tokens."""
+    chosen, _ = _score_target_with_scores(question, candidates)
+    return chosen
 
-    Two ordering rules govern this function:
 
-    1. **Service-metric questions** ("trend", "totals", year mentioned, etc.)
-       drop catalog/glossary collections from consideration so they can
-       never win on a tie-break.
-    2. **Catalog-style questions** may force-pick the metadata collection,
-       but only when (a) the question contains a *whole-word* catalog
-       intent phrase (no single-token substring traps), AND (b) no facts
-       collection has any token overlap with the question — i.e. the
-       user clearly is browsing, not analysing.
-
-    Falls back to a token-overlap score against collection names so a
-    real dataset wins on token specificity.
-    """
+def _score_target_with_scores(
+    question: str, candidates: list[str]
+) -> tuple[str | None, dict[str, int]]:
+    """Return best target and per-candidate token-overlap scores."""
     if not candidates:
-        return None
+        return None, {}
     if len(candidates) == 1:
-        return candidates[0]
+        return candidates[0], {candidates[0]: 0}
 
     q_tokens = set(_tokenize(question))
     active = list(candidates)
+    scores: dict[str, int] = {}
 
     if _question_targets_service_metrics(question):
         trimmed = [c for c in active if c not in _AWQAF_NON_FACT_COLLECTIONS]
@@ -996,11 +1149,6 @@ def _score_target(question: str, candidates: list[str]) -> str | None:
             for p in _CATALOG_INTENT_PHRASES
         )
         if looks_catalog and _AWQAF_METADATA_COLLECTION in active:
-            # Refuse to hijack to the metadata collection if any facts
-            # collection actually shares vocabulary with the question.
-            # Without this guard, "show all datasets with high occupancy"
-            # would land on metadata even though `occupancy` clearly
-            # points at a real facts collection.
             facts = [
                 c for c in active if c not in _AWQAF_NON_FACT_COLLECTIONS
             ]
@@ -1009,18 +1157,19 @@ def _score_target(question: str, candidates: list[str]) -> str | None:
                 for c in facts
             )
             if not facts_overlap:
-                return _AWQAF_METADATA_COLLECTION
+                return _AWQAF_METADATA_COLLECTION, {_AWQAF_METADATA_COLLECTION: 0}
 
     if not q_tokens:
-        return active[0]
+        return active[0], {active[0]: 0}
 
     best, best_score = active[0], -1
     for name in active:
         name_tokens = set(_tokenize(name.replace("_", " ")))
         score = len(q_tokens & name_tokens)
+        scores[name] = score
         if score > best_score:
             best_score, best = score, name
-    return best
+    return best, scores
 
 
 # ---------------------------------------------------------------------------

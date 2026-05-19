@@ -41,7 +41,11 @@ class QueryRequest(BaseModel):
     question: str = Field(..., min_length=2, description="Natural language question.")
     collection: str | None = Field(
         default=None,
-        description="Optional MongoDB collection / MySQL table to scope the query.",
+        description=(
+            "Optional MongoDB collection / MySQL table to scope the query. "
+            "When set, routing skips catalog and token scoring and uses this "
+            "target directly (method=explicit)."
+        ),
     )
     data_source: DataSource = Field(default=DataSource.AUTO)
     top_k: int | None = Field(default=None, ge=1, le=50)
@@ -49,9 +53,10 @@ class QueryRequest(BaseModel):
     session_id: str | None = Field(
         default=None,
         description=(
-            "Opaque session id. When provided, short follow-up questions "
-            "('by region', 'exclude refunds', 'vs last year') are merged with "
-            "the previous question's plan instead of starting fresh."
+            "Opaque session id (client-generated UUID recommended). When "
+            "provided, short follow-up questions ('by region', 'vs last year') "
+            "reuse the prior routing target and patch the aggregation plan "
+            "instead of re-scoring all collections."
         ),
     )
     include_details: bool = Field(
@@ -163,6 +168,30 @@ class GlossaryMatch(BaseModel):
     )
 
 
+class TargetResolution(BaseModel):
+    """How the router chose ``target`` (for trust / debug panels)."""
+
+    method: Literal[
+        "explicit",
+        "catalog",
+        "token_overlap",
+        "session_scope",
+        "default",
+    ] = "token_overlap"
+    score: float = Field(
+        default=0.0,
+        description="Confidence score for the chosen target (method-specific scale).",
+    )
+    catalog_slug: str | None = Field(
+        default=None,
+        description="AWQAF dataset slug when method=catalog.",
+    )
+    top_scores: dict[str, float] = Field(
+        default_factory=dict,
+        description="Top candidate collection/table → score (debug).",
+    )
+
+
 class RoutingDecision(BaseModel):
     route: QueryRoute
     data_source: DataSource
@@ -175,6 +204,10 @@ class RoutingDecision(BaseModel):
     target_candidates: list[str] = Field(
         default_factory=list,
         description="Other reasonable targets considered during scoring.",
+    )
+    resolution: TargetResolution | None = Field(
+        default=None,
+        description="How ``target`` was selected (catalog vs name tokens, etc.).",
     )
     reason: str = ""
     matched_keywords: list[str] = Field(default_factory=list)

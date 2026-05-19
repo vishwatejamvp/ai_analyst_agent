@@ -18,6 +18,7 @@ from models.schemas import (
     QueryRequest,
     RoutingDecision,
 )
+from services.catalog_routing_service import catalog_routing_service
 from services.analyst_service import analyst_orchestrator
 from services.awqaf_ingest import ingest_payload
 from services.ingestion_service import ingestion_service
@@ -155,6 +156,30 @@ def list_collections() -> dict[str, list[str]]:
         "mongo": _safe(mongo_service.list_collections, default=[]),
         "mysql": _safe(mysql_service.list_tables, default=[]),
     }
+
+
+@router.get("/datasets", tags=["meta"])
+def list_datasets() -> dict[str, Any]:
+    """AWQAF catalog entries for UI dataset pickers and routing debug.
+
+  Each item includes the Mongo facts ``collection`` name derived from the
+  dataset slug. Use ``collection`` in ``POST /analyze`` to lock routing.
+    """
+    entries = catalog_routing_service.load_catalog()
+    mongo_cols = set(_safe(mongo_service.list_collections, default=[]))
+    items = []
+    for e in entries:
+        items.append(
+            {
+                "slug": e.slug,
+                "dataset_name": e.dataset_name,
+                "collection": e.facts_collection,
+                "available": e.facts_collection in mongo_cols,
+                "department": e.department,
+            }
+        )
+    items.sort(key=lambda x: (not x["available"], x["dataset_name"].lower()))
+    return {"datasets": items, "count": len(items)}
 
 
 # ---------------------------------------------------------------------------
